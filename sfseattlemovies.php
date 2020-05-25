@@ -106,6 +106,9 @@
         </table>
         </div>
 
+        <!--link to Total Movie Count-->
+<?php require("sfmoviescount.php"); ?>  
+
     <footer>
       <nav class="navigation">
         <ul>
