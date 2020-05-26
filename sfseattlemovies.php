@@ -67,23 +67,28 @@
           </tr>
         
         <?php
-          // 2. Perform database query
-          $query = "SELECT * ";
-          $query .= "FROM movies ";
-          $query .= "ORDER BY MovieTitle ASC ";
-          $result = mysqli_query($connection, $query);
-          //Test if there was a query error   
-          if (!$result) {
-            die("Database query failed.");
-          } /* else { 
-            echo "Connected";
-          } */
+            // 2. Perform database query
+            $query = "SELECT * ";
+            $query .= "FROM moviesfilminglocation ";
+            $query .= "INNER JOIN movies ";
+            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
+            $query .= "INNER JOIN filminglocations ";
+            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
+            $query .= "WHERE City = 'Seattle' ";
+            $query .= "ORDER BY MovieTitle ASC ";
+            $result = mysqli_query($connection, $query);
+            //Test if there was a query error   
+            if (!$result) {
+                die("Database query failed.");
+            } /* else { 
+                echo "Connected";
+            } */
         ?>  
     
         <?php
-          // 3. Use returned data (if any) 
-           while($movies = mysqli_fetch_assoc($result)) {
-            // output data from each row
+            // 3. Use returned data (if any) 
+            while($movies = mysqli_fetch_assoc($result)) {
+                // output data from each row
         ?>
             
           <div class="MovieTitleMainContent">
@@ -97,17 +102,16 @@
             }
         ?>
 
-        <?php         
-                     
-          // 4. Release returned data
-          mysqli_free_result($result);
+        <?php        
+            // 4. Release returned data
+            mysqli_free_result($result);
         ?>  
 
         </table>
         </div>
 
         <!--link to Total Movie Count-->
-<?php require("sfmoviescount.php"); ?>  
+<?php require("sfmoviescount.php"); ?>
 
     <footer>
       <nav class="navigation">
