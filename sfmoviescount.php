@@ -6,7 +6,12 @@
         <?php
             // 2. Perform database query
             $query = "SELECT COUNT(*) ";
-            $query .= "FROM movies ";
+            $query .= "FROM moviesfilminglocation ";
+            $query .= "INNER JOIN movies ";
+            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
+            $query .= "INNER JOIN filminglocations ";
+            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
+            $query .= "WHERE City = 'Seattle' ";
             $result = mysqli_query($connection, $query);
             //Test if there was a query error   
             if (!$result) {
@@ -29,7 +34,7 @@
             }
         ?>
 
-        <?php
+        <?php      
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
