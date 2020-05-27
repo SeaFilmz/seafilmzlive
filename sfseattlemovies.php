@@ -1,6 +1,6 @@
 <?php require_once("db_connection.php"); ?>
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
   <head>
     <!--Connection to Google Analytics.-->
@@ -77,35 +77,33 @@
             $query .= "WHERE City = 'Seattle' ";
             $query .= "ORDER BY MovieTitle ASC ";
             $result = mysqli_query($connection, $query);
-            //Test if there was a query error   
+            //Test if there was a query error
             if (!$result) {
                 die("Database query failed.");
-            } /* else { 
+            } /* else {
                 echo "Connected";
             } */
-        ?>  
+        ?>
     
         <?php
-            // 3. Use returned data (if any) 
+            // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
             
-          <div class="MovieTitleMainContent">
-            <tr class="MoviesContent"> 
-              <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
-              <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
-            </tr>
-          </div>
+          <tr class="MoviesContent">
+            <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+            <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
+          </tr>
           
         <?php
             }
         ?>
 
-        <?php        
+        <?php
             // 4. Release returned data
             mysqli_free_result($result);
-        ?>  
+        ?>
 
         </table>
         </div>
