@@ -87,7 +87,7 @@
 
       <tr class="ActorsMainContent">
         <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["ActorLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
-        <td class="ActorsBirthdateContent"><?php echo $actors["BirthDate"]; ?></td>
+        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
   
         <?php
@@ -132,7 +132,7 @@
  
       <tr class="ActorsMainContent">
         <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["ActorLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
-        <td class="ActorsBirthdateContent"><?php echo $actors["BirthDate"]; ?></td>
+        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
         <?php
