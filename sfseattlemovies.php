@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="sfmain.js" defer></script>
   </head>
-    
+
   <body>
     <header id="MovieTitleTop" class="banner">
       <h1><a href="index.php">SeaFilmz</a></h1>
@@ -65,7 +65,7 @@
             <th class="MovieTitlesColumnHeader1">Title</th>
             <th class="MovieTitlesColumnHeader2">Year</th>
           </tr>
-        
+
         <?php
             // 2. Perform database query
             $query = "SELECT * ";
@@ -84,13 +84,13 @@
                 echo "Connected";
             } */
         ?>
-    
+
         <?php
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
-            
+
           <tr class="MoviesContent">
             <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
             <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
@@ -110,7 +110,7 @@
 
         <!--link to Total Movie Count-->
 <?php require("sfmoviescount.php"); ?>
-  
+
       <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
         <div class="MYTable">
@@ -136,7 +136,7 @@
                 die("Database query failed.");
             }
         ?>
-    
+
         <?php
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
@@ -147,7 +147,7 @@
             <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
             <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
           </tr>
-          
+
         <?php
             }
         ?>
