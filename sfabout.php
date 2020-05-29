@@ -1,6 +1,6 @@
 <?php require_once("db_connection.php"); ?>
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
   <head>
     <!--Connection to Google Analytics.-->
@@ -10,11 +10,11 @@
     <title>About - SeaFilmz</title>
     <link type="text/css" rel="stylesheet" href="sfcss.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="sfmain.js" defer></script>  
+    <script src="sfmain.js" defer></script>
   </head>
-    
+
   <body>
-    <header id="SeattleAboutTop" class="banner">	
+    <header id="SeattleAboutTop" class="banner">
       <h1><a href="index.php">SeaFilmz</a></h1>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
@@ -55,8 +55,8 @@
         </div>
       </nav>
     </header>
-      
-    <section class="aboutpagecontent">  
+
+    <section class="aboutpagecontent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
 
       <div class="aboutbio">
@@ -73,12 +73,12 @@
     <div id="secondHeader">
       <button onclick="headerSwitchText()">SeaFilmz Stand For</button>
     </div>
-        
+
     <footer>
       <nav class="navigation">
         <ul>
           <li class="NavFooterMobile"><a href="#SeattleAboutTop">Go to Top</a></li>
-          
+
           <?php require_once("sffootermenu.php"); ?>
         </ul>
       </nav>
@@ -91,3 +91,4 @@
 <?php
     // 5. Close database connection
     mysqli_close($connection);
+?>
