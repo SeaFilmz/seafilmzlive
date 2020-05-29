@@ -3,7 +3,7 @@
         <span class="bar2"></span>
         <span class="bar3"></span>
       </div>
-    
+
       <div class="MobileNav">
         <p><a href="sfseattlemovies.php">Movies Filmed in Seattle by Title</a></p>
         <p><a href="sfseattlemoviesyear.php">Movies Filmed in Seattle by Year Released</a></p>
