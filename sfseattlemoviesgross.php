@@ -87,7 +87,7 @@
 
           <tr class="MoviesContent">
             <td class="MovieTitlesContent"><b ><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
-            <td class="MovieGrossContent">$<?php echo $movies["TotalWorldGross"]; ?></td>
+            <td class="MovieGrossContent">$<?php echo number_format($movies["TotalWorldGross"]); ?></td>
           </tr>
 
         <?php
@@ -101,7 +101,6 @@
 
     </table>
     </div>
-
 
     <div class="MTGTable">
     <table class="MovieTotalGrossTable">
@@ -127,7 +126,7 @@
                 // output data from each row
         ?>
 
-        <td class="MovieTotalGrossNumber">$<?php echo $movies["SUM(TotalWorldGross)"]; ?></td>
+        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["SUM(TotalWorldGross)"]); ?></td>
       </tr>
 
         <?php
@@ -142,7 +141,6 @@
         </table>
         </div>
 
-       
     <footer>
       <nav class="navigation">
         <ul>
