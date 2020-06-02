@@ -103,6 +103,45 @@
     </table>
     </div>
 
+    <div class="ACTable">
+    <table class="AthletesCountTable">
+      <tr class="MoviesContent">
+        <th class="AthletesCountRowHeader">Total Athletes</th>
+
+        <?php
+            // 2. Perform database query
+            $query = "SELECT COUNT(*) ";
+            $query .= "FROM athletes ";
+            $result = mysqli_query($connection, $query);
+            //Test if there was a query error
+            if (!$result) {
+                die("Database query failed.");
+            } /* else {
+                echo "Connected";
+            } */
+        ?>
+
+        <?php
+            // 3. Use returned data (if any)
+            while($athletes = mysqli_fetch_assoc($result)) {
+                // output data from each row
+        ?>
+
+        <td class="AthletesCountNumber"><?php echo $athletes["COUNT(*)"]; ?></td>
+      </tr>
+
+        <?php
+            }
+        ?>
+
+        <?php
+            // 4. Release returned data
+            mysqli_free_result($result);
+        ?>
+
+    </table>
+    </div>
+
     <footer>
       <nav class="navigation">
         <ul>
