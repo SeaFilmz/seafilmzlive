@@ -16,7 +16,7 @@
 
   <body>
     <header id="ShorelineTop" class="banner">
-      <a href="index.php"><h1>SeaFilmz</h1></a>
+      <a href="index"><h1>SeaFilmz</h1></a>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
     <!--link to desktop and mobile menu in header-->
