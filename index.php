@@ -16,7 +16,7 @@
 
   <body class="MainPage">
     <header id="MainTop" class="banner">
-      <h1><a href="index.php">SeaFilmz</a></h1>
+      <h1><a href="index">SeaFilmz</a></h1>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
     <!--link to desktop and mobile menu in header-->
