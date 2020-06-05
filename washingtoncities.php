@@ -16,7 +16,7 @@
 
   <body>
     <header id="WashingtonCitiesTop" class="banner">	
-      <a href="/"><h1>SeaFilmz</h1></a>
+      <a href="\"><h1>SeaFilmz</h1></a>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
     <!--link to desktop and mobile menu in header-->
@@ -33,21 +33,21 @@
 
     <div class="WashingtonCitiesContent">
 
-      <p class="WashingtonCitiesLink"><a href="shoreline.php">Shoreline</a></p>
+      <p class="WashingtonCitiesLink"><a href="shoreline">Shoreline</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="lfp.php">Lake Forest Park</a></p>
+      <p class="WashingtonCitiesLink"><a href="lfp">Lake Forest Park</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="tukwila.php">Tukwila</a></p>
+      <p class="WashingtonCitiesLink"><a href="tukwila">Tukwila</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="burien.php">Burien</a></p>
+      <p class="WashingtonCitiesLink"><a href="burien">Burien</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="seatac.php">SeaTac</a></p>
+      <p class="WashingtonCitiesLink"><a href="seatac">SeaTac</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="mercerisland.php">Mercer Island</a></p>
+      <p class="WashingtonCitiesLink"><a href="mercerisland">Mercer Island</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="medina.php">Medina</a></p>
+      <p class="WashingtonCitiesLink"><a href="medina">Medina</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="bellevue.php">Bellevue</a></p>
+      <p class="WashingtonCitiesLink"><a href="bellevue">Bellevue</a></p>
 
     </div>
 
