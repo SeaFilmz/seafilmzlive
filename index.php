@@ -16,7 +16,7 @@
 
   <body class="MainPage">
     <header id="MainTop" class="banner">
-      <h1><a href="index">SeaFilmz</a></h1>
+      <h1><a href="\">SeaFilmz</a></h1>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
     <!--link to desktop and mobile menu in header-->
@@ -50,7 +50,7 @@
 
       <p class="SeattleFunFactsMain"><a href="seattlefunfacts.php">Seattle Fun Facts</a></p>
 
-      <p class="SeattleBorderCitiesMain"><a href="seattlebordercities.php">Seattle Border Cities</a></p>
+      <p class="SeattleBorderCitiesMain"><a href="washingtoncities.php">Other Washington State Cities</a></p>
     </div>
 
     <div class="sfQuizBackground">
