@@ -15,23 +15,18 @@
   </head>
 
   <body>
-    <header id="MovieTitleTop" class="banner">
-      <h1><a href="index">SeaFilmz</a></h1>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
 
-    </header>
-
-        <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
+    <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
         
-        <div class="MTTable">
-        <table class="MovieTitlesTable">
-          <tr>
-            <th class="MovieTitlesColumnHeader1">Title</th>
-            <th class="MovieTitlesColumnHeader2">Year</th>
-          </tr>
+    <div class="MTTable">
+    <table class="MovieTitlesTable">
+      <tr>
+        <th class="MovieTitlesColumnHeader1">Title</th>
+        <th class="MovieTitlesColumnHeader2">Year</th>
+      </tr>
 
         <?php
             // 2. Perform database query
@@ -58,10 +53,10 @@
                 // output data from each row
         ?>
 
-          <tr class="MoviesContent">
-            <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
-            <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
-          </tr>
+      <tr class="MoviesContent">
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
+      </tr>
           
         <?php
             }
@@ -72,20 +67,20 @@
             mysqli_free_result($result);
         ?>
 
-        </table>
-        </div>
+    </table>
+    </div>
 
         <!--link to Total Movie Count-->
 <?php require("sfmoviescount.php"); ?>
 
-      <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
+    <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
-        <div class="MYTable">
-        <table class="MovieYearTable">
-          <tr>
-            <th class="MovieYearColumnHeader1">Title</th>
-            <th class="MovieYearColumnHeader2">Year</th>
-          </tr>
+    <div class="MYTable">
+    <table class="MovieYearTable">
+      <tr>
+        <th class="MovieYearColumnHeader1">Title</th>
+        <th class="MovieYearColumnHeader2">Year</th>
+      </tr>
 
         <?php
             // 2. Perform database query
@@ -110,10 +105,10 @@
                 // output data from each row
         ?>
 
-          <tr class="MoviesContent">
-            <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
-            <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
-          </tr>
+      <tr class="MoviesContent">
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
+      </tr>
 
         <?php
             }
@@ -124,22 +119,15 @@
             mysqli_free_result($result);
         ?>
 
-        </table>
-        </div>
+    </table>
+    </div>
 
         <!--link to Total Movie Count-->
 <?php require("sfmoviescount.php"); ?>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#MovieTitleTop">Go to Top</a></li>
 
-          <!--link to Part of Footer Menu-->
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
