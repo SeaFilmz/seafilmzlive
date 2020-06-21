@@ -15,14 +15,9 @@
   </head>
 
   <body>
-    <header id="SeattleFFTop" class="banner">
-      <h1><a href="index">SeaFilmz</a></h1>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <h2 class="SeattleFFHeader">Seattle Fun Facts</h2>
 
@@ -75,16 +70,8 @@
       <button onclick="popsicleAnswer();">Answer</button>
     </div>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#SeattleFFTop">Go to Top</a></li>
-
-          <!--Link to Part of Footer Menu-->
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
