@@ -14,14 +14,9 @@
   </head>
 
   <body>
-    <header id="SeattleAboutTop" class="banner">
-      <h1><a href="\">SeaFilmz</a></h1>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <section class="aboutpagecontent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
@@ -41,15 +36,8 @@
       <button onclick="headerSwitchText()">SeaFilmz Stand For</button>
     </div>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#SeattleAboutTop">Go to Top</a></li>
-
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
