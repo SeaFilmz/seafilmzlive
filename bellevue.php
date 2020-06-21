@@ -15,14 +15,9 @@
   </head>
 
   <body>
-    <header id="BellevueTop" class="banner">
-      <a href="index"><h1>SeaFilmz</h1></a>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <h2 class="CityPageHeader">Bellevue (Eastside of Lake Washington City)</h2>
 
@@ -57,15 +52,8 @@
             mysqli_free_result($result);
         ?>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#BellevueTop">Go to Top</a></li>
-
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
