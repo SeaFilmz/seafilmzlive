@@ -15,14 +15,8 @@
   </head>
 
   <body class="MainPage">
-    <header id="MainTop" class="banner">
-      <h1><a href="\">SeaFilmz</a></h1>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
-
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
         <?php
             // 4. Release returned data
@@ -84,15 +78,8 @@
 
     </div>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#MainTop">Go to Top</a></li>
-
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
