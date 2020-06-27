@@ -14,14 +14,9 @@
   </head>
 
   <body>
-    <header id="MovieRuntimeTop" class="banner">
-      <a href="index.php"><h1>SeaFilmz</h1></a>
-      <b class="solgan">Greater Seattle Film, Media, Data</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h2>
 
@@ -114,16 +109,8 @@
     </table>
     </div>
 
-    <footer>
-      <nav class="navigation"> 
-          <ul>
-            <li class="NavFooterMobile"><a href="#MovieRuntimeTop">Go to Top</a></li>
-
-            <!--link to Part of Footer Menu-->
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
