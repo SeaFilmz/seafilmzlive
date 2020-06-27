@@ -14,15 +14,10 @@
     <script src="sfmain.js" defer></script>
   </head>
 
-    <body>
-      <header id="SeattleActorTitleTop" class="banner">
-        <a href="index.php"><h1>SeaFilmz</h1></a>
-        <b class="solgan">Your Seattle Film and Data Connection</b>
+  <body>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <h2 class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
 
@@ -120,15 +115,8 @@
     <!--link to Total Actors Count-->
 <?php require("sfactorscount.php"); ?>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#SeattleActorTitleTop">Go to Top</a></li>
-
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
