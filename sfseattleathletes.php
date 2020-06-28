@@ -15,14 +15,9 @@
   </head>
 
   <body>
-    <header id="#SeattleAthletesTop" class="banner">
-      <a href="index.php"><h1>SeaFilmz</h1></a>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
-    <!--link to desktop and mobile menu in header-->
-<?php require_once("sfmenu.php"); ?>
-
-    </header>
 
     <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
 
@@ -109,15 +104,8 @@
     </table>
     </div>
 
-    <footer>
-      <nav class="navigation">
-        <ul>
-          <li class="NavFooterMobile"><a href="#SeattleAthletesTop">Go to Top</a></li>
-
-          <?php require_once("sffootermenu.php"); ?>
-        </ul>
-      </nav>
-    </footer>
+    <!--link to footer-->
+<?php require_once("sffooter.php"); ?>
 
   </body>
 
