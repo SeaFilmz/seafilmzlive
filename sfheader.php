@@ -1,5 +1,5 @@
     <header id="goToTopLink" class="banner">
-      <h1><a href="\">SeaFilmz</a></h1>
+      <h1 id="headerStandFor"><a href="\">SeaFilmz</a></h1>
       <b class="solgan">Your Seattle Film and Data Connection</b>
 
       <div class="mobile-menu" onclick="onClickMenu()">
@@ -8,7 +8,7 @@
         <span class="bar3"></span>
       </div>
 
-      <div class="MobileNav">
+      <nav class="MobileNav">
         <p><a href="sfseattlemovies.php">Movies Filmed in Seattle by Title</a></p>
         <p><a href="sfseattlemoviesyear.php">Movies Filmed in Seattle by Year Released</a></p>
         <p><a href="sfseattlemoviesruntime.php">Movies Filmed in Seattle by Runtime</a></p>
@@ -17,9 +17,9 @@
         <p><a href="sfseattleactorsbirthdate.php">Actors Born in Seattle by Birthdate</a></p>
         <p><a href="sfseattlemusicians.php">Seattle Born Musicians</a></p>
         <p><a href="sfseattleathletes.php">Seattle Born Athletes</a></p>
-        <p><a href="seattlefunfacts.php">Seattle Facts</a></p>
-        <p><a href="seattlebordercities.php">Cities Near Seattle</a></p>
-      </div>
+        <p><a href="seattle">Seattle Facts</a></p>
+        <p><a href="washingtoncities">Cities Near Seattle</a></p>
+      </nav>
 
       <nav class="navigation">
         <div class="dropdown">
