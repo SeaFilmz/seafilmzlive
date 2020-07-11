@@ -1,14 +1,10 @@
-<?php require_once("db_connection.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
+<!--link to the start of a seafilmz general webpage template-->
+<?php $title = "About - SeaFilmz"; ?>
+<?php require_once "sftemplate.php"; ?>
 
-  <head>
-    <title>About - SeaFilmz</title>
-    <meta name="description" content="">
-      
-    <!--link to part of my head-->
-<?php require_once "sfhead.php"; ?>
 
+    <meta name="description" content="Info about what is seafilmz and its founder/developer.">
+  </head>
 
   <body>
     <!--link to header-->
