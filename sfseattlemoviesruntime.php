@@ -1,14 +1,10 @@
-<?php require_once("db_connection.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
+<!--link to the start of a seafilmz general webpage template-->
+<?php $title = "Seattle Movies by Runtime - SeaFilmz"; ?>
+<?php require_once "sftemplate.php"; ?>
 
-  <head>
-    <title>Seattle Movies by Runtime - SeaFilmz</title>
-    <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by runtime.">
 
-    <!--link to part of my head-->
-<?php require_once "sfhead.php"; ?>
-
+  <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by runtime.">
+  </head>
 
   <body>
     <!--link to header-->
