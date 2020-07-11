@@ -3,16 +3,12 @@
 <html lang="en">
 
   <head>
-    <!--Connection to Google Analytics.-->
-    <?php include "googleanalytics_connection.php"; ?>
-
-    <meta charset="utf-8">
-    <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by title.">
     <title>Seattle Movies by Title - SeaFilmz</title>
-    <link type="text/css" rel="stylesheet" href="sfcss.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="sfmain.js" defer></script>
-  </head>
+    <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by title.">
+
+    <!--link to part of my head-->
+<?php require_once "sfhead.php"; ?>
+
 
   <body>
     <!--link to header-->
