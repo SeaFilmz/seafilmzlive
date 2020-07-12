@@ -1,14 +1,10 @@
-<?php require_once("db_connection.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
+<!--link to the start of a seafilmz general webpage template-->
+<?php $title = "Seattle Actors by First Name- SeaFilmz"; ?>
+<?php require_once "sftemplate.php"; ?>
 
-  <head>
-    <title>Seattle Actors by First Name- SeaFilmz</title>
+
     <meta name="description" content="List of actors born is the city of Seattle organized by first name.">
-
-    <!--link to part of my head-->
-<?php require_once "sfhead.php"; ?>
-
+  </head>
 
   <body>
     <!--link to header-->
