@@ -1,13 +1,10 @@
-<?php require_once("db_connection.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
+<!--link to the start of a seafilmz general webpage template-->
+<?php $title = "Bellevue - SeaFilmz"; ?>
+<?php require_once "sftemplate.php"; ?>
 
-  <head>
-    <title>Bellevue - SeaFilmz</title>
+
     <meta name="description" content="Fact page about the city of Bellevue (eastside of lake washington city).">
-
-    <!--link to part of my head-->
-<?php require_once "sfhead.php"; ?>
+  </head>
 
 
   <body>
