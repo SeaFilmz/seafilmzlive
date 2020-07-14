@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Seattle Movies by Title or Year - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "Seattle Movies by Title or Year - SeaFilmz"; 
+  $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by title or by year.";
+  require_once "sftemplate.php";
+?>
 
-
-    <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by title or by year.">
-  </head>
 
   <body>
     <!--link to header-->
