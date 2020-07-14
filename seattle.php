@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Seattle Fun Facts - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "Seattle Fun Facts - SeaFilmz"; 
+  $mDesc = "Fact page about the city of Seattle.";
+  require_once "sftemplate.php";
+?>
 
-
-  <meta name="description" content="Fact page about the city of Seattle.">
-  </head>
 
   <body>
     <!--link to header-->
