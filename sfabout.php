@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "About - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "About - SeaFilmz"; 
+  $mDesc = "Info about what is seafilmz and who its founder/developer is.";
+  require_once "sftemplate.php";
+?>
 
-
-    <meta name="description" content="Info about what is seafilmz and its founder/developer.">
-  </head>
 
   <body>
     <!--link to header-->
