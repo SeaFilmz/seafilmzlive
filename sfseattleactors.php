@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Seattle Actors by First Name- SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "Seattle Actors by First Name- SeaFilmz"; 
+  $mDesc = "List of actors born is the city of Seattle organized by first name.";
+  require_once "sftemplate.php";
+?>
 
-
-    <meta name="description" content="List of actors born is the city of Seattle organized by first name.">
-  </head>
 
   <body>
     <!--link to header-->
