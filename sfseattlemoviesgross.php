@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Seattle Movies by Box Office Gross - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "Seattle Movies by Box Office Gross - SeaFilmz"; 
+  $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by total worldwide gross in US dollars.";
+  require_once "sftemplate.php";
+?>
 
-
-    <meta name="description" content="List of movies filmed fully or partly in the city of Seattle organized by total worldwide gross in US dollars.">
-  </head>
 
   <body>
     <!--link to header-->
