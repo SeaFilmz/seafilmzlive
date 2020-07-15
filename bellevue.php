@@ -1,10 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Bellevue - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
-
-
-    <meta name="description" content="Fact page about the city of Bellevue (eastside of lake washington city).">
-  </head>
+<?php
+  $title = "Bellevue - SeaFilmz"; 
+  $mDesc = "Fact page about the city of Bellevue (eastside of lake washington city).";
+  require_once "sftemplate.php";
+?>
 
 
   <body>
