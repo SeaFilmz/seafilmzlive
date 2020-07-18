@@ -26,7 +26,10 @@ const falseButton3 = document.querySelector(".falseAnswer3");
 const answerTextConnect = document.querySelector("#answerText");
 
 function quizButton() {
-  if (trueButton1.checked && trueButton2.checked && trueButton3.checked) {
+  if ((!trueButton1.checked && !falseButton1.checked) || (!trueButton2.checked && !falseButton2.checked) || (!trueButton3.checked && !falseButton3.checked)) {
+    answerTextConnect.innerHTML = "Please answer all questions for quiz results.";
+  }
+  else if (trueButton1.checked && trueButton2.checked && trueButton3.checked) {
     answerTextConnect.innerHTML = "Wrong - The highest grosing movie filmed in Seattle is The Ring. <br> Correct - The Ring was released in 2002. <br> Wrong - 10 Things I Hate About You cast does not included Naomi Watts.";
   }
   else if (falseButton1.checked && falseButton2.checked && falseButton3.checked) {
@@ -49,26 +52,5 @@ function quizButton() {
   }
   else if (falseButton1.checked && trueButton2.checked && falseButton3.checked) {
     answerTextConnect.innerHTML = "Correct - The highest grosing movie filmed in Seattle is The Ring. <br> Correct - The Ring was released in 2002. <br> Correct - 10 Things I Hate About You cast does not included Naomi Watts.";
-  }
-  else if (trueButton1.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }
-  else if (falseButton1.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }
-	else if (trueButton2.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }    
-  else if (falseButton2.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }
-  else if (trueButton3.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }    
-  else if (falseButton3.checked) {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
-  }
-  else {
-    answerTextConnect.innerHTML = "Please answer both questions for quiz results.";
   }
 }
