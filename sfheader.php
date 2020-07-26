@@ -51,6 +51,7 @@
             <p><a href="mercerisland">Mercer Island</a></p>
             <p><a href="medina">Medina</a></p>
             <p><a href="bellevue">Bellevue</a></p>
+            <p><a href="renton">Renton</a></p>
           </div>
         </div>
       </nav>
