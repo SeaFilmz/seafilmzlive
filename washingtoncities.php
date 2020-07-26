@@ -35,6 +35,8 @@
 
       <p class="WashingtonCitiesLink"><a href="bellevue">Bellevue</a></p>
 
+      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>      
+
     </div>
 
     <!--link to footer-->
