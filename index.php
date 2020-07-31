@@ -2,13 +2,10 @@
 <?php
   $title = "SeaFilmz - Greater Seattle Film, Media, Data"; 
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
+  $body = "HomePage";  
   require_once "sftemplate.php";
 ?>
 
-
-  <body class="MainPage">
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
         <?php
             // 4. Release returned data
