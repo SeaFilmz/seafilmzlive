@@ -2,13 +2,10 @@
 <?php
   $title = "Washington State Cities - SeaFilmz"; 
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
+  $body = "MainBody";  
   require_once "sftemplate.php";
 ?>
 
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
         <?php         
             // 4. Release returned data
