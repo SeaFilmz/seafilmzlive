@@ -1,12 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "SeaFilmz - Greater Seattle Film, Media, Data"; ?>
-<?php require_once "sftemplate.php"; ?>
-
-
-    <meta name="description" content="SeaFilmz is your Seattle media connection with a focus on film.">
-
-    <!--link to part of my head-->
-<?php require_once "sfhead.php"; ?>
+<?php
+  $title = "SeaFilmz - Greater Seattle Film, Media, Data"; 
+  $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
+  require_once "sftemplate.php";
+?>
 
 
   <body class="MainPage">
