@@ -1,9 +1,8 @@
-<?php require_once("db_connection.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
+<!--link to the start of a seafilmz general webpage template-->
+<?php $title = "SeaFilmz - Greater Seattle Film, Media, Data"; ?>
+<?php require_once "sftemplate.php"; ?>
 
-  <head>
-    <title>Grassroots (2012) - SeaFilmz</title>
+
     <meta name="description" content="SeaFilmz is your Seattle media connection with a focus on film.">
 
     <!--link to part of my head-->
