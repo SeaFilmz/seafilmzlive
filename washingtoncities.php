@@ -1,10 +1,10 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php $title = "Washington State Cities - SeaFilmz"; ?>
-<?php require_once "sftemplate.php"; ?>
+<?php
+  $title = "Washington State Cities - SeaFilmz"; 
+  $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
+  require_once "sftemplate.php";
+?>
 
-
-    <meta name="description" content="SeaFilmz is your Seattle media connection with a focus on film.">
-  </head>
 
   <body>
     <!--link to header-->
