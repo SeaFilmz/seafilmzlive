@@ -2,18 +2,14 @@
 <?php
   $title = "Shoreline - SeaFilmz"; 
   $mDesc = "Fact page about the city of Shoreline (northwest bordering city of Seattle).";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
 
 
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
+    <h2 class="CityPageHeader">City of Shoreline (Northwest Bordering City of Seattle)</h2>
 
-
-    <h2 class="ShorelineHeader">City of Shoreline (Northwest Bordering City of Seattle)</h2>
-
-		<div class="ShorelineContent">
+		<div class="CityPageContent">
 		  <p><b>Officially Became a City:</b> August 31, 1995</p>
 		  <p><b>County:</b> <a href="http://www.kingcounty.gov/">King</a></p>
 		  <p><b>State:</b> <a href="http://access.wa.gov/">Washington</a></p>
