@@ -2,13 +2,9 @@
 <?php
   $title = "Seattle Fun Facts - SeaFilmz"; 
   $mDesc = "Fact page about the city of Seattle.";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <h2 class="SeattleFFHeader">Seattle Fun Facts</h2>
