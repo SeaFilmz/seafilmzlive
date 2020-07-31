@@ -1,4 +1,4 @@
-<?php require_once("db_connectiontest.php"); ?>
+<?php require_once("db_connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
