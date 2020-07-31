@@ -2,13 +2,9 @@
 <?php
   $title = "Bellevue - SeaFilmz"; 
   $mDesc = "Fact page about the city of Bellevue (eastside of lake washington city).";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <h2 class="CityPageHeader">Bellevue (Eastside of Lake Washington City)</h2>
