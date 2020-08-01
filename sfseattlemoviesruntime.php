@@ -2,13 +2,9 @@
 <?php
   $title = "Seattle Movies by Runtime - SeaFilmz"; 
   $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by runtime.";
+  $body = "MainBody";  
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h2>
@@ -44,7 +40,7 @@
         ?>
 
       <tr class="MoviesContent">
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieTitlesRContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
         <td class="MovieRuntimeContent"><?php echo $movies["RunTime"]; ?></td>
       </tr>
 
@@ -87,7 +83,49 @@
                 // output data from each row
         ?>
 
-        <td class="MovieTotalRuntimeNumber"><?php echo $movies["SUM(RunTime)"]; ?> Minutes</td>
+        <td class="MovieTotalRuntimeNumber"><?php echo number_format($movies["SUM(RunTime)"]); ?> Minutes</td>
+      </tr>
+
+        <?php
+            }
+        ?>
+
+        <?php  
+            // 4. Release returned data
+            mysqli_free_result($result);
+        ?>
+
+    </table>
+    </div>
+
+    <div class="MTRTable">
+    <table class="MovieAvgRuntimeTable">
+        
+        <?php
+            // 2. Perform database query
+            $query = "SELECT AVG(RunTime) ";
+            $query .= "FROM moviesfilminglocation ";
+            $query .= "INNER JOIN movies ";
+            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
+            $query .= "INNER JOIN filminglocations ";
+            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
+            $query .= "WHERE City = 'Seattle' ";
+            $result = mysqli_query($connection, $query);
+            //Test if there was a query error
+            if (!$result) {
+                die("Database query failed.");
+            }
+        ?>
+
+        <?php
+            // 3. Use returned data (if any)
+            while($movies = mysqli_fetch_assoc($result)) {
+                // output data from each row
+        ?>
+
+      <tr class="MoviesContent">
+        <th class="MovieTotalRuntimeRowHeader">Average Seattle Movie Runtime</th>
+        <td class="MovieTotalRuntimeNumber"><?php echo $movies["AVG(RunTime)"]; ?> Minutes</td>
       </tr>
 
         <?php
