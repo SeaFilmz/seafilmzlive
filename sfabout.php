@@ -2,21 +2,17 @@
 <?php
   $title = "About - SeaFilmz"; 
   $mDesc = "Info about what is seafilmz and who its founder/developer is.";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <section class="aboutpagecontent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
 
       <div class="aboutbio">
-        <div class="biofacts"><span>Founder/Developer: </span>Daniel Schmidt</div>
-        <div class="biofacts"><span>LinkedIn: </span><a href="https://www.linkedin.com/in/danls20">linkedin.com/in/danls20</a></div>
+        <div class="biofacts"><span class="biofactsTag">Founder/Developer: </span>Daniel Schmidt</div>
+        <div class="biofacts"><span class="biofactsTag">LinkedIn: </span><a href="https://www.linkedin.com/in/danls20">linkedin.com/in/danls20</a></div>
       </div>
 
       <div class="AboutDescription">
@@ -25,8 +21,8 @@
       </div>
     </section>
 
-    <div id="secondHeader">
-      <button onclick="headerSwitchText()">SeaFilmz Stand For</button>
+    <div class="secondHeader">
+      <button onclick="headerSwitchText()" class="secondHeaderButton">SeaFilmz Stand For</button>
     </div>
 
     <!--link to footer-->
