@@ -2,13 +2,9 @@
 <?php
   $title = "Seattle Movies by Title or Year - SeaFilmz"; 
   $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by title or by year.";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
