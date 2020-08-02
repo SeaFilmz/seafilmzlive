@@ -2,13 +2,9 @@
 <?php
   $title = "Seattle Actors by First Name- SeaFilmz"; 
   $mDesc = "List of actors born is the city of Seattle organized by first name.";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
-
-
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
 
 
     <h2 class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
