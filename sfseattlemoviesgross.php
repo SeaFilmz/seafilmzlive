@@ -2,16 +2,12 @@
 <?php
   $title = "Seattle Movies by Box Office Gross - SeaFilmz"; 
   $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by total worldwide gross in US dollars.";
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
 
 
-  <body>
-    <!--link to header-->
-<?php require_once("sfheader.php"); ?>
-
-
-        <h2 class="MoviesGrossPageHeader"><b>Movies Filmed in Seattle by Total Worldwide Gross</b></h2>
+        <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Total Worldwide Gross</b></h2>
 
         <div class="MGTable">
         <table class="MovieGrossTable">
