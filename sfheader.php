@@ -1,6 +1,6 @@
     <header id="goToTopLink" class="banner">
-      <h1 id="headerStandFor"><a href="\">SeaFilmz</a></h1>
-      <b class="solgan">Your Seattle Film and Data Connection</b>
+      <h1 id="headerStandFor"><a href="/">SeaFilmz</a></h1>
+      <p class="solgan">6 Degrees of Seattle</p>
 
       <div class="mobile-menu" onclick="onClickMenu()">
         <span class="bar1"></span>
@@ -23,7 +23,7 @@
 
       <nav class="navigation">
         <div class="dropdown">
-          <span class="NavMobile">Movies Filmed in Seattle</span><div class="upsideDownTriangle"></div>
+          <span class="NavMove">Movies Filmed in Seattle</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="sfseattlemovies.php">by Title</a></p>
             <p><a href="sfseattlemoviesyear.php">by Year Released</a></p>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMobile">Seattle Born</span><div class="upsideDownTriangle"></div>
+          <span class="NavMove">Seattle Born</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="sfseattleactors.php">Actors</a></p>
             <p><a href="sfseattlemusicians.php">Musicians</a></p>
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMobile">City Facts</span><div class="upsideDownTriangle"></div>
+          <span class="NavMove">City Facts</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle">Seattle</a></p>
             <p><a href="shoreline">Shoreline</a></p>
