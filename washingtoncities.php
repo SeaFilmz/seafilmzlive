@@ -2,7 +2,7 @@
 <?php
   $title = "Washington State Cities - SeaFilmz"; 
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
-  $body = "MainBody";  
+  $body = "MainBody";
   require_once "sftemplate.php";
 ?>
 
@@ -32,7 +32,9 @@
 
       <p class="WashingtonCitiesLink"><a href="bellevue">Bellevue</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>      
+      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="kirkland">Kirland</a></p>      
 
     </div>
 
