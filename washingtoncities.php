@@ -1,11 +1,14 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php
-  $title = "Washington State Cities - SeaFilmz"; 
-  $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
-  $body = "MainBody";  
-  require_once "sftemplate.php";
-?>
+<?php $title = "Washington State Cities - SeaFilmz"; ?>
+<?php require_once "sftemplate.php"; ?>
 
+
+    <meta name="description" content="SeaFilmz is your Seattle media connection with a focus on film.">
+  </head>
+
+  <body>
+    <!--link to header-->
+<?php require_once("sfheader.php"); ?>
 
         <?php         
             // 4. Release returned data
@@ -32,7 +35,9 @@
 
       <p class="WashingtonCitiesLink"><a href="bellevue">Bellevue</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>      
+      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="kirkland">Kirland</a></p>      
 
     </div>
 
