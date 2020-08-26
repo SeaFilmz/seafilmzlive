@@ -34,7 +34,9 @@
 
       <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="kirkland">Kirland</a></p>      
+      <p class="WashingtonCitiesLink"><a href="kirkland">Kirkland</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="kenmore">Kenmore</a></p>
 
     </div>
 
