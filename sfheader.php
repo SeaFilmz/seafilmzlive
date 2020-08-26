@@ -1,5 +1,5 @@
     <header id="goToTopLink" class="banner">
-      <h1 id="headerStandFor"><a href="\">SeaFilmz</a></h1>
+      <h1 id="headerStandFor"><a href="/">SeaFilmz</a></h1>
       <p class="solgan">6 Degrees of Seattle</p>
 
       <div class="mobile-menu" onclick="onClickMenu()">
@@ -53,6 +53,7 @@
             <p><a href="bellevue">Bellevue</a></p>
             <p><a href="renton">Renton</a></p>
             <p><a href="kirkland">Kirkland</a></p>
+            <p><a href="kenmore">Kenmore</a></p>
           </div>
         </div>
       </nav>
