@@ -3,6 +3,8 @@
   $title = "SeaFilmz - 6 Degrees of Seattle"; 
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
   $body = "HomePage";
+  require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -76,7 +78,10 @@
     </main>
 
     <!--link to footer-->
-<?php require_once "sffooter.php"; ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
