@@ -7,13 +7,13 @@
 ?>
 
 
-    <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
+    <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
         
     <div class="MTTable">
-    <table class="MovieTitlesTable">
+    <table class="MoviesTable">
       <tr>
-        <th class="MovieTitlesColumnHeader1">Title</th>
-        <th class="MovieTitlesColumnHeader2">Year</th>
+        <th class="MoviesColumnHeader1">Title</th>
+        <th class="MoviesColumnHeader2"><a href="#sortByYear" class="SortText">Year</a><div class="SortTriangle">&#9660</div></th>
       </tr>
 
         <?php
@@ -61,13 +61,13 @@
         <!--link to Total Movie Count-->
 <?php require("sfmoviescount.php"); ?>
 
-    <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
+    <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
     <div class="MYTable">
-    <table class="MovieYearTable">
+    <table class="MoviesTable">
       <tr>
-        <th class="MovieYearColumnHeader1">Title</th>
-        <th class="MovieYearColumnHeader2">Year</th>
+        <th class="MoviesColumnHeader1"><a href="#sortByTitle" class="SortText">Title</a><div class="SortTriangle">&#9650</div></th>
+        <th class="MoviesColumnHeader2">Year</th>
       </tr>
 
         <?php
@@ -115,7 +115,7 @@
 
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php require_once "sffooter.php"; ?>
 
   </body>
 
