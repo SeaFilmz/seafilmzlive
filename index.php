@@ -1,9 +1,8 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "SeaFilmz - Greater Seattle Film, Media, Data"; 
+  $title = "SeaFilmz - 6 Degrees of Seattle"; 
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
-  $body = "HomePage";  
-  require_once "sftemplate.php";
+  $body = "HomePage";
 ?>
 
 
@@ -16,17 +15,13 @@
 
       <p class="HomePageAbout">SeaFilmz is a Seattle media and data tool with a focus on movies.</p>
 
-      <p class="SeattleMoviesMain"><a href="sfseattlemovies">Movies Filmed in Seattle by Title</a></p>
-
-      <p class="SeattleMoviesMain"><a href="sfseattlemoviesyear">Movies Filmed in Seattle by Year Released</a></p>
+      <p class="SeattleMoviesMain"><a href="sfseattlemovies">Movies Filmed in Seattle by Title or Year Released</a></p>
 
       <p class="SeattleMoviesMain"><a href="sfseattlemoviesruntime">Movies Filmed in Seattle by Runtime</a></p>
 
       <p class="SeattleMoviesMain"><a href="sfseattlemoviesgross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
 
-      <p class="SeattleActorsMain"><a href="sfseattleactors">Actors Born in Seattle by First Name</a></p>
-
-      <p class="SeattleActorsMain"><a href="sfseattleactorsbirthdate">Actors Born in Seattle by Birthdate</a></p>
+      <p class="SeattleActorsMain"><a href="sfseattleactors">Actors Born in Seattle by First Name or Birthdate</a></p>
 
       <p class="SeattleMusiciansMain"><a href="sfseattlemusicians">Musicians Born in Seattle</a></p>
 
@@ -36,6 +31,8 @@
 
       <p class="SeattleBorderCitiesMain"><a href="washingtoncities">Other Washington State Cities</a></p>
     
+      <p class="SeattleBorderCitiesMain"><a href="portlandor">Portland, Oregon</a></p>
+
 
       <div class="sfQuizBackground">
 
@@ -45,18 +42,27 @@
 
           <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie flimed in Seattle.</b></p></div>
 
-            <input type="radio" name="answer1" value="true" class="trueAnswer1"> True <br>
-            <input type="radio" name="answer1" value="false" class="falseAnswer1"> False <br>
+            <input type="radio" name="answer1" value="true" id="trueAnswer1">
+            <label for="trueAnswer1"> True</label><br>
+            
+            <input type="radio" name="answer1" value="false" id="falseAnswer1">
+            <label for="falseAnswer1"> False</label><br>
 
           <p class="sfQ"><b>The Ring was released in 2002.</b></p> 
 
-            <input type="radio" name="answer2" value="true" class="trueAnswer2"> True <br>
-            <input type="radio" name="answer2" value="false" class="falseAnswer2"> False <br>
+            <input type="radio" name="answer2" value="true" id="trueAnswer2">
+            <label for="trueAnswer2"> True</label><br>
+
+            <input type="radio" name="answer2" value="false" id="falseAnswer2">
+            <label for="falseAnswer2"> Fasle</label><br>
 
           <p class="sfQ"><b>10 Things I Hate About You cast included Naomi Watts.</b></p>
 
-            <input type="radio" name="answer3" value="true" class="trueAnswer3"> True <br>
-            <input type="radio" name="answer3" value="false" class="falseAnswer3"> False <br>      
+            <input type="radio" name="answer3" value="true" id="trueAnswer3">
+            <label for="trueAnswer3"> True</label><br>
+
+            <input type="radio" name="answer3" value="false" id="falseAnswer3">
+            <label for="falseAnswer3"> Fasle</label><br>      
 
         </form>
 
@@ -70,7 +76,7 @@
     </main>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php require_once "sffooter.php"; ?>
 
   </body>
 
