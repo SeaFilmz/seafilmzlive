@@ -7,7 +7,7 @@
 
       <head>
         <title><?php global $title; echo $title; ?></title>
-        <meta name="description" content="<?php echo $mDesc; ?>">
+        <meta name="description" content="<?php global $mDesc; echo $mDesc; ?>">
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="sfcssmain2.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
