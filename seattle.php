@@ -4,6 +4,7 @@
   $mDesc = "Fact page about the city of Seattle.";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -69,7 +70,10 @@
     </div>
 
     <!--link to footer-->
-<?php require_once "sftemplate.php"; ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
