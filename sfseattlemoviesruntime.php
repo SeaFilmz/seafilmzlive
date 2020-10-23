@@ -4,6 +4,7 @@
   $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by runtime.";
   $body = "MainBody";  
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -141,7 +142,10 @@
     </div>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
