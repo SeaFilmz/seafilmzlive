@@ -4,6 +4,7 @@
   $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -41,7 +42,10 @@
     </div>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
