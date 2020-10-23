@@ -4,6 +4,7 @@
   $mDesc = "Fact page about the city of Portland, Oregon.";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -92,7 +93,10 @@
         ?>
 
     <!--link to footer-->
-<?php require_once "sftemplate.php"; ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
