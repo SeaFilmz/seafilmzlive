@@ -4,6 +4,7 @@
   $mDesc = "List of athletes born in the city of Seattle organized by sport then by first name.";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -93,7 +94,10 @@
     </div>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
