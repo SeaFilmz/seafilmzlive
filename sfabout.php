@@ -4,6 +4,7 @@
   $mDesc = "Info about what is seafilmz and who its founder/developer is.";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -26,7 +27,10 @@
     </div>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
