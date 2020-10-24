@@ -4,6 +4,7 @@
   $mDesc = "Fact page about the city of Bellevue (eastside of lake washington city).";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -47,7 +48,10 @@
         ?>
 
     <!--link to footer-->
-<?php require_once "sffooter.php"; ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
   </body>
 
