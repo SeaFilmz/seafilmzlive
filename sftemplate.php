@@ -1,7 +1,7 @@
 <?php
   function headerTemp() {
 ?>   
-    <?php require_once("db_connection.php"); ?>
+    <?php require_once 'db_connection.php'; ?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -14,14 +14,14 @@
         <script src="sfmain.js" defer></script>
 
         <!--Connection to Google Analytics.-->
-        <?php include "googleanalytics_connection.php"; ?>
+        <?php include 'googleanalytics_connection.php'; ?>
         
       </head>
 
       <body class=<?php global $body; echo $body; ?>>
 
         <!--link to header-->
-    <?php require_once("sfheader.php"); ?>
+    <?php require_once 'sfheader.php'; ?>
 <?php
   }
 
