@@ -4,6 +4,7 @@
   $mDesc = "Fact page about the city of Shoreline (northwest bordering city of Seattle).";
   $body = "MainBody";
   require_once "sftemplate.php";
+  headerTemp();
 ?>
 
 
@@ -32,7 +33,10 @@
         ?>
 
     <!--link to footer-->
-<?php require_once "sffooter.php"; ?>
+<?php
+  require_once "sftemplate.php";
+  footer();
+?>
 
 </html>
 
