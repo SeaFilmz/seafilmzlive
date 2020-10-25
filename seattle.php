@@ -1,9 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Fun Facts - SeaFilmz"; 
-  $mDesc = "Fact page about the city of Seattle.";
-  $body = "MainBody";
-  require_once "sftemplate.php";
+  $title = 'Seattle Fun Facts - SeaFilmz'; 
+  $mDesc = 'Fact page about the city of Seattle.';
+  $body = 'MainBody';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
 
@@ -71,7 +71,7 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
+  require_once 'sftemplate.php';
   footer();
 ?>
 
