@@ -1,7 +1,7 @@
 <?php
   function headerTemp() {
    
-    require_once("db_connectiontest.php"); 
+    require_once("db_connection.php"); 
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -10,7 +10,7 @@
         <title><?php global $title; echo $title; ?></title>
         <meta name="description" content="<?php echo $mDesc; ?>">
         <meta charset="utf-8">
-        <link type="text/css" rel="stylesheet" href="newsfcssmain.css" />
+        <link type="text/css" rel="stylesheet" href="sfcssmain2.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="sfmain.js" defer></script>
 
