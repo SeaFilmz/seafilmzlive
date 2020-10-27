@@ -3,7 +3,7 @@
   $title = "Seattle Actors by First Name- SeaFilmz"; 
   $mDesc = "List of actors born is the city of Seattle organized by first name.";
   $body = "MainBody";
-  require_once "sftemplate.php";
+  require_once 'sftemplate.php';
 ?>
 
 
@@ -53,7 +53,7 @@
       </div>
 
     <!--link to Total Actors Count-->
-<?php require("sfactorscount.php"); ?>
+<?php require 'sfactorscount.php'; ?>
 
     <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
 
@@ -101,10 +101,10 @@
     </div>
 
     <!--link to Total Actors Count-->
-<?php require("sfactorscount.php"); ?>
+<?php require 'sfactorscount.php'; ?>
 
     <!--link to footer-->
-<?php require_once "sftemplate.php"; ?>
+<?php require_once 'sftemplate.php'; ?>
 
   </body>
 
