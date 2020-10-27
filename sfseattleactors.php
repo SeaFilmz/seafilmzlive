@@ -7,20 +7,20 @@
 ?>
 
 
-    <h2 class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
 
     <div class="MATable">
     <table class="ActorsTable">
       <tr>
         <th class="ActorsColumnHeader1">Name</th>
-        <th class="ActorsColumnHeader2">Birthdate</th>
+        <th class="ActorsColumnHeader2"><a href="#sortByBirthdate" class="SortText">Birthdate</a><div class="SortTriangle">&#9660</div></th>
       </tr>
 
         <?php
             // 2. Perform database query
             $query = "SELECT * ";
             $query .= "FROM actors ";
-            $query .= "WHERE CityTownBorn = 'Seattle' ";
+            $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY FirstName ASC ";
             $result = mysqli_query($connection, $query);
             //Test if there was a query error
@@ -55,12 +55,12 @@
     <!--link to Total Actors Count-->
 <?php require("sfactorscount.php"); ?>
 
-    <h2 class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
+    <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">
       <tr>
-        <th class="ActorsColumnHeader1">Name</th>
+        <th class="ActorsColumnHeader1"><a href="#sortByActorName" class="SortText">Name</a><div class="SortTriangle">&#9650</div></th>
         <th class="ActorsColumnHeader2">Birthdate</th>
       </tr>
 
@@ -68,7 +68,7 @@
             // 2. Perform database query
             $query = "SELECT * ";
             $query .= "FROM actors ";
-            $query .= "WHERE CityTownBorn = 'Seattle' ";
+            $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY BirthDate DESC ";
             $result = mysqli_query($connection, $query);
             //Test if there was a query error
@@ -104,7 +104,7 @@
 <?php require("sfactorscount.php"); ?>
 
     <!--link to footer-->
-<?php require_once("sffooter.php"); ?>
+<?php require_once "sftemplate.php"; ?>
 
   </body>
 
