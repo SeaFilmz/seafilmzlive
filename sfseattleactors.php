@@ -4,6 +4,7 @@
   $mDesc = "List of actors born is the city of Seattle organized by first name.";
   $body = "MainBody";
   require_once 'sftemplate.php';
+  headerTemp();
 ?>
 
 
@@ -104,7 +105,10 @@
 <?php require 'sfactorscount.php'; ?>
 
     <!--link to footer-->
-<?php require_once 'sftemplate.php'; ?>
+<?php
+  require_once 'sftemplate.php';
+  footer();
+?>
 
   </body>
 
