@@ -1,9 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "About - SeaFilmz"; 
-  $mDesc = "Info about what is seafilmz and who its founder/developer is.";
-  $body = "MainBody";
-  require_once "sftemplate.php";
+  $title = 'About - SeaFilmz'; 
+  $mDesc = 'Info about what is seafilmz and who its founder/developer is.';
+  $body = 'MainBody';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
 
@@ -28,15 +28,6 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  require_once 'sftemplate.php';
+  footerTemp();
 ?>
