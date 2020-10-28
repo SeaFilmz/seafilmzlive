@@ -1,9 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Movies by Title or Year - SeaFilmz"; 
-  $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by title or by year.";
-  $body = "MainBody";
-  require_once "sftemplate.php";
+  $title = 'Seattle Movies by Title or Year - SeaFilmz'; 
+  $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by title or by year.';
+  $body = 'MainBody';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
 
@@ -60,7 +60,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php require("sfmoviescount.php"); ?>
+<?php require 'sfmoviescount.php'; ?>
 
     <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
@@ -112,12 +112,12 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php require("sfmoviescount.php"); ?>
+<?php require 'sfmoviescount.php'; ?>
 
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
+  require_once 'sftemplate.php';
   footer();
 ?>
 
