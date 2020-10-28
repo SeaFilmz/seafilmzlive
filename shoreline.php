@@ -27,20 +27,8 @@
       <p><b>Golf Course:</b> <a href="https://www.seattlegolfclub.com/">Seattle Golf Club</a></p>
 		</div>
 
-        <?php     
-            // 4. Release returned data
-            mysqli_free_result($result);
-        ?>
-
     <!--link to footer-->
 <?php
   require_once 'sftemplate.php';
-  footer();
-?>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  footerTemp();
 ?>
