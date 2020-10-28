@@ -1,9 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "SeaFilmz - 6 Degrees of Seattle"; 
-  $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
-  $body = "HomePage";
-  require_once "sftemplate.php";
+  $title = 'SeaFilmz - 6 Degrees of Seattle'; 
+  $mDesc = 'SeaFilmz is your Seattle media connection with a focus on film.';
+  $body = 'HomePage';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
 
@@ -79,15 +79,6 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  require_once 'sftemplate.php';
+  footerTemp();
 ?>
