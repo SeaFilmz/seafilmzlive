@@ -8,11 +8,6 @@
 ?>
 
 
-        <?php         
-            // 4. Release returned data
-            mysqli_free_result($result);
-        ?>
-
     <h2 class="WashingtonCitiesHeader"><b>Other Washington State Cities</b></h2>
 
     <div class="WashingtonCitiesContent">
@@ -44,9 +39,5 @@
     <!--link to footer-->
 <?php
   require_once 'sftemplate.php';
-  footer();
+  footerTemp();
 ?>
-
-  </body>
-
-</html>
