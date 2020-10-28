@@ -27,7 +27,7 @@
 
   }
 
-  function footer() {
+function footerTemp() {
 ?>     
     <footer>
       <nav class="NavFooter">
@@ -40,6 +40,13 @@
           <p class="NavFooterMobile"><a href="sfservices">Services</a></p>
       </nav>
     </footer>
+
+  </body>
+
+</html>
+
 <?php
+    // 5. Close database connection
+    mysqli_close($connection);
   }
 ?>
