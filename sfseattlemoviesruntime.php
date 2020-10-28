@@ -1,12 +1,11 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Movies by Runtime - SeaFilmz"; 
-  $mDesc = "List of movies filmed fully or partly in the city of Seattle organized by runtime.";
-  $body = "MainBody";  
-  require_once "sftemplate.php";
+  $title = 'Seattle Movies by Runtime - SeaFilmz'; 
+  $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by runtime.';
+  $body = 'MainBody';  
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
-
 
     <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h2>
 
@@ -143,7 +142,7 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
+  require_once 'sftemplate.php';
   footer();
 ?>
 
