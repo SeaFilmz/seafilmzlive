@@ -1,9 +1,9 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Washington State Cities - SeaFilmz"; 
-  $mDesc = "SeaFilmz is your Seattle media connection with a focus on film.";
-  $body = "MainBody";
-  require_once "sftemplate.php";
+  $title = 'Washington State Cities - SeaFilmz'; 
+  $mDesc = 'SeaFilmz is your Seattle media connection with a focus on film.';
+  $body = 'MainBody';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
 
@@ -43,7 +43,7 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
+  require_once 'sftemplate.php';
   footer();
 ?>
 
