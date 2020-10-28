@@ -60,11 +60,6 @@
 		  <img class="PopsicleSculpture" src="popsiclesculpture.JPG" alt="Giant red popsicle located in the city of Seattle">
 		</div>
 
-        <?php
-            // 4. Release returned data
-            mysqli_free_result($result);
-        ?>
-
     <div id="imageAnswer">
       <button onclick="popsicleAnswer();">Answer</button>
     </div>
@@ -72,14 +67,5 @@
     <!--link to footer-->
 <?php
   require_once 'sftemplate.php';
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  footerTemp();
 ?>
