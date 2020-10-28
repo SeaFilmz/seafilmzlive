@@ -7,7 +7,6 @@
   headerTemp();
 ?>
 
-
     <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
         
     <div class="MTTable">
@@ -27,16 +26,10 @@
             $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
             $query .= "WHERE City = 'Seattle' ";
             $query .= "ORDER BY MovieTitle ASC ";
-            $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            } /* else {
-                echo "Connected";
-            } */
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -49,9 +42,7 @@
           
         <?php
             }
-        ?>
 
-        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -81,14 +72,10 @@
             $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
             $query .= "WHERE City = 'Seattle' ";
             $query .= "ORDER BY YearReleased DESC, MovieTitle ";
-            $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            }
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -101,9 +88,7 @@
 
         <?php
             }
-        ?>
-
-        <?php    
+    
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -114,18 +99,8 @@
         <!--link to Total Movie Count-->
 <?php require 'sfmoviescount.php'; ?>
 
-
     <!--link to footer-->
 <?php
   require_once 'sftemplate.php';
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  footerTemp();
 ?>
