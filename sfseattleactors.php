@@ -22,7 +22,6 @@
             $query .= "FROM actors ";
             $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY FirstName ASC ";
-            $result = mysqli_query($connection, $query);
             //Result variable with an error check
             $result = mysqli_query($connection, $query)
               or die("Database query failed.");
@@ -67,7 +66,6 @@
             $query .= "FROM actors ";
             $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY BirthDate DESC ";
-            $result = mysqli_query($connection, $query);
             //Result variable with an error check
             $result = mysqli_query($connection, $query)
               or die("Database query failed.");
