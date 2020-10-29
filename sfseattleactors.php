@@ -23,13 +23,10 @@
             $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY FirstName ASC ";
             $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            }
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($actors = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -71,13 +68,10 @@
             $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
             $query .= "ORDER BY BirthDate DESC ";
             $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            }
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($actors = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -106,14 +100,5 @@
     <!--link to footer-->
 <?php
   require_once 'sftemplate.php';
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  footerTemp();
 ?>
