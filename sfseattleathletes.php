@@ -1,12 +1,11 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Athletes - SeaFilmz"; 
-  $mDesc = "List of athletes born in the city of Seattle organized by sport then by first name.";
-  $body = "MainBody";
-  require_once "sftemplate.php";
+  $title = 'Seattle Athletes - SeaFilmz'; 
+  $mDesc = 'List of athletes born in the city of Seattle organized by sport then by first name.';
+  $body = 'MainBody';
+  require_once 'sftemplate.php';
   headerTemp();
 ?>
-
 
     <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
 
@@ -22,14 +21,10 @@
             $query = "SELECT * ";
             $query .= "FROM athletes ";
             $query .= "ORDER BY SportKnownFor ASC, FirstName ";
-            $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            }
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($athletes = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -44,9 +39,7 @@
 
         <?php
             }
-        ?>
 
-        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -63,16 +56,10 @@
             // 2. Perform database query
             $query = "SELECT COUNT(*) ";
             $query .= "FROM athletes ";
-            $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            } /* else {
-                echo "Connected";
-            } */
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($athletes = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -83,9 +70,7 @@
 
         <?php
             }
-        ?>
 
-        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -95,15 +80,6 @@
 
     <!--link to footer-->
 <?php
-  require_once "sftemplate.php";
-  footer();
-?>
-
-  </body>
-
-</html>
-
-<?php
-    // 5. Close database connection
-    mysqli_close($connection);
+  require_once 'sftemplate.php';
+  footerTemp();
 ?>
