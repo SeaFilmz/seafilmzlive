@@ -1,12 +1,11 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Actors by First Name- SeaFilmz"; 
-  $mDesc = "List of actors born is the city of Seattle organized by first name.";
-  $body = "MainBody";
+  $title = 'Seattle Actors by First Name- SeaFilmz'; 
+  $mDesc = 'List of actors born is the city of Seattle organized by first name.';
+  $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
 ?>
-
 
     <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
 
