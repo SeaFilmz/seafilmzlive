@@ -12,7 +12,6 @@
             $query .= "INNER JOIN filminglocations ";
             $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
             $query .= "WHERE City = 'Seattle' ";
-            $result = mysqli_query($connection, $query);
             //Result variable with an error check
             $result = mysqli_query($connection, $query)
               or die("Database query failed.");
