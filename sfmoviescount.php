@@ -13,15 +13,10 @@
             $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
             $query .= "WHERE City = 'Seattle' ";
             $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            } /* else {
-                echo "Connected";
-            } */
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -32,9 +27,7 @@
 
         <?php
             }
-        ?>
 
-        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
