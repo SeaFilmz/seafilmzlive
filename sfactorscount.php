@@ -1,5 +1,5 @@
     <div class="MACTable">
-    <table class="AtorsCountTable">
+    <table class="ActorsCountTable">
       <tr>
         <th class="ActorsCountRowHeader">Total Actors</th>
 
@@ -8,16 +8,10 @@
             $query = "SELECT COUNT(*) ";
             $query .= "FROM actors ";
             $query .= "WHERE CityTownBorn = 'Seattle' ";
-            $result = mysqli_query($connection, $query);
-            //Test if there was a query error
-            if (!$result) {
-                die("Database query failed.");
-            } /* else {
-                echo "Connected";
-            } */
-        ?>
+            //Result variable with an error check
+            $result = mysqli_query($connection, $query)
+              or die("Database query failed.");
 
-        <?php
             // 3. Use returned data (if any)
             while($actors = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -28,9 +22,7 @@
 
         <?php
             }
-        ?>
-
-        <?php      
+     
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
