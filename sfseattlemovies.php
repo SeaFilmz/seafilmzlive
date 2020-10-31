@@ -51,7 +51,10 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php require 'sfmoviescount.php'; ?>
+<?php 
+  require 'moviefunctions.php';
+  cityMoviesCount('Seattle');
+?>
 
     <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
@@ -97,7 +100,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php require 'sfmoviescount.php'; ?>
+<?php cityMoviesCount('Seattle'); ?>
 
     <!--link to footer-->
 <?php
