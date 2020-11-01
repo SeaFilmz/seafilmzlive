@@ -49,7 +49,10 @@
       </div>
 
     <!--link to Total Actors Count-->
-<?php require 'sfactorscount.php'; ?>
+<?php 
+  require 'actorfunctions.php';
+  cityActorsCount('Seattle');
+?>
 
     <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
 
@@ -93,7 +96,7 @@
     </div>
 
     <!--link to Total Actors Count-->
-<?php require 'sfactorscount.php'; ?>
+<?php cityActorsCount('Seattle'); ?>
 
     <!--link to footer-->
 <?php
