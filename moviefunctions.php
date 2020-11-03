@@ -10,17 +10,15 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT COUNT(*) ";
-            $query .= "FROM moviesfilminglocation ";
-            $query .= "INNER JOIN movies ";
-            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
-            $query .= "INNER JOIN filminglocations ";
-            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
-            $query .= "WHERE City = '$city' ";
+            $query = $connection->prepare("SELECT COUNT(*) FROM movies as m, moviesfilminglocation as mfl WHERE m.MovieID = mfl.MovieID AND mfl.FilmingLocationID = (SELECT FilmingLocationID FROM filminglocations WHERE City = ?) ");
+            
+            $query->bind_param("s", $city);
+            $query->execute();
+            
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
-
+            
             // 3. Use returned data (if any)
             while($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
@@ -52,15 +50,13 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT SUM(RunTime) ";
-            $query .= "FROM moviesfilminglocation ";
-            $query .= "INNER JOIN movies ";
-            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
-            $query .= "INNER JOIN filminglocations ";
-            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
-            $query .= "WHERE City = '$cityRt' ";
+            $query = $connection->prepare("SELECT SUM(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+            
+            $query->bind_param("s", $cityRt);
+            $query->execute();
+            
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
@@ -92,15 +88,13 @@ function cityRuntimeAvg($cityRtAvg) {
         
         <?php
             // 2. Perform database query
-            $query = "SELECT AVG(RunTime) ";
-            $query .= "FROM moviesfilminglocation ";
-            $query .= "INNER JOIN movies ";
-            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
-            $query .= "INNER JOIN filminglocations ";
-            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
-            $query .= "WHERE City = '$cityRtAvg' ";
+            $query = $connection->prepare("SELECT AVG(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+
+            $query->bind_param("s", $cityRtAvg);
+            $query->execute();
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
@@ -136,15 +130,13 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
         <?php
             // 2. Perform database query
-            $query = "SELECT SUM(TotalWorldGross) ";
-            $query .= "FROM moviesfilminglocation ";
-            $query .= "INNER JOIN movies ";
-            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
-            $query .= "INNER JOIN filminglocations ";
-            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
-            $query .= "WHERE City = '$cityGrossTotal' ";
+            $query = $connection->prepare("SELECT SUM(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+            
+            $query->bind_param("s", $cityGrossTotal);
+            $query->execute();            
+            
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
@@ -164,5 +156,5 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
         </table>
         </div>
-        
+
 <?php } ?>
