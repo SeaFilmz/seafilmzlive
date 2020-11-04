@@ -10,11 +10,13 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT COUNT(*) ";
-            $query .= "FROM actors ";
-            $query .= "WHERE CityTownBorn = '$city' ";
+            $query = $connection->prepare("SELECT COUNT(*) FROM actors WHERE CityTownBorn = ? ");
+            
+            $query->bind_param("s", $city);
+            $query->execute();         
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
