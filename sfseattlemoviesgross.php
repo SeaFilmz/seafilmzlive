@@ -18,16 +18,14 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT * ";
-            $query .= "FROM moviesfilminglocation ";
-            $query .= "INNER JOIN movies ";
-            $query .= "ON movies.MovieID = moviesfilminglocation.MovieID ";
-            $query .= "INNER JOIN filminglocations ";
-            $query .= "ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID ";
-            $query .= "WHERE City = 'Seattle' AND TotalWorldGross IS NOT NULL ";
-            $query .= "ORDER BY TotalWorldGross DESC ";
+            $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? AND TotalWorldGross IS NOT NULL ORDER BY TotalWorldGross DESC ");
+
+            $city = 'Seattle';
+            $query->bind_param("s", $city);
+            $query->execute();
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
