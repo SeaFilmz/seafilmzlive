@@ -18,12 +18,14 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT * ";
-            $query .= "FROM actors ";
-            $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
-            $query .= "ORDER BY FirstName ASC ";
+            $query = $connection->prepare("SELECT * FROM actors WHERE CityTownBorn = ? AND BirthDate IS NOT NULL ORDER BY FirstName ASC ");            
+
+            $city = 'Seattle';
+            $query->bind_param("s", $city);
+            $query->execute();
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
@@ -65,12 +67,14 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT * ";
-            $query .= "FROM actors ";
-            $query .= "WHERE CityTownBorn = 'Seattle' AND BirthDate IS NOT NULL ";
-            $query .= "ORDER BY BirthDate DESC ";
+            $query = $connection->prepare("SELECT * FROM actors WHERE CityTownBorn = ? AND BirthDate IS NOT NULL ORDER BY BirthDate DESC ");
+
+            $cityBirthdate = 'Seattle';
+            $query->bind_param("s", $cityBirthdate);
+            $query->execute();
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
