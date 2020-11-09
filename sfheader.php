@@ -9,12 +9,10 @@
       </div>
 
       <nav class="MobileNav">
-        <p><a href="sfseattlemovies">Movies Filmed in Seattle by Title</a></p>
-        <p><a href="sfseattlemoviesyear">Movies Filmed in Seattle by Year Released</a></p>
+        <p><a href="sfseattlemovies">Movies Filmed in Seattle by Title or Year Released</a></p>
         <p><a href="sfseattlemoviesruntime">Movies Filmed in Seattle by Runtime</a></p>
         <p><a href="sfseattlemoviesgross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
-        <p><a href="sfseattleactors">Seattle Born Actors by First Name</a></p>
-        <p><a href="sfseattleactorsbirthdate">Actors Born in Seattle by Birthdate</a></p>
+        <p><a href="sfseattleactors">Seattle Born Actors by First Name or Birthdate</a></p>
         <p><a href="sfseattlemusicians">Seattle Born Musicians</a></p>
         <p><a href="sfseattleathletes">Seattle Born Athletes</a></p>
         <p><a href="seattle">Seattle Facts</a></p>
@@ -25,8 +23,7 @@
         <div class="dropdown">
           <span class="NavMove">Movies Filmed in Seattle</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="sfseattlemovies">by Title</a></p>
-            <p><a href="sfseattlemoviesyear">by Year Released</a></p>
+            <p><a href="sfseattlemovies">by Title or Year Released</a></p>
             <p><a href="sfseattlemoviesruntime">by Runtime</a></p>
             <p><a href="sfseattlemoviesgross">by Total Worldwide Gross</a></p>
           </div>
