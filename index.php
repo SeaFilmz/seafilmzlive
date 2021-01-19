@@ -56,7 +56,7 @@
             <label for="trueAnswer2"> True</label><br>
 
             <input type="radio" name="answer2" value="false" id="falseAnswer2">
-            <label for="falseAnswer2"> Fasle</label><br>
+            <label for="falseAnswer2"> False</label><br>
 
           <p class="sfQ"><b>10 Things I Hate About You cast included Naomi Watts.</b></p>
 
@@ -64,7 +64,7 @@
             <label for="trueAnswer3"> True</label><br>
 
             <input type="radio" name="answer3" value="false" id="falseAnswer3">
-            <label for="falseAnswer3"> Fasle</label><br>      
+            <label for="falseAnswer3"> False</label><br>      
 
         </form>
 
