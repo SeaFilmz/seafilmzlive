@@ -28,7 +28,7 @@ const trueButton2 = document.querySelector("#trueAnswer2");
 const falseButton2 = document.querySelector("#falseAnswer2");
 const trueButton3 = document.querySelector("#trueAnswer3");
 const falseButton3 = document.querySelector("#falseAnswer3");
-const answerTextConnect = document.querySelector("#answerText");
+const answerText = document.querySelector("#answerText");
 const q1Wrong = "Wrong - The highest grossing movie filmed in Seattle is The Ring.";
 const q1Correct = "Correct - The highest grossing movie filmed in Seattle is The Ring.";
 const q2Wrong = "Wrong - The Ring was released in 2002.";
@@ -36,32 +36,36 @@ const q2Correct = "Correct - The Ring was released in 2002.";
 const q3Wrong = "Wrong - 10 Things I Hate About You cast does not include Naomi Watts.";
 const q3Correct = "Correct - 10 Things I Hate About You cast does not include Naomi Watts.";
 
+function resultAnswers(answer1, answer2, answer3){
+  answerText.innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+}
+
 function quizButton() {
   if ((!trueButton1.checked && !falseButton1.checked) || (!trueButton2.checked && !falseButton2.checked) || (!trueButton3.checked && !falseButton3.checked)) {
-    answerTextConnect.innerHTML = "Please answer all questions for quiz results.";
+    answerText.innerHTML = "Please answer all questions for quiz results.";
   }
   else if (trueButton1.checked && trueButton2.checked && trueButton3.checked) {
-    answerTextConnect.innerHTML = q1Wrong + "<br>" + q2Correct +"<br>" + q3Wrong;
+    resultAnswers(q1Wrong, q2Correct, q3Wrong);
   }
   else if (falseButton1.checked && falseButton2.checked && falseButton3.checked) {
-    answerTextConnect.innerHTML = q1Correct + "<br>" + q2Wrong + "<br>" + q3Correct;
+    resultAnswers(q1Correct, q2Wrong, q3Correct);
   }
   else if (trueButton1.checked && trueButton2.checked && falseButton3.checked) {
-    answerTextConnect.innerHTML = q1Wrong + "<br>" + q2Correct + "<br>" + q3Correct;
+    resultAnswers(q1Wrong, q2Correct, q3Correct);
   }
    else if (falseButton1.checked && falseButton2.checked && trueButton3.checked) {
-    answerTextConnect.innerHTML = q1Correct + "<br>" + q2Wrong + "<br>" + q3Wrong;
+    resultAnswers(q1Correct, q2Wrong, q3Wrong);
   }   
   else if (trueButton1.checked && falseButton2.checked && falseButton3.checked) {
-    answerTextConnect.innerHTML = q1Wrong + "<br>" + q2Wrong + "<br>" + q3Correct;
+    resultAnswers(q1Wrong, q2Wrong, q3Correct);
   }
   else if (falseButton1.checked && trueButton2.checked && trueButton3.checked) {
-    answerTextConnect.innerHTML = q1Correct + "<br>" + q2Correct + "<br>" + q3Wrong;
+    resultAnswers(q1Correct, q2Correct, q3Wrong);
   }
   else if (trueButton1.checked && falseButton2.checked && trueButton3.checked) {
-    answerTextConnect.innerHTML = q1Wrong + "<br>" +  q2Wrong + "<br>" + q3Wrong;
+    resultAnswers(q1Wrong, q2Wrong, q3Wrong);
   }
   else if (falseButton1.checked && trueButton2.checked && falseButton3.checked) {
-    answerTextConnect.innerHTML = q1Correct + "<br>" + q2Correct + "<br>" + q3Correct;
+    resultAnswers(q1Correct, q2Correct, q3Correct);
   }
 }
