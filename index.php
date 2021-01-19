@@ -15,7 +15,7 @@
 
     <main class="HomePageContent">
 
-      <p class="HomePageAbout">SeaFilmz is a Seattle media and data tool with a focus on movies.</p>
+      <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
 
       <p class="SeattleMoviesMain"><a href="sfseattlemovies">Movies Filmed in Seattle by Title or Year Released</a></p>
 
