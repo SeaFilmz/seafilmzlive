@@ -22,12 +22,12 @@ function headerSwitchText() {
 }
 
 //Home Page Movie Quiz
-const trueButton1 = document.querySelector(".trueAnswer1");
-const falseButton1 = document.querySelector(".falseAnswer1");
-const trueButton2 = document.querySelector(".trueAnswer2");
-const falseButton2 = document.querySelector(".falseAnswer2");
-const trueButton3 = document.querySelector(".trueAnswer3");
-const falseButton3 = document.querySelector(".falseAnswer3");
+const trueButton1 = document.querySelector("#trueAnswer1");
+const falseButton1 = document.querySelector("#falseAnswer1");
+const trueButton2 = document.querySelector("#trueAnswer2");
+const falseButton2 = document.querySelector("#falseAnswer2");
+const trueButton3 = document.querySelector("#trueAnswer3");
+const falseButton3 = document.querySelector("#falseAnswer3");
 const answerTextConnect = document.querySelector("#answerText");
 const q1Wrong = "Wrong - The highest grossing movie filmed in Seattle is The Ring.";
 const q1Correct = "Correct - The highest grossing movie filmed in Seattle is The Ring.";
