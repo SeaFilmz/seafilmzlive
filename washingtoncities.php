@@ -34,6 +34,8 @@
 
       <p class="WashingtonCitiesLink"><a href="kenmore">Kenmore</a></p>
 
+      <p class="WashingtonCitiesLink"><a href="everett">Everett</a></p>
+
       <p class="WashingtonCitiesLink"><a href="tacoma">Tacoma</p>      
 
     </div>
