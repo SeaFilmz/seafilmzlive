@@ -24,12 +24,12 @@ const falseButton2 = document.querySelector(".falseAnswer2");
 const trueButton3 = document.querySelector(".trueAnswer3");
 const falseButton3 = document.querySelector(".falseAnswer3");
 const answerTextConnect = document.querySelector("#answerText");
-const q1Wrong = "Wrong - The highest grosing movie filmed in Seattle is The Ring.";
-const q1Correct = "Correct - The highest grosing movie filmed in Seattle is The Ring.";
+const q1Wrong = "Wrong - The highest grossing movie filmed in Seattle is The Ring.";
+const q1Correct = "Correct - The highest grossing movie filmed in Seattle is The Ring.";
 const q2Wrong = "Wrong - The Ring was released in 2002.";
 const q2Correct = "Correct - The Ring was released in 2002.";
-const q3Wrong = "Wrong - 10 Things I Hate About You cast does not included Naomi Watts.";
-const q3Correct = "Correct - 10 Things I Hate About You cast does not included Naomi Watts.";
+const q3Wrong = "Wrong - 10 Things I Hate About You cast does not include Naomi Watts.";
+const q3Correct = "Correct - 10 Things I Hate About You cast does not include Naomi Watts.";
 
 function quizButton() {
   if ((!trueButton1.checked && !falseButton1.checked) || (!trueButton2.checked && !falseButton2.checked) || (!trueButton3.checked && !falseButton3.checked)) {
