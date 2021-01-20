@@ -21,31 +21,7 @@
       </p>
       <p><b>City Website:</b> <a href="https://www.portland.gov/">portland.gov</a></p>
       <p><b>Movie Filmed in Portland, Oregon:</b> <a href="pdfportlandormovies">List of Movies Filmed in Portland, Oregon</a></p>
-      <p><b>Movie Theaters in Portland, Oregon:</b>
-        <a href="https://www.academytheaterpdx.com/">Academy Theater</a>,
-        <a href="https://www.wunderlandgames.com/avalontheatre.asp">Avalon Theatre & Wunderland</a>,
-        <a href="https://www.mcmenamins.com/bagdad-theater-pub">Bagdad Theater & Pub</a>,
-        <a href="https://www.cinemark.com/theatres/or-portland/century-16-eastport-plaza">Century 16 Eastport Plaza</a>,
-        <a href="https://www.cinema21.com/">Cinema 21</a>,
-        <a href="https://thecinemagictheater.com/">CineMagic</a>,
-        <a href="https://cstpdx.com/">The Clinton Street Theater</a>,
-        <a href="https://omsi.edu/theater?utm_source=Google%20Maps%20-%20Locl.io&utm_medium=Website%20Button&utm_campaign=Locl.io%202019">The Empirical Theater</a>,
-        <a href="http://www.5thavecinema.com/">5th Avenue Cinema</a>,
-        <a href="https://hollywoodtheatre.org/">Hollywood Theatre</a>,
-        <a href="https://jubitz.com/dining-entertainment/jubitz-cinema/">Jubitz Cinema</a>,
-        <a href="https://www.mcmenamins.com/kennedy-school/kennedy-school-theater">Kennedy School Theater</a>,
-        <a href="https://www.laurelhursttheater.com/">Laurelhurst Theater and Pub</a>,
-        <a href="http://pdx.livingroomtheaters.com/index.cfm">Living Room Theaters</a>,
-        <a href="https://www.mcmenamins.com/mission-theater">Mission Theater</a>,
-        <a href="https://morelandtheater.com/">Moreland Theatre</a>,
-        <a href="https://www.mcmenamins.com/st-johns-theater-pub">St. Johns Theater and Pub</a>,
-        <a href="https://stjohnscinema.com/">St. Johns Twin Cinema and Pub</a>,
-        <a href="https://www.regmovies.com/theatres/regal-division-street/0851#/buy-tickets-by-cinema?in-cinema=0851&view-mode=list">Regal Division Street</a>,
-        <a href="https://www.regmovies.com/theatres/regal-fox-tower/0633#/buy-tickets-by-cinema?in-cinema=0633&view-mode=list">Regal Fox Tower</a>,
-        <a href="https://www.regmovies.com/theatres/regal-lloyd-center-imax/0807#/buy-tickets-by-cinema?in-cinema=0807&view-mode=list">Regal Lloyd Center & IMAX</a>,
-        <a href="http://www.rosewaytheater.com/">Roseway Theater</a>
-      </p>
-      
+      <p><b>Movie Theaters in Portland, Oregon:</b> <a href="portlandormovietheaters">List of Movie Theaters in Portland, Oregon</a></p>
       <p><b>Professional Sports Teams:</b>
         <a href="https://www.nba.com/blazers/">Portland Trail Blazers</a> (men's basketball),
         <a href="https://www.timbers.com/">Portland Timbers</a> (men's soccer),
