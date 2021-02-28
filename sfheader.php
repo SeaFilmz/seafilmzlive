@@ -53,6 +53,7 @@
             <p><a href="kenmore">Kenmore</a></p>
             <p><a href="everett">Everett</a></p>
             <p><a href="tacoma">Tacoma</a></p>
+            <p><a href="olympia">Olympia</a></p>
             <p><a href="spokane">Spokane</a></p>
             <p><a href="portlandor">Portland, Oregon</a></p>
           </div>
