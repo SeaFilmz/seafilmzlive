@@ -38,6 +38,8 @@
 
       <p class="WashingtonCitiesLink"><a href="tacoma">Tacoma</p>
 
+      <p class="WashingtonCitiesLink"><a href="olympia">Olympia</a></p>
+
       <p class="WashingtonCitiesLink"><a href="spokane">Spokane</p>
 
     </div>
