@@ -8,11 +8,6 @@
 ?>
 
 
-        <?php
-            // 4. Release returned data
-            //mysqli_free_result($result);
-        ?>
-
     <main class="HomePageContent">
 
       <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
@@ -42,7 +37,7 @@
 
         <form class="sfQuiz">
 
-          <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie flimed in Seattle.</b></p></div>
+          <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie filmed in Seattle.</b></p></div>
 
             <input type="radio" name="answer1" value="true" id="trueAnswer1">
             <label for="trueAnswer1"> True</label><br>
