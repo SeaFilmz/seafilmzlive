@@ -158,3 +158,20 @@ function cityMovieGrossTotal($cityGrossTotal) {
         </div>
 
 <?php } ?>
+
+<?php
+  function individualMovieFactPageQuery($movieTitle, $city) {
+    global $query, $connection;
+
+    // 2. Perform database query
+    $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE MovieTitle = ? AND City = ? ");
+
+    $query->bind_param("ss", $movieTitle, $city);
+    $query->execute();
+
+    //Result variable with an error check
+    $result = $query->get_result()
+    or die("Database query failed.");
+
+    return $result;
+} ?>
