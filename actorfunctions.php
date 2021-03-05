@@ -37,4 +37,21 @@
         </table>
         </div>
 
-        <?php  } ?>        
+        <?php  } ?>
+
+<?php
+  function individualActorFactPageQuery($actorFirstName, $actorLastName) {
+    global $query, $connection;
+
+    // 2. Perform database query
+    $query = $connection->prepare("SELECT * FROM actors WHERE FirstName = ? AND LastName = ? ");
+    
+    $query->bind_param("ss", $actorFirstName, $actorLastName);
+    $query->execute(); 
+
+    //Result variable with an error check
+    $result = $query->get_result()
+      or die("Database query failed.");
+
+    return $result;
+} ?>
