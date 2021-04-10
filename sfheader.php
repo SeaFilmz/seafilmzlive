@@ -55,6 +55,7 @@
             <p><a href="tacoma">Tacoma</a></p>
             <p><a href="olympia">Olympia</a></p>
             <p><a href="spokane">Spokane</a></p>
+            <p><a href="vancouverwa">Vancouver, Washington</a></p>            
             <p><a href="portlandor">Portland, Oregon</a></p>
           </div>
         </div>
