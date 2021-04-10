@@ -42,6 +42,8 @@
 
       <p class="WashingtonCitiesLink"><a href="spokane">Spokane</p>
 
+      <p class="WashingtonCitiesLink"><a href="vancouverwa">Vancouver, Washington</a></p>      
+
     </div>
 
     <!--link to footer-->
