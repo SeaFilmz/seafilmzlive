@@ -7,6 +7,12 @@
   headerTemp();
 ?>
 
+    <h2 class="MoviesPageHeader">
+      <b>
+        <a href="seattlemovies">New Movie Data UI Beta</a>
+      </b>
+    </h2>
+
     <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
         
     <div class="MTTable">
@@ -18,12 +24,12 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY MovieTitle ASC ");
-            
-            $city = "Seattle";
+            $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY MovieTitle ASC ");
+
+            $city = 'Seattle';
             $query->bind_param("s", $city);
-            $query->execute();            
-            
+            $query->execute();
+
             //Result variable with an error check
             $result = $query->get_result()
               or die("Database query failed.");
@@ -65,11 +71,11 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY YearReleased DESC, MovieTitle ");
+            $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY YearReleased DESC, MovieTitle ");
 
-            $cityY = "Seattle";
+            $cityY = 'Seattle';
             $query->bind_param("s", $cityY);
-            $query->execute(); 
+            $query->execute();
 
             //Result variable with an error check
             $result = $query->get_result()
