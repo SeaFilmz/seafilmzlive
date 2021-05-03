@@ -1,7 +1,7 @@
 <?php
   function headerTemp() {
     global $title, $mDesc, $body;
-    require_once 'db_connection.php'; 
+    require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
     <html lang="en">
