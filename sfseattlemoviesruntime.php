@@ -7,6 +7,12 @@
   headerTemp();
 ?>
 
+    <h2 class="MoviesPageHeader">
+      <b>
+        <a href="seattlemovies">New Movie Data UI Beta</a>
+      </b>
+    </h2>
+
     <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h2>
 
     <div class="MRTable">
@@ -18,7 +24,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY RunTime ASC, MovieTitle ");
+            $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ORDER BY RunTime ASC, MovieTitle ");
 
             $city = 'Seattle';
             $query->bind_param("s", $city);
