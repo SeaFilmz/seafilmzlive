@@ -1,6 +1,6 @@
 <?php
   function cityMoviesCount($city) {
-    global $query, $connection, $result;
+    global $query, $newconnection, $result;
 ?>
 
 <div class="MCTable">
@@ -10,7 +10,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT COUNT(*) FROM movies as m, moviesfilminglocation as mfl WHERE m.MovieID = mfl.MovieID AND mfl.FilmingLocationID = (SELECT FilmingLocationID FROM filminglocations WHERE City = ?) ");
+            $query = $newconnection->prepare("SELECT COUNT(*) FROM movies as m, moviesfilminglocation as mfl WHERE m.MovieID = mfl.MovieID AND mfl.FilmingLocationID = (SELECT FilmingLocationID FROM filminglocations WHERE City = ?) ");
             
             $query->bind_param("s", $city);
             $query->execute();
@@ -40,7 +40,7 @@
 <?php  } 
 
   function cityRuntimeCount($cityRt) {
-    global $query, $connection, $result;
+    global $query, $newconnection, $result;
 ?>
 
 <div class="MTRTable">
@@ -50,7 +50,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT SUM(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+            $query = $newconnection->prepare("SELECT SUM(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
             
             $query->bind_param("s", $cityRt);
             $query->execute();
@@ -80,7 +80,7 @@
 <?php }
 
 function cityRuntimeAvg($cityRtAvg) {
-    global $query, $connection, $result;
+    global $query, $newconnection, $result;
 ?>
 
 <div class="MTRTable">
@@ -88,7 +88,7 @@ function cityRuntimeAvg($cityRtAvg) {
         
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT AVG(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+            $query = $newconnection->prepare("SELECT AVG(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
 
             $query->bind_param("s", $cityRtAvg);
             $query->execute();
@@ -120,7 +120,7 @@ function cityRuntimeAvg($cityRtAvg) {
 <?php  }
 
 function cityMovieGrossTotal($cityGrossTotal) {
-    global $query, $connection, $result;
+    global $query, $newconnection, $result;
 ?>
 
 <div class="MTGTable">
@@ -130,7 +130,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT SUM(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
+            $query = $newconnection->prepare("SELECT SUM(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
             
             $query->bind_param("s", $cityGrossTotal);
             $query->execute();            
@@ -161,17 +161,17 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
 <?php
   function individualMovieFactPageQuery($movieTitle, $city) {
-    global $query, $connection;
+    global $query, $newconnection;
 
     // 2. Perform database query
-    $query = $connection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE MovieTitle = ? AND City = ? ");
+    $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE MovieTitle = ? AND City = ? ");
 
     $query->bind_param("ss", $movieTitle, $city);
     $query->execute();
 
     //Result variable with an error check
     $result = $query->get_result()
-    or die("Database query failed.");
+      or die("Database query failed.");
 
     return $result;
 } ?>
