@@ -7,6 +7,12 @@
   headerTemp();
 ?>
 
+    <h2 class="AthletesPageHeader">
+      <b>
+        <a href="seattleathletes">New Athletes Data UI Beta</a>
+      </b>
+    </h2>
+
     <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
 
     <div class="ATable">
@@ -18,11 +24,14 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT * ";
-            $query .= "FROM athletes ";
-            $query .= "ORDER BY SportKnownFor ASC, FirstName ";
+            $query = $newconnection->prepare(" SELECT * FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? ORDER BY SportKnownFor ASC, FirstName ");
+
+            $city = 'Seattle';
+            $job = 'athlete';
+            $query->execute();
+
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
@@ -32,7 +41,7 @@
 
       <div class="AthletesMainContent">
       <tr class="AthletesContent">
-        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["AthletePageLink"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
+        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["PeopleLinks"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
         <td class="SportPlayed"><?php echo $athletes["SportKnownFor"]; ?></td>
       </tr>
       </div>
@@ -54,10 +63,13 @@
 
         <?php
             // 2. Perform database query
-            $query = "SELECT COUNT(*) ";
-            $query .= "FROM athletes ";
+            $query = $newconnection->prepare("SELECT COUNT(*) FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? ");
+
+            $query->bind_param("ss", $city, $job);
+            $query->execute();
+            
             //Result variable with an error check
-            $result = mysqli_query($connection, $query)
+            $result = $query->get_result()
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
