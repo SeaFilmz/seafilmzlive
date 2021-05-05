@@ -1,6 +1,6 @@
 <?php
-  function cityActorsCount($city) {
-    global $query, $connection, $result;
+  function cityActorsCount($city, $job) {
+    global $query, $newconnection, $result;
 ?>
 
 <div class="MACTable">
@@ -10,9 +10,9 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT COUNT(*) FROM actors WHERE CityTownBorn = ? ");
+            $query = $newconnection->prepare("SELECT COUNT(*) FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? AND FirstName IS NOT NULL ");
             
-            $query->bind_param("s", $city);
+            $query->bind_param("ss", $city, $job);
             $query->execute();         
 
             //Result variable with an error check
@@ -41,10 +41,10 @@
 
 <?php
   function individualActorFactPageQuery($actorFirstName, $actorLastName) {
-    global $query, $connection;
+    global $query, $newconnection;
 
     // 2. Perform database query
-    $query = $connection->prepare("SELECT * FROM actors WHERE FirstName = ? AND LastName = ? ");
+    $query = $newconnection->prepare("SELECT * FROM peoples WHERE FirstName = ? AND LastName = ? ");
     
     $query->bind_param("ss", $actorFirstName, $actorLastName);
     $query->execute(); 
