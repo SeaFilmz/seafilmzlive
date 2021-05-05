@@ -7,6 +7,12 @@
   headerTemp();
 ?>
 
+    <h2 class="ActorsPageHeader">
+      <b>
+        <a href="seattleactors">New Actors Data UI Beta</a>
+      </b>
+    </h2>
+
     <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
 
     <div class="MATable">
@@ -18,10 +24,11 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT * FROM actors WHERE CityTownBorn = ? AND BirthDate IS NOT NULL ORDER BY FirstName ASC ");            
+            $query = $newconnection->prepare("SELECT * FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? AND FirstName IS NOT NULL ORDER BY FirstName ASC ");
 
             $city = 'Seattle';
-            $query->bind_param("s", $city);
+            $job = 'actor';
+            $query->bind_param("ss", $city, $job);
             $query->execute();
 
             //Result variable with an error check
@@ -34,7 +41,7 @@
         ?>
 
       <tr class="ActorsMainContent">
-        <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["ActorLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
+        <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["PeopleLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
         <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
@@ -53,7 +60,7 @@
     <!--link to Total Actors Count-->
 <?php 
   require 'actorfunctions.php';
-  cityActorsCount('Seattle');
+  cityActorsCount('Seattle', 'actor');
 ?>
 
     <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
@@ -67,10 +74,11 @@
 
         <?php
             // 2. Perform database query
-            $query = $connection->prepare("SELECT * FROM actors WHERE CityTownBorn = ? AND BirthDate IS NOT NULL ORDER BY BirthDate DESC ");
+            $query = $newconnection->prepare("SELECT * FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? AND FirstName IS NOT NULL ORDER BY Birthdate DESC ");
 
             $cityBirthdate = 'Seattle';
-            $query->bind_param("s", $cityBirthdate);
+            $jobBirthdate = 'actor';
+            $query->bind_param("ss", $cityBirthdate, $jobBirthdate);
             $query->execute();
 
             //Result variable with an error check
@@ -83,7 +91,7 @@
         ?>
 
       <tr class="ActorsMainContent">
-        <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["ActorLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
+        <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["PeopleLinks"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
         <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
@@ -100,7 +108,7 @@
     </div>
 
     <!--link to Total Actors Count-->
-<?php cityActorsCount('Seattle'); ?>
+<?php cityActorsCount('Seattle', 'actor'); ?>
 
     <!--link to footer-->
 <?php
