@@ -16,8 +16,9 @@
       <p><b>State:</b> <a href="http://access.wa.gov/">Washington</a></p>
       <p><b>County:</b> <a href="http://www.kingcounty.gov/">King</a></p>
       <p><b>City Website:</b> <a href="http://www.seattle.gov/">seattle.gov</a></p>
-      <p><b>Movies Filmed in Seattle:</b> <a href="sfseattlemovies">List of Movies Filmed in Seattle</a>
+      <p><b>Movies Filmed in Seattle:</b> <a href="sfseattlemovies">List of Movies Filmed in Seattle</a></p>
       <p><b>Movie Theaters in Seattle:</b> <a href="seattlemovietheaters">List of Movie Theaters in Seattle</a></p>
+      <p><b>People Born:</b> <a href="seattleactors">List of Actors</a>, <a href="seattleathletes">List of Athletes</a></p>
       <p><b>Professional Sports Teams:</b>
         <a href="http://www.seahawks.com/">Seattle Seahawks</a> (men's football),
         <a href="http://storm.wnba.com/">Seattle Storm</a> (women's basketball),
@@ -26,7 +27,7 @@
         <a href="https://www.reignfc.com/">Seattle Reign FC</a> (women's soccer),
         <a href="https://www.xfl.com/en-US/teams/seattle">Seattle Dragons</a> (men's football)
       </p>
-      <p><b>Universities or Colleges:</b> 
+      <p><b>Universities or Colleges:</b>
         <a href="https://www.washington.edu/">University of Washington</a>,
         <a href="https://www.seattleu.edu/">Seattle University</a>,
         <a href="http://spu.edu/">Seattle Pacific University</a>,
