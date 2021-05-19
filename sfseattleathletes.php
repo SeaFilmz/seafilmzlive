@@ -28,6 +28,7 @@
 
             $city = 'Seattle';
             $job = 'athlete';
+            $query->bind_param("ss", $city, $job);
             $query->execute();
 
             //Result variable with an error check
