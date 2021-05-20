@@ -1,6 +1,6 @@
 <?php
   function cityMoviesCount($city) {
-    global $query, $newconnection, $result;
+    global $newconnection;
 ?>
 
 <div class="MCTable">
@@ -40,7 +40,7 @@
 <?php  } 
 
   function cityRuntimeCount($cityRt) {
-    global $query, $newconnection, $result;
+    global $newconnection;
 ?>
 
 <div class="MTRTable">
@@ -80,7 +80,7 @@
 <?php }
 
 function cityRuntimeAvg($cityRtAvg) {
-    global $query, $newconnection, $result;
+    global $newconnection;
 ?>
 
 <div class="MTRTable">
@@ -120,7 +120,7 @@ function cityRuntimeAvg($cityRtAvg) {
 <?php  }
 
 function cityMovieGrossTotal($cityGrossTotal) {
-    global $query, $newconnection, $result;
+    global $newconnection;
 ?>
 
 <div class="MTGTable">
@@ -161,7 +161,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
 <?php
   function individualMovieFactPageQuery($movieTitle, $city) {
-    global $query, $newconnection;
+    global $newconnection;
 
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE MovieTitle = ? AND City = ? ");
