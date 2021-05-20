@@ -1,6 +1,6 @@
 <?php
   function cityActorsCount($city, $job) {
-    global $query, $newconnection, $result;
+    global $newconnection;
 ?>
 
 <div class="MACTable">
@@ -41,7 +41,7 @@
 
 <?php
   function individualActorFactPageQuery($actorFirstName, $actorLastName) {
-    global $query, $newconnection;
+    global $newconnection;
 
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM peoples WHERE FirstName = ? AND LastName = ? ");
