@@ -22,6 +22,7 @@
       <p><b>City Website:</b> <a href="https://www.portland.gov/">portland.gov</a></p>
       <p><b>Movie Filmed in Portland, Oregon:</b> <a href="pfportlandormovies">List of Movies Filmed in Portland, Oregon</a></p>
       <p><b>Movie Theaters in Portland, Oregon:</b> <a href="portlandormovietheaters">List of Movie Theaters in Portland, Oregon</a></p>
+      <p><b>People Born:</b> <a href="portlandoractors">List of Actors</a>, <a href="portlandorathletes">List of Athletes</a></p>
       <p><b>Professional Sports Teams:</b>
         <a href="https://www.nba.com/blazers/">Portland Trail Blazers</a> (men's basketball),
         <a href="https://www.timbers.com/">Portland Timbers</a> (men's soccer),
@@ -43,7 +44,7 @@
         <a href="https://redcastlegames.com/">Red Castle Games</a>,
         <a href="https://cloudcapgames.com/">Cloud Cap Games</a>
       </p>
-      <p><b>Bowling Alleys:</b> 
+      <p><b>Bowling Alleys:</b>
         <a href="https://www.thegrandcentralbowl.com/">Grand Central Bowling Lounge</a>, 
         <a href="https://punchbowlsocial.com/location/portland">Punch Bowl Social</a>,
         <a href="https://mykingpins.com/">KingPins Family Entertainment Center</a>
