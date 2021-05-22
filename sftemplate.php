@@ -47,6 +47,6 @@ function footerTemp() {
 
 <?php
     // 5. Close database connection
-    mysqli_close($connection);
+    mysqli_close($newconnection);
   }
 ?>
