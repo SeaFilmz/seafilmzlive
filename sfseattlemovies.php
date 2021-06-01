@@ -104,8 +104,7 @@
         <!--link to Total Movie Count-->
 <?php cityMoviesCount('Seattle'); ?>
 
-    <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
+  // footer display function
   footerTemp();
 ?>
