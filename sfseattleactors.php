@@ -110,8 +110,7 @@
     <!--link to Total Actors Count-->
 <?php cityActorsCount('Seattle', 'actor'); ?>
 
-    <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
+  // footer display function
   footerTemp();
 ?>
