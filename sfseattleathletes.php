@@ -91,8 +91,7 @@
     </table>
     </div>
 
-    <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
+  // footer display function
   footerTemp();
 ?>
