@@ -26,8 +26,7 @@
       <button onclick="headerSwitchText()" class="secondHeaderButton">SeaFilmz Stand For</button>
     </div>
 
-    <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
+  // footer display function
   footerTemp();
 ?>
