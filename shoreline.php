@@ -27,8 +27,7 @@
       <p><b>Golf Course:</b> <a href="https://www.seattlegolfclub.com/">Seattle Golf Club</a></p>
 		</div>
 
-    <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
+  // footer display function
   footerTemp();
 ?>
