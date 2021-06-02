@@ -70,6 +70,18 @@
         <p id="answerText" class="answerText"></p>
       </div>
 
+      <div class="follow">
+        <h2 class="followTitle">Follow SeaFilmz</h2>
+        <b class="contactTitle">SeaFilmz Twitch</b> :
+        <a href="https://www.twitch.tv/seafilmz" class="contactInfo">twitch.tv/seafilmz</a>
+        <p></p>
+        <b class="contactTitle">SeaFilmz Twitter</b> :
+        <a href="https://twitter.com/seafilmz" class="contactInfo">@SeaFilmz</a>
+        <p></p>
+        <b class="contactTitle">SeaFilmz Instagram</b> :
+        <a href="https://instagram.com/seafilmz" class="contactInfo">@SeaFilmz</a>
+      </div>
+
     </main>
 
     <!--link to footer-->
