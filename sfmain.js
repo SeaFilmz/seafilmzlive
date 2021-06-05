@@ -21,6 +21,7 @@ function headerSwitchText() {
   }
 }
 
+
 //Home Page Movie Quiz
 const falseButton = [document.querySelector("#falseAnswer1"), document.querySelector("#falseAnswer2"), document.querySelector("#falseAnswer3")];
 
@@ -32,36 +33,27 @@ const qCorrect = ['Correct - The highest grossing movie filmed in Seattle is The
 
 const answerText = document.querySelector("#answerText");
 
-function resultAnswers(answer1, answer2, answer3){
-  answerText.innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
-}
-
 function quizButton() {
   if ((!trueButton[0].checked && !falseButton[0].checked) || (!trueButton[1].checked && !falseButton[1].checked) || (!trueButton[2].checked && !falseButton[2].checked)) {
     answerText.innerHTML = "Please answer all questions for quiz results.";
+    return;
   }
-  else if (trueButton[0].checked && trueButton[1].checked && trueButton[2].checked) {
-    resultAnswers(qWrong[0], qCorrect[1], qWrong[2]);
+  if (trueButton[0].checked){
+    answerText.innerHTML = qWrong[0] + '<br>';
   }
-  else if (falseButton[0].checked && falseButton[1].checked && falseButton[2].checked) {
-    resultAnswers(qCorrect[0], qWrong[1], qCorrect[2]);
+  if (falseButton[0].checked){
+    answerText.innerHTML = qCorrect[0] + '<br>';
   }
-  else if (trueButton[0].checked && trueButton[1].checked && falseButton[2].checked) {
-    resultAnswers(qWrong[0], qCorrect[1], qCorrect[2]);
+  if (trueButton[1].checked){
+    answerText.innerHTML += qCorrect[1] + '<br>';
   }
-   else if (falseButton[0].checked && falseButton[1].checked && trueButton[2].checked) {
-    resultAnswers(qCorrect[0], qWrong[1], qWrong[2]);
-  }   
-  else if (trueButton[0].checked && falseButton[1].checked && falseButton[2].checked) {
-    resultAnswers(qWrong[0], qWrong[1], qCorrect[2]);
+  if (falseButton[1].checked){
+    answerText.innerHTML += qWrong[1] + '<br>';
   }
-  else if (falseButton[0].checked && trueButton[1].checked && trueButton[2].checked) {
-    resultAnswers(qCorrect[0], qCorrect[1], qWrong[2]);
+  if (trueButton[2].checked){
+    answerText.innerHTML += qWrong[2] + '<br>';
   }
-  else if (trueButton[0].checked && falseButton[1].checked && trueButton[2].checked) {
-    resultAnswers(qWrong[0], qWrong[1], qWrong[1]);
-  }
-  else if (falseButton[0].checked && trueButton[1].checked && falseButton[2].checked) {
-    resultAnswers(qCorrect[0], qCorrect[1], qCorrect[2]);
+  if (falseButton[2].checked){
+    answerText.innerHTML += qCorrect[2] + '<br>';
   }
 }
