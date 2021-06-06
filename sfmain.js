@@ -21,7 +21,6 @@ function headerSwitchText() {
   }
 }
 
-
 //Home Page Movie Quiz
 const falseButton = [document.querySelector("#falseAnswer1"), document.querySelector("#falseAnswer2"), document.querySelector("#falseAnswer3")];
 
@@ -32,6 +31,10 @@ const qWrong = ['Wrong - The highest grossing movie filmed in Seattle is The Rin
 const qCorrect = ['Correct - The highest grossing movie filmed in Seattle is The Ring.', 'Correct - The Ring was released in 2002.', 'Correct - 10 Things I Hate About You cast does not include Naomi Watts.'];
 
 const answerText = document.querySelector("#answerText");
+
+function resultAnswer(answer){
+  answerText.innerHTML += answer + "<br>";
+}
 
 function quizButton() {
   if ((!trueButton[0].checked && !falseButton[0].checked) || (!trueButton[1].checked && !falseButton[1].checked) || (!trueButton[2].checked && !falseButton[2].checked)) {
@@ -45,15 +48,15 @@ function quizButton() {
     answerText.innerHTML = qCorrect[0] + '<br>';
   }
   if (trueButton[1].checked){
-    answerText.innerHTML += qCorrect[1] + '<br>';
+    resultAnswer(qCorrect[1]);
   }
   if (falseButton[1].checked){
-    answerText.innerHTML += qWrong[1] + '<br>';
+    resultAnswer(qWrong[1]);
   }
   if (trueButton[2].checked){
-    answerText.innerHTML += qWrong[2] + '<br>';
+    resultAnswer(qWrong[2]);
   }
   if (falseButton[2].checked){
-    answerText.innerHTML += qCorrect[2] + '<br>';
+    resultAnswer(qCorrect[2]);
   }
 }
