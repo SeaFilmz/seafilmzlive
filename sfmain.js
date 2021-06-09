@@ -36,11 +36,16 @@ function resultAnswer(answer){
   answerText.innerHTML += answer + "<br>";
 }
 
-function quizButton() {
-  if ((!trueButton[0].checked && !falseButton[0].checked) || (!trueButton[1].checked && !falseButton[1].checked) || (!trueButton[2].checked && !falseButton[2].checked)) {
-    answerText.innerHTML = "Please answer all questions for quiz results.";
-    return;
+function buttonNotchecked(){
+  for (var i = 0; i < trueButton.length; i++) {
+    if (!trueButton[i].checked && !falseButton[i].checked){
+      answerText.innerHTML = "Please answer all questions for quiz results.";
+      return;
+    }
   }
+}
+
+function quizButton() {
   if (trueButton[0].checked){
     answerText.innerHTML = qWrong[0] + '<br>';
   }
@@ -59,4 +64,5 @@ function quizButton() {
   if (falseButton[2].checked){
     resultAnswer(qCorrect[2]);
   }
+  buttonNotchecked();
 }
