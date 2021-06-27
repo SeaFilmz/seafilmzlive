@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMove">City Facts</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Washington City Facts</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle">Seattle</a></p>
             <p><a href="shoreline">Shoreline</a></p>
@@ -55,8 +55,14 @@
             <p><a href="tacoma">Tacoma</a></p>
             <p><a href="olympia">Olympia</a></p>
             <p><a href="spokane">Spokane</a></p>
-            <p><a href="vancouverwa">Vancouver, Washington</a></p>            
-            <p><a href="portlandor">Portland, Oregon</a></p>
+            <p><a href="vancouverwa">Vancouver</a></p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <span class="NavMove">Oregon City Facts</span><div class="upsideDownTriangle">&#9660;</div>
+          <div class="dropdown-content">
+            <p><a href="portlandor">Portland</a></p>
+            <p><a href="salemor">Salem</a></p>
           </div>
         </div>
       </nav>
