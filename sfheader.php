@@ -21,7 +21,7 @@
 
       <nav class="navigation">
         <div class="dropdown">
-          <span class="NavMove">Movies Filmed in Seattle</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Seattle Movies</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="sfseattlemovies">by Title or Year Released</a></p>
             <p><a href="sfseattlemoviesruntime">by Runtime</a></p>
