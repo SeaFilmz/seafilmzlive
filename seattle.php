@@ -16,15 +16,21 @@
       <p><b>State:</b> <a href="http://access.wa.gov/">Washington</a></p>
       <p><b>County:</b> <a href="http://www.kingcounty.gov/">King</a></p>
       <p><b>City Website:</b> <a href="http://www.seattle.gov/">seattle.gov</a></p>
-      <p><b>Movies Filmed in Seattle:</b> <a href="sfseattlemovies">List of Movies Filmed in Seattle</a></p>
-      <p><b>Movie Theaters in Seattle:</b> <a href="seattlemovietheaters">List of Movie Theaters in Seattle</a></p>
-      <p><b>People Born:</b> <a href="seattleactors">List of Actors</a>, <a href="seattleathletes">List of Athletes</a></p>
+      <p><b>Movies Filmed in Seattle:</b> <a href="sfseattlemovies">Movies Filmed in Seattle</a></p>
+      <p><b>Movie Theaters in Seattle:</b> <a href="seattlemovietheaters">Seattle Movie Theaters</a></p>
+      <p><b>People Born:</b> <a href="seattleactors">Actors</a>, <a href="seattleathletes">Athletes</a></p>
+      <p><b>Other Film and Media Resources for Seattle:</b>
+        <a href="https://www.seattle.gov/filmandmusic">Seattle Office of Film and Music</a>,
+        <a href="https://www.washingtonfilmworks.org/">Washington Filmworks</a>,
+        <a href="https://www.siff.net/">Seattle International Film Festival</a>,
+        <a href="https://nwfilmforum.org/">Northwest Film Forum</a>
+      </p>
       <p><b>Professional Sports Teams:</b>
         <a href="http://www.seahawks.com/">Seattle Seahawks</a> (men's football),
         <a href="http://storm.wnba.com/">Seattle Storm</a> (women's basketball),
         <a href="https://www.mlb.com/mariners">Seattle Mariners</a> (men's baseball),
         <a href="https://www.soundersfc.com/">Seattle Sounders FC</a> (men's soccer),
-        <a href="https://www.reignfc.com/">Seattle Reign FC</a> (women's soccer),
+        <a href="https://www.nhl.com/kraken">Seattle Kraken</a> (men's hockey),
         <a href="https://www.xfl.com/en-US/teams/seattle">Seattle Dragons</a> (men's football)
       </p>
       <p><b>Universities or Colleges:</b>
@@ -35,7 +41,7 @@
         <a href="http://www.seattlecentral.org/">Seattle Central College</a>,
         <a href="http://www.southseattle.edu/">South Seattle College</a>
       </p>
-      <p><b>Libraries:</b> <a href="https://www.spl.org/hours-and-locations">List of Libraries in Seattle</a></p>
+      <p><b>Libraries:</b> <br> <a href="https://www.spl.org/hours-and-locations">List of Libraries in Seattle</a></p>
       <p><b>Board Game Hangout Places:</b>
         <a href="https://www.moxboardinghouse.com/">Mox Boarding House</a>,
         <a href="http://www.bluehighwaygames.com/">Blue Highway Games</a>,
@@ -55,6 +61,7 @@
         <a href="https://www.glenacresgolf.com/">Glen Acres Golf & Country Club</a>
       </p>
     </div>
+    
 
 		<div class="SeattleFFImage">
 		  <p class="PopsicleText">Where in Seattle is this popsicle locationed?</p>
@@ -64,6 +71,7 @@
     <div id="imageAnswer">
       <button onclick="popsicleAnswer();">Answer</button>
     </div>
+
 
 <?php
   // footer display function
