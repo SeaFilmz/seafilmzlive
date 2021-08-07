@@ -27,8 +27,6 @@
       <p class="SeattleFunFactsMain"><a href="seattle">Seattle Fun Facts</a></p>
 
       <p class="SeattleBorderCitiesMain"><a href="washingtoncities">Other Washington State Cities</a></p>
-    
-      <p class="SeattleBorderCitiesMain"><a href="portlandor">Portland, Oregon</a></p>
 
 
       <div class="sfQuizBackground">
