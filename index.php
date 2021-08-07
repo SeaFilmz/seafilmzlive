@@ -61,6 +61,14 @@
             <input type="radio" name="answer3" value="false" id="falseAnswer3">
             <label for="falseAnswer3"> False</label><br>      
 
+          <p class="sfQ"><b>Bianca Kajlich was not born in Seattle.</b></p>
+
+            <input type="radio" name="answer4" value="true" id="trueAnswer4">
+            <label for="trueAnswer4"> True</label><br>
+
+            <input type="radio" name="answer4" value="false" id="falseAnswer4">
+            <label for="falseAnswer4"> False</label><br>     
+
         </form>
 
         <div class="sfQuizButton">
