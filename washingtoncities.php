@@ -12,37 +12,37 @@
 
     <div class="WashingtonCitiesContent">
 
-      <p class="WashingtonCitiesLink"><a href="shoreline">Shoreline</a></p>
+      <p class="WashingtonCitiesLink"><a href="shoreline-washington">Shoreline</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="lfp">Lake Forest Park</a></p>
+      <p class="WashingtonCitiesLink"><a href="lake-forest-park-washington">Lake Forest Park</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="tukwila">Tukwila</a></p>
+      <p class="WashingtonCitiesLink"><a href="tukwila-washington">Tukwila</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="burien">Burien</a></p>
+      <p class="WashingtonCitiesLink"><a href="burien-washington">Burien</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="seatac">SeaTac</a></p>
+      <p class="WashingtonCitiesLink"><a href="seatac-washington">SeaTac</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="mercerisland">Mercer Island</a></p>
+      <p class="WashingtonCitiesLink"><a href="mercer-island-washington">Mercer Island</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="medina">Medina</a></p>
+      <p class="WashingtonCitiesLink"><a href="medina-washington">Medina</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="bellevue">Bellevue</a></p>
+      <p class="WashingtonCitiesLink"><a href="bellevue-washington">Bellevue</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="renton">Renton</a></p>
+      <p class="WashingtonCitiesLink"><a href="renton-washington">Renton</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="kirkland">Kirkland</a></p>
+      <p class="WashingtonCitiesLink"><a href="kirkland-washington">Kirkland</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="kenmore">Kenmore</a></p>
+      <p class="WashingtonCitiesLink"><a href="kenmore-washington">Kenmore</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="everett">Everett</a></p>
+      <p class="WashingtonCitiesLink"><a href="everett-washington">Everett</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="tacoma">Tacoma</p>
+      <p class="WashingtonCitiesLink"><a href="tacoma-washington">Tacoma</p>
 
-      <p class="WashingtonCitiesLink"><a href="olympia">Olympia</a></p>
+      <p class="WashingtonCitiesLink"><a href="olympia-washington">Olympia</a></p>
 
-      <p class="WashingtonCitiesLink"><a href="spokane">Spokane</p>
+      <p class="WashingtonCitiesLink"><a href="spokane-washington">Spokane</p>
 
-      <p class="WashingtonCitiesLink"><a href="vancouverwa">Vancouver, Washington</a></p>      
+      <p class="WashingtonCitiesLink"><a href="vancouver-washington">Vancouver, Washington</a></p>      
 
     </div>
 
