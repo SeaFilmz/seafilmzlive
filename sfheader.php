@@ -41,29 +41,33 @@
           <span class="NavMove">Washington City Facts</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle">Seattle</a></p>
-            <p><a href="shoreline">Shoreline</a></p>
-            <p><a href="lfp">Lake Forest Park</a></p>
-            <p><a href="tukwila">Tukwila</a></p>
-            <p><a href="burien">Burien</a></p>
-            <p><a href="seatac">SeaTac</a></p>
-            <p><a href="mercerisland">Mercer Island</a></p>
-            <p><a href="medina">Medina</a></p>
-            <p><a href="bellevue">Bellevue</a></p>
-            <p><a href="renton">Renton</a></p>
-            <p><a href="kirkland">Kirkland</a></p>
-            <p><a href="kenmore">Kenmore</a></p>
-            <p><a href="everett">Everett</a></p>
-            <p><a href="tacoma">Tacoma</a></p>
-            <p><a href="olympia">Olympia</a></p>
-            <p><a href="spokane">Spokane</a></p>
-            <p><a href="vancouverwa">Vancouver</a></p>
+            <p><a href="shoreline-washington">Shoreline</a></p>
+            <p><a href="lake-forest-park-washington">Lake Forest Park</a></p>
+            <p><a href="tukwila-washington">Tukwila</a></p>
+            <p><a href="burien-washington">Burien</a></p>
+            <p><a href="seatac-washington">SeaTac</a></p>
+            <p><a href="mercer-island-washington">Mercer Island</a></p>
+            <p><a href="medina-washington">Medina</a></p>
+            <p><a href="bellevue-washington">Bellevue</a></p>
+            <p><a href="renton-washington">Renton</a></p>
+            <p><a href="kirkland-washington">Kirkland</a></p>
+            <p><a href="kenmore-washington">Kenmore</a></p>
+            <p><a href="everett-washington">Everett</a></p>
+            <p><a href="tacoma-washington">Tacoma</a></p>
+            <p><a href="olympia-washington">Olympia</a></p>
+            <p><a href="spokane-washington">Spokane</a></p>
+            <p><a href="vancouver-washington">Vancouver</a></p>
           </div>
         </div>
         <div class="dropdown">
           <span class="NavMove">Oregon City Facts</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="portlandor">Portland</a></p>
-            <p><a href="salemor">Salem</a></p>
+            <p><a href="portland-oregon">Portland</a></p>
+            <p><a href="salem-oregon">Salem</a></p>
+            <p><a href="gresham-oregon">Gresham</a></p>
+            <p><a href="happy-valley-oregon">Happy Valley</a></p>
+            <p><a href="milwaukie-oregon">Milwaukie</a></p>
+            <p><a href="lake-oswego-oregon">Lake Oswego</a></p>
           </div>
         </div>
       </nav>
