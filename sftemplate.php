@@ -33,11 +33,11 @@ function footerTemp() {
       <nav class="NavFooter">
           <p class="NavFooterMobile"><a href="#goToTopLink">Go to Top</a></p>
 
-          <p class="NavFooterMobile"><a href="sfabout">About</a></p>
+          <p class="NavFooterMobile"><a href="about">About</a></p>
 
           <p class="NavFooterMobile"><a href="contact">Contact</a></p>
 
-          <p class="NavFooterMobile"><a href="builtwith">Built With</a></p>
+          <p class="NavFooterMobile"><a href="built-with">Built With</a></p>
 
           <p class="NavFooterMobile"><a href="services">Services</a></p>
       </nav>
