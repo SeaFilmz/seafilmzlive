@@ -9,12 +9,12 @@
       </div>
 
       <nav class="MobileNav">
-        <p><a href="sfseattlemovies">Movies Filmed in Seattle by Title or Year Released</a></p>
-        <p><a href="sfseattlemoviesruntime">Movies Filmed in Seattle by Runtime</a></p>
-        <p><a href="sfseattlemoviesgross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
-        <p><a href="sfseattleactors">Seattle Born Actors by First Name or Birthdate</a></p>
-        <p><a href="sfseattlemusicians">Seattle Born Musicians</a></p>
-        <p><a href="sfseattleathletes">Seattle Born Athletes</a></p>
+        <p><a href="seattle-movies">Movies Filmed in Seattle by Title or Year Released</a></p>
+        <p><a href="seattle-movies-runtime">Movies Filmed in Seattle by Runtime</a></p>
+        <p><a href="seattle-movies-gross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
+        <p><a href="seattle-actors">Seattle Born Actors by First Name or Birthdate</a></p>
+        <p><a href="seattle-musicians">Seattle Born Musicians</a></p>
+        <p><a href="seattle-athletes">Seattle Born Athletes</a></p>
         <p><a href="seattle">Seattle Facts</a></p>
         <p><a href="washingtoncities">Cities Near Seattle</a></p>
         <p><a href="oregoncities">Oregon State Cities</a></p>
@@ -24,17 +24,17 @@
         <div class="dropdown">
           <span class="NavMove">Seattle Movies</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="sfseattlemovies">by Title or Year Released</a></p>
-            <p><a href="sfseattlemoviesruntime">by Runtime</a></p>
-            <p><a href="sfseattlemoviesgross">by Total Worldwide Gross</a></p>
+            <p><a href="seattle-movies">by Title or Year Released</a></p>
+            <p><a href="seattle-movies-runtime">by Runtime</a></p>
+            <p><a href="seattle-movies-gross">by Total Worldwide Gross</a></p>
           </div>
         </div>
         <div class="dropdown">
           <span class="NavMove">Seattle Born</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="sfseattleactors">Actors</a></p>
-            <p><a href="sfseattlemusicians">Musicians</a></p>
-            <p><a href="sfseattleathletes">Athletes</a></p>
+            <p><a href="seattle-actors">Actors</a></p>
+            <p><a href="seattle-musicians">Musicians</a></p>
+            <p><a href="seattle-athletes">Athletes</a></p>
           </div>
         </div>
         <div class="dropdown">
@@ -68,6 +68,8 @@
             <p><a href="happy-valley-oregon">Happy Valley</a></p>
             <p><a href="milwaukie-oregon">Milwaukie</a></p>
             <p><a href="lake-oswego-oregon">Lake Oswego</a></p>
+            <p><a href="tigard-oregon">Tigard</a></p>
+            <p><a href="eugene-oregon">Eugene</a></p>
           </div>
         </div>
       </nav>
