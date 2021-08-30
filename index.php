@@ -12,17 +12,17 @@
 
       <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
 
-      <p class="SeattleMoviesMain"><a href="sfseattlemovies">Movies Filmed in Seattle by Title or Year Released</a></p>
+      <p class="SeattleMoviesMain"><a href="seattle-movies">Movies Filmed in Seattle by Title or Year Released</a></p>
 
-      <p class="SeattleMoviesMain"><a href="sfseattlemoviesruntime">Movies Filmed in Seattle by Runtime</a></p>
+      <p class="SeattleMoviesMain"><a href="seattle-movies-runtime">Movies Filmed in Seattle by Runtime</a></p>
 
-      <p class="SeattleMoviesMain"><a href="sfseattlemoviesgross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
+      <p class="SeattleMoviesMain"><a href="seattle-movies-gross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
 
-      <p class="SeattleActorsMain"><a href="sfseattleactors">Actors Born in Seattle by First Name or Birthdate</a></p>
+      <p class="SeattleActorsMain"><a href="seattle-actors">Actors Born in Seattle by First Name or Birthdate</a></p>
 
-      <p class="SeattleMusiciansMain"><a href="sfseattlemusicians">Musicians Born in Seattle</a></p>
+      <p class="SeattleMusiciansMain"><a href="seattle-musicians">Musicians Born in Seattle</a></p>
 
-      <p class="SeattleAthletesMain"><a href="sfseattleathletes">Athletes Born in Seattle</a></p>
+      <p class="SeattleAthletesMain"><a href="seattle-athletes">Athletes Born in Seattle</a></p>
 
       <p class="SeattleFunFactsMain"><a href="seattle">Seattle Fun Facts</a></p>
 
