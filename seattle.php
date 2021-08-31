@@ -16,8 +16,8 @@
       <p><b>State:</b> <a href="http://access.wa.gov/">Washington</a></p>
       <p><b>County:</b> <a href="http://www.kingcounty.gov/">King</a></p>
       <p><b>City Website:</b> <a href="http://www.seattle.gov/">seattle.gov</a></p>
-      <p><b>Movies Filmed in Seattle:</b> <a href="sfseattlemovies">Movies Filmed in Seattle</a></p>
-      <p><b>Movie Theaters in Seattle:</b> <a href="seattlemovietheaters">Seattle Movie Theaters</a></p>
+      <p><b>Movies Filmed in Seattle:</b> <a href="seattle-movies">Movies Filmed in Seattle</a></p>
+      <p><b>Movie Theaters in Seattle:</b> <a href="seattle-movie-theaters">Seattle Movie Theaters</a></p>
       <p><b>People Born:</b> <a href="seattle-actors">Actors</a>, <a href="seattle-athletes">Athletes</a></p>
       <p><b>Other Film and Media Resources for Seattle:</b>
         <a href="https://www.seattle.gov/filmandmusic">Seattle Office of Film and Music</a>,
