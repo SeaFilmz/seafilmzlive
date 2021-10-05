@@ -72,3 +72,12 @@ function quizButton() {
   }
   buttonNotchecked();
 }
+
+//Movie Watched Count
+const countText = document.querySelector("#countText");
+
+function movieCountButton(){
+  const moviesChecked = document.querySelectorAll('.movieCheckbox:checked').length
+
+  countText.innerHTML = moviesChecked + " Seattle Filmed Movies Watched" + "<br>" + "You have watched " + (((moviesChecked)/(document.querySelectorAll('.movieCheckbox').length))*100).toFixed(1) + "% of movies from this table.";
+}
