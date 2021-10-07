@@ -77,7 +77,8 @@ function quizButton() {
 const countText = document.querySelector("#countText");
 
 function movieCountButton(){
-  const moviesChecked = document.querySelectorAll('.movieCheckbox:checked').length
+  const moviesChecked = document.querySelectorAll('.movieCheckbox:checked').length;
+  const totalMovies = document.querySelectorAll('.movieCheckbox').length;
 
-  countText.innerHTML = moviesChecked + " Seattle Filmed Movies Watched" + "<br>" + "You have watched " + (((moviesChecked)/(document.querySelectorAll('.movieCheckbox').length))*100).toFixed(1) + "% of movies from this table.";
+  countText.innerHTML = moviesChecked + " Seattle Filmed Movies Watched" + "<br>" + "You have watched " + (((moviesChecked)/(totalMovies))*100).toFixed(1) + "% of movies from this table.";
 }
