@@ -41,8 +41,8 @@
 
       <tr class="MoviesContent">
         <td class="MovieCountCheckbox">
-          <input type="checkbox" class="movieCheckbox" name="movieCheckbox">
-          <label for="movieCheckbox"></label>
+          <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
+          <label for="movieCheckboxes"></label>
         </td>   
         <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
@@ -65,12 +65,11 @@
 ?>
 
 
-    <div class="sfCountButton">
-      <button onclick="movieCountButton()" class="sfCountButton"><b>Movies Watched</b></button>
+    <div class="watchedButton">
+      <button onclick="movieWatchedButton('Seattle')" class="watchedButton"><b>Movies Watched</b></button>
     </div>
 
-    <p id="countText" class="countText"></p>
-
+    <p id="watchedText" class="watchedText"></p>
 
     <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
