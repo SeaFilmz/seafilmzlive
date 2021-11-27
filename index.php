@@ -1,8 +1,8 @@
-<!--link to the start of a seafilmz general webpage template-->
 <?php
   $title = 'SeaFilmz - 6 Degrees of Seattle'; 
   $mDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
   $body = 'HomePage';
+  /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
   headerTemp();
 ?>
