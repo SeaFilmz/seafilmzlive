@@ -84,5 +84,13 @@
             <p><a href="coeurdalene-idaho">Coeur d'Alene</a></p>
           </div>
         </div>
+        <div class="dropdown">
+          <span class="NavMove">Alaska Cities</span><div class="upsideDownTriangle">&#9660;</div>
+          <div class="dropdown-content">
+            <p><a href="anchorage-alaska">Anchorage</a></p>
+            <p><a href="juneau-alaska">Juneau</a></p>
+            <p><a href="fairbanks-alaska">Fairbanks</a></p>
+          </div>
+        </div>
       </nav>
     </header>
