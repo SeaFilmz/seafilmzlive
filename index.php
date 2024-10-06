@@ -10,22 +10,18 @@
 
     <main class="HomePageContent">
 
-      <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
-
-      <p class="SeattleMoviesMain"><a href="seattle-movies">Movies Filmed in Seattle by Title or Year Released</a></p>
-
-      <p class="SeattleMoviesMain"><a href="seattle-movies-runtime">Movies Filmed in Seattle by Runtime</a></p>
-
-      <p class="SeattleMoviesMain"><a href="seattle-movies-gross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
-
-      <p class="SeattleActorsMain"><a href="seattle-actors">Actors Born in Seattle by First Name or Birthdate</a></p>
-
-      <p class="SeattleMusiciansMain"><a href="seattle-musicians">Musicians Born in Seattle</a></p>
-
-      <p class="SeattleAthletesMain"><a href="seattle-athletes">Athletes Born in Seattle</a></p>
-
-      <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
-
+      <div class="mainLinks">
+        <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
+  
+        <div class="SeattleMoviesMainHeader">Movies Filmed in Seattle</div>
+        <p class="SeattleMoviesMain"> <a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></p>
+  
+        <div class="SeattlePeopleMainHeader">Seattle Born</div>
+        <p class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></p>
+  
+        <div class="SeattleFunFactsMainHeader">City Facts</div>
+        <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
+      </div>
 
       <div class="sfQuizBackground">
 
