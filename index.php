@@ -24,7 +24,7 @@
 
       <p class="SeattleAthletesMain"><a href="seattle-athletes">Athletes Born in Seattle</a></p>
 
-      <p class="SeattleFunFactsMain"><a href="seattle">Seattle Fun Facts</a></p>
+      <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
 
 
       <div class="sfQuizBackground">
