@@ -13,7 +13,6 @@
 
       <div class="aboutbio">
         <div class="biofacts"><span class="biofactsTag">Founder/Developer: </span>Daniel Schmidt</div>
-        <div class="biofacts"><span class="biofactsTag">LinkedIn: </span><a href="https://www.linkedin.com/in/danls20">linkedin.com/in/danls20</a></div>
       </div>
 
       <div class="AboutDescription">
