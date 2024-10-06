@@ -72,5 +72,17 @@
             <p><a href="eugene-oregon">Eugene</a></p>
           </div>
         </div>
+        <div class="dropdown">
+          <span class="NavMove">Idaho Cities</span><div class="upsideDownTriangle">&#9660;</div>
+          <div class="dropdown-content">
+            <p><a href="boise-idaho">Boise</a></p>
+            <p><a href="meridian-idaho">Meridian</a></p>
+            <p><a href="garden-city-idaho">Garden City</a></p>
+            <p><a href="eagle-idaho">Eagle</a></p>
+            <p><a href="pocatello-idaho">Pocatello</a></p>
+            <p><a href="moscow-idaho">Moscow</a></p>
+            <p><a href="coeurdalene-idaho">Coeur d'Alene</a></p>
+          </div>
+        </div>
       </nav>
     </header>
