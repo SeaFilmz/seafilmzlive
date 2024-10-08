@@ -18,6 +18,7 @@
         <p><a href="seattle-washington">Seattle Facts</a></p>
         <p><a href="washington-cities">Washington State Cities</a></p>
         <p><a href="oregon-cities">Oregon State Cities</a></p>
+        <p><a href="idaho-cities">Idaho State Cities</a></p>
       </nav>
 
       <nav class="navigation">
