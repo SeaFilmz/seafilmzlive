@@ -16,8 +16,8 @@
         <p><a href="seattle-musicians">Seattle Born Musicians</a></p>
         <p><a href="seattle-athletes">Seattle Born Athletes</a></p>
         <p><a href="seattle">Seattle Facts</a></p>
-        <p><a href="washingtoncities">Cities Near Seattle</a></p>
-        <p><a href="oregoncities">Oregon State Cities</a></p>
+        <p><a href="washington-cities">Washington State Cities</a></p>
+        <p><a href="oregon-cities">Oregon State Cities</a></p>
       </nav>
 
       <nav class="navigation">
