@@ -15,7 +15,7 @@
         <p><a href="seattle-actors">Seattle Born Actors by First Name or Birthdate</a></p>
         <p><a href="seattle-musicians">Seattle Born Musicians</a></p>
         <p><a href="seattle-athletes">Seattle Born Athletes</a></p>
-        <p><a href="seattle">Seattle Facts</a></p>
+        <p><a href="seattle-washington">Seattle Facts</a></p>
         <p><a href="washington-cities">Washington State Cities</a></p>
         <p><a href="oregon-cities">Oregon State Cities</a></p>
       </nav>
