@@ -14,8 +14,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="sfmain.js" defer></script>
 
-        <!--Connection to Google Analytics.-->
+        <!--Connection to Google Analytics and AdSense.-->
         <?php include 'googleanalytics_connection.php'; ?>
+        <?php include 'googleadsense_connection.php'; ?>
         
       </head>
 
