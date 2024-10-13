@@ -71,15 +71,21 @@
       </div>
 
       <div class="follow">
-        <h2 class="followTitle">Follow SeaFilmz</h2>
-        <b class="contactTitle">SeaFilmz Twitch</b> :
-        <a href="https://www.twitch.tv/seafilmz" class="contactInfo">twitch.tv/seafilmz</a>
-        <p></p>
-        <b class="contactTitle">SeaFilmz Twitter</b> :
-        <a href="https://twitter.com/seafilmz" class="contactInfo">@SeaFilmz</a>
-        <p></p>
-        <b class="contactTitle">SeaFilmz Instagram</b> :
-        <a href="https://instagram.com/seafilmz" class="contactInfo">@SeaFilmz</a>
+        <span class="contactInfo">
+          <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
+            <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage"
+            />
+          </a>
+        </span >
+        <span class="contactInfo">
+          <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
+            <img src="/images/xblacklogo.png" alt="X Icon" class="twitterLogoImage" />
+          </a>
+        </span>
+        <span class="contactInfo">
+          <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
+            <img class="instagramLogoColor" src="/images/instagramlogocolor.png" alt="instagram logo"></a>
+        </spam>
       </div>
 
     </main>
