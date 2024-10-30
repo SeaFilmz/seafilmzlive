@@ -60,7 +60,7 @@
 
         <!--link to Total Movie Count-->
 <?php 
-  require 'moviefunctions.php';
+  require 'queryfunctions/moviefunctions.php';
   cityMoviesCount('Seattle');
 ?>
 

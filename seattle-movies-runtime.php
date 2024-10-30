@@ -55,7 +55,7 @@
         </div>
 
 <?php 
-  require 'moviefunctions.php';
+  require 'queryfunctions/moviefunctions.php';
   cityRuntimeCount('Seattle');
   cityRuntimeAvg('Seattle');
 ?>
