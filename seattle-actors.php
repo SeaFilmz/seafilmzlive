@@ -59,7 +59,7 @@
 
     <!--link to Total Actors Count-->
 <?php 
-  require 'actorfunctions.php';
+  require 'queryfunctions/actorfunctions.php';
   cityActorsCount('Seattle', 'actor');
 ?>
 
