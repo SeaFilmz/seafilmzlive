@@ -12,7 +12,7 @@
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="sfmain.js" defer></script>
+        <script src="js/sfmain.js" defer></script>
 
         <!--Connection to Google Analytics and AdSense.-->
         <?php include 'googleanalytics_connection.php'; ?>
