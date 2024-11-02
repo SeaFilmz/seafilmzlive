@@ -10,7 +10,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT COUNT(*) FROM movies as m, moviesfilminglocation as mfl WHERE m.MovieID = mfl.MovieID AND mfl.FilmingLocationID = (SELECT FilmingLocationID FROM filminglocations WHERE City = ?) ");
+            $query = $newconnection->prepare("SELECT COUNT(*) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
             
             $query->bind_param("s", $city);
             $query->execute();
