@@ -12,6 +12,8 @@
 
     <div class="WashingtonCitiesContent">
 
+      <p class="WashingtonCitiesLink"><a href="seattle">Seattle</a></p>
+
       <p class="WashingtonCitiesLink"><a href="shoreline-washington">Shoreline</a></p>
 
       <p class="WashingtonCitiesLink"><a href="lake-forest-park-washington">Lake Forest Park</a></p>
@@ -42,7 +44,7 @@
 
       <p class="WashingtonCitiesLink"><a href="spokane-washington">Spokane</p>
 
-      <p class="WashingtonCitiesLink"><a href="vancouver-washington">Vancouver, Washington</a></p>      
+      <p class="WashingtonCitiesLink"><a href="vancouver-washington">Vancouver, Washington</a></p>     
 
     </div>
 
