@@ -44,7 +44,21 @@
 
       <p class="WashingtonCitiesLink"><a href="spokane-washington">Spokane</p>
 
-      <p class="WashingtonCitiesLink"><a href="vancouver-washington">Vancouver, Washington</a></p>     
+      <p class="WashingtonCitiesLink"><a href="vancouver-washington">Vancouver, Washington</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="pullman-washington">Pullman</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="bellingham-washington">Bellingham</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="bothell-washington">Bothell</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="edmonds-washington">Edmonds</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="woodway-washington">Woodway</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="lynnwod-washington">Lynnwood</a></p>
+
+      <p class="WashingtonCitiesLink"><a href="gig-harbor-washington">Gig Harbor</a></p>
 
     </div>
 
