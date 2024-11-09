@@ -113,13 +113,8 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php cityMoviesCount('Seattle'); ?>
+<?php cityMoviesCount('Seattle');
 
-<img class="YearReleasedGraph"
-     src="moviegraphy.JPG"
-     alt="A line graph of the number of movies released each year that were filmed in Seattle.">
-
-<?php
   // footer display function
   footerTemp();
 ?>
