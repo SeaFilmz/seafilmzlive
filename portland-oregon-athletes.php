@@ -64,7 +64,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT COUNT(*) FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID WHERE CityTownBorn = ? AND Jobs = ? ");
+            $query = $newconnection->prepare("SELECT COUNT(*) FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID INNER JOIN peoplebirthcity ON peoples.PeopleID = peoplebirthcity.PeopleID INNER JOIN cities ON cities.CityID = peoplebirthcity.CityID WHERE City = ? AND Jobs = ? ");
 
             $query->bind_param("ss", $city, $job);
             $query->execute();
