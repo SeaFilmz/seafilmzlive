@@ -117,6 +117,86 @@ function cityRuntimeAvg($cityRtAvg) {
     </table>
     </div>
 
+    <?php }
+
+function cityRuntimeShortest($cityRtShortest) {
+  global $newconnection;
+?>
+
+<div class="MTRTable">
+  <table class="MovieAvgRuntimeTable">
+      
+      <?php
+          // 2. Perform database query
+          $query = $newconnection->prepare("SELECT MIN(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ");
+
+          $query->bind_param("s", $cityRtShortest);
+          $query->execute();
+
+          //Result variable with an error check
+          $result = $query->get_result()
+            or die("Database query failed.");
+
+          // 3. Use returned data (if any)
+          while($movies = mysqli_fetch_assoc($result)) {
+              // output data from each row
+      ?>
+
+    <tr class="MoviesContent">
+      <th class="MovieTotalRuntimeRowHeader">Shortest Seattle Movie Runtime</th>
+      <td class="MovieTotalRuntimeNumber"><?php echo $movies["MIN(RunTime)"]; ?> Minutes</td>
+    </tr>
+
+      <?php
+          }
+
+          // 4. Release returned data
+          mysqli_free_result($result);
+      ?>
+
+  </table>
+  </div>
+
+  <?php }
+
+function cityRuntimeLongest($cityRtLongest) {
+    global $newconnection;
+?>
+
+<div class="MTRTable">
+    <table class="MovieAvgRuntimeTable">
+        
+        <?php
+            // 2. Perform database query
+            $query = $newconnection->prepare("SELECT MAX(RunTime) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ");
+
+            $query->bind_param("s", $cityRtLongest);
+            $query->execute();
+
+            //Result variable with an error check
+            $result = $query->get_result()
+              or die("Database query failed.");
+
+            // 3. Use returned data (if any)
+            while($movies = mysqli_fetch_assoc($result)) {
+                // output data from each row
+        ?>
+
+      <tr class="MoviesContent">
+        <th class="MovieTotalRuntimeRowHeader">Longest Seattle Movie Runtime</th>
+        <td class="MovieTotalRuntimeNumber"><?php echo $movies["MAX(RunTime)"]; ?> Minutes</td>
+      </tr>
+
+        <?php
+            }
+  
+            // 4. Release returned data
+            mysqli_free_result($result);
+        ?>
+
+    </table>
+    </div>
+
 <?php  }
 
 function cityMovieGrossTotal($cityGrossTotal) {

@@ -58,6 +58,8 @@
   require 'queryfunctions/moviefunctions.php';
   cityRuntimeCount('Seattle');
   cityRuntimeAvg('Seattle');
+  cityRuntimeShortest('Seattle');
+  cityRuntimeLongest('Seattle');
 ?>
 
 <?php
