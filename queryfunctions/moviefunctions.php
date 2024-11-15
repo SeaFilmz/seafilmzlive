@@ -433,6 +433,46 @@ function cityMovieGrossTotal($cityGrossTotal) {
         </table>
         </div>
 
+<?php }
+
+function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
+    global $newconnection;
+?>
+
+<div class="MTGTable">
+    <table class="MovieTotalGrossTable">
+      <tr class="MoviesContent">
+        <th class="MovieTotalGrossRowHeader">Highest Seattle Movie Gross (US Dollars)</th>      
+
+        <?php
+            // 2. Perform database query
+            $query = $newconnection->prepare("SELECT MAX(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ");
+            
+            $query->bind_param("s", $cityHighestGrossTotal);
+            $query->execute();            
+            
+            //Result variable with an error check
+            $result = $query->get_result()
+              or die("Database query failed.");
+
+            // 3. Use returned data (if any)
+            while($movies = mysqli_fetch_assoc($result)) {
+                // output data from each row
+        ?>
+
+        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["MAX(TotalWorldGross)"]); ?></td>
+      </tr>
+
+        <?php
+            }
+
+            // 4. Release returned data
+            mysqli_free_result($result);
+        ?>
+
+        </table>
+        </div>
+
 <?php } ?>
 
 <?php
