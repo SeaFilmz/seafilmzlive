@@ -61,6 +61,13 @@
   cityRuntimeShortest('Seattle');
   cityRuntimeLongest('Seattle');
 ?>
+<br>
+<?php
+  cityRuntimeCountHours('Seattle');
+  cityRuntimeAvgHours('Seattle');
+  cityRuntimeShortestHours('Seattle');
+  cityRuntimeLongestHours('Seattle');
+?>
 
 <?php
   // footer display function
