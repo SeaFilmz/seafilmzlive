@@ -44,6 +44,24 @@
         <?php
   }
   ?>
+      <?php
+        $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed);
+      ?>
+
+        <tr class="movieDataPointRow">
+          <td class="movieData movieDataDesc">Filming Location</td>
+          <?php
+            while($locations = mysqli_fetch_assoc($filmLocations)) {
+          ?>
+          <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["City"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["Country"]; ?></td>
+          <?php
+          }
+          ?>
+          <?php
+          // 4. Release returned data
+          mysqli_free_result($filmLocations);
+          ?>
+        </tr>
       </table>  
 
   <?php
