@@ -22,11 +22,27 @@
     <main class="MovieMainFacts">
       <h2 class="MovieTitle"><b><?php echo $movies["MovieTitle"]; ?></b></h2>
 
+      <?php
+        $bday = $movies["YearReleased"]; // Movies Year Released from DB
+        $today = date('Y'); // Todays Date
+        $diff = $today-$bday; // Calculate Age
+      ?>
+
       <table>
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Year Released</td>
           <td class="movieData"><?php echo $movies["YearReleased"]; ?></td>
         </tr>
+
+        <tr class="movieDataPointRow">
+          <td class="movieData movieDataDesc">Movie Age</td>
+          <td class="movieData">
+            <?php
+              echo $diff . ' Years';
+            ?>
+          </td>
+        </tr>        
+
         <tr class="movieDataPointRow">
           <td class="movieData  movieDataDesc">Run Time</td>
           <td class="movieData"><?php echo $movies["RunTime"]; ?> Minutes</td>
