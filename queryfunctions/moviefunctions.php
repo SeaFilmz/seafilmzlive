@@ -508,3 +508,20 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
 
     return $filmLocations;
 } ?>
+
+<?php
+  function individualMoviePeopleFactPageQuery($movieSLUGPeople, $job) {
+    global $newconnection;
+
+    // 2. Perform database query
+    $query = $newconnection->prepare("SELECT FirstName, MiddleInitialName, LastName FROM moviespeoples INNER JOIN peoplesjobs ON peoplesjobs.PeopleID = moviespeoples.PeopleID INNER JOIN jobs ON peoplesjobs.JobID = jobs.JobID INNER JOIN peoples ON moviespeoples.PeopleID = peoples.PeopleID INNER JOIN movies ON moviespeoples.MovieID = movies.MovieID WHERE MoviePageLink = ? and Jobs = ? ");
+
+    $query->bind_param("ss", $movieSLUGPeople, $job);
+    $query->execute();
+
+    //Result variable with an error check
+    $movieActors = $query->get_result()
+      or die("Database query failed.");
+
+    return $movieActors;
+} ?>

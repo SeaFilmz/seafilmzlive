@@ -44,6 +44,25 @@
         <?php
   }
   ?>
+
+      <?php
+        $movieActors = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'actor');
+      ?>
+        <tr class="movieDataPointRow">
+          <td class="movieData movieDataDesc">Main Actors</td>
+          <?php 
+            while($actors = mysqli_fetch_assoc($movieActors)) {
+          ?>
+          <td class="movieDataActor"><?php echo $actors["FirstName"]; ?> <?php if ($actors["MiddleInitialName"] != NULL) { echo $actors["MiddleInitialName"]; } ?> <?php echo $actors["LastName"]; ?></td>
+          <?php
+          }
+          ?>
+          <?php
+          // 4. Release returned data
+          mysqli_free_result($movieActors);
+          ?>
+        </tr>
+
       <?php
         $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed);
       ?>
