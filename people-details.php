@@ -105,6 +105,14 @@
         <?php
         }
         ?>
+        <?php if ($people["SportKnownFor"] != NULL) { ?>
+          <tr class="peopleDataPointRow">
+            <td class="peopleData peopleDataDesc">Sport Known For</td>
+            <td class="peopleData"><?php echo $people["SportKnownFor"]; ?></td>
+          </tr>
+        <?php
+        }
+        ?>
       </table>
     </main>
 
