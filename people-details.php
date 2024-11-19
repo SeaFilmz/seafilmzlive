@@ -59,6 +59,11 @@
         <?php
         }
         ?>
+        <?php if ($people["DeathDate"] !== NULL) { ?>
+          <tr class="peopleDataPointRow">
+            <td class="peopleData peopleDataDesc">Death Date</td>
+            <td class="peopleData"><?php $date = date_create($people["DeathDate"]); echo date_format($date, "F d, Y"); ?></td>
+          </tr>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Place</td>
             <td class="peopleData"><!--<a href="seattle">--><?php echo $people["City"]; ?><!--</a>-->, <?php echo $people["StateProvince"]; ?>, <?php echo $people["Country"]; ?></td>
