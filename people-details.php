@@ -65,6 +65,35 @@
             <td class="peopleData"><?php $date = date_create($people["DeathDate"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
           <tr class="peopleDataPointRow">
+            <td class="peopleData peopleDataDesc">Death Age</td>
+            <td class="peopleData">
+            <?php
+              $bday = date_create($people["BirthDate"]); // Actors Birtdate for Db
+              $dday = date_create($people["DeathDate"]);
+              /*$dday = new DateTime(date('m/d/Y'));*/ // Todays Date
+              $diff = $dday->diff($bday); // Calculate Age
+              printf(' %d years, %d months, %d days', $diff->y, $diff->m, $diff->d); // Display Age in Years, Months, Days
+            ?>
+            </td>
+          </tr>
+        <?php
+        } else if ($people["BirthDate"] != NULL) {  
+        ?>
+          <tr class="peopleDataPointRow">
+            <td class="peopleData peopleDataDesc">Age</td>
+            <td class="peopleData">
+            <?php
+              $bday = date_create($people["BirthDate"]); // Actors Birtdate from Db
+              $today = new DateTime(date('m/d/Y')); // Todays Date
+              $diff = $today->diff($bday); // Calculate Age
+              printf(' %d years, %d months, %d days', $diff->y, $diff->m, $diff->d); // Display Age in Years, Months
+            ?>
+            </td>
+          </tr>
+        <?php
+        }
+        ?>
+          <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Place</td>
             <td class="peopleData"><!--<a href="seattle">--><?php echo $people["City"]; ?><!--</a>-->, <?php echo $people["StateProvince"]; ?>, <?php echo $people["Country"]; ?></td>
           </tr>
