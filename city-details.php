@@ -47,6 +47,19 @@
 			</table>
 		</main>
 
+		<?php if ($city === 'Seattle') { ?>
+      <div class="SeattleFFImage">
+        <p class="PopsicleText">Where in Seattle is this popsicle's location?</p>
+        <img class="PopsicleSculpture" src="/images/popsiclesculpture.JPG" alt="Giant red popsicle located in the city of Seattle">
+      </div>
+
+      <div id="imageAnswer">
+        <button id="popsicleImageAnswer">Answer</button>
+      </div>
+
+      <script src="/js/popsicleanswer.js" defer></script>
+    <?php } ?>
+
 <?php
   }
 
