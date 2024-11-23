@@ -50,13 +50,23 @@
             <td class="cityData cityDataDesc">State</td>
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
-        <?php if ($city === 'Seattle') { ?>
+        <?php if ($rows === 1) { ?>
+          <?php if ($StateProvince === 'Washington') { ?>
+            <tr class="cityDataPointRow">
+              <td class="cityData cityDataDesc">County</td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
+            </tr>
+          <?php
+          }
+        } else if ($city === 'Bothell') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
-            <td class="cityData"><a href="http://www.kingcounty.gov/">King</a></p>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://kingcounty.gov/">King</a></div>
+              <div><a href="https://snohomishcountywa.gov/">Snohomish</a><div>
+            </td>
           </tr>
-        <?php
-        } else if ($city === 'Portland') { ?>
+        <?php } else if ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
