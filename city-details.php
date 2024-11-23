@@ -50,6 +50,24 @@
             <td class="cityData cityDataDesc">State</td>
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
+        <?php if ($city === 'Seattle') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">County</td>
+            <td class="cityData"><a href="http://www.kingcounty.gov/">King</a></p>
+          </tr>
+        <?php
+        } else if ($city === 'Portland') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">County</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://multco.us/">Multnomah</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.clackamas.us/">Clackamas</a></div>
+              <div><a href="https://www.co.washington.or.us/">Washington</a><div>
+            </td>
+          </tr>
+        <?php
+        }
+        ?> 
 			</table>
 		</main>
 
