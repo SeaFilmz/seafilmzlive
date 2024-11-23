@@ -20,8 +20,14 @@
     headerTemp();
 ?>
 
-    <main class="CityMainFacts">
-      <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?></h2>
+		<main class="CityMainFacts">
+      <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
+        <?php if ($cityFact["StateProvinceCapital"] === 1) { ?>
+          (State Capital City)
+        <?php
+        }
+        ?>
+      </h2>
 
       <table class="CityTable">
         <?php if ($cityFact["IncorporatedDate"] !== NULL) { ?> 
