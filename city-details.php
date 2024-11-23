@@ -51,7 +51,7 @@
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
         <?php if ($rows === 1) { ?>
-          <?php if ($StateProvince === 'Washington') { ?>
+          <?php if ($StateProvince === 'Washington' or $StateProvince === 'Oregon') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">County</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
@@ -66,13 +66,32 @@
               <div><a href="https://snohomishcountywa.gov/">Snohomish</a><div>
             </td>
           </tr>
-        <?php } else if ($city === 'Portland') { ?>
+        <?php 
+        } else if ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://multco.us/">Multnomah</a></div>
               <div class="cityDataPointOfMany"><a href="https://www.clackamas.us/">Clackamas</a></div>
               <div><a href="https://www.co.washington.or.us/">Washington</a><div>
+            </td>
+          </tr>
+        <?php 
+        } else if ($city === 'Milwaukie') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">County</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://multco.us/">Multnomah</a></div>
+              <div><a href="https://www.clackamas.us/">Clackamas</a><div>
+            </td>
+          </tr>
+        <?php 
+        } else if ($city === 'Salem') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">County</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://www.co.marion.or.us/">Marion</a></div>
+              <div><a href="https://www.co.polk.or.us/">Polk</a><div>
             </td>
           </tr>
         <?php
