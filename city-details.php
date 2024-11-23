@@ -51,13 +51,18 @@
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
         <?php if ($rows === 1) { ?>
-          <?php if ($StateProvince === 'Washington' or $StateProvince === 'Oregon' or $StateProvince === 'Idaho') { ?>
+          <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">County</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
           <?php
-          }
+          } else if ($StateProvince === 'Alaska') { ?>
+            <tr class="cityDataPointRow">
+              <td class="cityData cityDataDesc">Borough</td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
+            </tr>
+          <?php }
         } else if ($city === 'Bothell') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
