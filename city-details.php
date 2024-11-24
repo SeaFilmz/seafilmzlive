@@ -121,6 +121,15 @@
             <td class="cityData cityDataDesc">Movies Filmed</td>
             <td class="cityData"><a href="https://seafilmz.com/seattle-movies">	List of Movies Filmed</a></td>
           </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Other Film and Media Resources for Seattle</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://www.seattle.gov/filmandmusic">Seattle Office of Film and Music</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.washingtonfilmworks.org/">Washington Filmworks</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.siff.net/">Seattle International Film Festival</a></div>
+              <div><a href="https://nwfilmforum.org/">Northwest Film Forum</a></div>
+            </td>
+          </tr>
         <?php
         }
         ?>
