@@ -114,6 +114,10 @@
 
         <?php if ($city === 'Seattle') { ?>
           <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Movie Theaters</td>
+            <td class="cityData"><a href="https://seafilmz.com/seattle-movie-theaters">List of Movie Theaters</a></td>
+          </tr>
+          <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
             <td class="cityData"><a href="https://seafilmz.com/seattle-movies">	List of Movies Filmed</a></td>
           </tr>
@@ -122,6 +126,10 @@
         ?>
 
         <?php if ($city === 'Portland') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Movie Theaters</td>
+            <td class="cityData"><a href="https://seafilmz.com/portland-oregon-movie-theaters">List of Movie Theaters</a></td>
+          </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
             <td class="cityData"><a href="https://seafilmz.com/portland-oregon-movies">	List of Movies Filmed</a></td>
