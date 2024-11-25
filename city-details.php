@@ -130,6 +130,13 @@
               <div><a href="https://nwfilmforum.org/">Northwest Film Forum</a></div>
             </td>
           </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">People Born</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="seattle-actors">Actors</a></div>
+              <div class="cityDataPointOfMany"><a href="seattle-athletes">Athletes</a></div>
+            </td>
+          </tr>
         <?php
         }
         ?>
@@ -142,6 +149,13 @@
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
             <td class="cityData"><a href="https://seafilmz.com/portland-oregon-movies">	List of Movies Filmed</a></td>
+          </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">People Born</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="portland-oregon-actors">Actors</a></div>
+              <div class="cityDataPointOfMany"><a href="portland-oregon-athletes">Athletes</a></div>
+            </td>
           </tr>
         <?php
         }
