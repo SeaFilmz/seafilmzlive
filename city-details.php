@@ -135,6 +135,7 @@
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="seattle-actors">Actors</a></div>
               <div class="cityDataPointOfMany"><a href="seattle-athletes">Athletes</a></div>
+              <div class="cityDataPointOfMany"><a href="seattle-musicians">Musicians</a></div>
             </td>
           </tr>
         <?php
