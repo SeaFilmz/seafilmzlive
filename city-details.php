@@ -138,6 +138,17 @@
               <div class="cityDataPointOfMany"><a href="seattle-musicians">Musicians</a></div>
             </td>
           </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Professional Sports Teams</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="http://www.seahawks.com/">Seattle Seahawks</a> (men's football)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.mlb.com/mariners">Seattle Mariners</a> (men's baseball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.soundersfc.com/">Seattle Sounders FC</a> (men's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.nhl.com/kraken">Seattle Kraken</a> (men's hockey)</div>
+              <div class="cityDataPointOfMany"><a href="http://storm.wnba.com/">Seattle Storm</a> (women's basketball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.olreign.com/">OL Reign</a> (women's soccer)</div>
+            </td>
+          </tr>
         <?php
         }
         ?>
@@ -156,6 +167,14 @@
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="portland-oregon-actors">Actors</a></div>
               <div class="cityDataPointOfMany"><a href="portland-oregon-athletes">Athletes</a></div>
+            </td>
+          </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Professional Sports Teams</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="https://www.nba.com/blazers/">Portland Trail Blazers</a> (men's basketball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.timbers.com/">Portland Timbers</a> (men's soccer)</div>
+              <div><a href="https://www.nwslsoccer.com/teams/portland-thorns">Portland Thorns FC</a> (women's soccer)</div>
             </td>
           </tr>
         <?php
