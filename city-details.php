@@ -149,6 +149,10 @@
               <div class="cityDataPointOfMany"><a href="https://www.olreign.com/">OL Reign</a> (women's soccer)</div>
             </td>
           </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Libraries</td>
+            <td class="cityData"><a href="https://www.spl.org/hours-and-locations">List of Libraries</a></td>
+          </tr>
         <?php
         }
         ?>
