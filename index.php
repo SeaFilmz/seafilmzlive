@@ -90,6 +90,8 @@
 
     </main>
 
+    <script src="/js/moviequiz.js" defer></script>
+
 <?php
   // footer display function
   footerTemp();
