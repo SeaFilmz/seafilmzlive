@@ -115,6 +115,8 @@
         <!--link to Total Movie Count-->
 <?php cityMoviesCount('Seattle');
 
+    <script src="/js/movieswatched.js" defer></script>
+
   // footer display function
   footerTemp();
 ?>
