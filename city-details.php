@@ -184,6 +184,11 @@
         <?php
         }
         ?>
+
+        <?php if ($city !== 'Seattle' or $city !== 'Portland') { 
+          cityFilmedMovieTableQuery($city);
+        ?>
+
 			</table>
 		</main>
 
