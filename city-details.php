@@ -187,8 +187,13 @@
 
         <?php if ($city !== 'Seattle' or $city !== 'Portland') { 
           cityFilmedMovieTableQuery($city);
+        }
         ?>
 
+        <?php
+          cityAttractionTableQuery($city, 'College');
+        }
+        ?>
 			</table>
 		</main>
 
