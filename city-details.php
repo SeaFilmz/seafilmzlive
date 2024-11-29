@@ -194,6 +194,11 @@
           cityAttractionTableQuery($city, 'College');
         }
         ?>
+
+        <?php if ($city !== 'Seattle') { 
+          cityAttractionTableQuery($city, 'Library');
+        }  
+        ?>
 			</table>
 		</main>
 
