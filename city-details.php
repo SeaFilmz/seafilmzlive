@@ -198,8 +198,10 @@
           cityAttractionTableQuery($city, 'Library');
         }  
         ?>
+
         <?php
           cityAttractionTableQuery($city, 'Bowling Alley');
+          cityAttractionTableQuery($city, 'Board Game Hangout Store');
         ?>
 			</table>
 		</main>
