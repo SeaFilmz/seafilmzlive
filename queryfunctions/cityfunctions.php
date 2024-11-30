@@ -65,6 +65,36 @@
 ?>
 
 <?php
+  function cityAttractionQuery($city, $attractionType) {
+    global $newconnection;
+
+
+    // 2. Perform database query
+    $query = $newconnection->prepare("SELECT * FROM attractionscity INNER JOIN attractions ON attractions.AttractionID = attractionscity.AttractionID INNER JOIN cities ON cities.CityID = attractionscity.CityID WHERE City = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+
+    $query->bind_param("ss", $city, $attractionType);
+    $query->execute();
+  
+    //Result variable with an error check
+    $result = $query->get_result()
+      or die("Database query failed.");
+
+    // 3. Use returned data (if any)
+    while($attractions = mysqli_fetch_assoc($result)) {
+      // output data from each row
+?>
+
+      <li class="SMTElements"><a href= "<?php echo $attractions["AttractionLink"]; ?>"><?php echo $attractions["AttractionName"]; ?></a></li>
+
+  <?php
+    }
+
+      // 4. Release returned data
+      mysqli_free_result($result);
+  }
+?>
+
+<?php
   function cityAttractionTableQuery($city, $attractionType) {
     global $newconnection, $rows;
 

@@ -181,6 +181,10 @@
               <div><a href="https://www.nwslsoccer.com/teams/portland-thorns">Portland Thorns FC</a> (women's soccer)</div>
             </td>
           </tr>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">Libraries</td>
+            <td class="cityData"><a href="https://seafilmz.com/portland-oregon-libraries">List of Libraries</a></td>
+          </tr>
         <?php
         }
         ?>
@@ -194,7 +198,7 @@
           cityAttractionTableQuery($city, 'College');
         ?>
 
-        <?php if ($city !== 'Seattle') { 
+        <?php if ($city !== 'Seattle' or $city !== 'Portland') { 
           cityAttractionTableQuery($city, 'Library');
         }  
         ?>
