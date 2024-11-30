@@ -53,13 +53,9 @@
             <td class="movieData movieDataDesc">Total Worldwide Gross in US Dollars</td>
             <td class="movieData">$<?php echo number_format($movies["TotalWorldGross"]); ?>
           </tr>
-        <?php
-        }
-        ?>
-
-        <?php
-  }
-  ?>
+        <?php } 
+      
+  } ?>
 
       <?php
         $movieActors = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'actor');
@@ -70,10 +66,8 @@
             while($actors = mysqli_fetch_assoc($movieActors)) {
           ?>
           <td class="movieDataActor"><?php echo $actors["FirstName"]; ?> <?php if ($actors["MiddleInitialName"] != NULL) { echo $actors["MiddleInitialName"]; } ?> <?php echo $actors["LastName"]; ?></td>
-          <?php
-          }
-          ?>
-          <?php
+          <?php }
+          
           // 4. Release returned data
           mysqli_free_result($movieActors);
           ?>
@@ -88,10 +82,8 @@
             while($director = mysqli_fetch_assoc($movieDirector)) {
           ?>
           <td class="movieDataDirector"><?php echo $director["FirstName"]; ?> <?php if ($director["MiddleInitialName"] != NULL) { echo $director["MiddleInitialName"]; } ?> <?php echo $director["LastName"]; ?></td>
-          <?php
-          }
-          ?>
-          <?php
+          <?php }
+
           // 4. Release returned data
           mysqli_free_result($movieDirector);
           ?>
@@ -107,10 +99,8 @@
             while($locations = mysqli_fetch_assoc($filmLocations)) {
           ?>
           <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["City"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["Country"]; ?></td>
-          <?php
-          }
-          ?>
-          <?php
+          <?php }
+          
           // 4. Release returned data
           mysqli_free_result($filmLocations);
           ?>
