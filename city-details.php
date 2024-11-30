@@ -24,9 +24,7 @@
       <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
         <?php if ($cityFact["StateProvinceCapital"] === 1) { ?>
           (State Capital City)
-        <?php
-        }
-        ?>
+        <?php } ?>
       </h2>
 
       <table class="CityTable">
@@ -35,29 +33,27 @@
             <td class="cityData cityDataDesc">Officially Became a City</td>
             <td class="cityData"><?php $date = date_create($cityFact["IncorporatedDate"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
-        <?php
-        }
-        ?>
+        <?php } ?>
+
         <?php if ($cityFact["Country"] === 'USA') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Country</td>
             <td class="cityData"><a href="<?= "{$cityFact["OfficialCountryLinks"]}"; ?>"><?= "United States of America"; ?></a></td>
           </tr>
-        <?php
-        }
-        ?>
+        <?php } ?>
+
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">State</td>
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
+        
         <?php if ($rows === 1) { ?>
           <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">County</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
-          <?php
-          } else if ($StateProvince === 'Alaska') { ?>
+          <?php } else if ($StateProvince === 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">Borough</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
@@ -71,8 +67,7 @@
               <div><a href="https://snohomishcountywa.gov/">Snohomish</a><div>
             </td>
           </tr>
-        <?php 
-        } else if ($city === 'Portland') { ?>
+        <?php } else if ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -81,8 +76,7 @@
               <div><a href="https://www.co.washington.or.us/">Washington</a><div>
             </td>
           </tr>
-        <?php 
-        } else if ($city === 'Milwaukie') { ?>
+        <?php } else if ($city === 'Milwaukie') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -90,8 +84,7 @@
               <div><a href="https://www.clackamas.us/">Clackamas</a><div>
             </td>
           </tr>
-        <?php 
-        } else if ($city === 'Salem') { ?>
+        <?php } else if ($city === 'Salem') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -99,8 +92,7 @@
               <div><a href="https://www.co.polk.or.us/">Polk</a><div>
             </td>
           </tr>
-        <?php
-        } else if ($city === 'Pocatello') { ?>
+        <?php } else if ($city === 'Pocatello') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -108,9 +100,7 @@
               <div><a href="https://www.co.power.id.us/">Power</a><div>
             </td>
           </tr>
-        <?php
-        }
-        ?>
+        <?php } ?>
 
         <?php if ($city === 'Seattle') { ?>
           <tr class="cityDataPointRow">
@@ -153,9 +143,7 @@
             <td class="cityData cityDataDesc">Libraries</td>
             <td class="cityData"><a href="https://www.spl.org/hours-and-locations">List of Libraries</a></td>
           </tr>
-        <?php
-        }
-        ?>
+        <?php } ?>
 
         <?php if ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
@@ -185,25 +173,19 @@
             <td class="cityData cityDataDesc">Libraries</td>
             <td class="cityData"><a href="https://seafilmz.com/portland-oregon-libraries">List of Libraries</a></td>
           </tr>
-        <?php
-        }
-        ?>
+        <?php } ?>
 
-        <?php if ($city !== 'Seattle' or $city !== 'Portland') { 
-          cityFilmedMovieTableQuery($city);
+        <?php 
+          if ($city !== 'Seattle' or $city !== 'Portland') { 
+            cityFilmedMovieTableQuery($city);
         }
-        ?>
 
-        <?php
           cityAttractionTableQuery($city, 'College');
-        ?>
 
-        <?php if ($city !== 'Seattle' or $city !== 'Portland') { 
-          cityAttractionTableQuery($city, 'Library');
-        }  
-        ?>
+          if ($city !== 'Seattle' or $city !== 'Portland') { 
+            cityAttractionTableQuery($city, 'Library');
+        }
 
-        <?php
           cityAttractionTableQuery($city, 'Bowling Alley');
           cityAttractionTableQuery($city, 'Board Game Hangout Store');
           cityAttractionTableQuery($city, 'Golf Course');
