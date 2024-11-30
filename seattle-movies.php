@@ -113,10 +113,11 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php cityMoviesCount('Seattle');
+<?php cityMoviesCount('Seattle'); ?>
 
     <script src="/js/movieswatched.js" defer></script>
 
+<?php
   // footer display function
   footerTemp();
 ?>
