@@ -198,6 +198,9 @@
           cityAttractionTableQuery($city, 'Library');
         }  
         ?>
+        <?php
+          cityAttractionTableQuery($city, 'Bowling Alley');
+        ?>
 			</table>
 		</main>
 
