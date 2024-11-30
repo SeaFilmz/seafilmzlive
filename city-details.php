@@ -105,11 +105,11 @@
         <?php if ($city === 'Seattle') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movie Theaters</td>
-            <td class="cityData"><a href="https://seafilmz.com/seattle-movie-theaters">List of Movie Theaters</a></td>
+            <td class="cityData"><a href="seattle-movie-theaters">List of Movie Theaters</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
-            <td class="cityData"><a href="https://seafilmz.com/seattle-movies">	List of Movies Filmed</a></td>
+            <td class="cityData"><a href="seattle-movies">	List of Movies Filmed</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Other Film and Media Resources for Seattle</td>
@@ -148,11 +148,11 @@
         <?php if ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movie Theaters</td>
-            <td class="cityData"><a href="https://seafilmz.com/portland-oregon-movie-theaters">List of Movie Theaters</a></td>
+            <td class="cityData"><a href="portland-oregon-movie-theaters">List of Movie Theaters</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
-            <td class="cityData"><a href="https://seafilmz.com/portland-oregon-movies">	List of Movies Filmed</a></td>
+            <td class="cityData"><a href="portland-oregon-movies">	List of Movies Filmed</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">People Born</td>
@@ -171,7 +171,7 @@
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Libraries</td>
-            <td class="cityData"><a href="https://seafilmz.com/portland-oregon-libraries">List of Libraries</a></td>
+            <td class="cityData"><a href="portland-oregon-libraries">List of Libraries</a></td>
           </tr>
         <?php } ?>
 
