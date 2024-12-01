@@ -14,17 +14,22 @@
 
     <div class="IdahoCitiesContent">
 
-      <p class="IdahoCitiesLink"><a href="boise-idaho">Boise</a></p>
+      <?php $cities = [
+        "Boise",
+        "Moscow",
+        "Meridian",
+        "Garden City",
+        "Eagle",
+        "Pocatello",
+      ];
 
-      <p class="IdahoCitiesLink"><a href="moscow-idaho">Moscow</a></p>
-
-      <p class="IdahoCitiesLink"><a href="meridian-idaho">Meridian</a></p>
-
-      <p class="IdahoCitiesLink"><a href="garden-city-idaho">Garden City</a></p>
-
-      <p class="IdahoCitiesLink"><a href="eagle-idaho">Eagle</a></p>
-
-      <p class="IdahoCitiesLink"><a href="pocatello-idaho">Pocatello</a></p>
+        for ($i = 0; $i < count(cities); $i++) { 
+          if (str_contains($cities, "")) { ?>
+            <p class="IdahoCitiesLink"><a href="<?= "{strtolower(cities)}-idaho"; ?>"><?= cities[$i]; ?></a></p>
+          <?php } else { ?>
+            <p class="IdahoCitiesLink"><a href="<?= "{str_replace(' ', '-', strtolower(cities)}-idaho"; ?>"><?= cities[$i]; ?></a></p>
+          <?php }
+        } ?>
 
       <p class="IdahoCitiesLink"><a href="coeurdalene-idaho">Coeur d'Alene</a></p>
 
