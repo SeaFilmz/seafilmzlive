@@ -14,11 +14,17 @@
 
     <div class="AlaskaCitiesContent">
 
-      <p class="AlaskaCitiesLink"><a href="anchorage-alaska">Anchorage</a></p>
+      <?php $cities = [
+        "Anchorage",
+        "Juneau",
+        "Fairbanks",
+      ];
 
-      <p class="AlaskaCitiesLink"><a href="juneau-alaska">Juneau</a></p>
-
-      <p class="AlaskaCitiesLink"><a href="fairbanks-alaska">Fairbanks</a></p>
+        for ($i = 0; $i < count(cities); $i++) { 
+          if (str_contains($cities, "")) { ?>
+            <p class="AlaskaCitiesLink"><a href="<?= "{strtolower(cities)}-alaska"; ?>"><?= cities[$i]; ?></a></p>
+          <?php }
+        } ?>
 
     </div>
 
