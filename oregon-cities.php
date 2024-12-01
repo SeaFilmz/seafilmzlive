@@ -7,34 +7,33 @@
   headerTemp();
 ?>
 
-
 		<h2 class="OregonCitiesHeader"><b>Oregon State Cities</b></h2>
 
     <div class="OregonCitiesContent">
 
-      <p class="OregonCitiesLink"><a href="portland-oregon">Portland</a></p>
+      <?php $cities = [
+          "Portland",
+          "Salem",
+          "Eugene",
+          "Gresham",
+          "Happy Valley",
+          "Milwaukie",
+          "Lake Oswego",
+          "Tigard",
+          "Beaverton",
+          "Corvallis",
+        ];
 
-      <p class="OregonCitiesLink"><a href="salem-oregon">Salem</a></p>
-
-      <p class="OregonCitiesLink"><a href="eugene-oregon">Eugene</a></p>
-
-      <p class="OregonCitiesLink"><a href="gresham-oregon">Gresham</a></p>
-
-      <p class="OregonCitiesLink"><a href="happy-valley-oregon">Happy Valley</a></p>
-
-      <p class="OregonCitiesLink"><a href="milwaukie-oregon">Milwaukie</a></p>
-
-      <p class="OregonCitiesLink"><a href="lake-oswego-oregon">Lake Oswego</a></p>
-
-      <p class="OregonCitiesLink"><a href="tigard-oregon">Tigard</a></p>
-
-      <p class="OregonCitiesLink"><a href="beaverton-oregon">Beaverton</a></p>
-
-      <p class="OregonCitiesLink"><a href="corvallis-oregon">Corvallis</a></p>      
+        for ($i = 0; $i < count(cities); $i++) { 
+          if (str_contains($cities, "")) { ?>
+            <p class="OregonCitiesLink"><a href="<?= "{strtolower(cities)}-oregon"; ?>"><?= cities[$i]; ?></a></p>
+          <?php } else { ?>
+            <p class="OregonCitiesLink"><a href="<?= "{str_replace(' ', '-', strtolower(cities)}-oregon"; ?>"><?= cities[$i]; ?></a></p>
+          <?php }
+        } ?>
 
     </div>
 
-    
 <?php
   // footer display function
   footerTemp();
