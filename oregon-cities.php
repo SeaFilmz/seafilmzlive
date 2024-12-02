@@ -7,33 +7,17 @@
   headerTemp();
 ?>
 
-		<h2 class="OregonCitiesHeader"><b>Oregon State Cities</b></h2>
+    <h2 class="OregonCitiesHeader"><b>Oregon State Cities</b></h2>
 
     <div class="OregonCitiesContent">
 
-      <?php $cities = [
-          "Portland",
-          "Salem",
-          "Eugene",
-          "Gresham",
-          "Happy Valley",
-          "Milwaukie",
-          "Lake Oswego",
-          "Tigard",
-          "Beaverton",
-          "Corvallis",
-        ];
-
-        for ($i = 0; $i < count(cities); $i++) { 
-          if (str_contains($cities, "")) { ?>
-            <p class="OregonCitiesLink"><a href="<?= "{strtolower(cities)}-oregon"; ?>"><?= cities[$i]; ?></a></p>
-          <?php } else { ?>
-            <p class="OregonCitiesLink"><a href="<?= "{str_replace(' ', '-', strtolower(cities)}-oregon"; ?>"><?= cities[$i]; ?></a></p>
-          <?php }
-        } ?>
+      <?php
+        require_once 'queryfunctions/statecitiesfunction.php';
+        stateCitiesQuery("Oregon");
+      ?>
 
     </div>
-
+    
 <?php
   // footer display function
   footerTemp();
