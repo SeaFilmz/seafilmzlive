@@ -9,40 +9,44 @@
 
   <main>
 
+    <?php function StreamingServiceList($link, $name) { ?>
+      <li class="StreamingServicesName"><a href="<?= $link; ?>"><?= $name; ?></a></li>
+    <?php } ?>
+
     <h2>Where to Watch Seattle Movies:</h2>
     <h3 class="subheader">List of Major Streaming Services</h3>
 
     <ul class="StreamingServices">
-      <li class="StreamingServicesName"><a href="https://tubitv.com">Tubi</a></li>
+    <?php 
+        StreamingServiceList("https://tubitv.com", "Tubi");
 
-      <li class="StreamingServicesName"><a href="https://www.starz.com/us/en/">Starz</a></li>
+        StreamingServiceList("https://www.starz.com/us/en/", "Starz");
 
-      <li class="StreamingServicesName"><a href="https://www.peacocktv.com">Peacock</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.paramountpluswithshowtime.com/">Paramount + with Showtime</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.paramountplus.com">Paramount+</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.netflix.com">Netflix</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.max.com/">Max</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.hulu.com/welcome">Hulu</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.amazon.com/gp/video/splash/freevee_findus">Freevee</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.disneyplus.com">Disney+</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.discoveryplus.com">Discovery+</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.apple.com/apple-tv-plus/">Apple TV+</a></li>
-      
-      <li class="StreamingServicesName"><a href="https://www.amazon.com/gp/video/storefront">Amazon Prime Video</a></li>
+        StreamingServiceList("https://www.peacocktv.com", "Peacock");
+
+        StreamingServiceList("https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime");
+
+        StreamingServiceList("https://www.paramountplus.com", "Paramount+");
+
+        StreamingServiceList("https://www.netflix.com", "Netflix");
+
+        StreamingServiceList("https://www.max.com/", "Max");
+
+        StreamingServiceList("https://www.hulu.com/welcome", "Hulu");
+
+        StreamingServiceList("https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee");
+
+        StreamingServiceList("https://www.disneyplus.com", "Disney+");
+
+        StreamingServiceList("https://www.discoveryplus.com", "Discovery+");
+
+        StreamingServiceList("https://www.apple.com/apple-tv-plus/", "Apple TV+");
+
+        StreamingServiceList("https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video");
+      ?>
     </ul>
 
   </main>
 
 <!--link to footer-->
-<?php
-footerTemp();
-?>
+<?php footerTemp(); ?>
