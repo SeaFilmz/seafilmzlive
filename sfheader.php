@@ -8,18 +8,24 @@
         <span class="bar3"></span>
       </div>
 
+      <?php $mobileNavItems = [
+        ["seattle-movies", "Movies Filmed in Seattle by Title or Year Released"],
+        ["seattle-movies-runtime", "Movies Filmed in Seattle by Runtime"],
+        ["seattle-movies-gross", "Movies Filmed in Seattle by Total Worldwide Gross"],
+        ["seattle-actors", "Seattle Born Actors by First Name or Birthdate"],
+        ["seattle-musicians", "Seattle Born Musicians"],
+        ["seattle-athletes", "Seattle Born Athletes"],
+        ["seattle-washington", "Seattle Facts"],
+        ["washington-cities", "Washington State Cities"],
+        ["oregon-cities", "Oregon State Cities"],
+        ["idaho-cities", "Idaho State Cities"],
+        ["alaska-cities", "Alaska State Cities"],
+      ]; ?>
+      
       <nav class="MobileNav">
-        <p><a href="seattle-movies">Movies Filmed in Seattle by Title or Year Released</a></p>
-        <p><a href="seattle-movies-runtime">Movies Filmed in Seattle by Runtime</a></p>
-        <p><a href="seattle-movies-gross">Movies Filmed in Seattle by Total Worldwide Gross</a></p>
-        <p><a href="seattle-actors">Seattle Born Actors by First Name or Birthdate</a></p>
-        <p><a href="seattle-musicians">Seattle Born Musicians</a></p>
-        <p><a href="seattle-athletes">Seattle Born Athletes</a></p>
-        <p><a href="seattle-washington">Seattle Facts</a></p>
-        <p><a href="washington-cities">Washington State Cities</a></p>
-        <p><a href="oregon-cities">Oregon State Cities</a></p>
-        <p><a href="idaho-cities">Idaho State Cities</a></p>
-        <p><a href="alaska-cities">Alaska State Cities</a></p>
+        <?php for ($i = 0; $i < count($mobileNavItems); $i++) { ?>
+            <p><a href="<?= "{$mobileNavItems[$i][0]}"; ?>"><?= $mobileNavItems[$i][1]; ?></a></p>
+        <?php } ?>
       </nav>
 
       <nav class="navigation">
