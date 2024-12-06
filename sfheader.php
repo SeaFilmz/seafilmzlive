@@ -43,23 +43,20 @@
         <div class="dropdown">
           <span class="NavMove">Washington City Facts</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="seattle">Seattle</a></p>
+          <p><a href="seattle-washington">Seattle</a></p>
             <p><a href="shoreline-washington">Shoreline</a></p>
-            <p><a href="lake-forest-park-washington">Lake Forest Park</a></p>
             <p><a href="tukwila-washington">Tukwila</a></p>
-            <p><a href="burien-washington">Burien</a></p>
             <p><a href="seatac-washington">SeaTac</a></p>
             <p><a href="mercer-island-washington">Mercer Island</a></p>
             <p><a href="medina-washington">Medina</a></p>
             <p><a href="bellevue-washington">Bellevue</a></p>
             <p><a href="renton-washington">Renton</a></p>
-            <p><a href="kirkland-washington">Kirkland</a></p>
-            <p><a href="kenmore-washington">Kenmore</a></p>
             <p><a href="everett-washington">Everett</a></p>
             <p><a href="tacoma-washington">Tacoma</a></p>
             <p><a href="olympia-washington">Olympia</a></p>
-            <p><a href="spokane-washington">Spokane</a></p>
             <p><a href="vancouver-washington">Vancouver</a></p>
+            <p><a href="spokane-washington">Spokane</a></p>
+            <p><a href="washington-cities">More Cities</a></p>
           </div>
         </div>
         <div class="dropdown">
