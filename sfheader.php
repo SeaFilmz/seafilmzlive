@@ -72,6 +72,8 @@
             <p><a href="milwaukie-oregon">Milwaukie</a></p>
             <p><a href="lake-oswego-oregon">Lake Oswego</a></p>
             <p><a href="tigard-oregon">Tigard</a></p>
+            <p><a href="beaverton-oregon">Beaverton</a></p>   
+            <p><a href="corvallis-oregon">Corvallis</a></p>
             <p><a href="eugene-oregon">Eugene</a></p>
           </div>
         </div>
