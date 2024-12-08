@@ -182,7 +182,7 @@
 
           cityAttractionTableQuery($city, 'College');
 
-          if ($city !== 'Seattle' or $city !== 'Portland') { 
+          if ($StateProvince === "Idaho" or $StateProvince === "Alaska" or ($StateProvince === "Oregon" and $city !== "Portland") or ($StateProvince === "Washington" and $city !== "Seattle")) { 
             cityAttractionTableQuery($city, 'Library');
         }
 
