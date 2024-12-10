@@ -9,7 +9,7 @@
 
     <h2 class="ActorsPageHeader">
       <b>
-        <a href="seattleactors">New Actors Data UI Beta</a>
+        <a href="seattle-actors-beta">New Actors Data UI Beta</a>
       </b>
     </h2>
 
