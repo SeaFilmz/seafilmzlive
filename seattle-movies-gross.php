@@ -9,7 +9,7 @@
 
     <h2 class="MoviesPageHeader">
       <b>
-        <a href="seattlemovies">New Movie Data UI Beta</a>
+        <a href="seattle-movies-beta">New Movie Data UI Beta</a>
       </b>
     </h2>
 
