@@ -9,7 +9,7 @@
 
     <h2 class="AthletesPageHeader">
       <b>
-        <a href="seattleathletes">New Athletes Data UI Beta</a>
+        <a href="seattle-athletes-beta">New Athletes Data UI Beta</a>
       </b>
     </h2>
 
