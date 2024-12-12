@@ -37,7 +37,7 @@
         </table>
         </div>
 
-<?php  } 
+<?php  }
 
   function cityRuntimeCount($cityRt) {
     global $newconnection;
@@ -108,7 +108,7 @@ function cityRuntimeCountHours($cityRt) {
         <?php
           if ($movies["SUM(RunTime)"] % 60 == 0) { ?>
             <td class="MovieTotalRuntimeNumber"><?= number_format($movies["SUM(RunTime)"]/60); ?> Hours</td>
-          <?php } else { 
+          <?php } else {
             $totalRuntimeHours = floor($movies["SUM(RunTime)"]/60);
             $totalRuntimeHoursFormated = number_format($totalRuntimeHours);
             $remainingRuntimeMintues = $movies["SUM(RunTime)"] - ($totalRuntimeHours * 60);
@@ -192,13 +192,11 @@ function cityRuntimeAvgHours($cityRtAvg) {
               // output data from each row
       ?>
 
-
-
     <tr class="MoviesContent">
       <th class="MovieTotalRuntimeRowHeader">Average Seattle Movie Runtime</th>
         <?php if ($movies["AVG(RunTime)"] / 60 === 0) { ?>
           <td class="MovieTotalRuntimeNumber"><?= number_format($movies["AVG(RunTime)"]/60); ?> Hours</td>
-        <?php } else { 
+        <?php } else {
           $averageRuntimeHours = floor($movies["AVG(RunTime)"]/60);
           $averageRuntimeHoursFormated = number_format($averageRuntimeHours);
           $remainingAverageRuntimeMinutes = $movies["AVG(RunTime)"] - ($averageRuntimeHours * 60);
@@ -286,7 +284,7 @@ function cityRuntimeShortestHours($cityRtShortest) {
       <th class="MovieTotalRuntimeRowHeader">Shortest Seattle Movie Runtime</th>
       <?php if ($movies["MIN(RunTime)"] % 60 == 0) { ?>
         <td class="MovieTotalRuntimeNumber"><?php $movies["MIN(RunTime)"]/60; ?> Hours</td>
-      <?php } else { 
+      <?php } else {
         $shortestRuntimeHours = floor($movies["MIN(RunTime)"]/60);
         $shortestRuntimeHoursFormated = number_format($shortestRuntimeHours);
         $remainingShortestRuntimeMinutes = $movies["MIN(RunTime)"] - ($shortestRuntimeHours * 60);

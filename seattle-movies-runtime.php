@@ -1,8 +1,8 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Seattle Movies by Runtime - SeaFilmz'; 
+  $title = 'Seattle Movies by Runtime - SeaFilmz';
   $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by runtime.';
-  $body = 'MainBody';  
+  $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
 ?>
@@ -54,7 +54,7 @@
         </table>
         </div>
 
-<?php 
+<?php
   require 'queryfunctions/moviefunctions.php';
   cityRuntimeCount('Seattle');
   cityRuntimeAvg('Seattle');

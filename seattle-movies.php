@@ -1,8 +1,8 @@
 <?php
-  $title = 'Seattle Movies by Title or Year - SeaFilmz'; 
+  $title = 'Seattle Movies by Title or Year - SeaFilmz';
   $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by title or by year.';
   $body = 'MainBody';
-  /*link to the start of a seafilmz general web page template*/  
+  /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
   headerTemp();
 ?>
@@ -59,7 +59,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php 
+<?php
   require 'queryfunctions/moviefunctions.php';
   cityMoviesCount('Seattle');
 ?>

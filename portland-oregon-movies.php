@@ -1,8 +1,8 @@
 <?php
-  $title = 'Portland, Oregon Movies by Title or Year - SeaFilmz'; 
+  $title = 'Portland, Oregon Movies by Title or Year - SeaFilmz';
   $mDesc = 'List of movies filmed fully or partly in the city of Portland, Oregon organized by title or by year.';
   $body = 'MainBody';
-  /*link to the start of a seafilmz general web page template*/  
+  /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
   headerTemp();
 ?>
@@ -23,7 +23,7 @@
       </tr>
 
         <?php
-            // 2. Perform database query
+            // 2. Perform database querylike
             $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ORDER BY MovieTitle ASC ");
 
             $city = 'Portland';
@@ -43,7 +43,7 @@
         <td class="MovieCountCheckbox">
           <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
           <label for="movieCheckboxes"></label>
-        </td>   
+        </td>
         <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
@@ -59,7 +59,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php 
+<?php
   require 'queryfunctions/moviefunctions.php';
   cityMoviesCount('Portland');
 ?>

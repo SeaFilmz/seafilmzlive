@@ -1,5 +1,5 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php 
+<?php
   require_once 'new_db_connection.php';
 
   $movieSLUGPart = $_SERVER['REQUEST_URI'];
@@ -8,7 +8,7 @@
   require_once 'queryfunctions/moviefunctions.php';
   $result = individualMovieFactPageQuery(trim($movieSLUGPartFixed));
 
-  // 3. Use returned data (if any) 
+  // 3. Use returned data (if any)
   if($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
   
@@ -41,7 +41,7 @@
               echo $diff . ' Years';
             ?>
           </td>
-        </tr>        
+        </tr>
 
         <tr class="movieDataPointRow">
           <td class="movieData  movieDataDesc">Run Time</td>
@@ -53,7 +53,7 @@
             <td class="movieData movieDataDesc">Total Worldwide Gross in US Dollars</td>
             <td class="movieData">$<?php echo number_format($movies["TotalWorldGross"]); ?>
           </tr>
-        <?php } 
+        <?php }
       
   } ?>
 
@@ -62,7 +62,7 @@
       ?>
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Main Actors</td>
-          <?php 
+          <?php
             while($actors = mysqli_fetch_assoc($movieActors)) {
           ?>
           <td class="movieDataActor"><?php echo $actors["FirstName"]; ?> <?php if ($actors["MiddleInitialName"] != NULL) { echo $actors["MiddleInitialName"]; } ?> <?php echo $actors["LastName"]; ?></td>
@@ -105,7 +105,7 @@
           mysqli_free_result($filmLocations);
           ?>
         </tr>
-      </table>  
+      </table>
 
   <?php
   // 4. Release returned data

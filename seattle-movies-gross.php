@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Seattle Movies by Box Office Gross - SeaFilmz'; 
+  $title = 'Seattle Movies by Box Office Gross - SeaFilmz';
   $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by total worldwide gross in US dollars.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -54,7 +54,7 @@
     </table>
     </div>
 
-<?php 
+<?php
   require 'queryfunctions/moviefunctions.php';
   cityMovieGrossTotal('Seattle');
   cityMovieHighestGrossTotal('Seattle');
