@@ -1,5 +1,5 @@
 <?php
-  $title = 'Portland, Oregon Libraries - SeaFilmz'; 
+  $title = 'Portland, Oregon Libraries - SeaFilmz';
   $mDesc = 'List of Libraries in the city of Portland, Oregon.';
   $body = 'MainBody';
   /*link to the start of a seafilmz general webpage template*/
