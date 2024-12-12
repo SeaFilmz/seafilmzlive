@@ -31,7 +31,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($musician = mysqli_fetch_assoc($result)) {
+            while ($musician = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 

@@ -42,7 +42,7 @@
         <td class="cityData">
 <?php
       // 3. Use returned data (if any)
-      while($movies = mysqli_fetch_assoc($result)) {
+      while ($movies = mysqli_fetch_assoc($result)) {
         // output data from each row
 ?>
 
@@ -80,7 +80,7 @@
       or die("Database query failed.");
 
     // 3. Use returned data (if any)
-    while($attractions = mysqli_fetch_assoc($result)) {
+    while ($attractions = mysqli_fetch_assoc($result)) {
       // output data from each row
 ?>
 
@@ -120,7 +120,7 @@
         <td class="cityData">
 <?php
     // 3. Use returned data (if any)
-    while($attractions = mysqli_fetch_assoc($result)) {
+    while ($attractions = mysqli_fetch_assoc($result)) {
       // output data from each row
 ?>
 

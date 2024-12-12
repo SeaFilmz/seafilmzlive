@@ -20,7 +20,7 @@
               or die("Database query failed.");
             
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -60,7 +60,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -100,7 +100,7 @@ function cityRuntimeCountHours($cityRt) {
             or die("Database query failed.");
 
           // 3. Use returned data (if any)
-          while($movies = mysqli_fetch_assoc($result)) {
+          while ($movies = mysqli_fetch_assoc($result)) {
               // output data from each row
       ?>
 
@@ -148,7 +148,7 @@ function cityRuntimeAvg($cityRtAvg) {
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -188,7 +188,7 @@ function cityRuntimeAvgHours($cityRtAvg) {
             or die("Database query failed.");
 
           // 3. Use returned data (if any)
-          while($movies = mysqli_fetch_assoc($result)) {
+          while ($movies = mysqli_fetch_assoc($result)) {
               // output data from each row
       ?>
 
@@ -236,7 +236,7 @@ function cityRuntimeShortest($cityRtShortest) {
             or die("Database query failed.");
 
           // 3. Use returned data (if any)
-          while($movies = mysqli_fetch_assoc($result)) {
+          while ($movies = mysqli_fetch_assoc($result)) {
               // output data from each row
       ?>
 
@@ -276,7 +276,7 @@ function cityRuntimeShortestHours($cityRtShortest) {
             or die("Database query failed.");
 
           // 3. Use returned data (if any)
-          while($movies = mysqli_fetch_assoc($result)) {
+          while ($movies = mysqli_fetch_assoc($result)) {
               // output data from each row
       ?>
 
@@ -324,7 +324,7 @@ function cityRuntimeLongest($cityRtLongest) {
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -364,7 +364,7 @@ function cityRuntimeLongestHours($cityRtLongest) {
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -414,7 +414,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -454,7 +454,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 

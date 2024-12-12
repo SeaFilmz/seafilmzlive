@@ -63,7 +63,7 @@
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Main Actors</td>
           <?php
-            while($actors = mysqli_fetch_assoc($movieActors)) {
+            while ($actors = mysqli_fetch_assoc($movieActors)) {
           ?>
           <td class="movieDataActor"><?php echo $actors["FirstName"]; ?> <?php if ($actors["MiddleInitialName"] != NULL) { echo $actors["MiddleInitialName"]; } ?> <?php echo $actors["LastName"]; ?></td>
           <?php }
@@ -79,7 +79,7 @@
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Director</td>
           <?php 
-            while($director = mysqli_fetch_assoc($movieDirector)) {
+            while ($director = mysqli_fetch_assoc($movieDirector)) {
           ?>
           <td class="movieDataDirector"><?php echo $director["FirstName"]; ?> <?php if ($director["MiddleInitialName"] != NULL) { echo $director["MiddleInitialName"]; } ?> <?php echo $director["LastName"]; ?></td>
           <?php }
@@ -96,7 +96,7 @@
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Filming Location</td>
           <?php
-            while($locations = mysqli_fetch_assoc($filmLocations)) {
+            while ($locations = mysqli_fetch_assoc($filmLocations)) {
           ?>
           <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["City"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["Country"]; ?></td>
           <?php }

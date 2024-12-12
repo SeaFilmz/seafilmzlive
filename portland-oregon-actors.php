@@ -36,7 +36,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($actors = mysqli_fetch_assoc($result)) {
+            while ($actors = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
@@ -86,7 +86,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($actors = mysqli_fetch_assoc($result)) {
+            while ($actors = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
