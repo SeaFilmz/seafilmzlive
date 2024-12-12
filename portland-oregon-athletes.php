@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Portland, Oregon Athletes - SeaFilmz'; 
+  $title = 'Portland, Oregon Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Portland, Oregon organized by sport then by first name.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -58,10 +58,10 @@
     </div>
 
     <!--link to Total Athletes Count-->
-    <?php 
+    <?php
   require 'queryfunctions/athletefunctions.php';
   cityAthletesCount('Portland', 'athlete');
-?>   
+?>
 
 <?php
   // footer display function

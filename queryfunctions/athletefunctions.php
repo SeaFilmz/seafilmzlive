@@ -13,7 +13,7 @@
             $query = $newconnection->prepare("SELECT COUNT(*) athletecount FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE City = ? AND Jobs = ? AND FirstName IS NOT NULL ");
             
             $query->bind_param("ss", $city, $job);
-            $query->execute();         
+            $query->execute();
 
             //Result variable with an error check
             $result = $query->get_result()

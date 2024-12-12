@@ -13,7 +13,7 @@
             $query = $newconnection->prepare("SELECT COUNT(*) actorcount FROM peoplesjobs INNER JOIN peoples ON peoples.PeopleID = peoplesjobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoplesjobs.JobID INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE City = ? AND Jobs = ? AND FirstName IS NOT NULL ");
             
             $query->bind_param("ss", $city, $job);
-            $query->execute();         
+            $query->execute();
 
             //Result variable with an error check
             $result = $query->get_result()
@@ -47,7 +47,7 @@
     $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE FirstName = ? AND LastName = ? ");
     
     $query->bind_param("ss", $actorFirstName, $actorLastName);
-    $query->execute(); 
+    $query->execute();
 
     //Result variable with an error check
     $result = $query->get_result()

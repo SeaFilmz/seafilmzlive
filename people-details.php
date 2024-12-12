@@ -9,20 +9,20 @@
   require_once 'queryfunctions/peoplefunctions.php';
   $result = newIndividualPeopleFactPageQuery(trim($peopleSLUGPartFixed));
 
-  // 3. Use returned data (if any) 
+  // 3. Use returned data (if any)
   if($people = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {  
-    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz'; 
+  if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
+    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
     $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born athlete.';
   }
-  else if (($people["FirstName"] and $people["LastName"]) != NULL) {  
-    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz'; 
+  else if (($people["FirstName"] and $people["LastName"]) != NULL) {
+    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
     $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born actor.';
   }
   else if ($people["MusicianName"] != NULL) {
-    $title = $people["MusicianName"] . ' - SeaFilmz'; 
+    $title = $people["MusicianName"] . ' - SeaFilmz';
     $mDesc = $people["MusicianName"] . ' is a Seattle born musician.';
   }
   $body = 'MainBody';
@@ -37,19 +37,19 @@
           <b class="PeopleName"><?php echo $people["MiddleInitialName"]; ?></b>
         <?php } ?>
         <?php echo $people["LastName"]; ?></h2>
-      <?php } 
+      <?php }
       else if ($people["MusicianName"] != NULL) { ?>
         <h2 class="PeopleName"><?php echo $people["MusicianName"]; ?></h2>
       <?php } ?>
 
       <table class="IndividualPeopleTable">
-        <?php if ($people["BirthName"] !== NULL) { ?> 
+        <?php if ($people["BirthName"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Name</td>
             <td class="peopleData"><?php echo $people["BirthName"]; ?></td>
           </tr>
-        <?php 
-        } 
+        <?php
+        }
         ?>
         <?php if ($people["BirthDate"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
@@ -77,7 +77,7 @@
             </td>
           </tr>
         <?php
-        } else if ($people["BirthDate"] != NULL) {  
+        } else if ($people["BirthDate"] != NULL) {
         ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Age</td>

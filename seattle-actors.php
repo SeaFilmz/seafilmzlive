@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Seattle Actors by First Name- SeaFilmz'; 
+  $title = 'Seattle Actors by First Name- SeaFilmz';
   $mDesc = 'List of actors born is the city of Seattle organized by first name.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -13,7 +13,7 @@
       </b>
     </h2>
 
-    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>     
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Seattle by First Name</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">
@@ -49,7 +49,7 @@
             }
         ?>
 
-        <?php            
+        <?php       
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -58,7 +58,7 @@
       </div>
 
     <!--link to Total Actors Count-->
-<?php 
+<?php
   require 'queryfunctions/actorfunctions.php';
   cityActorsCount('Seattle', 'actor');
 ?>
@@ -99,7 +99,7 @@
             }
         ?>
 
-        <?php    
+        <?php 
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
