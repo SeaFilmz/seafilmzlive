@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Where to Watch Seattle Movies - SeaFilmz'; 
+  $title = 'Where to Watch Seattle Movies - SeaFilmz';
   $mDesc = 'This is a list of streaming services that might have Seattle movies you can watch.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -17,7 +17,7 @@
     <h3 class="subheader">List of Major Streaming Services</h3>
 
     <ul class="StreamingServices">
-    <?php 
+    <?php
         StreamingServiceList("https://tubitv.com", "Tubi");
 
         StreamingServiceList("https://www.starz.com/us/en/", "Starz");
