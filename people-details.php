@@ -17,11 +17,11 @@
     $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
     $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born athlete.';
   }
-  else if (($people["FirstName"] and $people["LastName"]) != NULL) {
+  elseif (($people["FirstName"] and $people["LastName"]) != NULL) {
     $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
     $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born actor.';
   }
-  else if ($people["MusicianName"] != NULL) {
+  elseif ($people["MusicianName"] != NULL) {
     $title = $people["MusicianName"] . ' - SeaFilmz';
     $mDesc = $people["MusicianName"] . ' is a Seattle born musician.';
   }
@@ -38,7 +38,7 @@
         <?php } ?>
         <?php echo $people["LastName"]; ?></h2>
       <?php }
-      else if ($people["MusicianName"] != NULL) { ?>
+      elseif ($people["MusicianName"] != NULL) { ?>
         <h2 class="PeopleName"><?php echo $people["MusicianName"]; ?></h2>
       <?php } ?>
 
@@ -77,7 +77,7 @@
             </td>
           </tr>
         <?php
-        } else if ($people["BirthDate"] != NULL) {
+        } elseif ($people["BirthDate"] != NULL) {
         ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Age</td>
