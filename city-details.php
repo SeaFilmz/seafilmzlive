@@ -53,13 +53,13 @@
               <td class="cityData cityDataDesc">County</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
-          <?php } else if ($StateProvince === 'Alaska') { ?>
+          <?php } elseif ($StateProvince === 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">Borough</td>
               <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
           <?php }
-        } else if ($city === 'Bothell') { ?>
+        } elseif ($city === 'Bothell') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -67,7 +67,7 @@
               <div><a href="https://snohomishcountywa.gov/">Snohomish</a><div>
             </td>
           </tr>
-        <?php } else if ($city === 'Portland') { ?>
+        <?php } elseif ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -76,7 +76,7 @@
               <div><a href="https://www.co.washington.or.us/">Washington</a><div>
             </td>
           </tr>
-        <?php } else if ($city === 'Milwaukie') { ?>
+        <?php } elseif ($city === 'Milwaukie') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -84,7 +84,7 @@
               <div><a href="https://www.clackamas.us/">Clackamas</a><div>
             </td>
           </tr>
-        <?php } else if ($city === 'Salem') { ?>
+        <?php } elseif ($city === 'Salem') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
@@ -92,7 +92,7 @@
               <div><a href="https://www.co.polk.or.us/">Polk</a><div>
             </td>
           </tr>
-        <?php } else if ($city === 'Pocatello') { ?>
+        <?php } elseif ($city === 'Pocatello') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
