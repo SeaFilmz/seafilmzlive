@@ -58,7 +58,7 @@
     </div>
 
     <!--link to Total Athletes Count-->
-    <?php 
+    <?php
   require 'queryfunctions/athletefunctions.php';
   cityAthletesCount('Seattle', 'athlete');
 ?>

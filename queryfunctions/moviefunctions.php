@@ -372,7 +372,7 @@ function cityRuntimeLongestHours($cityRtLongest) {
         <th class="MovieTotalRuntimeRowHeader">Longest Seattle Movie Runtime</th>
         <?php if ($movies["MAX(RunTime)"] % 60 == 0) { ?>
           <td class="MovieTotalRuntimeNumber"><?php $movies["MAX(RunTime)"]/60; ?> Hours</td>
-        <?php } else { 
+        <?php } else {
           $longestRuntimeHours = floor($movies["MAX(RunTime)"]/60);
           $longestRuntimeHoursFormated = number_format($longestRuntimeHours);
           $remainingLongestRuntimeMinutes = $movies["MAX(RunTime)"] - ($longestRuntimeHours * 60);
@@ -407,7 +407,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
             $query = $newconnection->prepare("SELECT SUM(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN filminglocations ON filminglocations.FilmingLocationID = moviesfilminglocation.FilmingLocationID WHERE City = ? ");
             
             $query->bind_param("s", $cityGrossTotal);
-            $query->execute();            
+            $query->execute();
             
             //Result variable with an error check
             $result = $query->get_result()
@@ -447,7 +447,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
             $query = $newconnection->prepare("SELECT MAX(TotalWorldGross) FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ");
             
             $query->bind_param("s", $cityHighestGrossTotal);
-            $query->execute();            
+            $query->execute();
             
             //Result variable with an error check
             $result = $query->get_result()

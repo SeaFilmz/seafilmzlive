@@ -23,7 +23,7 @@
       <body class=<?php echo $body; ?>>
 
         <!--link to header-->
-<?php 
+<?php
         require_once 'sfheader.php';
 
   }

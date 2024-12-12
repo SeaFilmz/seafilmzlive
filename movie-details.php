@@ -78,7 +78,7 @@
       ?>
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Director</td>
-          <?php 
+          <?php
             while ($director = mysqli_fetch_assoc($movieDirector)) {
           ?>
           <td class="movieDataDirector"><?php echo $director["FirstName"]; ?> <?php if ($director["MiddleInitialName"] != NULL) { echo $director["MiddleInitialName"]; } ?> <?php echo $director["LastName"]; ?></td>
