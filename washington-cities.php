@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Washington State Cities - SeaFilmz'; 
+  $title = 'Washington State Cities - SeaFilmz';
   $mDesc = 'List of important Washington state cities.';
   $body = 'MainBody';
   require_once 'sftemplate.php';

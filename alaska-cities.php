@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Alaska State Cities - SeaFilmz'; 
+  $title = 'Alaska State Cities - SeaFilmz';
   $mDesc = 'List of important Alaska cities.';
   $body = 'MainBody';
   require_once 'sftemplate.php';

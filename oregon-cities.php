@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Oregon State Cities - SeaFilmz'; 
+  $title = 'Oregon State Cities - SeaFilmz';
   $mDesc = 'List of important Oregon cities.';
   $body = 'MainBody';
   require_once 'sftemplate.php';

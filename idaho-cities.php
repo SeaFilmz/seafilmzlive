@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Idaho State Cities - SeaFilmz'; 
+  $title = 'Idaho State Cities - SeaFilmz';
   $mDesc = 'List of important Idaho cities.';
   $body = 'MainBody';
   require_once 'sftemplate.php';

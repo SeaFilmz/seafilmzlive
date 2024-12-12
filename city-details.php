@@ -1,5 +1,5 @@
 <!--link to the start of a seafilmz general webpage template-->
-<?php 
+<?php
   require_once 'new_db_connection.php';
 
   $cityStateSLUGPart = $_SERVER['REQUEST_URI'];
@@ -28,7 +28,7 @@
       </h2>
 
       <table class="CityTable">
-        <?php if ($cityFact["IncorporatedDate"] !== NULL) { ?> 
+        <?php if ($cityFact["IncorporatedDate"] !== NULL) { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Officially Became a City</td>
             <td class="cityData"><?php $date = date_create($cityFact["IncorporatedDate"]); echo date_format($date, "F d, Y"); ?></td>
@@ -175,14 +175,14 @@
           </tr>
         <?php } ?>
 
-        <?php 
-          if ($city !== 'Seattle' or $city !== 'Portland') { 
+        <?php
+          if ($city !== 'Seattle' or $city !== 'Portland') {
             cityFilmedMovieTableQuery($city);
         }
 
           cityAttractionTableQuery($city, 'College');
 
-          if ($StateProvince === "Idaho" or $StateProvince === "Alaska" or ($StateProvince === "Oregon" and $city !== "Portland") or ($StateProvince === "Washington" and $city !== "Seattle")) { 
+          if ($StateProvince === "Idaho" or $StateProvince === "Alaska" or ($StateProvince === "Oregon" and $city !== "Portland") or ($StateProvince === "Washington" and $city !== "Seattle")) {
             cityAttractionTableQuery($city, 'Library');
         }
 
