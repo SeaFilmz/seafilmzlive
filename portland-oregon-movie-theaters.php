@@ -1,5 +1,5 @@
 <?php
-  $title = 'Portland, Oregon Movie Theaters - SeaFilmz'; 
+  $title = 'Portland, Oregon Movie Theaters - SeaFilmz';
   $mDesc = 'List of movie theaters in the city of Portland, Oregon.';
   $body = 'MainBody';
   /*link to the start of a seafilmz general webpage template*/

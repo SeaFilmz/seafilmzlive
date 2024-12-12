@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = "Seattle Movie Theaters - SeaFilmz"; 
+  $title = "Seattle Movie Theaters - SeaFilmz";
   $mDesc = "List of the movie theaters in the city of Seattle.";
   $body = 'MainBody';
   require_once 'sftemplate.php';
