@@ -1,5 +1,5 @@
 <?php
-  $title = 'SeaFilmz Built With'; 
+  $title = 'SeaFilmz Built With';
   $mDesc = 'A list of the tools used to build the SeaFilmz website.';
   $body = 'MainBody';
   /*link to the start of a seafilmz general web page template*/

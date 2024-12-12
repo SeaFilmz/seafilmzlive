@@ -1,12 +1,11 @@
 <?php
-  $title = 'SeaFilmz - 6 Degrees of Seattle'; 
+  $title = 'SeaFilmz - 6 Degrees of Seattle';
   $mDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
   $body = 'HomePage';
   /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
   headerTemp();
 ?>
-
 
     <main class="HomePageContent">
 
@@ -37,7 +36,7 @@
             <input type="radio" name="answer1" value="false" id="falseAnswer1">
             <label for="falseAnswer1"> False</label><br>
 
-          <p class="sfQ"><b>The Ring was released in 2002.</b></p> 
+          <p class="sfQ"><b>The Ring was released in 2002.</b></p>
 
             <input type="radio" name="answer2" value="true" id="trueAnswer2">
             <label for="trueAnswer2"> True</label><br>
@@ -51,7 +50,7 @@
             <label for="trueAnswer3"> True</label><br>
 
             <input type="radio" name="answer3" value="false" id="falseAnswer3">
-            <label for="falseAnswer3"> False</label><br>      
+            <label for="falseAnswer3"> False</label><br>
 
           <p class="sfQ"><b>Bianca Kajlich was not born in Seattle.</b></p>
 
@@ -59,7 +58,7 @@
             <label for="trueAnswer4"> True</label><br>
 
             <input type="radio" name="answer4" value="false" id="falseAnswer4">
-            <label for="falseAnswer4"> False</label><br>     
+            <label for="falseAnswer4"> False</label><br>
 
         </form>
 

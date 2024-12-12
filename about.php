@@ -1,12 +1,11 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'About - SeaFilmz'; 
+  $title = 'About - SeaFilmz';
   $mDesc = 'Info about what is seafilmz and who its founder/developer is.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
 ?>
-
 
     <section class="aboutpagecontent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
