@@ -10,7 +10,7 @@
   $result = newIndividualPeopleFactPageQuery(trim($peopleSLUGPartFixed));
 
   // 3. Use returned data (if any)
-  if($people = mysqli_fetch_assoc($result)) {
+  if ($people = mysqli_fetch_assoc($result)) {
     // output data from each row
 
   if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {

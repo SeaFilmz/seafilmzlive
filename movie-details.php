@@ -9,7 +9,7 @@
   $result = individualMovieFactPageQuery(trim($movieSLUGPartFixed));
 
   // 3. Use returned data (if any)
-  if($movies = mysqli_fetch_assoc($result)) {
+  if ($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
   
   $title = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
