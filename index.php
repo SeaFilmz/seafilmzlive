@@ -84,7 +84,7 @@
         <span class="contactInfo">
           <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
             <img class="instagramLogoColor" src="/images/instagramlogocolor.png" alt="instagram logo"></a>
-        </spam>
+        </span>
       </div>
 
     </main>
