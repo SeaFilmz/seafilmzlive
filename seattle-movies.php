@@ -93,7 +93,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
