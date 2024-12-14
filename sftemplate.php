@@ -25,10 +25,9 @@
         <!--link to header-->
 <?php
         require_once 'sfheader.php';
-
   }
 
-function footerTemp() {
+  function footerTemp() {
 ?>     
     <footer>
       <nav class="NavFooter">
