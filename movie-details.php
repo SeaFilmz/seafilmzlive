@@ -54,7 +54,6 @@
             <td class="movieData">$<?php echo number_format($movies["TotalWorldGross"]); ?>
           </tr>
         <?php }
-      
   } ?>
 
       <?php
