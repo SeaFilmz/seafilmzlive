@@ -58,9 +58,9 @@
     </div>
 
     <!--link to Total Athletes Count-->
-    <?php
-  require 'queryfunctions/athletefunctions.php';
-  cityAthletesCount('Seattle', 'athlete');
+<?php
+  require 'queryfunctions/peoplefunctions.php';
+  peopleCityBornByJobCount('Seattle', 'athlete');
 ?>
 
 <?php

@@ -59,8 +59,8 @@
 
     <!--link to Total Actors Count-->
 <?php
-  require 'queryfunctions/actorfunctions.php';
-  cityActorsCount('Seattle', 'actor');
+  require 'queryfunctions/peoplefunctions.php';
+  peopleCityBornByJobCount('Seattle', 'actor');
 ?>
 
     <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
@@ -108,7 +108,7 @@
     </div>
 
     <!--link to Total Actors Count-->
-<?php cityActorsCount('Seattle', 'actor'); ?>
+<?php peopleCityBornByJobCount('Seattle', 'actor'); ?>
 
 <?php
   // footer display function
