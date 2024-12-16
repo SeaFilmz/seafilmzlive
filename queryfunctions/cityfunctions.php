@@ -2,7 +2,6 @@
   function cityQuery($cityLinkSlug) {
     global $newconnection;
 
-
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM `citiescounty` INNER JOIN cities ON cities.CityID = citiescounty.CityID INNER JOIN county ON county.CountyID = citiescounty.CountyID WHERE CityLinks = ? ");
 
@@ -19,7 +18,6 @@
 <?php
   function cityFilmedMovieTableQuery($city) {
     global $newconnection, $rows;
-
 
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM moviesfilminglocation INNER JOIN movies ON movies.MovieID = moviesfilminglocation.MovieID INNER JOIN cities ON cities.CityID = moviesfilminglocation.CityID WHERE City = ? ORDER BY MovieTitle ASC ");
@@ -68,7 +66,6 @@
   function cityAttractionQuery($city, $attractionType) {
     global $newconnection;
 
-
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM attractionscity INNER JOIN attractions ON attractions.AttractionID = attractionscity.AttractionID INNER JOIN cities ON cities.CityID = attractionscity.CityID WHERE City = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
 
@@ -97,7 +94,6 @@
 <?php
   function cityAttractionTableQuery($city, $attractionType) {
     global $newconnection, $rows;
-
 
     // 2. Perform database query
     $query = $newconnection->prepare("SELECT * FROM attractionscity INNER JOIN attractions ON attractions.AttractionID = attractionscity.AttractionID INNER JOIN cities ON cities.CityID = attractionscity.CityID WHERE City = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
