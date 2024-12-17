@@ -13,6 +13,12 @@
       </b>
     </h2>
 
+    <h2 class="AthletesPageHeader">
+      <b>
+        <a href="seattle-athletes-dataviz">Seattle Born Athletes Dataviz</a>
+      </b>
+    </h2>
+
     <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
 
     <div class="ATable">

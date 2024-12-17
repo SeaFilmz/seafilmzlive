@@ -13,6 +13,12 @@
       </b>
     </h2>
 
+    <h2 class="AthletesPageHeader">
+      <b>
+        <a href="portland-oregon-athletes-dataviz">Portland, Oregon Born Athletes Dataviz</a>
+      </b>
+    </h2>
+    
     <h2 class="AthletesPageHeader"><b>Athletes Born in Portland, Oregon</b></h2>
 
     <div class="ATable">
