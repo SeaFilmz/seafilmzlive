@@ -1,7 +1,7 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Portland, Oregon Actors by First Name- SeaFilmz';
-  $mDesc = 'List of actors born is the city of Portland organized by first name.';
+  $title = 'Portland, Oregon Actors by First Name or by Birthdate - SeaFilmz'; 
+  $mDesc = 'List of actors born is the city of Portland, Oregon organized by first name or birthdate.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
@@ -13,7 +13,7 @@
       </b>
     </h2>
 
-    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by First Name</b></h2>
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by First Name</b></h2>     
 
     <div class="MATable">
     <table class="ActorsTable">
@@ -49,7 +49,7 @@
             }
         ?>
 
-        <?php
+        <?php            
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -99,7 +99,7 @@
             }
         ?>
 
-        <?php
+        <?php    
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
