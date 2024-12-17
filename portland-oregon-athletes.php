@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Portland, Oregon Athletes - SeaFilmz';
+  $title = 'Portland, Oregon Athletes - SeaFilmz'; 
   $mDesc = 'List of athletes born in the city of Portland, Oregon organized by sport then by first name.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -18,7 +18,7 @@
         <a href="portland-oregon-athletes-dataviz">Portland, Oregon Born Athletes Dataviz</a>
       </b>
     </h2>
-    
+
     <h2 class="AthletesPageHeader"><b>Athletes Born in Portland, Oregon</b></h2>
 
     <div class="ATable">
@@ -46,12 +46,10 @@
                 // output data from each row
         ?>
 
-      <div class="AthletesMainContent">
       <tr class="AthletesContent">
         <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["PeopleLinks"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
         <td class="SportPlayed"><?php echo $athletes["SportKnownFor"]; ?></td>
       </tr>
-      </div>
 
         <?php
             }
@@ -67,7 +65,7 @@
 <?php
   require 'queryfunctions/peoplefunctions.php';
   peopleCityBornByJobCount('Portland', 'athlete');
-?>
+?>   
 
 <?php
   // footer display function

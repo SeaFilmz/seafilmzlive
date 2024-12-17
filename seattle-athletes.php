@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Seattle Athletes - SeaFilmz';
+  $title = 'Seattle Athletes - SeaFilmz'; 
   $mDesc = 'List of athletes born in the city of Seattle organized by sport then by first name.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -46,12 +46,10 @@
                 // output data from each row
         ?>
 
-      <div class="AthletesMainContent">
       <tr class="AthletesContent">
         <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["PeopleLinks"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
         <td class="SportPlayed"><?php echo $athletes["SportKnownFor"]; ?></td>
       </tr>
-      </div>
 
         <?php
             }
@@ -64,7 +62,7 @@
     </div>
 
     <!--link to Total Athletes Count-->
-<?php
+<?php 
   require 'queryfunctions/peoplefunctions.php';
   peopleCityBornByJobCount('Seattle', 'athlete');
 ?>
