@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Seattle Athletes - SeaFilmz'; 
+  $title = 'Seattle Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Seattle organized by sport then by first name.';
   $body = 'MainBody';
   require_once 'sftemplate.php';
@@ -62,7 +62,7 @@
     </div>
 
     <!--link to Total Athletes Count-->
-<?php 
+<?php
   require 'queryfunctions/peoplefunctions.php';
   peopleCityBornByJobCount('Seattle', 'athlete');
 ?>

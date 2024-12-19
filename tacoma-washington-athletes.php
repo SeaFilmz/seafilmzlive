@@ -67,7 +67,7 @@
 <?php
   require 'queryfunctions/peoplefunctions.php';
   peopleCityBornByJobCount('Tacoma', 'athlete');
-?>   
+?>
 
 
 <?php

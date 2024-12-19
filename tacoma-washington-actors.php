@@ -48,7 +48,7 @@
             }
         ?>
 
-        <?php  
+        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
@@ -98,7 +98,7 @@
             }
         ?>
 
-        <?php 
+        <?php
             // 4. Release returned data
             mysqli_free_result($result);
         ?>
