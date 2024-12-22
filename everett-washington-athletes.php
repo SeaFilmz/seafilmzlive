@@ -65,7 +65,6 @@
 
     <!--link to Total Athletes Count-->
 <?php
-  require 'queryfunctions/athletefunctions.php';
   require 'queryfunctions/peoplefunctions.php';
   peopleCityBornByJobCount('Everett', 'athlete');
 ?>
