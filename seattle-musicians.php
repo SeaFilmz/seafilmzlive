@@ -8,7 +8,7 @@
 ?>
 
 
-     
+
     <h2 class="MusiciansPageHeader"><b>Musicians Born in Seattle</b></h2>
 
     <div class="MTable">
@@ -50,6 +50,12 @@
 
     </table>
     </div>
+
+    <!--link to Total Musicians Count-->
+<?php
+  require 'queryfunctions/musicianfunctions.php';
+  cityMusiciansCount('Seattle', 'musician');
+?>
 
     <!--link to footer-->
 <?php
