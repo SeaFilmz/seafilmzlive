@@ -1,5 +1,5 @@
     <header id="goToTopLink" class="banner">
-      <h1 id="headerStandFor"><a href="/">SeaFilmz</a></h1>
+      <h2 id="headerStandFor"><a href="/">SeaFilmz</a></h2>
       <p class="solgan">6 Degrees of Seattle</p>
 
       <div class="mobile-menu" onclick="onClickMenu()">
@@ -21,7 +21,7 @@
         ["idaho-cities", "Idaho State Cities"],
         ["alaska-cities", "Alaska State Cities"],
       ]; ?>
-      
+
       <nav class="MobileNav">
         <?php for ($i = 0; $i < count($mobileNavItems); $i++) { ?>
             <p><a href="<?= "{$mobileNavItems[$i][0]}"; ?>"><?= $mobileNavItems[$i][1]; ?></a></p>
