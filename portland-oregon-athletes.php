@@ -7,17 +7,17 @@
   headerTemp();
 ?>
 
-    <h1 class="AthletesPageHeader">
+    <p class="AthletesPageHeader">
       <b>
         <a href="portland-oregon-athletes-beta">New Athletes Data UI Beta</a>
       </b>
-    </h1>
+    </p>
 
-    <h1 class="AthletesPageHeader">
+    <p class="AthletesPageHeader">
       <b>
         <a href="portland-oregon-athletes-dataviz">Portland, Oregon Born Athletes Dataviz</a>
       </b>
-    </h1>
+    </p>
 
     <h1 class="AthletesPageHeader"><b>Athletes Born in Portland, Oregon</b></h1>
 

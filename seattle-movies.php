@@ -7,11 +7,11 @@
   headerTemp();
 ?>
 
-    <h1 class="MoviesPageHeader">
+    <p class="MoviesPageHeader">
       <b>
         <a href="seattle-movies-beta">New Movie Data UI Beta</a>
       </b>
-    </h1>
+    </p>
 
     <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h1S>
 

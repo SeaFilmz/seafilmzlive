@@ -7,11 +7,11 @@
   headerTemp();
 ?>
 
-    <h1 class="ActorsPageHeader">
+    <p class="ActorsPageHeader">
       <b>
         <a href="portland-oregon-actors-beta">New Actors Data UI Beta</a>
       </b>
-    </h1>
+    </p>
 
     <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by First Name</b></h1>
 

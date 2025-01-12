@@ -7,11 +7,11 @@
   headerTemp();
 ?>
 
-    <h1 class="AthletesPageHeader">
+    <p class="AthletesPageHeader">
       <b>
         <a href="bellevue-washington-athletes-beta">New Athletes Data UI Beta</a>
       </b>
-    </h1>
+    </p>
 
     <h1 class="AthletesPageHeader">
       <b>
