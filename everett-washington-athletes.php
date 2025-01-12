@@ -19,7 +19,7 @@
       </b>
     </h2>
 
-    <h2 class="AthletesPageHeader"><b>Athletes Born in Everett, Washington</b></h2>
+    <h1 class="AthletesPageHeader"><b>Athletes Born in Everett, Washington</b></h1>
 
     <div class="ATable">
     <table class="AthletesTable">

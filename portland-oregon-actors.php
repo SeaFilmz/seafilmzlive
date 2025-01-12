@@ -7,13 +7,13 @@
   headerTemp();
 ?>
 
-    <h2 class="ActorsPageHeader">
+    <h1 class="ActorsPageHeader">
       <b>
         <a href="portland-oregon-actors-beta">New Actors Data UI Beta</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by First Name</b></h2>
+    <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by First Name</b></h1>
 
     <div class="MATable">
     <table class="ActorsTable">
@@ -63,7 +63,7 @@
   peopleCityBornByJobCount('Portland', 'actor');
 ?>
 
-    <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by Birthdate</b></h2>
+    <h1 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Portland, Oregon by Birthdate</b></h1>
 
     <div class="MATable">
     <table class="ActorsTable">

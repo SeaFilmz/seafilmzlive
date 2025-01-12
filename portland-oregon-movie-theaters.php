@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-	<h2 class="SeattleMTHeader">Portland, Oregon Movie Theaters</h2>
+	<h1 class="SeattleMTHeader">Portland, Oregon Movie Theaters</h1>
 		<div class="SeattleMTContent">
       <ul class="SMTList">
 				<li class="SMTElements"><a href= "http://www.5thavecinema.com/">5th Avenue Cinema</a></li>

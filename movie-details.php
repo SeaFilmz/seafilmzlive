@@ -11,7 +11,7 @@
   // 3. Use returned data (if any)
   if ($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
-  
+
   $title = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
   $mDesc = 'This is the fact page for Seattle movie ' . $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ').';
   $body = 'MainBody';
@@ -20,7 +20,7 @@
 ?>
 
     <main class="MovieMainFacts">
-      <h2 class="MovieTitle"><b><?php echo $movies["MovieTitle"]; ?></b></h2>
+      <h1 class="MovieTitle"><b><?php echo $movies["MovieTitle"]; ?></b></h1>
 
       <?php
         $bday = $movies["YearReleased"]; // Movies Year Released from DB
@@ -47,7 +47,7 @@
           <td class="movieData  movieDataDesc">Run Time</td>
           <td class="movieData"><?php echo $movies["RunTime"]; ?> Minutes</td>
         </tr>
-        
+
         <?php if ($movies["TotalWorldGross"] != NULL) { ?>
           <tr class="movieDataPointRow">
             <td class="movieData movieDataDesc">Total Worldwide Gross in US Dollars</td>
@@ -66,7 +66,7 @@
           ?>
           <td class="movieDataActor"><?php echo $actors["FirstName"]; ?> <?php if ($actors["MiddleInitialName"] != NULL) { echo $actors["MiddleInitialName"]; } ?> <?php echo $actors["LastName"]; ?></td>
           <?php }
-          
+
           // 4. Release returned data
           mysqli_free_result($movieActors);
           ?>
@@ -99,7 +99,7 @@
           ?>
           <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["City"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["Country"]; ?></td>
           <?php }
-          
+
           // 4. Release returned data
           mysqli_free_result($filmLocations);
           ?>
@@ -112,7 +112,7 @@
   ?>
 
 </main>
- 
+
 <?php
   // link to footer
   footerTemp();

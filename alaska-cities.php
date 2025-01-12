@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-    <h2 class="WashingtonCitiesHeader"><b>Alaska State Cities</b></h2>
+    <h1 class="WashingtonCitiesHeader"><b>Alaska State Cities</b></h1>
 
     <div class="WashingtonCitiesContent">
 

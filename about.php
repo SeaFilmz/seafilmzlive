@@ -9,7 +9,7 @@
 
     <section class="aboutpagecontent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
-      
+
       <div class="AboutDescription">
         <p>Do you enjoy movies, music, or sports?</p>
         <p>Do you watch movies or sports?</p>

@@ -7,14 +7,14 @@
   headerTemp();
 ?>
 
-    <h2 class="MoviesPageHeader">
+    <h1 class="MoviesPageHeader">
       <b>
         <a href="seattle-movies-beta">New Movie Data UI Beta</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
-        
+    <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h1S>
+
     <div class="MTTable">
     <table class="MoviesTable">
       <tr>
@@ -43,11 +43,11 @@
         <td class="MovieCountCheckbox">
           <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
           <label for="movieCheckboxes"></label>
-        </td>   
+        </td>
         <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
-          
+
         <?php
             }
 
@@ -71,7 +71,7 @@
 
     <p id="watchedText" class="watchedText"></p>
 
-    <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
+    <h1 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h1>
 
     <div class="MYTable">
     <table class="MoviesTable">
@@ -104,7 +104,7 @@
 
         <?php
             }
-    
+
             // 4. Release returned data
             mysqli_free_result($result);
         ?>

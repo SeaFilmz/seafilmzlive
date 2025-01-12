@@ -7,14 +7,14 @@
   headerTemp();
 ?>
 
-    <h2 class="MoviesPageHeader">
+    <h1 class="MoviesPageHeader">
       <b>
         <a href="Portland-movies-beta">New Movie Data UI Beta</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Portland, Oregon by Title</b></h2>
-        
+    <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Portland, Oregon by Title</b></h1>
+
     <div class="MTTable">
     <table class="MoviesTable">
       <tr>
@@ -47,7 +47,7 @@
         <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
-          
+
         <?php
             }
 
@@ -104,7 +104,7 @@
 
         <?php
             }
-    
+
             // 4. Release returned data
             mysqli_free_result($result);
         ?>

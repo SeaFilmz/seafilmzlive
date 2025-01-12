@@ -7,13 +7,13 @@
   headerTemp();
 ?>
 
-    <h2 class="ActorsPageHeader">
+    <h1 class="ActorsPageHeader">
       <b>
         <a href="renton-washington-actors-beta">New Actors Data UI Beta</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Renton by First Name</b></h2>
+    <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Renton by First Name</b></h1>
 
     <div class="MATable">
     <table class="ActorsTable">

@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-    <h2 class="IdahoCitiesHeader"><b>Idaho State Cities</b></h2>
+    <h1 class="IdahoCitiesHeader"><b>Idaho State Cities</b></h1>
 
     <div class="IdahoCitiesContent">
 
@@ -18,7 +18,7 @@
       ?>
 
     </div>
-    
+
 <?php
   // footer display function
   footerTemp();

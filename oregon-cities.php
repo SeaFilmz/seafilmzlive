@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-    <h2 class="OregonCitiesHeader"><b>Oregon State Cities</b></h2>
+    <h1 class="OregonCitiesHeader"><b>Oregon State Cities</b></h1>
 
     <div class="OregonCitiesContent">
 
@@ -17,7 +17,7 @@
       ?>
 
     </div>
-    
+
 <?php
   // footer display function
   footerTemp();

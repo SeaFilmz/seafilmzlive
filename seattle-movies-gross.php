@@ -13,7 +13,7 @@
       </b>
     </h2>
 
-        <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Total Worldwide Gross</b></h2>
+        <h1 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Total Worldwide Gross</b></h1>
 
         <div class="MGTable">
         <table class="MovieGrossTable">

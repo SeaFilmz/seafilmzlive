@@ -13,7 +13,7 @@
       <li class="StreamingServicesName"><a href="<?= $link; ?>"><?= $name; ?></a></li>
     <?php } ?>
 
-    <h2>Where to Watch Seattle Movies:</h2>
+    <h1>Where to Watch Seattle Movies:</h1>
     <h3 class="subheader">List of Major Streaming Services</h3>
 
     <ul class="StreamingServices">

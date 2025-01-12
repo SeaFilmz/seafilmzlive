@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-    <h2 class="SeattleMTHeader">Portland, Oregon Libraries</h2>
+    <h1 class="SeattleMTHeader">Portland, Oregon Libraries</h1>
 
 	<div class="SeattleMTContent">
       <ul class="SMTList">

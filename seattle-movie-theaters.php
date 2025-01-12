@@ -7,7 +7,7 @@
   headerTemp();
 ?>
 
-	<h2 class="SeattleMTHeader">Seattle Movie Theaters</h2>
+	<h1 class="SeattleMTHeader">Seattle Movie Theaters</h1>
 		<div class="SeattleMTContent">
       <ul class="SMTList">
 				<li class="SMTElements"><a href= "https://www.farawayentertainment.com/locations/admiral-theater">Admiral Theater</a></li>

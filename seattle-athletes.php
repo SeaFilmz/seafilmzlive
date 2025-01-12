@@ -7,19 +7,19 @@
   headerTemp();
 ?>
 
-    <h2 class="AthletesPageHeader">
+    <h1 class="AthletesPageHeader">
       <b>
         <a href="seattle-athletes-beta">New Athletes Data UI Beta</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 class="AthletesPageHeader">
+    <h1 class="AthletesPageHeader">
       <b>
         <a href="seattle-athletes-dataviz">Seattle Born Athletes Dataviz</a>
       </b>
-    </h2>
+    </h1>
 
-    <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
+    <h1 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h1>
 
     <div class="ATable">
     <table class="AthletesTable">

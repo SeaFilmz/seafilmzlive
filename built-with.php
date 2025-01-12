@@ -8,7 +8,7 @@
 ?>
 
   <main>
-    <h2 class="BuiltWithHeader">SeaFilmz Built With</h2>
+    <h1 class="BuiltWithHeader">SeaFilmz Built With</h1>
     <ul class="BuiltWith">
       <li class="BuiltWithTool">HTML</li>
       <li class="BuiltWithTool">CSS</li>

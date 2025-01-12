@@ -21,11 +21,11 @@
 ?>
 
 		<main class="CityMainFacts">
-      <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
+      <h1 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
         <?php if ($cityFact["StateProvinceCapital"] === 1) { ?>
           (State Capital City)
         <?php } ?>
-      </h2>
+      </h1>
 
       <table class="CityTable">
         <?php if ($cityFact["IncorporatedDate"] !== NULL) { ?>
@@ -46,7 +46,7 @@
             <td class="cityData cityDataDesc">State</td>
             <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
           </tr>
-        
+
         <?php if ($rows === 1) { ?>
           <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="cityDataPointRow">
