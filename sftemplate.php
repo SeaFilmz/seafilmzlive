@@ -14,10 +14,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/sfmain.js" defer></script>
 
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="<?php echo $ogTitle; ?>">
+        <meta property="og:description" content="<?php echo $ogMDesc; ?>">
+        <meta property="og:url" content="<?php echo $ogURL ?>">
+        <meta property="og:type" content="website">
+
         <!--Connection to Google Analytics and AdSense.-->
         <?php include 'googleanalytics_connection.php'; ?>
         <?php include 'googleadsense_connection.php'; ?>
-        
+
       </head>
 
       <body class=<?php echo $body; ?>>
@@ -28,7 +34,7 @@
   }
 
   function footerTemp() {
-?>     
+?>
     <footer>
       <nav class="NavFooter">
           <p class="NavFooterMobile"><a href="#goToTopLink">Go to Top</a></p>
