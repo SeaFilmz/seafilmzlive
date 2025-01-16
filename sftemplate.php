@@ -17,7 +17,7 @@
         <!-- Open Graph Meta Tags for Social Media -->
         <meta property="og:title" content="<?php echo $ogTitle; ?>">
         <meta property="og:description" content="<?php echo $ogMDesc; ?>">
-        <meta property="og:url" content="<?php echo $ogURL ?>">
+        <meta property="og:url" content="<?php echo $ogURL; ?>">
         <meta property="og:type" content="website">
 
         <!--Connection to Google Analytics and AdSense.-->
