@@ -1,6 +1,6 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
-  $title = 'Musicians by Musician Name- SeaFilmz';
+  $title = 'Seattle Musicians - SeaFilmz';
   $mDesc = 'List of musicians born in the city of Seattle organized by musician name.';
   $body = 'MainBody';
   require_once "sftemplate.php";
