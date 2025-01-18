@@ -1,6 +1,9 @@
 <?php
   $title = 'SeaFilmz - 6 Degrees of Seattle';
   $mDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
+  $ogTitle = 'SeaFilmz - 6 Degrees of Seattle';
+  $ogMDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
+  $ogURL = 'https://seafilmz.com';
   $body = 'HomePage';
   /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
@@ -11,13 +14,13 @@
 
       <div class="mainLinks">
         <p class="HomePageAbout">SeaFilmz is a greater Seattle area media and data tool with a focus on movies.</p>
-  
+
         <div class="SeattleMoviesMainHeader">Movies Filmed in Seattle</div>
         <p class="SeattleMoviesMain"> <a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></p>
-  
+
         <div class="SeattlePeopleMainHeader">Seattle Born</div>
         <p class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></p>
-  
+
         <div class="SeattleFunFactsMainHeader">City Facts</div>
         <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
       </div>
@@ -32,7 +35,7 @@
 
             <input type="radio" name="answer1" value="true" id="trueAnswer1">
             <label for="trueAnswer1"> True</label><br>
-            
+
             <input type="radio" name="answer1" value="false" id="falseAnswer1">
             <label for="falseAnswer1"> False</label><br>
 
