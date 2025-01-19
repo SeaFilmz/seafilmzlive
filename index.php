@@ -33,35 +33,36 @@
 
           <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie filmed in Seattle.</b></p></div>
 
-            <input type="radio" name="answer1" value="true" id="trueAnswer1">
-            <label for="trueAnswer1"> True</label><br>
+            <label for="trueAnswer1"> True</label>
+            <input type="radio" name="answer1" value="true" id="trueAnswer1"><br>
 
-            <input type="radio" name="answer1" value="false" id="falseAnswer1">
-            <label for="falseAnswer1"> False</label><br>
+            <label for="falseAnswer1"> False</label>
+            <input type="radio" name="answer1" value="false" id="falseAnswer1"><br>
 
           <p class="sfQ"><b>The Ring was released in 2002.</b></p>
 
-            <input type="radio" name="answer2" value="true" id="trueAnswer2">
-            <label for="trueAnswer2"> True</label><br>
+            <label for="trueAnswer2"> True</label>
+            <input type="radio" name="answer2" value="true" id="trueAnswer2"><br>
 
-            <input type="radio" name="answer2" value="false" id="falseAnswer2">
-            <label for="falseAnswer2"> False</label><br>
+            <label for="falseAnswer2"> False</label>
+            <input type="radio" name="answer2" value="false" id="falseAnswer2"><br>
 
           <p class="sfQ"><b>10 Things I Hate About You cast included Naomi Watts.</b></p>
 
-            <input type="radio" name="answer3" value="true" id="trueAnswer3">
-            <label for="trueAnswer3"> True</label><br>
+            <label for="trueAnswer3"> True</label>
+            <input type="radio" name="answer3" value="true" id="trueAnswer3"><br>
 
-            <input type="radio" name="answer3" value="false" id="falseAnswer3">
-            <label for="falseAnswer3"> False</label><br>
+            <label for="falseAnswer3"> False</label>
+            <input type="radio" name="answer3" value="false" id="falseAnswer3"><br>
+
 
           <p class="sfQ"><b>Bianca Kajlich was not born in Seattle.</b></p>
 
-            <input type="radio" name="answer4" value="true" id="trueAnswer4">
-            <label for="trueAnswer4"> True</label><br>
+            <label for="trueAnswer4"> True</label>
+            <input type="radio" name="answer4" value="true" id="trueAnswer4"><br>
 
-            <input type="radio" name="answer4" value="false" id="falseAnswer4">
             <label for="falseAnswer4"> False</label><br>
+            <input type="radio" name="answer4" value="false" id="falseAnswer4">
 
         <div class="sfQuizButton">
           <button onclick="quizButton()" class="sfQuizButton"><b>Answer</b></button>
