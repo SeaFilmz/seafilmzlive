@@ -25,6 +25,10 @@
         <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
       </div>
 
+      <div class="quizStartButton">
+        <button type="button" onclick="startQuizButton()" class="sfStartQuizButton"><b>Start SeaFilmz Quiz</b></button>
+      </div>
+
       <div class="sfQuizBackground">
 
         <h2 class="sfQuizHeader">SeaFilmz Quiz</h2>

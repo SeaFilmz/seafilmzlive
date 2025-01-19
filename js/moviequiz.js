@@ -1,3 +1,8 @@
+function startQuizButton() {
+  document.querySelector(".sfStartQuizButton").style.display = "none";
+  document.querySelector(".sfQuizBackground").style.display = "block";
+}
+
 //Home Page Movie Quiz
 const falseButton = [
   document.querySelector("#falseAnswer1"),
