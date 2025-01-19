@@ -65,8 +65,8 @@
             <label for="trueAnswer4"> True</label>
             <input type="radio" name="answer4" value="true" id="trueAnswer4"><br>
 
-            <label for="falseAnswer4"> False</label><br>
-            <input type="radio" name="answer4" value="false" id="falseAnswer4">
+            <label for="falseAnswer4"> False</label>
+            <input type="radio" name="answer4" value="false" id="falseAnswer4"><br>
 
         <div class="sfQuizButton">
           <button onclick="quizButton()" class="sfQuizButton"><b>Answer</b></button>
