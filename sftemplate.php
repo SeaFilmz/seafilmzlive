@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $body;
+    global $title, $mDesc, $ogTitle, $ogMDesc, $ogURL, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
