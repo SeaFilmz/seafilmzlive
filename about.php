@@ -2,6 +2,9 @@
 <?php
   $title = 'About - SeaFilmz';
   $mDesc = 'Info about what is seafilmz and who its founder/developer is.';
+  $ogTitle = 'About - SeaFilmz';
+  $ogMDesc = 'Info about what is seafilmz and who its founder/developer is.';
+  $ogURL = 'https://seafilmz.com/about';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
