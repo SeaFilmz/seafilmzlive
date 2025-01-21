@@ -2,6 +2,9 @@
   $title = 'SeaFilmz Built With';
   $mDesc = 'A list of the tools used to build the SeaFilmz website.';
   $body = 'MainBody';
+  $ogTitle = 'SeaFilmz Built With';
+  $ogMDesc = 'A list of the tools used to build the SeaFilmz website.';
+  $ogURL = 'https://seafilmz.com/built-with';
   /*link to the start of a seafilmz general web page template*/
   require_once 'sftemplate.php';
   headerTemp();
