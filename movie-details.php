@@ -14,6 +14,9 @@
 
   $title = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
   $mDesc = 'This is the fact page for Seattle movie ' . $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ').';
+  $ogTitle = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
+  $ogMDesc = 'This is the fact page for Seattle movie ' . $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ').';
+  $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
