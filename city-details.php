@@ -15,6 +15,8 @@
     $StateProvince = $cityFact["StateProvince"];
     $title = "{$city} - SeaFilmz";
     $mDesc = "Fact page about the city of {$city}";
+    $ogTitle = "{$city} - SeaFilmz";
+    $ogURL = 'https://seafilmz.com' . $cityStateSLUGPart;
     $body = "MainBody";
     require_once 'sftemplate.php';
     headerTemp();
