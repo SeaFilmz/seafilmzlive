@@ -138,7 +138,7 @@
               <div class="cityDataPointOfMany"><a href="https://www.soundersfc.com/">Seattle Sounders FC</a> (men's soccer)</div>
               <div class="cityDataPointOfMany"><a href="https://www.nhl.com/kraken">Seattle Kraken</a> (men's hockey)</div>
               <div class="cityDataPointOfMany"><a href="http://storm.wnba.com/">Seattle Storm</a> (women's basketball)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.olreign.com/">OL Reign</a> (women's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.reignfc.com/">Seattle Reign FC</a> (women's soccer)</div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
