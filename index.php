@@ -2,7 +2,6 @@
   $title = 'SeaFilmz - 6 Degrees of Seattle';
   $mDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
   $ogTitle = 'SeaFilmz - 6 Degrees of Seattle';
-  $ogMDesc = 'SeaFilmz is a resource for Seattle movies, actors, musicans and athletes.';
   $ogURL = 'https://seafilmz.com';
   $body = 'HomePage';
   /*link to the start of a seafilmz general web page template*/

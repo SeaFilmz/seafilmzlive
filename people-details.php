@@ -27,15 +27,12 @@
   }
   if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
     $ogTitle = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
-    $ogMDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born athlete.';
   }
   elseif (($people["FirstName"] and $people["LastName"]) != NULL) {
     $ogTitle = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
-    $ogMDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born actor.';
   }
   elseif ($people["MusicianName"] != NULL) {
     $ogTitle = $people["MusicianName"] . ' - SeaFilmz';
-    $ogMDesc = $people["MusicianName"] . ' is a Seattle born musician.';
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $body = 'MainBody';

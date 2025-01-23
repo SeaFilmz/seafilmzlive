@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogMDesc, $ogURL, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -16,7 +16,7 @@
 
         <!-- Open Graph Meta Tags for Social Media -->
         <meta property="og:title" content="<?php echo $ogTitle; ?>">
-        <meta property="og:description" content="<?php echo $ogMDesc; ?>">
+        <meta property="og:description" content="<?php echo $mDesc; ?>">
         <meta property="og:url" content="<?php echo $ogURL; ?>">
         <meta property="og:type" content="website">
 

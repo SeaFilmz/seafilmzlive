@@ -3,7 +3,6 @@
   $mDesc = "Contact info for the founder/ devloper of SeaFilmz.";
   $body = "MainBody";
   $ogTitle = 'Contacts - SeaFilmz';
-  $ogMDesc = 'Contact info for the founder/ devloper of SeaFilmz.';
   $ogURL = 'https://seafilmz.com/contact';
   /*link to the start of a seafilmz general web page template*/
   require_once "sftemplate.php";
