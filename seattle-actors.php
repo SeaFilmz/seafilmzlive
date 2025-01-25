@@ -2,6 +2,8 @@
 <?php
   $title = 'Seattle Actors by First Name or by Birthdate - SeaFilmz';
   $mDesc = 'List of actors born is the city of Seattle organized by first name or by birthdate.';
+  $ogTitle = 'Seattle Actors by First Name or by Birthdate - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/seattle-actors';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

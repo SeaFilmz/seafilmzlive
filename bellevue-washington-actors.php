@@ -1,6 +1,8 @@
 <?php
   $title = 'Bellevue, Washington Actors by First Name or by Birthdate- SeaFilmz';
   $mDesc = 'List of actors born is the city of Bellevue, Washington organized by first name or by birthday.';
+  $ogTitle = 'Bellevue, Washington Actors by First Name or by Birthdate - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/bellevue-washington-actors';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

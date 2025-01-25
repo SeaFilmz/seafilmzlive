@@ -2,6 +2,8 @@
 <?php
   $title = 'Portland, Oregon Actors by First Name or by Birthdate - SeaFilmz';
   $mDesc = 'List of actors born is the city of Portland, Oregon organized by first name or birthdate.';
+  $ogTitle = 'Portland, Oregon Actors by First Name or by Birthdate - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/portland-oregon-actors';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

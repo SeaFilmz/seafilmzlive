@@ -2,6 +2,8 @@
 <?php
   $title = 'Renton, Washington Actors by First Name or by Birthdate- SeaFilmz';
   $mDesc = 'List of actors born is the city of Renton, Washington organized by first name or by birthdate.';
+  $ogTitle = 'Renton, Washington Actors by First Name or by Birthdate - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/renton-washington-actors';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
