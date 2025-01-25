@@ -2,6 +2,8 @@
 <?php
   $title = 'Bellevue, Washington Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Bellevue, Washington organized by sport then by first name.';
+  $ogTitle = 'Bellevue, Washington Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/bellevue-washington-athletes';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

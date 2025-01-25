@@ -2,6 +2,8 @@
 <?php
   $title = 'Portland, Oregon Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Portland, Oregon organized by sport then by first name.';
+  $ogTitle = 'Portland, Oregon Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/portland-oregon-athletes';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

@@ -2,6 +2,8 @@
 <?php
   $title = 'Seattle Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Seattle organized by sport then by first name.';
+  $ogTitle = 'Seattle Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/seattle-athletes';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

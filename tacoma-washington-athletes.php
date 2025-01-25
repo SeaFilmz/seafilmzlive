@@ -2,6 +2,8 @@
 <?php
   $title = 'Tacoma, Washington Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Tacoma, Washington organized by sport then by first name.';
+  $ogTitle = 'Tacoma, Washington Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/tacoma-washington';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

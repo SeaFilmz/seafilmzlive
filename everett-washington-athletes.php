@@ -2,6 +2,8 @@
 <?php
   $title = 'Everett, Washington Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Everett, Washington organized by sport then by first name.';
+  $ogTitle = 'Everett, Washington Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/everett-washington-athletes';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
