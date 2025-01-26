@@ -2,6 +2,8 @@
 <?php
   $title = 'Anchorage, Alaska Athletes - SeaFilmz';
   $mDesc = 'List of athletes born in the city of Anchorage organized by sport then by first name.';
+  $ogTitle = 'Anchorage, Alaska Athletes - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/anchorage-alaska-athletes';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
