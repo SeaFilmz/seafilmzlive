@@ -2,6 +2,8 @@
 <?php
   $title = 'Oregon State Cities - SeaFilmz';
   $mDesc = 'List of important Oregon cities.';
+  $ogTitle = 'Oregon State Cities - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/oregon-cities';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

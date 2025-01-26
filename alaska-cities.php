@@ -2,6 +2,8 @@
 <?php
   $title = 'Alaska State Cities - SeaFilmz';
   $mDesc = 'List of important Alaska cities.';
+  $ogTitle = 'Alaska State Cities - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/alaska-cities';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();

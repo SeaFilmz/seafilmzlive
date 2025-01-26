@@ -2,6 +2,8 @@
 <?php
   $title = 'Washington State Cities - SeaFilmz';
   $mDesc = 'List of important Washington state cities.';
+  $ogTitle = 'Washington State Cities - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/washington-cities';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
