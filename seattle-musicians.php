@@ -2,6 +2,8 @@
 <?php
   $title = 'Seattle Musicians - SeaFilmz';
   $mDesc = 'List of musicians born in the city of Seattle organized by musician name.';
+  $ogTitle = 'Seattle Musicians - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/seattle-musicians';
   $body = 'MainBody';
   require_once "sftemplate.php";
   headerTemp();

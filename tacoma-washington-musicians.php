@@ -2,6 +2,8 @@
 <?php
   $title = 'Tacoma, Washington Musicians - SeaFilmz';
   $mDesc = 'List of musicians born in the city of Tacoma organized by musician name.';
+  $ogTitle = 'Tacoma, Washington Musicians - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/tacoma-washington-musicians';
   $body = 'MainBody';
   require_once "sftemplate.php";
   headerTemp();
