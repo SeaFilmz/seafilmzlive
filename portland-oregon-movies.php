@@ -9,7 +9,7 @@
 
     <p class="MoviesPageHeader">
       <b>
-        <a href="Portland-movies-beta">New Movie Data UI Beta</a>
+        <a href="portland-oregon-movies-beta">New Movie Data UI Beta</a>
       </b>
     </p>
 
