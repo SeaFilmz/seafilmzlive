@@ -13,7 +13,7 @@
       </b>
     </p>
 
-    <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h1S>
+    <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h1>
 
     <div class="MTTable">
     <table class="MoviesTable">
@@ -63,7 +63,6 @@
   require 'queryfunctions/moviefunctions.php';
   cityMoviesCount('Seattle');
 ?>
-
 
     <div class="watchedButton">
       <button onclick="movieWatchedButton('Seattle')" class="watchedButton"><b>Movies Watched</b></button>
