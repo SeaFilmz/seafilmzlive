@@ -36,6 +36,14 @@
   function footerTemp() {
 ?>
     <footer>
+      <div class="followFooter">
+        <span class="contactInfo">
+          <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
+            <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage" />
+          </a>
+        </span >
+      </div>
+
       <nav class="NavFooter">
           <p class="NavFooterMobile"><a href="#goToTopLink">Go to Top</a></p>
 

@@ -78,12 +78,6 @@
 
       <div class="follow">
         <span class="contactInfo">
-          <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage"
-            />
-          </a>
-        </span >
-        <span class="contactInfo">
           <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
             <img src="/images/xblacklogo.png" alt="X Icon" class="twitterLogoImage" />
           </a>
