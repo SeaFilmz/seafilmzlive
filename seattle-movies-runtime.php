@@ -2,6 +2,8 @@
 <?php
   $title = 'Seattle Movies by Runtime - SeaFilmz';
   $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by runtime.';
+  $ogTitle = 'Seattle Movies by Runtime - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/seattle-movies-runtime';
   $body = 'MainBody';
   require_once 'sftemplate.php';
   headerTemp();
