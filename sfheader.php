@@ -66,38 +66,11 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMove">Oregon City Facts</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Other States</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="portland-oregon">Portland</a></p>
-            <p><a href="salem-oregon">Salem</a></p>
-            <p><a href="gresham-oregon">Gresham</a></p>
-            <p><a href="happy-valley-oregon">Happy Valley</a></p>
-            <p><a href="milwaukie-oregon">Milwaukie</a></p>
-            <p><a href="lake-oswego-oregon">Lake Oswego</a></p>
-            <p><a href="tigard-oregon">Tigard</a></p>
-            <p><a href="beaverton-oregon">Beaverton</a></p>
-            <p><a href="corvallis-oregon">Corvallis</a></p>
-            <p><a href="eugene-oregon">Eugene</a></p>
-          </div>
-        </div>
-        <div class="dropdown">
-          <span class="NavMove">Idaho Cities</span><div class="upsideDownTriangle">&#9660;</div>
-          <div class="dropdown-content">
-            <p><a href="boise-idaho">Boise</a></p>
-            <p><a href="meridian-idaho">Meridian</a></p>
-            <p><a href="garden-city-idaho">Garden City</a></p>
-            <p><a href="eagle-idaho">Eagle</a></p>
-            <p><a href="pocatello-idaho">Pocatello</a></p>
-            <p><a href="moscow-idaho">Moscow</a></p>
-            <p><a href="coeurdalene-idaho">Coeur d'Alene</a></p>
-          </div>
-        </div>
-        <div class="dropdown">
-          <span class="NavMove">Alaska Cities</span><div class="upsideDownTriangle">&#9660;</div>
-          <div class="dropdown-content">
-            <p><a href="anchorage-alaska">Anchorage</a></p>
-            <p><a href="juneau-alaska">Juneau</a></p>
-            <p><a href="fairbanks-alaska">Fairbanks</a></p>
+            <p><a href="oregon-cities">Oregon</a></p>
+            <p><a href="idaho-cities">Idaho</a></p>
+            <p><a href="alaska-cities">Alaska</a></p>
           </div>
         </div>
       </nav>
