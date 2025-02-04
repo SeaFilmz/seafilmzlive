@@ -76,18 +76,6 @@
         <p id="answerText" class="answerText"></p>
       </div>
 
-      <div class="follow">
-        <span class="contactInfo">
-          <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/xblacklogo.png" alt="X Icon" class="twitterLogoImage" />
-          </a>
-        </span>
-        <span class="contactInfo">
-          <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
-            <img class="instagramLogoColor" src="/images/instagramlogocolor.png" alt="instagram logo"></a>
-        </span>
-      </div>
-
     </main>
 
     <script src="/js/moviequiz.js" defer></script>
