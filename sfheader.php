@@ -32,9 +32,9 @@
         <div class="dropdown">
           <span class="NavMove">Seattle Movies</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
-            <p><a href="seattle-movies">by Title or Year Released</a></p>
-            <p><a href="seattle-movies-runtime">by Runtime</a></p>
-            <p><a href="seattle-movies-gross">by Total Worldwide Gross</a></p>
+            <p><a href="seattle-movies">Title or Year Released</a></p>
+            <p><a href="seattle-movies-runtime">Runtime</a></p>
+            <p><a href="seattle-movies-gross">Total Worldwide Gross</a></p>
             <p><a href="streaming-services">Where To Watch</a></p>
           </div>
         </div>
