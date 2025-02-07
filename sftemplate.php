@@ -42,6 +42,11 @@
             <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage" />
           </a>
         </span >
+        <span class="contactInfo">
+          <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
+            <img src="/images/instagramlogocolor.png" alt="instagram logo" class="instagramLogoColorImage">
+          </a>
+        </span>
       </div>
 
       <nav class="NavFooter">
