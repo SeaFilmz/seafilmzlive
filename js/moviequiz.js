@@ -41,7 +41,7 @@ function resultAnswer(answer){
 function buttonNotchecked(){
   for (var i = 0; i < trueButton.length; i++) {
     if (!trueButton[i].checked && !falseButton[i].checked){
-      answerText.innerHTML = "Please answer all questions for quiz results.";
+      answerText.textContent = "Please answer all questions for quiz results.";
       return;
     }
   }
