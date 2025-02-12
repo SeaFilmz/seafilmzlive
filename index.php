@@ -14,25 +14,26 @@
       <div class="mainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
 
-        <div class="SeattleMoviesMainHeader">Movies Filmed in Seattle</div>
-        <p class="SeattleMoviesMain"> <a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></p>
+        <span class="SeattleMoviesMainHeader">Movies Filmed in Seattle: </span><span class="SeattleMoviesMain"><a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></span>
 
-        <div class="SeattlePeopleMainHeader">Seattle Born</div>
-        <p class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></p>
+        <p></p>
 
-        <div class="SeattleFunFactsMainHeader">City Facts</div>
-        <p class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></p>
+        <span class="SeattlePeopleMainHeader">Seattle Born: </span><span class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></span>
+
+        <p></p>
+
+        <span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</span>
       </div>
 
-      <div class="quizStartButton">
+			<div class="quizStartButton">
         <button type="button" onclick="startQuizButton()" class="sfStartQuizButton"><b>Start SeaFilmz Quiz</b></button>
       </div>
 
       <div class="sfQuizBackground">
 
-        <h2 class="sfQuizHeader">SeaFilmz Quiz</h2>
+				<h2 class="sfQuizHeader">SeaFilmz Quiz</h2>
 
-        <form class="sfQuiz">
+				<form class="sfQuiz">
 
           <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie filmed in Seattle.</b></p></div>
 
@@ -58,7 +59,6 @@
             <label for="falseAnswer3"> False</label>
             <input type="radio" name="answer3" value="false" id="falseAnswer3"><br>
 
-
           <p class="sfQ"><b>Bianca Kajlich was not born in Seattle.</b></p>
 
             <label for="trueAnswer4"> True</label>
@@ -73,12 +73,12 @@
 
         </form>
 
-        <p id="answerText" class="answerText"></p>
+				<p id="answerText" class="answerText"></p>
       </div>
 
-    </main>
+		</main>
 
-    <script src="/js/moviequiz.js" defer></script>
+		<script src="/js/moviequiz.js" defer></script>
 
 <?php
   // footer display function
