@@ -22,7 +22,7 @@
 
         <p></p>
 
-        <span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</span>
+        <span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></span>
       </div>
 
 			<div class="quizStartButton">
