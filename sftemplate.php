@@ -47,6 +47,11 @@
             <img src="/images/instagramlogocolor.png" alt="instagram logo" class="instagramLogoColorImage">
           </a>
         </span>
+        <span class="contactInfoLast">
+          <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
+            <img src="/images/xblacklogo.png" alt="X Icon" class="xLogoImage" />
+          </a>
+        </span>
       </div>
 
       <nav class="NavFooter">
