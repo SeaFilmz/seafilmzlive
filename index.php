@@ -14,15 +14,11 @@
       <div class="mainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
 
-        <span class="SeattleMoviesMainHeader">Movies Filmed in Seattle: </span><span class="SeattleMoviesMain"><a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></span>
+        <p class="SeattleMovieMainLinks"><span class="SeattleMoviesMainHeader">Movies Filmed in Seattle: </span><span class="SeattleMoviesMain"><a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></span></p>
 
-        <p></p>
+        <p class="SeattlePeopleMainLinks"><span class="SeattlePeopleMainHeader">Seattle Born: </span><span class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></span></p>
 
-        <span class="SeattlePeopleMainHeader">Seattle Born: </span><span class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></span>
-
-        <p></p>
-
-        <span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></span>
+        <p class="SeattleFunFactsMainLinks"><span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a></span></p>
       </div>
 
 			<div class="quizStartButton">
