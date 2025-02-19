@@ -7,7 +7,7 @@
 
     $query->bind_param("s", $cityLinkSlug);
     $query->execute();
-  
+
     //Result variable with an error check
     $result = $query->get_result()
       or die("Database query failed.");
@@ -24,7 +24,7 @@
 
     $query->bind_param("s", $city);
     $query->execute();
-  
+
     //Result variable with an error check
     $result = $query->get_result()
       or die("Database query failed.");
@@ -34,7 +34,7 @@
   <?php
     if ($rows >= 1) {
   ?>
-    
+
       <tr class="cityDataPointRow">
         <td class="cityData cityDataDesc">Movies Filmed in <?= $city; ?></td>
         <td class="cityData">
@@ -44,8 +44,8 @@
         // output data from each row
 ?>
 
-        <div class="movieTheaters"><a href= "<?= $movies["MoviePageLink"]; ?>"><?= $movies["MovieTitle"]; ?></a></div>
-    
+        <div class="movieTheaters"><a href= "<?= $movies["MoviePageLink"]; ?>" target="_blank"><?= $movies["MovieTitle"]; ?></a></div>
+
   <?php
       }
   ?>
@@ -71,7 +71,7 @@
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
-  
+
     //Result variable with an error check
     $result = $query->get_result()
       or die("Database query failed.");
@@ -100,7 +100,7 @@
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
-  
+
     //Result variable with an error check
     $result = $query->get_result()
       or die("Database query failed.");
@@ -110,7 +110,7 @@
   <?php
     if ($rows >= 1) {
   ?>
-    
+
       <tr class="cityDataPointRow">
         <td class="cityData cityDataDesc"><?= $attractionType; ?></td>
         <td class="cityData">
@@ -121,7 +121,7 @@
 ?>
 
         <div class="movieTheaters"><a href= "<?= $attractions["AttractionLink"]; ?>"><?= $attractions["AttractionName"]; ?></a></div>
-    
+
   <?php
     }
   ?>

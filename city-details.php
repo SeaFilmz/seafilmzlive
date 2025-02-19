@@ -40,66 +40,66 @@
         <?php if ($cityFact["Country"] === 'USA') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Country</td>
-            <td class="cityData"><a href="<?= "{$cityFact["OfficialCountryLinks"]}"; ?>"><?= "United States of America"; ?></a></td>
+            <td class="cityData"><a href="<?= "{$cityFact["OfficialCountryLinks"]}"; ?>" target="_blank"><?= "United States of America"; ?></a></td>
           </tr>
         <?php } ?>
 
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">State</td>
-            <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>"><?= $StateProvince; ?></a></td>
+            <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>" target="_blank"><?= $StateProvince; ?></a></td>
           </tr>
 
         <?php if ($rows === 1) { ?>
           <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">County</td>
-              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
           <?php } elseif ($StateProvince === 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">Borough</td>
-              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>"><?= "{$cityFact["County"]}"; ?></a></td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["County"]}"; ?></a></td>
             </tr>
           <?php }
         } elseif ($city === 'Bothell') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://kingcounty.gov/">King</a></div>
-              <div><a href="https://snohomishcountywa.gov/">Snohomish</a><div>
+              <div class="cityDataPointOfMany"><a href="https://kingcounty.gov/" target="_blank">King</a></div>
+              <div><a href="https://snohomishcountywa.gov/" target="_blank">Snohomish</a><div>
             </td>
           </tr>
         <?php } elseif ($city === 'Portland') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://multco.us/">Multnomah</a></div>
-              <div class="cityDataPointOfMany"><a href="https://www.clackamas.us/">Clackamas</a></div>
-              <div><a href="https://www.co.washington.or.us/">Washington</a><div>
+              <div class="cityDataPointOfMany"><a href="https://multco.us/" target="_blank">Multnomah</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.clackamas.us/" target="_blank">Clackamas</a></div>
+              <div><a href="https://www.co.washington.or.us/" target="_blank">Washington</a><div>
             </td>
           </tr>
         <?php } elseif ($city === 'Milwaukie') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://multco.us/">Multnomah</a></div>
-              <div><a href="https://www.clackamas.us/">Clackamas</a><div>
+              <div class="cityDataPointOfMany"><a href="https://multco.us/" target="_blank">Multnomah</a></div>
+              <div><a href="https://www.clackamas.us/" target="_blank">Clackamas</a><div>
             </td>
           </tr>
         <?php } elseif ($city === 'Salem') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://www.co.marion.or.us/">Marion</a></div>
-              <div><a href="https://www.co.polk.or.us/">Polk</a><div>
+              <div class="cityDataPointOfMany"><a href="https://www.co.marion.or.us/" target="_blank">Marion</a></div>
+              <div><a href="https://www.co.polk.or.us/" target="_blank">Polk</a><div>
             </td>
           </tr>
         <?php } elseif ($city === 'Pocatello') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://www.bannockcounty.us/">Bannock</a></div>
-              <div><a href="https://www.co.power.id.us/">Power</a><div>
+              <div class="cityDataPointOfMany"><a href="https://www.bannockcounty.us/" target="_blank">Bannock</a></div>
+              <div><a href="https://www.co.power.id.us/" target="_blank">Power</a><div>
             </td>
           </tr>
         <?php } ?>
@@ -116,10 +116,10 @@
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Other Film and Media Resources for Seattle</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://www.seattle.gov/filmandmusic">Seattle Office of Film and Music</a></div>
-              <div class="cityDataPointOfMany"><a href="https://www.washingtonfilmworks.org/">Washington Filmworks</a></div>
-              <div class="cityDataPointOfMany"><a href="https://www.siff.net/">Seattle International Film Festival</a></div>
-              <div><a href="https://nwfilmforum.org/">Northwest Film Forum</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.seattle.gov/filmandmusic" target="_blank">Seattle Office of Film and Music</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.washingtonfilmworks.org/" target="_blank">Washington Filmworks</a></div>
+              <div class="cityDataPointOfMany"><a href="https://www.siff.net/" target="_blank">Seattle International Film Festival</a></div>
+              <div><a href="https://nwfilmforum.org/" target="_blank">Northwest Film Forum</a></div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
@@ -133,12 +133,12 @@
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Professional Sports Teams</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="http://www.seahawks.com/">Seattle Seahawks</a> (men's football)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.mlb.com/mariners">Seattle Mariners</a> (men's baseball)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.soundersfc.com/">Seattle Sounders FC</a> (men's soccer)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.nhl.com/kraken">Seattle Kraken</a> (men's hockey)</div>
-              <div class="cityDataPointOfMany"><a href="http://storm.wnba.com/">Seattle Storm</a> (women's basketball)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.reignfc.com/">Seattle Reign FC</a> (women's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="http://www.seahawks.com/" target="_blank">Seattle Seahawks</a> (men's football)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.mlb.com/mariners" target="_blank">Seattle Mariners</a> (men's baseball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.soundersfc.com/" target="_blank">Seattle Sounders FC</a> (men's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.nhl.com/kraken" target="_blank">Seattle Kraken</a> (men's hockey)</div>
+              <div class="cityDataPointOfMany"><a href="http://storm.wnba.com/" target="_blank">Seattle Storm</a> (women's basketball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.reignfc.com/" target="_blank">Seattle Reign FC</a> (women's soccer)</div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
@@ -166,9 +166,9 @@
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Professional Sports Teams</td>
             <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="https://www.nba.com/blazers/">Portland Trail Blazers</a> (men's basketball)</div>
-              <div class="cityDataPointOfMany"><a href="https://www.timbers.com/">Portland Timbers</a> (men's soccer)</div>
-              <div><a href="https://www.nwslsoccer.com/teams/portland-thorns">Portland Thorns FC</a> (women's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.nba.com/blazers/" target="_blank">Portland Trail Blazers</a> (men's basketball)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.timbers.com/" target="_blank">Portland Timbers</a> (men's soccer)</div>
+              <div><a href="https://www.nwslsoccer.com/teams/portland-thorns" target="_blank">Portland Thorns FC</a> (women's soccer)</div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
