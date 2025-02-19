@@ -12,7 +12,7 @@
   <main>
 
     <?php function StreamingServiceList($link, $name) { ?>
-      <li class="StreamingServicesName"><a href="<?= $link; ?>"><?= $name; ?></a></li>
+      <li class="StreamingServicesName"><a href="<?= $link; ?>" target="_blank"><?= $name; ?></a></li>
     <?php } ?>
 
     <h1>Where to Watch Seattle Movies:</h1>
