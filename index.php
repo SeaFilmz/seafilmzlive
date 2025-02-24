@@ -64,7 +64,7 @@
             <input type="radio" name="answer4" value="false" id="falseAnswer4"><br>
 
         <div class="sfQuizButton">
-          <button onclick="quizButton()" class="sfQuizButton"><b>Answer</b></button>
+          <button type="button" onclick="quizButton()" class="sfQuizButton"><b>Answer</b></button>
         </div>
 
         </form>
