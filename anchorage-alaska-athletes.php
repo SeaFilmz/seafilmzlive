@@ -44,7 +44,7 @@
               or die("Database query failed.");
 
             // 3. Use returned data (if any)
-            while($athletes = mysqli_fetch_assoc($result)) {
+            while ($athletes = mysqli_fetch_assoc($result)) {
                 // output data from each row
         ?>
 
