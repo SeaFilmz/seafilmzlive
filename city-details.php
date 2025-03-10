@@ -178,9 +178,11 @@
         <?php } ?>
 
         <?php
-          if ($city !== 'Seattle' or $city !== 'Portland') {
+          if ($city === 'Seattle' or $city === 'Portland') {
+          } else {
+            cityAttractionTableQuery($city, 'Movie Theater');
             cityFilmedMovieTableQuery($city);
-        }
+          }
 
           cityAttractionTableQuery($city, 'College');
 
