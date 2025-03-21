@@ -43,3 +43,8 @@ h1 {
 .HomePage {
   background-image: url("/images/SeattleBeachGGWeb.webp");
 }
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 1rem 0;
+}
