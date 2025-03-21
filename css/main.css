@@ -34,3 +34,7 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
 }
+
+.HomePage {
+  background-image: url("/images/SeattleBeachGGWeb.webp");
+}
