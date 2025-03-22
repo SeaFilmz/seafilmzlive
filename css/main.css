@@ -39,6 +39,32 @@ a {
   display: inline;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 11rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  padding-bottom: 1rem;
+}
+
+.NavMove {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
 h1 {
   font-size: 2.5rem;
   text-align: center;
