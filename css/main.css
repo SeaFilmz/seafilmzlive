@@ -23,6 +23,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: #99d9d9;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
 .solgan {
   text-align: center;
   font-size: 2rem;
