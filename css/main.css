@@ -122,6 +122,11 @@ h1 {
   text-align: left;
 }
 
+.sfQuiz {
+  text-align: left;
+  margin: 0 1rem 1rem 1rem;
+}
+
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 0 1rem 0;
