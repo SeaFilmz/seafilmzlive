@@ -135,6 +135,11 @@ h1 {
   text-align: center;
 }
 
+.secondHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .secondHeaderButton {
   font-weight: bold;
 }
