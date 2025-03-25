@@ -132,6 +132,11 @@ footer {
   margin: 0 0 1rem 0;
 }
 
+.followFooter {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 .NavFooter {
   display: flex;
   flex-wrap: wrap;
