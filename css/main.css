@@ -144,6 +144,11 @@ h1 {
   font-weight: bold;
 }
 
+.contact {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 0 1rem 0;
