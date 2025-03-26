@@ -18,7 +18,7 @@
 
         <p class="SeattlePeopleMainLinks"><span class="SeattlePeopleMainHeader">Seattle Born: </span><span class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></span></p>
 
-        <p class="SeattleFunFactsMainLinks"><span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a>, <span class="SeattleFunFactsMain"><a href="portland-oregon">Portland OR</a></span></p>
+        <p class="SeattleFunFactsMainLinks"><span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a>, <a href="portland-oregon">Portland OR</a></span></p>
       </div>
 
 			<div class="quizStartButton">

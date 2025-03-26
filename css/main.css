@@ -98,6 +98,12 @@ h1 {
   font-weight: 900;
 }
 
+.SeattleMoviesMain,
+.SeattlePeopleMain,
+.SeattleFunFactsMain {
+  font-weight: 900;
+}
+
 .sfStartQuizButton{
   font-size: 1.5rem;
   width: 20rem;
