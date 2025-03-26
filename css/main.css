@@ -154,6 +154,11 @@ footer {
   padding-top: 1.5rem;
 }
 
+.socialMediaInfo {
+  text-align: left;
+  margin: 1rem 1rem;
+}
+
 .NavFooter {
   display: flex;
   flex-wrap: wrap;

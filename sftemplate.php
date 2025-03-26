@@ -37,17 +37,17 @@
 ?>
     <footer>
       <div class="followFooter">
-        <span class="contactInfo">
+        <span class="socialMediaInfo">
           <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
             <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage" />
           </a>
         </span >
-        <span class="contactInfo">
+        <span class="socialMediaInfo">
           <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
             <img src="/images/instagramlogocolor.png" alt="instagram logo" class="instagramLogoColorImage">
           </a>
         </span>
-        <span class="contactInfoLast">
+        <span class="socialMediaInfo">
           <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
             <img src="/images/xblacklogo.png" alt="X Icon" class="xLogoImage" />
           </a>
