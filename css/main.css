@@ -200,6 +200,10 @@ footer {
   width: 3%;
 }
 
+.instagramLogoColorImage {
+  width: 3.5%;
+}
+
 .NavFooter {
   display: flex;
   flex-wrap: wrap;
