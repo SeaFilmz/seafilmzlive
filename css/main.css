@@ -196,6 +196,10 @@ footer {
   margin: 1rem 1rem;
 }
 
+.twitchLogoImage {
+  width: 3%;
+}
+
 .NavFooter {
   display: flex;
   flex-wrap: wrap;
