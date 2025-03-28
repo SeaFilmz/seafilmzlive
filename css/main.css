@@ -204,6 +204,10 @@ footer {
   width: 3.5%;
 }
 
+.xLogoImage {
+  width: 3.25%;
+}
+
 .NavFooter {
   display: flex;
   flex-wrap: wrap;
