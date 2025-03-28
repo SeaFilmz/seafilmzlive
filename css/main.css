@@ -182,7 +182,8 @@ tr:nth-child(even) {
 }
 
 .MovieTitle,
-.PeopleName {
+.PeopleName,
+.CityPageHeader {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: left;
