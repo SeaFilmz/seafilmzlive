@@ -10,7 +10,9 @@ body {
 
 header {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: -2.5rem 0 1rem 0;
+  border-radius: 0.5rem;
+  max-width: 75rem;
+  margin: -2.5rem auto 1rem auto;
 }
 
 h2 {
