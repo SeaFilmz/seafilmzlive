@@ -93,6 +93,10 @@ h1 {
   border-radius: 0.5rem;
 }
 
+.mainLinks {
+  text-align: left;
+}
+
 .HomePageAbout {
   font-size: 1.5rem;
   font-weight: 600;
