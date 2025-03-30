@@ -99,6 +99,13 @@ h1 {
   text-align: left;
 }
 
+.HomePageAbout,
+.SeattleMovieMainLinks,
+.SeattlePeopleMainLinks,
+.SeattleFunFactsMainLinks {
+  margin: 1rem 1rem;
+}
+
 .HomePageAbout {
   font-size: 1.5rem;
   font-weight: 600;
