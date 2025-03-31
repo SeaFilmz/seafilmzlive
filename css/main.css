@@ -186,6 +186,15 @@ h1 {
   text-align: center;
 }
 
+.MoviesTable,
+.MovieRuntimeTable,
+.MovieGrossTable,
+.ActorsTable,
+.MusiciansTable,
+.AthletesTable {
+  margin: auto;
+}
+
 .MoviesColumnHeader1,
 .MoviesColumnHeader2,
 .MovieRuntimeColumnHeader1,
