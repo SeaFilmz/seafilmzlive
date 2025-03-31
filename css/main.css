@@ -193,6 +193,7 @@ h1 {
 .MusiciansTable,
 .AthletesTable {
   margin: auto;
+  border-spacing: 0;
 }
 
 .MoviesColumnHeader1,
