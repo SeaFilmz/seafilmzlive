@@ -225,6 +225,10 @@ tr:nth-child(even) {
   text-align: left;
 }
 
+.SeattleFFImage {
+  text-align: center;
+}
+
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
