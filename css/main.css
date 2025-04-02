@@ -225,6 +225,10 @@ tr:nth-child(even) {
   text-align: left;
 }
 
+.StateCitiesLinks {
+  text-align: center;
+}
+
 .PopsicleText {
   text-align: center;
   font-size: 1.25rem;
