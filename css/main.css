@@ -222,6 +222,10 @@ tr:nth-child(even) {
   margin: 0 auto;
 }
 
+.watchedText {
+  text-align: center;
+}
+
 .MovieTitle,
 .PeopleName,
 .CityPageHeader {
