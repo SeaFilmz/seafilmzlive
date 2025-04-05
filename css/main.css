@@ -217,6 +217,11 @@ tr:nth-child(even) {
   background: #ccc;
 }
 
+.watchedButton {
+  width: 10rem;
+  margin: 0 auto;
+}
+
 .MovieTitle,
 .PeopleName,
 .CityPageHeader {
