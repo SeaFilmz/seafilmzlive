@@ -5,7 +5,7 @@
   $ogTitle = 'Tacoma, Washington Musicians - SeaFilmz';
   $ogURL = 'https://seafilmz.com/tacoma-washington-musicians';
   $body = 'MainBody';
-  require_once "sftemplate.php";
+  require_once "templates/sftemplate.php";
   headerTemp();
 ?>
 

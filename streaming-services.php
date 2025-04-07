@@ -5,7 +5,7 @@
   $body = 'MainBody';
   $ogTitle = 'Where to Watch Seattle Movies - SeaFilmz';
   $ogURL = 'https://seafilmz.com/built-with';
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 

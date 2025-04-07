@@ -5,7 +5,7 @@
   $ogTitle = 'Portland, Oregon Athletes - SeaFilmz';
   $ogURL = 'https://seafilmz.com/portland-oregon-athletes';
   $body = 'MainBody';
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 

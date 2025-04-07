@@ -5,7 +5,7 @@
   $ogURL = 'https://seafilmz.com';
   $body = 'HomePage';
   /*link to the start of a seafilmz general web page template*/
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 

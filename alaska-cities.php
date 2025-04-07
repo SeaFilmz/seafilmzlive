@@ -5,7 +5,7 @@
   $ogTitle = 'Alaska State Cities - SeaFilmz';
   $ogURL = 'https://seafilmz.com/alaska-cities';
   $body = 'MainBody';
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 

@@ -5,7 +5,7 @@
   $ogTitle = 'Contacts - SeaFilmz';
   $ogURL = 'https://seafilmz.com/contact';
   /*link to the start of a seafilmz general web page template*/
-  require_once "sftemplate.php";
+  require_once "templates/sftemplate.php";
   headerTemp();
 ?>
 

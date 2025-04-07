@@ -5,7 +5,7 @@
   $ogTitle = 'Seattle Movies by Box Office Gross - SeaFilmz';
   $ogURL = 'https://seafilmz.com/seattle-movies-gross';
   $body = 'MainBody';
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 

@@ -5,7 +5,7 @@
   $ogTitle = 'Portland, Oregon Actors by First Name or by Birthdate - SeaFilmz';
   $ogURL = 'https://seafilmz.com/portland-oregon-actors';
   $body = 'MainBody';
-  require_once 'sftemplate.php';
+  require_once 'templates/sftemplate.php';
   headerTemp();
 ?>
 
