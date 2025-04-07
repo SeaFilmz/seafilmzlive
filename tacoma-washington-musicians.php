@@ -59,6 +59,5 @@
 
     <!--link to footer-->
 <?php
-  require_once 'sftemplate.php';
   footerTemp();
 ?>
