@@ -221,7 +221,8 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-.MovieYearContent {
+.MovieYearContent,
+.MovieRuntimeContent {
   padding: 0.75rem 5rem 0.75rem 5rem;
   text-align: center;
 }
