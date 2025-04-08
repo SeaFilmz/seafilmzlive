@@ -216,7 +216,8 @@ tr:nth-child(even) {
 }
 
 .MovieTitlesContent,
-.MovieTitlesRContent {
+.MovieTitlesRContent,
+.ActorsNameContent {
   padding: 0.75rem 10rem 0.75rem 10rem;
   text-align: center;
 }
