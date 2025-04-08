@@ -191,8 +191,7 @@ h1 {
 .MovieGrossTable,
 .ActorsTable,
 .MusiciansTable,
-.AthletesTable,
-.CityTable {
+.AthletesTable {
   margin: auto;
   border-spacing: 0;
 }
