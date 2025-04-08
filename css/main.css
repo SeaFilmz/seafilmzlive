@@ -220,6 +220,11 @@ tr:nth-child(even) {
   text-align: center;
 }
 
+.MovieYearContent {
+  padding: 0.75rem 5rem 0.75rem 5rem;
+  text-align: center;
+}
+
 .watchedButton {
   width: 10rem;
   margin: 0 auto;
