@@ -225,6 +225,7 @@ tr:nth-child(even) {
 
 .MovieYearContent,
 .MovieRuntimeContent,
+.MovieGrossContent
 .ActorsBirthdateContent,
 .SportPlayed {
   padding: 0.75rem 5rem 0.75rem 5rem;
