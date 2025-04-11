@@ -38,6 +38,13 @@ button {
   margin-top: -4rem;
 }
 
+#searchButton {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0.5rem;
+  padding: 0.375rem;
+}
+
 .navigation {
   display: flex;
   justify-content: space-evenly;
