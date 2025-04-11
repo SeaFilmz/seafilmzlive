@@ -2,6 +2,11 @@
       <h2 id="headerStandFor"><a href="/">SeaFilmz</a></h2>
       <p class="solgan">6 Degrees of Seattle</p>
 
+      <?php
+        require_once 'moviesearchform.php';
+        movieSearchForm();
+      ?>
+
       <div class="mobile-menu" onclick="onClickMenu()">
         <span class="bar1"></span>
         <span class="bar2"></span>
