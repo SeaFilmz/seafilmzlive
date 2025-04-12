@@ -38,6 +38,13 @@ button {
   margin-top: -4rem;
 }
 
+#search {
+  width: 15rem;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  padding: 0.375rem;
+}
+
 #searchButton {
   font-size: 1.125rem;
   font-weight: 600;
