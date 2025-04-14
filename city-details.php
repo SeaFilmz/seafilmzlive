@@ -104,6 +104,13 @@
           </tr>
         <?php } ?>
 
+        <?php if ($cityFact["CityLinks"] !== NULL) { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">City</td>
+            <td class="cityData"><a href="<?= "{$cityFact["OfficialCityLinks"]}"; ?>" target="_blank"><?= "{$city}"; ?></a></td>
+          </tr>
+        <?php } ?>
+
         <?php if ($city === 'Seattle') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movie Theaters</td>
