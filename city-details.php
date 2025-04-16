@@ -189,6 +189,7 @@
             <td class="cityData cityDataDesc">People Born</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="tacoma-washington-actors">Actors</a></div>
+              <div class="cityDataPointOfMany"><a href="tacoma-washington-athletes">Athletes</a></div>
             </td>
           </tr>
         <?php } ?>
