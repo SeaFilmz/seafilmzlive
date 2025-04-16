@@ -194,6 +194,15 @@
           </tr>
         <?php } ?>
 
+        <?php if ($city === 'Bellevue') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">People Born</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="bellevue-washington-actors">Actors</a></div>
+            </td>
+          </tr>
+        <?php } ?>
+
         <?php
           if ($city === 'Seattle' or $city === 'Portland') {
           } else {
