@@ -184,6 +184,15 @@
           </tr>
         <?php } ?>
 
+        <?php if ($city === 'Tacoma') { ?>
+          <tr class="cityDataPointRow">
+            <td class="cityData cityDataDesc">People Born</td>
+            <td class="cityData">
+              <div class="cityDataPointOfMany"><a href="tacoma-washington-actors">Actors</a></div>
+            </td>
+          </tr>
+        <?php } ?>
+
         <?php
           if ($city === 'Seattle' or $city === 'Portland') {
           } else {
