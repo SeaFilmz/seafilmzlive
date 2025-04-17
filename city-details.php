@@ -199,6 +199,7 @@
             <td class="cityData cityDataDesc">People Born</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="bellevue-washington-actors">Actors</a></div>
+              <div class="cityDataPointOfMany"><a href="bellevue-washington-athletes">Athletes</a></div>
             </td>
           </tr>
         <?php } ?>
