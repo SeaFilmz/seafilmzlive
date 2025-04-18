@@ -3,7 +3,7 @@
       <p class="solgan">6 Degrees of Seattle</p>
 
       <?php
-        require_once 'moviesearchform.php';
+        require_once 'templates/moviesearchform.php';
         movieSearchForm();
       ?>
 
