@@ -220,6 +220,7 @@
           cityAttractionTableQuery($city, 'Bowling Alley');
           cityAttractionTableQuery($city, 'Board Game Hangout Store');
           cityAttractionTableQuery($city, 'Golf Course');
+          cityAttractionTableQuery($city, 'Amusement Park');
         ?>
 			</table>
 		</main>
