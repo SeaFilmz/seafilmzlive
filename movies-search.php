@@ -61,6 +61,26 @@
 		} else {
 			echo "There are no results matching your search!";
 		}
+		?>
+
+		<div class="numberOfSearcResults">
+			<?php
+				if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
+			?>
+				Movie Result: 0
+			<?php
+			}	 else if ($queryResults === 1) {
+			?>
+				Movie Result: 1
+			<?php
+			} else {
+			?>
+				Movie Results:
+			<?php echo "{$queryResults}";
+			}
+			?>
+    </div>
+	<?php
 	}
 ?>
 
