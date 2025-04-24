@@ -30,7 +30,7 @@
 
         <!--link to header-->
 <?php
-        require_once 'templates/sfheader.php';
+        require_once 'templates/header-nav.php';
   }
 
   function footerTemp() {
