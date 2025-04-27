@@ -36,7 +36,7 @@
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

@@ -5,7 +5,7 @@
   $ogTitle = 'SeaFilmz Built With';
   $ogURL = 'https://seafilmz.com/built-with';
   /*link to the start of a seafilmz general web page template*/
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

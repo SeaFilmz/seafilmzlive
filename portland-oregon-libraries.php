@@ -3,7 +3,7 @@
   $mDesc = 'List of Libraries in the city of Portland, Oregon.';
   $body = 'MainBody';
   /*link to the start of a seafilmz general webpage template*/
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

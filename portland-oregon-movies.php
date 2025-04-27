@@ -5,7 +5,7 @@
   $ogURL = 'https://seafilmz.com/portland-oregon-movies';
   $body = 'MainBody';
   /*link to the start of a seafilmz general web page template*/
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

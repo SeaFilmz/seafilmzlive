@@ -5,7 +5,7 @@
   $ogTitle = 'Portland, Oregon Movie Theaters - SeaFilmz';
   $ogURL = 'https://seafilmz.com/portland-oregon-movie-theaters';
   /*link to the start of a seafilmz general webpage template*/
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

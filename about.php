@@ -5,7 +5,7 @@
   $ogTitle = 'About - SeaFilmz';
   $ogURL = 'https://seafilmz.com/about';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

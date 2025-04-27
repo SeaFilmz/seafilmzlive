@@ -5,7 +5,7 @@
   $ogTitle = 'Renton, Washington Actors by First Name or by Birthdate - SeaFilmz';
   $ogURL = 'https://seafilmz.com/renton-washington-actors';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

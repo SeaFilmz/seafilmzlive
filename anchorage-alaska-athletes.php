@@ -5,7 +5,7 @@
   $ogTitle = 'Anchorage, Alaska Athletes - SeaFilmz';
   $ogURL = 'https://seafilmz.com/anchorage-alaska-athletes';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

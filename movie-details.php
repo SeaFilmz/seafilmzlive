@@ -17,7 +17,7 @@
   $ogTitle = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

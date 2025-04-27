@@ -4,7 +4,7 @@
   $ogTitle = 'Bellevue, Washington Actors by First Name or by Birthdate - SeaFilmz';
   $ogURL = 'https://seafilmz.com/bellevue-washington-actors';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

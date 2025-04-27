@@ -5,7 +5,7 @@
   $ogTitle = 'Washington State Cities - SeaFilmz';
   $ogURL = 'https://seafilmz.com/washington-cities';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 

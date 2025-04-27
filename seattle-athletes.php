@@ -5,7 +5,7 @@
   $ogTitle = 'Seattle Athletes - SeaFilmz';
   $ogURL = 'https://seafilmz.com/seattle-athletes';
   $body = 'MainBody';
-  require_once 'templates/sftemplate.php';
+  require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
 
