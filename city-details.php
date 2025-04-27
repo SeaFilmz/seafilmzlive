@@ -175,7 +175,7 @@
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://www.nba.com/blazers/" target="_blank">Portland Trail Blazers</a> (men's basketball)</div>
               <div class="cityDataPointOfMany"><a href="https://www.timbers.com/" target="_blank">Portland Timbers</a> (men's soccer)</div>
-              <div><a href="https://www.nwslsoccer.com/teams/portland-thorns" target="_blank">Portland Thorns FC</a> (women's soccer)</div>
+              <div><a href="https://www.thorns.com/" target="_blank">Portland Thorns FC</a> (women's soccer)</div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
