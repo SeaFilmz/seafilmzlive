@@ -82,7 +82,7 @@
 
 		</main>
 
-		<script src="/js/moviequiz.js" defer></script>
+		<script src="/js/movie-quiz.js" defer></script>
 
 <?php
   // footer display function
