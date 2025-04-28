@@ -235,7 +235,7 @@
         <button id="popsicleImageAnswer">Answer</button>
       </div>
 
-      <script src="/js/popsicleanswer.js" defer></script>
+      <script src="/js/popsicle-answer.js" defer></script>
     <?php } ?>
 
 <?php
