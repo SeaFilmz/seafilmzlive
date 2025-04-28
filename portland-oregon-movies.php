@@ -116,7 +116,7 @@
         <!--link to Total Movie Count-->
 <?php cityMoviesCount('Portland'); ?>
 
-    <script src="/js/movieswatched.js" defer></script>
+    <script src="/js/movies-watched.js" defer></script>
 
   <!-- footer display function -->
 <?php footerTemp(); ?>
