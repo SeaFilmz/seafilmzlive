@@ -39,17 +39,17 @@
       <div class="followFooter">
         <span class="socialMediaInfo">
           <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/twitchpurplelogo.png" alt="Twitch Icon" class="twitchLogoImage" />
+            <img src="/images/twitch-purple-logo.png" alt="Twitch Icon" class="twitchLogoImage" />
           </a>
         </span >
         <span class="socialMediaInfo">
           <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/instagramlogocolor.png" alt="instagram logo" class="instagramLogoColorImage">
+            <img src="/images/instagram-color-logo.png" alt="instagram logo" class="instagramLogoColorImage">
           </a>
         </span>
         <span class="socialMediaInfo">
           <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/xblacklogo.png" alt="X Icon" class="xLogoImage" />
+            <img src="/images/x-black-logo.png" alt="X Icon" class="xLogoImage" />
           </a>
         </span>
       </div>
