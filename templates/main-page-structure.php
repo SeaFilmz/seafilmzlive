@@ -12,7 +12,7 @@
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/sfmain.js" defer></script>
+        <script src="js/mobile-nav.js" defer></script>
 
         <!-- Open Graph Meta Tags for Social Media -->
         <meta property="og:title" content="<?php echo $ogTitle; ?>">
