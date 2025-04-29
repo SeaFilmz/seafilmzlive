@@ -228,7 +228,7 @@
 		<?php if ($city === 'Seattle') { ?>
       <div class="SeattleFFImage">
         <p class="PopsicleText">Where in Seattle is this popsicle's location?</p>
-        <img class="PopsicleSculpture" src="/images/popsiclesculpture.JPG" alt="Giant red popsicle located in the city of Seattle">
+        <img class="PopsicleSculpture" src="/images/popsicle-sculpture.JPG" alt="Giant red popsicle located in the city of Seattle">
       </div>
 
       <div id="imageAnswer">
