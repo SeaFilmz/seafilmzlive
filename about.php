@@ -26,7 +26,7 @@
       <button onclick="headerSwitchText()" class="secondHeaderButton">SeaFilmz Stand For</button>
     </div>
 
-    <script src="/js/websitenamestandsfor.js" defer></script>
+    <script src="/js/website-name-stands-for.js" defer></script>
 
 <?php
   // footer display function
