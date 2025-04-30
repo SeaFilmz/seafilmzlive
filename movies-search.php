@@ -51,7 +51,8 @@
 
 				<div class="movieResult">
 
-					<div class="movieTitleYear"><a href= "<?php echo $row["MoviePageLink"]; ?>" class="movieTitleLink"><?php echo $row["MovieTitle"]; ?></a>, <?php echo $row["YearReleased"]; ?></div>
+					<div class="movieTitleYear"><a href= "<?php echo $row["MoviePageLink"]; ?>" class="movieTitleLink"><?php echo $row["MovieTitle"]; ?></a></div>
+					<div><?php echo $row["YearReleased"]; ?></div>
 					<div>Movie</div>
 
 				</div>
