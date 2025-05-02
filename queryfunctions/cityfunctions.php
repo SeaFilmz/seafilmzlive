@@ -3,7 +3,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM `citiescounty` INNER JOIN cities ON cities.CityID = citiescounty.CityID INNER JOIN county ON county.CountyID = citiescounty.CountyID WHERE CityLinks = ? ");
+    $query = $newconnection->prepare("SELECT * FROM `cities_counties` INNER JOIN cities ON cities.CityID = cities_counties.CityID INNER JOIN county ON county.CountyID = cities_counties.CountyID WHERE CityLinks = ? ");
 
     $query->bind_param("s", $cityLinkSlug);
     $query->execute();
