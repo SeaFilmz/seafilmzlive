@@ -102,12 +102,19 @@
           </tr>
         <?php
         }
-        ?>
+        if ($people["City"] === "Seattle") { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Place</td>
-            <td class="peopleData"><!--<a href="seattle">--><?php echo $people["City"]; ?><!--</a>-->, <?php echo $people["StateProvince"]; ?>, <?php echo $people["Country"]; ?></td>
+            <td class="peopleData"><a href="seattle-washington"><?php echo $people["City"]; ?></a>, <?php echo $people["StateProvince"]; ?>, <?php echo $people["Country"]; ?></td>
+            </tr>
+        <?php } else { ?>
+          <tr class="peopleDataPointRow">
+            <td class="peopleData peopleDataDesc">Birth Place</td>
+            <td class="peopleData"><?php echo $people["City"]; ?>, <?php echo $people["StateProvince"]; ?>, <?php echo $people["Country"]; ?></td>
           </tr>
-        <?php if ($people["Height"] != NULL) { ?>
+        <?php
+        }
+        if ($people["Height"] != NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Height</td>
             <td class="peopleData"><?php echo $people["Height"]; ?></td>
