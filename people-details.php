@@ -105,8 +105,8 @@
             <td class="peopleData">
             <?php
             }
-            if ($people["City"] === "Seattle") { ?>
-              <a href="seattle-washington"><?php echo $people["City"]; ?></a>,
+            if ($people["City"] === "Seattle" or $people["City"] === "Portland") { ?>
+              <a href="<?php echo $people["CityLinks"]; ?>"><?php echo $people["City"]; ?></a>,
             <?php } else { ?>
               <?php echo $people["City"]; ?>,
             <?php } ?>
