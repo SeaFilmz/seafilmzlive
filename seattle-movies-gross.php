@@ -57,7 +57,7 @@
     </div>
 
 <?php
-  require 'queryfunctions/moviefunctions.php';
+  require 'queryfunctions/movie-functions.php';
   cityMovieGrossTotal('Seattle');
   cityMovieHighestGrossTotal('Seattle');
 ?>

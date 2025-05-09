@@ -5,7 +5,7 @@
   $movieSLUGPart = $_SERVER['REQUEST_URI'];
   $movieSLUGPartFixed = str_replace('/', '', $movieSLUGPart);
 
-  require_once 'queryfunctions/moviefunctions.php';
+  require_once 'queryfunctions/movie-functions.php';
   $result = individualMovieFactPageQuery(trim($movieSLUGPartFixed));
 
   // 3. Use returned data (if any)

@@ -62,7 +62,7 @@
 
         <!--link to Total Movie Count-->
 <?php
-  require 'queryfunctions/moviefunctions.php';
+  require 'queryfunctions/movie-functions.php';
   cityMoviesCount('Portland');
 ?>
 
