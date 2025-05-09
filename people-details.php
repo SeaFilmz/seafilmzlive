@@ -97,14 +97,13 @@
               $today = new DateTime(date('m/d/Y')); // Todays Date
               $diff = $today->diff($bday); // Calculate Age
               printf(' %d years, %d months, %d days', $diff->y, $diff->m, $diff->d); // Display Age in Years, Months
-            ?>
+            } ?>
             </td>
           </tr>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Place</td>
             <td class="peopleData">
             <?php
-            }
             if ($people["CityLinks"] !== NULL and $people["PeopleLinks"] !== NULL) { ?>
               <a href="<?php echo $people["CityLinks"]; ?>"><?php echo $people["City"]; ?></a>,
             <?php } else { ?>
