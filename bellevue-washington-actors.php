@@ -60,7 +60,7 @@
 
     <!--link to Total Actors Count-->
 <?php
-  require 'queryfunctions/peoplefunctions.php';
+  require 'queryfunctions/people-functions.php';
   peopleCityBornByJobCount('Bellevue', 'actor');
 ?>
 

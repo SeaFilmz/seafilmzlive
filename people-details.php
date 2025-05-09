@@ -6,7 +6,7 @@
   $peopleSLUGPart = $_SERVER['REQUEST_URI'];
   $peopleSLUGPartFixed = str_replace('/', '', $peopleSLUGPart);
 
-  require_once 'queryfunctions/peoplefunctions.php';
+  require_once 'queryfunctions/people-functions.php';
   $result = newIndividualPeopleFactPageQuery(trim($peopleSLUGPartFixed));
 
   // 3. Use returned data (if any)
