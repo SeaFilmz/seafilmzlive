@@ -5,7 +5,7 @@
   $cityStateSLUGPart = $_SERVER['REQUEST_URI'];
   $cityStateSLUGPartFixed = str_replace('/', '', $cityStateSLUGPart);
 
-  require_once 'queryfunctions/cityfunctions.php';
+  require_once 'queryfunctions/city-functions.php';
   $result = cityQuery(trim($cityStateSLUGPartFixed));
 
   // 3. Use returned data (if any)

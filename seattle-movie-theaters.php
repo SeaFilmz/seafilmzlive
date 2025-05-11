@@ -13,7 +13,7 @@
 		<div class="SeattleMTContent">
       <ul class="SMTList">
         <?php
-          require_once 'queryfunctions/cityfunctions.php';
+          require_once 'queryfunctions/city-functions.php';
           cityAttractionQuery('Seattle', 'Movie Theater');
         ?>
       </ul>
