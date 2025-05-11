@@ -14,7 +14,7 @@
     <div class="OregonCitiesContent">
 
       <?php
-        require_once 'queryfunctions/statecitiesfunction.php';
+        require_once 'queryfunctions/state-cities-functions.php';
         stateCitiesQuery("Oregon");
       ?>
 
