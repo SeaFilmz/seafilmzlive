@@ -66,7 +66,7 @@
 
     <!--link to Total Athletes Count-->
     <?php
-  require 'queryfunctions/athletefunctions.php';
+  require 'queryfunctions/athlete-functions.php';
   require 'queryfunctions/people-functions.php';
   peopleCityBornByJobCount('Anchorage', 'athlete');
 ?>
