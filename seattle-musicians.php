@@ -55,7 +55,7 @@
 
     <!--link to Total Musicians Count-->
 <?php
-  require 'queryfunctions/musicianfunctions.php';
+  require 'queryfunctions/musician-functions.php';
   cityMusiciansCount('Seattle', 'musician');
 ?>
 
