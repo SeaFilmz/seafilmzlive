@@ -99,7 +99,7 @@
           <?php
             while ($locations = mysqli_fetch_assoc($filmLocations)) {
           ?>
-          <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["City"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["country"]; ?></td>
+          <td class="movieDataFilmLocations"><a href="<?php echo $locations["CityLinks"]; ?>"><?php echo $locations["city"]; ?></a>, <?php echo $locations["StateProvince"]; ?>, <?php echo $locations["country"]; ?></td>
           <?php }
 
           // 4. Release returned data

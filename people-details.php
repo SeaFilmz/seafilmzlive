@@ -105,9 +105,9 @@
             <td class="peopleData">
             <?php
             if ($people["CityLinks"] !== NULL and $people["PeopleLinks"] !== NULL) { ?>
-              <a href="<?php echo $people["CityLinks"]; ?>"><?php echo $people["City"]; ?></a>,
+              <a href="<?php echo $people["CityLinks"]; ?>"><?php echo $people["city"]; ?></a>,
             <?php } else { ?>
-              <?php echo $people["City"]; ?>,
+              <?php echo $people["city"]; ?>,
             <?php } ?>
               <?php echo $people["StateProvince"] . ", " . $people["country"]; ?>
             </td>

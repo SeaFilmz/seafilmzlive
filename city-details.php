@@ -11,7 +11,7 @@
   // 3. Use returned data (if any)
   if ($cityFact = mysqli_fetch_assoc($result)) {
     $rows = mysqli_num_rows($result);
-    $city = $cityFact["City"];
+    $city = $cityFact["city"];
     $StateProvince = $cityFact["StateProvince"];
     $title = "{$city} - SeaFilmz";
     $mDesc = "Fact page about the city of {$city}";

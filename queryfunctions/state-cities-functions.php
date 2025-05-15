@@ -14,7 +14,7 @@
 
     while ($city = mysqli_fetch_assoc($result)) { ?>
         <?php if ($city["CityLinks"] !== NULL) { ?>
-            <p class="StateCitiesLinks"><a href= "<?= $city["CityLinks"]; ?>"><?= $city["City"];
+            <p class="StateCitiesLinks"><a href= "<?= $city["CityLinks"]; ?>"><?= $city["city"];
         }
     }
 

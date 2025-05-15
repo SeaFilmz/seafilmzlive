@@ -12,7 +12,7 @@
 
           <?php
               // 2. Perform database query
-              $query = $newconnection->prepare("SELECT COUNT(*) peoplecount FROM peoples_jobs INNER JOIN peoples ON peoples.PeopleID = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE City = ? AND jobs = ? AND (FirstName IS NOT NULL OR MusicianName IS NOT NULL) ");
+              $query = $newconnection->prepare("SELECT COUNT(*) peoplecount FROM peoples_jobs INNER JOIN peoples ON peoples.PeopleID = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE city = ? AND jobs = ? AND (FirstName IS NOT NULL OR MusicianName IS NOT NULL) ");
 
               $query->bind_param("ss", $city, $job);
               $query->execute();
