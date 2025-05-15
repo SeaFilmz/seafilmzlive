@@ -112,10 +112,10 @@
               <?php echo $people["StateProvince"] . ", " . $people["country"]; ?>
             </td>
           </tr>
-        <?php if ($people["Height"] != NULL) { ?>
+        <?php if ($people["height"] != NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Height</td>
-            <td class="peopleData"><?php echo $people["Height"]; ?></td>
+            <td class="peopleData"><?php echo $people["height"]; ?></td>
           </tr>
         <?php
         }
