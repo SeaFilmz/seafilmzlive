@@ -53,12 +53,12 @@
           <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">County</td>
-              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["County"]}"; ?></a></td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["county"]}"; ?></a></td>
             </tr>
           <?php } elseif ($StateProvince === 'Alaska') { ?>
             <tr class="cityDataPointRow">
               <td class="cityData cityDataDesc">Borough</td>
-              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["County"]}"; ?></a></td>
+              <td class="cityData"><a href="<?= "{$cityFact["OfficialCountyLinks"]}"; ?>" target="_blank"><?= "{$cityFact["county"]}"; ?></a></td>
             </tr>
           <?php }
         } elseif ($city === 'Bothell') { ?>
