@@ -67,7 +67,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.CityID WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
@@ -96,7 +96,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.CityID WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
