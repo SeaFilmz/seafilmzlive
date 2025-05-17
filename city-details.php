@@ -208,7 +208,7 @@
           if ($city === 'Seattle' or $city === 'Portland') {
           } else {
             cityAttractionTableQuery($city, 'Movie Theater');
-            cityFilmedMovieTableQuery($city);
+            cityFilmedMovieTableQuery($city, $StateProvince);
           }
 
           cityAttractionTableQuery($city, 'College');
