@@ -21,7 +21,7 @@
 
       <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.PeopleID = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.BirthCityID WHERE city = ? AND jobs = ? AND MusicianName IS NOT NULL ORDER BY MusicianName ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.PeopleID = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.birth_city_id WHERE city = ? AND jobs = ? AND MusicianName IS NOT NULL ORDER BY MusicianName ");
 
             $city = 'Seattle';
             $job = 'musician';
