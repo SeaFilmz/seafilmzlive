@@ -3,7 +3,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON cities.CityID = peoples.birth_city_id WHERE FirstName = ? AND LastName = ? ");
+    $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON  = peoples.birth_city_id WHERE FirstName = ? AND LastName = ? ");
 
     $query->bind_param("ss", $actorFirstName, $actorLastName);
     $query->execute();

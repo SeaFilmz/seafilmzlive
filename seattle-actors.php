@@ -26,7 +26,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY FirstName ASC ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY FirstName ASC ");
 
             $city = 'Seattle';
             $job = 'actor';
@@ -76,7 +76,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON cities.CityID = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY Birthdate DESC ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.PeopleID INNER JOIN jobs ON jobs.JobID = peoples_jobs.JobID INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY Birthdate DESC ");
 
             $cityBirthdate = 'Seattle';
             $jobBirthdate = 'actor';

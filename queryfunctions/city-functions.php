@@ -3,7 +3,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM `cities_counties` INNER JOIN cities ON cities.CityID = cities_counties.city_id INNER JOIN counties ON counties.county_id = cities_counties.county_id WHERE CityLinks = ? ");
+    $query = $newconnection->prepare("SELECT * FROM `cities_counties` INNER JOIN cities ON  = cities_counties.city_id INNER JOIN counties ON counties.county_id = cities_counties.county_id WHERE CityLinks = ? ");
 
     $query->bind_param("s", $cityLinkSlug);
     $query->execute();
@@ -20,7 +20,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON cities.CityID = movies_cities.city_id WHERE city = ?  AND StateProvince = ? ORDER BY MovieTitle ASC ");
+    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ?  AND StateProvince = ? ORDER BY MovieTitle ASC ");
 
     $query->bind_param("ss", $city, $StateProvince);
     $query->execute();
@@ -67,7 +67,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
@@ -96,7 +96,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON cities.CityID = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
