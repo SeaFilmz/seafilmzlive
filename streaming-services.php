@@ -11,7 +11,7 @@
 
   <main>
 
-    <?php function StreamingServiceList($link, $name) { ?>
+    <?php function streamingServiceList($link, $name) { ?>
       <li class="StreamingServicesName"><a href="<?= $link; ?>" target="_blank"><?= $name; ?></a></li>
     <?php } ?>
 
@@ -20,31 +20,31 @@
 
     <ul class="StreamingServices">
     <?php
-        StreamingServiceList("https://tubitv.com", "Tubi");
+        streamingServiceList("https://tubitv.com", "Tubi");
 
-        StreamingServiceList("https://www.starz.com/us/en/", "Starz");
+        streamingServiceList("https://www.starz.com/us/en/", "Starz");
 
-        StreamingServiceList("https://www.peacocktv.com", "Peacock");
+        streamingServiceList("https://www.peacocktv.com", "Peacock");
 
-        StreamingServiceList("https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime");
+        streamingServiceList("https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime");
 
-        StreamingServiceList("https://www.paramountplus.com", "Paramount+");
+        streamingServiceList("https://www.paramountplus.com", "Paramount+");
 
-        StreamingServiceList("https://www.netflix.com", "Netflix");
+        streamingServiceList("https://www.netflix.com", "Netflix");
 
-        StreamingServiceList("https://www.max.com/", "Max");
+        streamingServiceList("https://www.max.com/", "Max");
 
-        StreamingServiceList("https://www.hulu.com/welcome", "Hulu");
+        streamingServiceList("https://www.hulu.com/welcome", "Hulu");
 
-        StreamingServiceList("https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee");
+        streamingServiceList("https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee");
 
-        StreamingServiceList("https://www.disneyplus.com", "Disney+");
+        streamingServiceList("https://www.disneyplus.com", "Disney+");
 
-        StreamingServiceList("https://www.discoveryplus.com", "Discovery+");
+        streamingServiceList("https://www.discoveryplus.com", "Discovery+");
 
-        StreamingServiceList("https://www.apple.com/apple-tv-plus/", "Apple TV+");
+        streamingServiceList("https://www.apple.com/apple-tv-plus/", "Apple TV+");
 
-        StreamingServiceList("https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video");
+        streamingServiceList("https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video");
       ?>
     </ul>
 
