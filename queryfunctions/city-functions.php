@@ -67,7 +67,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY attraction_name ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
@@ -81,7 +81,7 @@
       // output data from each row
 ?>
 
-      <li class="SMTElements"><a href= "<?php echo $attractions["attraction_link"]; ?>"><?php echo $attractions["AttractionName"]; ?></a></li>
+      <li class="SMTElements"><a href= "<?php echo $attractions["attraction_link"]; ?>"><?php echo $attractions["attraction_name"]; ?></a></li>
 
   <?php
     }
@@ -96,7 +96,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY AttractionName ASC ");
+    $query = $newconnection->prepare("SELECT * FROM attractions_cities INNER JOIN attractions ON attractions.attraction_id = attractions_cities.attraction_id INNER JOIN cities ON  = attractions_cities.city_id WHERE city = ? AND AttractionType = ? ORDER BY attraction_name ASC ");
 
     $query->bind_param("ss", $city, $attractionType);
     $query->execute();
@@ -120,7 +120,7 @@
       // output data from each row
 ?>
 
-        <div class="movieTheaters"><a href= "<?= $attractions["attraction_link"]; ?>"><?= $attractions["AttractionName"]; ?></a></div>
+        <div class="movieTheaters"><a href= "<?= $attractions["attraction_link"]; ?>"><?= $attractions["attraction_name"]; ?></a></div>
 
   <?php
     }
