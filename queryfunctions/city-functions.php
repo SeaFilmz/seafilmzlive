@@ -81,7 +81,7 @@
       // output data from each row
 ?>
 
-      <li class="SMTElements"><a href= "<?php echo $attractions["AttractionLink"]; ?>"><?php echo $attractions["AttractionName"]; ?></a></li>
+      <li class="SMTElements"><a href= "<?php echo $attractions["attraction_link"]; ?>"><?php echo $attractions["AttractionName"]; ?></a></li>
 
   <?php
     }
@@ -120,7 +120,7 @@
       // output data from each row
 ?>
 
-        <div class="movieTheaters"><a href= "<?= $attractions["AttractionLink"]; ?>"><?= $attractions["AttractionName"]; ?></a></div>
+        <div class="movieTheaters"><a href= "<?= $attractions["attraction_link"]; ?>"><?= $attractions["AttractionName"]; ?></a></div>
 
   <?php
     }
