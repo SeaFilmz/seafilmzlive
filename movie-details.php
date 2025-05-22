@@ -12,9 +12,9 @@
   if ($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  $title = $movies["movie_title"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
-  $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["YearReleased"] . ').';
-  $ogTitle = $movies["movie_title"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
+  $title = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
+  $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["year_released"] . ').';
+  $ogTitle = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
@@ -25,7 +25,7 @@
       <h1 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h1>
 
       <?php
-        $bday = $movies["YearReleased"]; // Movies Year Released from DB
+        $bday = $movies["year_released"]; // Movies Year Released from DB
         $today = date('Y'); // Todays Date
         $diff = $today-$bday; // Calculate Age
       ?>
@@ -33,7 +33,7 @@
       <table>
         <tr class="movieDataPointRow">
           <td class="movieData movieDataDesc">Year Released</td>
-          <td class="movieData"><?php echo $movies["YearReleased"]; ?></td>
+          <td class="movieData"><?php echo $movies["year_released"]; ?></td>
         </tr>
 
         <tr class="movieDataPointRow">
