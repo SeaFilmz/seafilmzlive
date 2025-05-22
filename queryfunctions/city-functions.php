@@ -20,7 +20,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ?  AND StateProvince = ? ORDER BY MovieTitle ASC ");
+    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ?  AND StateProvince = ? ORDER BY movie_title ASC ");
 
     $query->bind_param("ss", $city, $StateProvince);
     $query->execute();
@@ -44,7 +44,7 @@
         // output data from each row
 ?>
 
-        <div class="movieTheaters"><a href= "<?= $movies["MoviePageLink"]; ?>" target="_blank"><?= $movies["MovieTitle"]; ?></a></div>
+        <div class="movieTheaters"><a href= "<?= $movies["MoviePageLink"]; ?>" target="_blank"><?= $movies["movie_title"]; ?></a></div>
 
   <?php
       }

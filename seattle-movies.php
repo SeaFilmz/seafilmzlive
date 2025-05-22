@@ -26,7 +26,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY MovieTitle ASC ");
+            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
 
             $city = 'Seattle';
             $query->bind_param("s", $city);
@@ -46,7 +46,7 @@
           <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
           <label for="movieCheckboxes"></label>
         </td>
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
 
@@ -83,7 +83,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY YearReleased DESC, MovieTitle ");
+            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY YearReleased DESC, movie_title ");
 
             $cityY = 'Seattle';
             $query->bind_param("s", $cityY);
@@ -99,7 +99,7 @@
         ?>
 
       <tr class="MoviesContent">
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
 

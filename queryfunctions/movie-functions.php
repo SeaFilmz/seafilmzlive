@@ -478,7 +478,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE MovieTitle = ? AND city = ? ");
+    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE movie_title = ? AND city = ? ");
 
     $query->bind_param("ss", $movieTitle, $city);
     $query->execute();

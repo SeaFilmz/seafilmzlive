@@ -22,8 +22,8 @@
 
 		$query = $newconnection->prepare(
 			"SELECT * FROM movies
-				WHERE REPLACE(MovieTitle, ' ', '') LIKE ?
-				ORDER BY MovieTitle ASC
+				WHERE REPLACE(movie_title, ' ', '') LIKE ?
+				ORDER BY movie_title ASC
 		");
 
 		$query->bind_param("s", $movieTitle);
@@ -51,7 +51,7 @@
 
 				<div class="movieResult">
 
-					<div class="movieTitleYear"><a href= "<?php echo $row["MoviePageLink"]; ?>" class="movieTitleLink"><?php echo $row["MovieTitle"]; ?></a></div>
+					<div class="movieTitleYear"><a href= "<?php echo $row["MoviePageLink"]; ?>" class="movieTitleLink"><?php echo $row["movie_title"]; ?></a></div>
 					<div><?php echo $row["YearReleased"]; ?></div>
 					<div>Movie</div>
 

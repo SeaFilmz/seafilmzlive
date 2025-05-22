@@ -26,7 +26,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY RunTime ASC, MovieTitle ");
+            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY RunTime ASC, movie_title ");
 
             $city = 'Seattle';
             $query->bind_param("s", $city);
@@ -42,7 +42,7 @@
         ?>
 
       <tr class="MoviesContent">
-        <td class="MovieTitlesRContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["MovieTitle"]; ?></a></b></td>
+        <td class="MovieTitlesRContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieRuntimeContent"><?php echo $movies["RunTime"]; ?></td>
       </tr>
 

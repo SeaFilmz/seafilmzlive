@@ -12,9 +12,9 @@
   if ($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  $title = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
-  $mDesc = 'This is the fact page for Seattle movie ' . $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ').';
-  $ogTitle = $movies["MovieTitle"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
+  $title = $movies["movie_title"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
+  $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["YearReleased"] . ').';
+  $ogTitle = $movies["movie_title"] . ' (' . $movies["YearReleased"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
@@ -22,7 +22,7 @@
 ?>
 
     <main class="MovieMainFacts">
-      <h1 class="MovieTitle"><b><?php echo $movies["MovieTitle"]; ?></b></h1>
+      <h1 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h1>
 
       <?php
         $bday = $movies["YearReleased"]; // Movies Year Released from DB
