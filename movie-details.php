@@ -50,10 +50,10 @@
           <td class="movieData"><?php echo $movies["RunTime"]; ?> Minutes</td>
         </tr>
 
-        <?php if ($movies["TotalWorldGross"] != NULL) { ?>
+        <?php if ($movies["total_world_gross"] != NULL) { ?>
           <tr class="movieDataPointRow">
             <td class="movieData movieDataDesc">Total Worldwide Gross in US Dollars</td>
-            <td class="movieData">$<?php echo number_format($movies["TotalWorldGross"]); ?>
+            <td class="movieData">$<?php echo number_format($movies["total_world_gross"]); ?>
           </tr>
         <?php }
   } ?>

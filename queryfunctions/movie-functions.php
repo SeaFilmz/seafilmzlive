@@ -404,7 +404,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT SUM(TotalWorldGross) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT SUM(total_world_gross) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityGrossTotal);
             $query->execute();
@@ -418,7 +418,7 @@ function cityMovieGrossTotal($cityGrossTotal) {
                 // output data from each row
         ?>
 
-        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["SUM(TotalWorldGross)"]); ?></td>
+        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["SUM(total_world_gross)"]); ?></td>
       </tr>
 
         <?php
@@ -444,7 +444,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT MAX(TotalWorldGross) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT MAX(total_world_gross) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityHighestGrossTotal);
             $query->execute();
@@ -458,7 +458,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
                 // output data from each row
         ?>
 
-        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["MAX(TotalWorldGross)"]); ?></td>
+        <td class="MovieTotalGrossNumber">$<?php echo number_format($movies["MAX(total_world_gross)"]); ?></td>
       </tr>
 
         <?php
