@@ -42,7 +42,7 @@
         ?>
 
           <tr class="MoviesContent">
-            <td class="MovieTitlesContent"><b ><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+            <td class="MovieTitlesContent"><b ><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
             <td class="MovieGrossContent">$<?php echo number_format($movies["TotalWorldGross"]); ?></td>
           </tr>
 

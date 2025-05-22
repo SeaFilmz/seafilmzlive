@@ -46,7 +46,7 @@
           <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
           <label for="movieCheckboxes"></label>
         </td>
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
 
@@ -99,7 +99,7 @@
         ?>
 
       <tr class="MoviesContent">
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieYearContent"><?php echo $movies["YearReleased"]; ?></td>
       </tr>
 

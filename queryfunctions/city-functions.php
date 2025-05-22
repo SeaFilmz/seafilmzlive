@@ -44,7 +44,7 @@
         // output data from each row
 ?>
 
-        <div class="movieTheaters"><a href= "<?= $movies["MoviePageLink"]; ?>" target="_blank"><?= $movies["movie_title"]; ?></a></div>
+        <div class="movieTheaters"><a href= "<?= $movies["movie_page_link"]; ?>" target="_blank"><?= $movies["movie_title"]; ?></a></div>
 
   <?php
       }

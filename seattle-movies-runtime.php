@@ -42,7 +42,7 @@
         ?>
 
       <tr class="MoviesContent">
-        <td class="MovieTitlesRContent"><b><a href= "<?php echo $movies["MoviePageLink"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+        <td class="MovieTitlesRContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
         <td class="MovieRuntimeContent"><?php echo $movies["RunTime"]; ?></td>
       </tr>
 
