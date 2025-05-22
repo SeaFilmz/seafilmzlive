@@ -50,7 +50,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT SUM(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRt);
             $query->execute();
@@ -64,7 +64,7 @@
                 // output data from each row
         ?>
 
-        <td class="MovieTotalRuntimeNumber"><?php echo number_format($movies["SUM(RunTime)"]); ?> Minutes</td>
+        <td class="MovieTotalRuntimeNumber"><?php echo number_format($movies["SUM(runtime)"]); ?> Minutes</td>
       </tr>
 
         <?php
@@ -90,7 +90,7 @@ function cityRuntimeCountHours($cityRt) {
 
       <?php
           // 2. Perform database query
-          $query = $newconnection->prepare("SELECT SUM(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newconnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRt);
           $query->execute();
@@ -106,12 +106,12 @@ function cityRuntimeCountHours($cityRt) {
 
       <td class="MovieTotalRuntimeNumber">
         <?php
-          if ($movies["SUM(RunTime)"] % 60 == 0) { ?>
-            <td class="MovieTotalRuntimeNumber"><?= number_format($movies["SUM(RunTime)"]/60); ?> Hours</td>
+          if ($movies["SUM(runtime)"] % 60 == 0) { ?>
+            <td class="MovieTotalRuntimeNumber"><?= number_format($movies["SUM(runtime)"]/60); ?> Hours</td>
           <?php } else {
-            $totalRuntimeHours = floor($movies["SUM(RunTime)"]/60);
+            $totalRuntimeHours = floor($movies["SUM(runtime)"]/60);
             $totalRuntimeHoursFormated = number_format($totalRuntimeHours);
-            $remainingRuntimeMintues = $movies["SUM(RunTime)"] - ($totalRuntimeHours * 60);
+            $remainingRuntimeMintues = $movies["SUM(runtime)"] - ($totalRuntimeHours * 60);
           ?>
             <td class="MovieTotalRuntimeNumber"><?= "{$totalRuntimeHoursFormated} Hours {$remainingRuntimeMintues} Minutes"; ?></td>
           <?php } ?>
@@ -138,7 +138,7 @@ function cityRuntimeAvg($cityRtAvg) {
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT AVG(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtAvg);
             $query->execute();
@@ -154,7 +154,7 @@ function cityRuntimeAvg($cityRtAvg) {
 
       <tr class="MoviesContent">
         <th class="MovieTotalRuntimeRowHeader">Average Seattle Movie Runtime</th>
-        <td class="MovieTotalRuntimeNumber"><?php echo $movies["AVG(RunTime)"]; ?> Minutes</td>
+        <td class="MovieTotalRuntimeNumber"><?php echo $movies["AVG(runtime)"]; ?> Minutes</td>
       </tr>
 
         <?php
@@ -178,7 +178,7 @@ function cityRuntimeAvgHours($cityRtAvg) {
 
       <?php
           // 2. Perform database query
-          $query = $newconnection->prepare("SELECT AVG(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newconnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtAvg);
           $query->execute();
@@ -194,12 +194,12 @@ function cityRuntimeAvgHours($cityRtAvg) {
 
     <tr class="MoviesContent">
       <th class="MovieTotalRuntimeRowHeader">Average Seattle Movie Runtime</th>
-        <?php if ($movies["AVG(RunTime)"] / 60 === 0) { ?>
-          <td class="MovieTotalRuntimeNumber"><?= number_format($movies["AVG(RunTime)"]/60); ?> Hours</td>
+        <?php if ($movies["AVG(runtime)"] / 60 === 0) { ?>
+          <td class="MovieTotalRuntimeNumber"><?= number_format($movies["AVG(runtime)"]/60); ?> Hours</td>
         <?php } else {
-          $averageRuntimeHours = floor($movies["AVG(RunTime)"]/60);
+          $averageRuntimeHours = floor($movies["AVG(runtime)"]/60);
           $averageRuntimeHoursFormated = number_format($averageRuntimeHours);
-          $remainingAverageRuntimeMinutes = $movies["AVG(RunTime)"] - ($averageRuntimeHours * 60);
+          $remainingAverageRuntimeMinutes = $movies["AVG(runtime)"] - ($averageRuntimeHours * 60);
         ?>
           <td class="MovieTotalRuntimeNumber"><?= "{$averageRuntimeHoursFormated} Hours {$remainingAverageRuntimeMinutes} Minutes"; ?></td>
         <?php } ?>
@@ -226,7 +226,7 @@ function cityRuntimeShortest($cityRtShortest) {
 
       <?php
           // 2. Perform database query
-          $query = $newconnection->prepare("SELECT MIN(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newconnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtShortest);
           $query->execute();
@@ -242,7 +242,7 @@ function cityRuntimeShortest($cityRtShortest) {
 
     <tr class="MoviesContent">
       <th class="MovieTotalRuntimeRowHeader">Shortest Seattle Movie Runtime</th>
-      <td class="MovieTotalRuntimeNumber"><?php echo $movies["MIN(RunTime)"]; ?> Minutes</td>
+      <td class="MovieTotalRuntimeNumber"><?php echo $movies["MIN(runtime)"]; ?> Minutes</td>
     </tr>
 
       <?php
@@ -266,7 +266,7 @@ function cityRuntimeShortestHours($cityRtShortest) {
 
       <?php
           // 2. Perform database query
-          $query = $newconnection->prepare("SELECT MIN(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newconnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtShortest);
           $query->execute();
@@ -282,12 +282,12 @@ function cityRuntimeShortestHours($cityRtShortest) {
 
     <tr class="MoviesContent">
       <th class="MovieTotalRuntimeRowHeader">Shortest Seattle Movie Runtime</th>
-      <?php if ($movies["MIN(RunTime)"] % 60 == 0) { ?>
-        <td class="MovieTotalRuntimeNumber"><?php $movies["MIN(RunTime)"]/60; ?> Hours</td>
+      <?php if ($movies["MIN(runtime)"] % 60 == 0) { ?>
+        <td class="MovieTotalRuntimeNumber"><?php $movies["MIN(runtime)"]/60; ?> Hours</td>
       <?php } else {
-        $shortestRuntimeHours = floor($movies["MIN(RunTime)"]/60);
+        $shortestRuntimeHours = floor($movies["MIN(runtime)"]/60);
         $shortestRuntimeHoursFormated = number_format($shortestRuntimeHours);
-        $remainingShortestRuntimeMinutes = $movies["MIN(RunTime)"] - ($shortestRuntimeHours * 60);
+        $remainingShortestRuntimeMinutes = $movies["MIN(runtime)"] - ($shortestRuntimeHours * 60);
       ?>
         <td class="MovieTotalRuntimeNumber"><?= "{$shortestRuntimeHoursFormated} Hours {$remainingShortestRuntimeMinutes} Minutes"; ?></td>
       <?php } ?>
@@ -314,7 +314,7 @@ function cityRuntimeLongest($cityRtLongest) {
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT MAX(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtLongest);
             $query->execute();
@@ -330,7 +330,7 @@ function cityRuntimeLongest($cityRtLongest) {
 
       <tr class="MoviesContent">
         <th class="MovieTotalRuntimeRowHeader">Longest Seattle Movie Runtime</th>
-        <td class="MovieTotalRuntimeNumber"><?php echo $movies["MAX(RunTime)"]; ?> Minutes</td>
+        <td class="MovieTotalRuntimeNumber"><?php echo $movies["MAX(runtime)"]; ?> Minutes</td>
       </tr>
 
         <?php
@@ -354,7 +354,7 @@ function cityRuntimeLongestHours($cityRtLongest) {
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT MAX(RunTime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newconnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtLongest);
             $query->execute();
@@ -370,12 +370,12 @@ function cityRuntimeLongestHours($cityRtLongest) {
 
       <tr class="MoviesContent">
         <th class="MovieTotalRuntimeRowHeader">Longest Seattle Movie Runtime</th>
-        <?php if ($movies["MAX(RunTime)"] % 60 == 0) { ?>
-          <td class="MovieTotalRuntimeNumber"><?php $movies["MAX(RunTime)"]/60; ?> Hours</td>
+        <?php if ($movies["MAX(runtime)"] % 60 == 0) { ?>
+          <td class="MovieTotalRuntimeNumber"><?php $movies["MAX(runtime)"]/60; ?> Hours</td>
         <?php } else {
-          $longestRuntimeHours = floor($movies["MAX(RunTime)"]/60);
+          $longestRuntimeHours = floor($movies["MAX(runtime)"]/60);
           $longestRuntimeHoursFormated = number_format($longestRuntimeHours);
-          $remainingLongestRuntimeMinutes = $movies["MAX(RunTime)"] - ($longestRuntimeHours * 60);
+          $remainingLongestRuntimeMinutes = $movies["MAX(runtime)"] - ($longestRuntimeHours * 60);
         ?>
           <td class="MovieTotalRuntimeNumber"><?= "{$longestRuntimeHoursFormated} Hours {$remainingLongestRuntimeMinutes} Minutes"; ?></td>
         <?php } ?>
