@@ -24,7 +24,7 @@
 
 		<main class="CityMainFacts">
       <h1 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
-        <?php if ($cityFact["StateProvinceCapital"] === 1) { ?>
+        <?php if ($cityFact["state_province_capital"] === 1) { ?>
           (State Capital City)
         <?php } ?>
       </h1>
