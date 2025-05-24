@@ -104,8 +104,8 @@
             <td class="peopleData peopleDataDesc">Birth Place</td>
             <td class="peopleData">
             <?php
-            if ($people["CityLinks"] !== NULL and $people["people_links"] !== NULL) { ?>
-              <a href="<?php echo $people["CityLinks"]; ?>"><?php echo $people["city"]; ?></a>,
+            if ($people["city_links"] !== NULL and $people["people_links"] !== NULL) { ?>
+              <a href="<?php echo $people["city_links"]; ?>"><?php echo $people["city"]; ?></a>,
             <?php } else { ?>
               <?php echo $people["city"]; ?>,
             <?php } ?>

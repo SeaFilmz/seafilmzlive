@@ -13,8 +13,8 @@
       or die("Database query failed.");
 
     while ($city = mysqli_fetch_assoc($result)) { ?>
-        <?php if ($city["CityLinks"] !== NULL) { ?>
-            <p class="StateCitiesLinks"><a href= "<?= $city["CityLinks"]; ?>"><?= $city["city"];
+        <?php if ($city["city_links"] !== NULL) { ?>
+            <p class="StateCitiesLinks"><a href= "<?= $city["city_links"]; ?>"><?= $city["city"];
         }
     }
 
