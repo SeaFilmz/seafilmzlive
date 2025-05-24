@@ -46,7 +46,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON  = peoples.birth_city_id WHERE PeopleLinks = ? ");
+    $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON  = peoples.birth_city_id WHERE people_links = ? ");
 
     $query->bind_param("s", $peopleSLUG);
     $query->execute();

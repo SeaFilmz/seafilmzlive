@@ -36,7 +36,7 @@
         ?>
 
       <tr class="MusiciansMainContent">
-        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["PeopleLinks"]; ?>"> <?php echo $musician["MusicianName"]; ?> </a></b></td>
+        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["people_links"]; ?>"> <?php echo $musician["MusicianName"]; ?> </a></b></td>
       </tr>
 
         <?php

@@ -50,7 +50,7 @@
 
       <div class="AthletesMainContent">
       <tr class="AthletesContent">
-        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["PeopleLinks"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
+        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["people_links"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
         <td class="SportPlayed"><?php echo $athletes["SportKnownFor"]; ?></td>
       </tr>
       </div>
