@@ -43,8 +43,8 @@
     <main class="PeopleMainFacts">
       <?php if (($people["first_name"] and $people["LastName"]) != NULL) { ?>
         <h1 class="PeopleName"><?php echo $people["first_name"]; ?>
-        <?php if ($people["MiddleInitialName"] != NULL) { ?>
-          <b class="PeopleName"><?php echo $people["MiddleInitialName"]; ?></b>
+        <?php if ($people["middle_initialname"] != NULL) { ?>
+          <b class="PeopleName"><?php echo $people["middle_initialname"]; ?></b>
         <?php } ?>
         <?php echo $people["LastName"]; ?></h1>
       <?php }
