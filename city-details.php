@@ -107,7 +107,7 @@
         <?php if ($cityFact["city_links"] !== NULL) { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">City</td>
-            <td class="cityData"><a href="<?= "{$cityFact["OfficialCityLinks"]}"; ?>" target="_blank"><?= "{$city}"; ?></a></td>
+            <td class="cityData"><a href="<?= "{$cityFact["official_city_links"]}"; ?>" target="_blank"><?= "{$city}"; ?></a></td>
           </tr>
         <?php } ?>
 
