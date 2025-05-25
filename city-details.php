@@ -46,7 +46,7 @@
 
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">State</td>
-            <td class="cityData"><a href="<?= "{$cityFact["OfficialStateProvinceLinks"]}"; ?>" target="_blank"><?= $StateProvince; ?></a></td>
+            <td class="cityData"><a href="<?= "{$cityFact["official_state_province_links"]}"; ?>" target="_blank"><?= $StateProvince; ?></a></td>
           </tr>
 
         <?php if ($rows === 1) { ?>
