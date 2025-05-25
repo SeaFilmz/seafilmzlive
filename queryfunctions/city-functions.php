@@ -20,7 +20,7 @@
     global $newconnection, $rows;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ?  AND StateProvince = ? ORDER BY movie_title ASC ");
+    $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ?  AND state_province = ? ORDER BY movie_title ASC ");
 
     $query->bind_param("ss", $city, $StateProvince);
     $query->execute();

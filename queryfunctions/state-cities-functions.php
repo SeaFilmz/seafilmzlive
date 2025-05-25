@@ -3,7 +3,7 @@
     global $newconnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM `cities` WHERE StateProvince = ? ");
+    $query = $newconnection->prepare("SELECT * FROM `cities` WHERE state_province = ? ");
 
     $query->bind_param("s", $state);
     $query->execute();

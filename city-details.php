@@ -12,7 +12,7 @@
   if ($cityFact = mysqli_fetch_assoc($result)) {
     $rows = mysqli_num_rows($result);
     $city = $cityFact["city"];
-    $StateProvince = $cityFact["StateProvince"];
+    $StateProvince = $cityFact["state_province"];
     $title = "{$city} - SeaFilmz";
     $mDesc = "Fact page about the city of {$city}";
     $ogTitle = "{$city} - SeaFilmz";

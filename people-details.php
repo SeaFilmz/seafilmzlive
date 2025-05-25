@@ -109,7 +109,7 @@
             <?php } else { ?>
               <?php echo $people["city"]; ?>,
             <?php } ?>
-              <?php echo $people["StateProvince"] . ", " . $people["country"]; ?>
+              <?php echo $people["state_province"] . ", " . $people["country"]; ?>
             </td>
           </tr>
         <?php if ($people["height"] != NULL) { ?>
