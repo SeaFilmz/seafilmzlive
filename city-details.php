@@ -40,7 +40,7 @@
         <?php if ($cityFact["country"] === 'USA') { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Country</td>
-            <td class="cityData"><a href="<?= "{$cityFact["OfficialCountryLinks"]}"; ?>" target="_blank"><?= "United States of America"; ?></a></td>
+            <td class="cityData"><a href="<?= "{$cityFact["official_country_links"]}"; ?>" target="_blank"><?= "United States of America"; ?></a></td>
           </tr>
         <?php } ?>
 
