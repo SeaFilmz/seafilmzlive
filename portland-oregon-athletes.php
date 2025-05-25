@@ -32,7 +32,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? ORDER BY SportKnownFor ASC, FirstName ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? ORDER BY SportKnownFor ASC, first_name ");
 
             $city = 'Portland';
             $job = 'athlete';
@@ -49,7 +49,7 @@
         ?>
 
       <tr class="AthletesContent">
-        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["people_links"]; ?>"> <?php echo $athletes["FirstName"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
+        <td class="AthletesNameContent"> <b class="AthletesPageContent"> <a href= "<?php echo $athletes["people_links"]; ?>"> <?php echo $athletes["first_name"]; ?> <?php echo $athletes["LastName"]; ?></a> </b></td>
         <td class="SportPlayed"><?php echo $athletes["SportKnownFor"]; ?></td>
       </tr>
 

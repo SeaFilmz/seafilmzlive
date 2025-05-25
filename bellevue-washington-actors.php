@@ -25,7 +25,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY FirstName ASC ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND first_name IS NOT NULL ORDER BY first_name ASC ");
 
             $city = 'Bellevue';
             $job = 'actor';
@@ -42,7 +42,7 @@
         ?>
 
       <tr class="ActorsMainContent">
-        <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
+        <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["first_name"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
         <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
@@ -75,7 +75,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND FirstName IS NOT NULL ORDER BY Birthdate DESC ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND first_name IS NOT NULL ORDER BY Birthdate DESC ");
 
             $cityBirthdate = 'Bellevue';
             $jobBirthdate = 'actor';
@@ -92,7 +92,7 @@
         ?>
 
       <tr class="ActorsMainContent">
-        <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["FirstName"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
+        <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["first_name"]; ?> <?php echo $actors["MiddleInitialName"]; ?> <?php echo $actors["LastName"]; ?></a></b></td>
         <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 

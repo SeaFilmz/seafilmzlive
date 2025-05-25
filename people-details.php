@@ -13,23 +13,23 @@
   if ($people = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
-    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
-    $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born athlete.';
+  if (($people["first_name"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
+    $title = $people["first_name"] . ' ' . $people["LastName"] . ' - SeaFilmz';
+    $mDesc = $people["first_name"] . ' ' . $people["LastName"] . ' is a Seattle born athlete.';
   }
-  elseif (($people["FirstName"] and $people["LastName"]) != NULL) {
-    $title = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
-    $mDesc = $people["FirstName"] . ' ' . $people["LastName"] . ' is a Seattle born actor.';
+  elseif (($people["first_name"] and $people["LastName"]) != NULL) {
+    $title = $people["first_name"] . ' ' . $people["LastName"] . ' - SeaFilmz';
+    $mDesc = $people["first_name"] . ' ' . $people["LastName"] . ' is a Seattle born actor.';
   }
   elseif ($people["MusicianName"] != NULL) {
     $title = $people["MusicianName"] . ' - SeaFilmz';
     $mDesc = $people["MusicianName"] . ' is a Seattle born musician.';
   }
-  if (($people["FirstName"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
-    $ogTitle = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
+  if (($people["first_name"] and $people["LastName"] and $people["SportKnownFor"]) != NULL) {
+    $ogTitle = $people["first_name"] . ' ' . $people["LastName"] . ' - SeaFilmz';
   }
-  elseif (($people["FirstName"] and $people["LastName"]) != NULL) {
-    $ogTitle = $people["FirstName"] . ' ' . $people["LastName"] . ' - SeaFilmz';
+  elseif (($people["first_name"] and $people["LastName"]) != NULL) {
+    $ogTitle = $people["first_name"] . ' ' . $people["LastName"] . ' - SeaFilmz';
   }
   elseif ($people["MusicianName"] != NULL) {
     $ogTitle = $people["MusicianName"] . ' - SeaFilmz';
@@ -41,8 +41,8 @@
 ?>
 
     <main class="PeopleMainFacts">
-      <?php if (($people["FirstName"] and $people["LastName"]) != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["FirstName"]; ?>
+      <?php if (($people["first_name"] and $people["LastName"]) != NULL) { ?>
+        <h1 class="PeopleName"><?php echo $people["first_name"]; ?>
         <?php if ($people["MiddleInitialName"] != NULL) { ?>
           <b class="PeopleName"><?php echo $people["MiddleInitialName"]; ?></b>
         <?php } ?>
