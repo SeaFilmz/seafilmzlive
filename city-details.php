@@ -30,10 +30,10 @@
       </h1>
 
       <table class="CityTable">
-        <?php if ($cityFact["IncorporatedDate"] !== NULL) { ?>
+        <?php if ($cityFact["incorporated_date"] !== NULL) { ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Officially Became a City</td>
-            <td class="cityData"><?php $date = date_create($cityFact["IncorporatedDate"]); echo date_format($date, "F d, Y"); ?></td>
+            <td class="cityData"><?php $date = date_create($cityFact["incorporated_date"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
         <?php } ?>
 
