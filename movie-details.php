@@ -66,7 +66,7 @@
           <?php
             while ($actors = mysqli_fetch_assoc($movieActors)) {
           ?>
-          <td class="movieDataActor"><?php echo $actors["first_name"]; ?> <?php if ($actors["middle_initialname"] != NULL) { echo $actors["middle_initialname"]; } ?> <?php echo $actors["LastName"]; ?></td>
+          <td class="movieDataActor"><?php echo $actors["first_name"]; ?> <?php if ($actors["middle_initialname"] != NULL) { echo $actors["middle_initialname"]; } ?> <?php echo $actors["last_name"]; ?></td>
           <?php }
 
           // 4. Release returned data
@@ -82,7 +82,7 @@
           <?php
             while ($director = mysqli_fetch_assoc($movieDirector)) {
           ?>
-          <td class="movieDataDirector"><?php echo $director["first_name"]; ?> <?php if ($director["middle_initialname"] != NULL) { echo $director["middle_initialname"]; } ?> <?php echo $director["LastName"]; ?></td>
+          <td class="movieDataDirector"><?php echo $director["first_name"]; ?> <?php if ($director["middle_initialname"] != NULL) { echo $director["middle_initialname"]; } ?> <?php echo $director["last_name"]; ?></td>
           <?php }
 
           // 4. Release returned data
