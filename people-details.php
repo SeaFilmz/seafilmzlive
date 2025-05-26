@@ -21,9 +21,9 @@
     $title = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
     $mDesc = $people["first_name"] . ' ' . $people["last_name"] . ' is a Seattle born actor.';
   }
-  elseif ($people["MusicianName"] != NULL) {
-    $title = $people["MusicianName"] . ' - SeaFilmz';
-    $mDesc = $people["MusicianName"] . ' is a Seattle born musician.';
+  elseif ($people["musician_name "] != NULL) {
+    $title = $people["musician_name "] . ' - SeaFilmz';
+    $mDesc = $people["musician_name "] . ' is a Seattle born musician.';
   }
   if (($people["first_name"] and $people["last_name"] and $people["SportKnownFor"]) != NULL) {
     $ogTitle = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
@@ -31,8 +31,8 @@
   elseif (($people["first_name"] and $people["last_name"]) != NULL) {
     $ogTitle = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
   }
-  elseif ($people["MusicianName"] != NULL) {
-    $ogTitle = $people["MusicianName"] . ' - SeaFilmz';
+  elseif ($people["musician_name "] != NULL) {
+    $ogTitle = $people["musician_name "] . ' - SeaFilmz';
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $body = 'MainBody';
@@ -48,8 +48,8 @@
         <?php } ?>
         <?php echo $people["last_name"]; ?></h1>
       <?php }
-      elseif ($people["MusicianName"] != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["MusicianName"]; ?></h1>
+      elseif ($people["musician_name "] != NULL) { ?>
+        <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
       <?php } ?>
 
       <table class="IndividualPeopleTable">

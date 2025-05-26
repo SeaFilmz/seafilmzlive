@@ -19,7 +19,7 @@
 
       <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND MusicianName IS NOT NULL ORDER BY MusicianName ");
+            $query = $newconnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND musician_name  IS NOT NULL ORDER BY musician_name  ");
 
             $city = 'Tacoma';
             $job = 'musician';
@@ -36,7 +36,7 @@
         ?>
 
       <tr class="MusiciansMainContent">
-        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["people_links"]; ?>"> <?php echo $musician["MusicianName"]; ?> </a></b></td>
+        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["people_links"]; ?>"> <?php echo $musician["musician_name "]; ?> </a></b></td>
       </tr>
 
         <?php
