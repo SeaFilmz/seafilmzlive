@@ -53,10 +53,10 @@
       <?php } ?>
 
       <table class="IndividualPeopleTable">
-        <?php if ($people["BirthName"] !== NULL) { ?>
+        <?php if ($people["birth_name"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birth Name</td>
-            <td class="peopleData"><?php echo $people["BirthName"]; ?></td>
+            <td class="peopleData"><?php echo $people["birth_name"]; ?></td>
           </tr>
         <?php
         }
