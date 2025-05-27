@@ -69,17 +69,17 @@
         <?php
         }
         ?>
-        <?php if ($people["DeathDate"] !== NULL) { ?>
+        <?php if ($people["death_date"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Death Date</td>
-            <td class="peopleData"><?php $date = date_create($people["DeathDate"]); echo date_format($date, "F d, Y"); ?></td>
+            <td class="peopleData"><?php $date = date_create($people["death_date"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Death Age</td>
             <td class="peopleData">
             <?php
               $bday = date_create($people["birthdate"]); // Actors Birtdate for Db
-              $dday = date_create($people["DeathDate"]);
+              $dday = date_create($people["death_date"]);
               /*$dday = new DateTime(date('m/d/Y'));*/ // Todays Date
               $diff = $dday->diff($bday); // Calculate Age
               printf(' %d years, %d months, %d days', $diff->y, $diff->m, $diff->d); // Display Age in Years, Months, Days
