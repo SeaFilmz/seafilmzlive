@@ -13,7 +13,7 @@
   if ($people = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  if (($people["first_name"] and $people["last_name"] and $people["SportKnownFor"]) != NULL) {
+  if (($people["first_name"] and $people["last_name"] and $people["sport_known_for"]) != NULL) {
     $title = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
     $mDesc = $people["first_name"] . ' ' . $people["last_name"] . ' is a Seattle born athlete.';
   }
@@ -25,7 +25,7 @@
     $title = $people["musician_name "] . ' - SeaFilmz';
     $mDesc = $people["musician_name "] . ' is a Seattle born musician.';
   }
-  if (($people["first_name"] and $people["last_name"] and $people["SportKnownFor"]) != NULL) {
+  if (($people["first_name"] and $people["last_name"] and $people["sport_known_for"]) != NULL) {
     $ogTitle = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
   }
   elseif (($people["first_name"] and $people["last_name"]) != NULL) {
@@ -120,10 +120,10 @@
         <?php
         }
         ?>
-        <?php if ($people["SportKnownFor"] != NULL) { ?>
+        <?php if ($people["sport_known_for"] != NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Sport Known For</td>
-            <td class="peopleData"><?php echo $people["SportKnownFor"]; ?></td>
+            <td class="peopleData"><?php echo $people["sport_known_for"]; ?></td>
           </tr>
         <?php
         }
