@@ -53,8 +53,8 @@
 
     <!--link to Total Musicians Count-->
 <?php
-  require 'queryfunctions/musician-functions.php';
-  cityMusiciansCount('Tacoma', 'musician');
+  require 'queryfunctions/people-functions.php';
+  peopleCityBornByJobCount('Tacoma', 'musician');
 ?>
 
     <!--link to footer-->
