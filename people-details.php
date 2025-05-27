@@ -61,10 +61,10 @@
         <?php
         }
         ?>
-        <?php if ($people["BirthDate"] !== NULL) { ?>
+        <?php if ($people["birthdate"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birthdate</td>
-            <td class="peopleData"><?php $date = date_create($people["BirthDate"]); echo date_format($date, "F d, Y"); ?></td>
+            <td class="peopleData"><?php $date = date_create($people["birthdate"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
         <?php
         }
@@ -78,7 +78,7 @@
             <td class="peopleData peopleDataDesc">Death Age</td>
             <td class="peopleData">
             <?php
-              $bday = date_create($people["BirthDate"]); // Actors Birtdate for Db
+              $bday = date_create($people["birthdate"]); // Actors Birtdate for Db
               $dday = date_create($people["DeathDate"]);
               /*$dday = new DateTime(date('m/d/Y'));*/ // Todays Date
               $diff = $dday->diff($bday); // Calculate Age
@@ -87,13 +87,13 @@
             </td>
           </tr>
         <?php
-        } elseif ($people["BirthDate"] != NULL) {
+        } elseif ($people["birthdate"] != NULL) {
         ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Age</td>
             <td class="peopleData">
             <?php
-              $bday = date_create($people["BirthDate"]); // Actors Birtdate from Db
+              $bday = date_create($people["birthdate"]); // Actors Birtdate from Db
               $today = new DateTime(date('m/d/Y')); // Todays Date
               $diff = $today->diff($bday); // Calculate Age
               printf(' %d years, %d months, %d days', $diff->y, $diff->m, $diff->d); // Display Age in Years, Months

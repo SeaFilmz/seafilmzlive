@@ -44,7 +44,7 @@
 
       <tr class="ActorsMainContent">
         <td class="ActorsNameContent"><b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["first_name"]; ?> <?php echo $actors["middle_initialname"]; ?> <?php echo $actors["last_name"]; ?></a></b></td>
-        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
+        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["birthdate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
         <?php
@@ -94,7 +94,7 @@
 
       <tr class="ActorsMainContent">
         <td class="ActorsNameContent"> <b class="ActorsFirstName"> <a href= "<?php echo $actors["people_links"]; ?>"> <?php echo $actors["first_name"]; ?> <?php echo $actors["middle_initialname"]; ?> <?php echo $actors["last_name"]; ?></a></b></td>
-        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["BirthDate"]); echo date_format($date, "M d, Y"); ?></td>
+        <td class="ActorsBirthdateContent"><?php $date = date_create($actors["birthdate"]); echo date_format($date, "M d, Y"); ?></td>
       </tr>
 
         <?php
