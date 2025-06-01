@@ -118,7 +118,7 @@
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
-            <td class="cityData"><a href="seattle-movies">	List of Movies Filmed</a></td>
+            <td class="cityData"><a href="seattle-movies">List of Movies Filmed</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Other Film and Media Resources for Seattle</td>
@@ -161,7 +161,7 @@
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Movies Filmed</td>
-            <td class="cityData"><a href="portland-oregon-movies">	List of Movies Filmed</a></td>
+            <td class="cityData"><a href="portland-oregon-movies">List of Movies Filmed</a></td>
           </tr>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">People Born</td>
