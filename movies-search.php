@@ -70,7 +70,7 @@
 			?>
 				Movie Result: 0
 			<?php
-			}	 else if ($queryResults === 1) {
+			} elseif ($queryResults === 1) {
 			?>
 				Movie Result: 1
 			<?php
