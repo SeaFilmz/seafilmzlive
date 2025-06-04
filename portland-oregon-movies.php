@@ -26,7 +26,7 @@
 
         <?php
             // 2. Perform database querylike
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
+            $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
 
             $city = 'Portland';
             $query->bind_param("s", $city);
@@ -83,7 +83,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ");
+            $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ");
 
             $cityY = 'Portland';
             $query->bind_param("s", $cityY);

@@ -73,7 +73,7 @@
 
 <?php
     // 5. Close database connection
-    global $newconnection;
-    mysqli_close($newconnection);
+    global $newConnection;
+    mysqli_close($newConnection);
   }
 ?>

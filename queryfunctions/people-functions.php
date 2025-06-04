@@ -1,6 +1,6 @@
 <?php
   function peopleCityBornByJobCount($city, $job) {
-    global $newconnection;
+    global $newConnection;
 ?>
 
     <div class="MACTable">
@@ -12,7 +12,7 @@
 
           <?php
               // 2. Perform database query
-              $query = $newconnection->prepare("SELECT COUNT(*) peoplecount FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND (first_name IS NOT NULL OR musician_name  IS NOT NULL) ");
+              $query = $newConnection->prepare("SELECT COUNT(*) peoplecount FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND jobs = ? AND (first_name IS NOT NULL OR musician_name  IS NOT NULL) ");
 
               $query->bind_param("ss", $city, $job);
               $query->execute();
@@ -43,10 +43,10 @@
 
 <?php
   function newIndividualPeopleFactPageQuery($peopleSLUG) {
-    global $newconnection;
+    global $newConnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM peoples INNER JOIN cities ON  = peoples.birth_city_id WHERE people_links = ? ");
+    $query = $newConnection->prepare("SELECT * FROM peoples INNER JOIN cities ON  = peoples.birth_city_id WHERE people_links = ? ");
 
     $query->bind_param("s", $peopleSLUG);
     $query->execute();

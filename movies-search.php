@@ -12,7 +12,7 @@
 
 <?php
 	if (isset($_GET['search'])) {
-		$search = mysqli_real_escape_string($newconnection, $_GET['search']);
+		$search = mysqli_real_escape_string($newConnection, $_GET['search']);
 		$searchWhitespaceTrim = trim($search);
 
 		$searchRemoveWhitespaceAll = str_replace(" ", "", $search);
@@ -20,7 +20,7 @@
 
 		$movieTitle ="%$searchRemoveWhitespaceAll%";
 
-		$query = $newconnection->prepare(
+		$query = $newConnection->prepare(
 			"SELECT * FROM movies
 				WHERE REPLACE(movie_title, ' ', '') LIKE ?
 				ORDER BY movie_title ASC

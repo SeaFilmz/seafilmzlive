@@ -1,9 +1,9 @@
 <?php
   function stateCitiesQuery($state) {
-    global $newconnection;
+    global $newConnection;
 
     // 2. Perform database query
-    $query = $newconnection->prepare("SELECT * FROM `cities` WHERE state_province = ? ");
+    $query = $newConnection->prepare("SELECT * FROM `cities` WHERE state_province = ? ");
 
     $query->bind_param("s", $state);
     $query->execute();

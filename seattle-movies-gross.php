@@ -26,7 +26,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newconnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? AND total_world_gross IS NOT NULL ORDER BY total_world_gross DESC ");
+            $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? AND total_world_gross IS NOT NULL ORDER BY total_world_gross DESC ");
 
             $city = 'Seattle';
             $query->bind_param("s", $city);
