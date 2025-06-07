@@ -33,7 +33,7 @@
         <?php } ?>
       </nav>
 
-      <nav class="navigation">
+      <nav class="Navigation">
         <div class="dropdown">
           <span class="NavMove">Seattle Movies</span><div class="upsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
