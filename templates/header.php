@@ -1,6 +1,6 @@
     <header id="goToTopLink" class="banner">
       <h2 id="headerStandFor"><a href="/">SeaFilmz</a></h2>
-      <p class="solgan">6 Degrees of Seattle</p>
+      <p class="Slogan">6 Degrees of Seattle</p>
 
       <?php
         require_once 'templates/movie-search-form.php';
