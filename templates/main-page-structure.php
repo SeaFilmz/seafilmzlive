@@ -36,7 +36,7 @@
   function footerTemp() {
 ?>
     <footer>
-      <div class="followFooter">
+      <div class="FollowFooter">
         <span class="socialMediaInfo">
           <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
             <img src="/images/twitch-purple-logo.png" alt="Twitch Icon" class="twitchLogoImage" />
