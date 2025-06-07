@@ -22,7 +22,7 @@
       </div>
     </section>
 
-    <div class="secondHeader">
+    <div class="SecondHeader">
       <button onclick="headerSwitchText()" class="secondHeaderButton">SeaFilmz Stand For</button>
     </div>
 
