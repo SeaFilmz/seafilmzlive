@@ -9,7 +9,7 @@
   headerTemp();
 ?>
 
-    <section class="aboutpagecontent">
+    <section class="AboutPageContent">
       <h2 class="AboutHeader">About SeaFilmz</h2>
 
       <div class="AboutDescription">
