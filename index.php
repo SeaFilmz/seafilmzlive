@@ -11,7 +11,7 @@
 
     <main class="HomePageContent">
 
-      <div class="mainLinks">
+      <div class="MainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
 
         <p class="SeattleMovieMainLinks"><span class="SeattleMoviesMainHeader">Movies Filmed in Seattle: </span><span class="SeattleMoviesMain"><a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></span></p>
