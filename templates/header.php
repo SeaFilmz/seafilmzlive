@@ -35,7 +35,7 @@
 
       <nav class="Navigation">
         <div class="dropdown">
-          <span class="NavMove">Seattle Movies</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Seattle Movies</span><div class="UpsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle-movies">Title or Year Released</a></p>
             <p><a href="seattle-movies-runtime">Runtime</a></p>
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMove">Seattle Born</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Seattle Born</span><div class="UpsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle-actors">Actors</a></p>
             <p><a href="seattle-musicians">Musicians</a></p>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMove">Washington City Facts</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Washington City Facts</span><div class="UpsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="seattle-washington">Seattle</a></p>
             <p><a href="spokane-washington">Spokane</a></p>
@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="NavMove">Other States</span><div class="upsideDownTriangle">&#9660;</div>
+          <span class="NavMove">Other States</span><div class="UpsideDownTriangle">&#9660;</div>
           <div class="dropdown-content">
             <p><a href="oregon-cities">Oregon</a></p>
             <p><a href="idaho-cities">Idaho</a></p>
