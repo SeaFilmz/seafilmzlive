@@ -71,8 +71,8 @@
             <label for="falseAnswer5"> False</label>
             <input type="radio" name="answer5" value="false" id="falseAnswer5"><br>
 
-        <div class="sfQuizButton">
-          <button type="button" onclick="quizButton()" class="sfQuizButton"><b>Answer</b></button>
+        <div class="SFQuizButton">
+          <button type="button" onclick="quizButton()" class="SFQuizButton"><b>Answer</b></button>
         </div>
 
         </form>
