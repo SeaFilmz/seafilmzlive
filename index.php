@@ -29,7 +29,7 @@
 
 				<h2 class="SFQuizBackground">SeaFilmz Quiz</h2>
 
-				<form class="sfQuiz">
+				<form class="SFQuiz">
 
           <div class="sfQText"><p class="sfQ"><b>Sleepless in Seattle is the highest grossing movie filmed in Seattle.</b></p></div>
 
