@@ -79,11 +79,11 @@ button {
   z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.Dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown {
+.Dropdown {
   padding-bottom: 1rem;
 }
 
