@@ -70,7 +70,7 @@
       <button onclick="movieWatchedButton('Seattle')" class="WatchedButton"><b>Movies Watched</b></button>
     </div>
 
-    <p id="watchedText" class="watchedText"></p>
+    <p id="watchedText" class="WatchedText"></p>
 
     <h1 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h1>
 

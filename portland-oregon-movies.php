@@ -70,7 +70,7 @@
       <button onclick="movieWatchedButton('Portland')" class="WatchedButton"><b>Movies Watched</b></button>
     </div>
 
-    <p id="watchedText" class="watchedText"></p>
+    <p id="watchedText" class="WatchedText"></p>
 
     <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Portland, Oregon by Year</b></h2>
 
