@@ -1,6 +1,6 @@
 function startQuizButton() {
   document.querySelector(".SFStartQuizButton").style.display = "none";
-  document.querySelector(".sfQuizBackground").style.display = "block";
+  document.querySelector(".SFQuizBackground").style.display = "block";
 }
 
 //Home Page Movie Quiz

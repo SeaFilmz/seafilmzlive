@@ -25,7 +25,7 @@
         <button type="button" onclick="startQuizButton()" class="SFStartQuizButton"><b>Start SeaFilmz Quiz</b></button>
       </div>
 
-      <div class="sfQuizBackground">
+      <div class="SFQuizBackground">
 
 				<h2 class="sfQuizHeader">SeaFilmz Quiz</h2>
 
