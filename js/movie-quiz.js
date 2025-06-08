@@ -1,5 +1,5 @@
 function startQuizButton() {
-  document.querySelector(".sfStartQuizButton").style.display = "none";
+  document.querySelector(".SFStartQuizButton").style.display = "none";
   document.querySelector(".sfQuizBackground").style.display = "block";
 }
 
