@@ -66,8 +66,8 @@
   cityMoviesCount('Portland');
 ?>
 
-    <div class="watchedButton">
-      <button onclick="movieWatchedButton('Portland')" class="watchedButton"><b>Movies Watched</b></button>
+    <div class="WatchedButton">
+      <button onclick="movieWatchedButton('Portland')" class="WatchedButton"><b>Movies Watched</b></button>
     </div>
 
     <p id="watchedText" class="watchedText"></p>
