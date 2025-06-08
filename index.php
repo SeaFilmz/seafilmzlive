@@ -27,7 +27,7 @@
 
       <div class="SFQuizBackground">
 
-				<h2 class="sfQuizHeader">SeaFilmz Quiz</h2>
+				<h2 class="SFQuizBackground">SeaFilmz Quiz</h2>
 
 				<form class="sfQuiz">
 

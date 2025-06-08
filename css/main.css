@@ -160,11 +160,11 @@ h1 {
   display: none;
 }
 
-.sfQuizHeader {
+.SFQuizBackground {
   padding-top: 0.75rem;
 }
 
-.sfQuizHeader,
+.SFQuizBackground,
 .AnswerText {
   margin: 1rem 1rem;
   text-align: left;
