@@ -39,7 +39,7 @@
       <div class="FollowFooter">
         <span class="SocialMediaInfo">
           <a href="https://www.twitch.tv/seafilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/twitch-purple-logo.png" alt="Twitch Icon" class="twitchLogoImage" />
+            <img src="/images/twitch-purple-logo.png" alt="Twitch Icon" class="TwitchLogoImage" />
           </a>
         </span >
         <span class="SocialMediaInfo">
