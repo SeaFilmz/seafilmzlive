@@ -77,7 +77,7 @@
 
         </form>
 
-				<p id="answerText" class="answerText"></p>
+				<p id="answerText" class="AnswerText"></p>
       </div>
 
 		</main>
