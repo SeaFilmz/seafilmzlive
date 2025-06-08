@@ -49,7 +49,7 @@
         </span>
         <span class="SocialMediaInfo">
           <a href="https://twitter.com/SeaFilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/x-black-logo.png" alt="X Icon" class="xLogoImage" />
+            <img src="/images/x-black-logo.png" alt="X Icon" class="XLogoImage" />
           </a>
         </span>
       </div>
