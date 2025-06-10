@@ -231,7 +231,7 @@
         <img class="PopsicleSculpture" src="/images/popsicle-sculpture.JPG" alt="Giant red popsicle located in the city of Seattle">
       </div>
 
-      <div id="imageAnswer">
+      <div id="ImageAnswer">
         <button id="popsicleImageAnswer">Answer</button>
       </div>
 
