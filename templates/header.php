@@ -7,7 +7,7 @@
         movieSearchForm();
       ?>
 
-      <div class="mobile-menu" onclick="onClickMenu()">
+      <div class="MobileMenu" onclick="onClickMenu()">
         <span class="bar1"></span>
         <span class="bar2"></span>
         <span class="bar3"></span>
