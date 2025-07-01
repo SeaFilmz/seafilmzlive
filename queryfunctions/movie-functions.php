@@ -512,7 +512,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
     global $newConnection;
 
     // 2. Perform database query
-    $query = $newConnection->prepare("SELECT first_name, middle_initial_name, last_name, birth_name FROM movies_peoples_jobs JOIN movies ON movies_peoples_jobs.movie_id = movies.movie_id JOIN peoples ON movies_peoples_jobs.people_id = peoples.people_id JOIN jobs ON movies_peoples_jobs.job_id = jobs.job_id WHERE movie_page_link = ? and jobs = ? ");
+    $query = $newConnection->prepare("SELECT first_name, middle_initial_name, last_name, birth_name FROM movies_peoples_jobs JOIN movies ON movies_peoples_jobs.movie_id = movies.movie_id JOIN peoples ON movies_peoples_jobs.people_id = peoples.people_id JOIN jobs ON movies_peoples_jobs.job_id = jobs.job_id WHERE movie_page_link = ? and job = ? ");
 
     $query->bind_param("ss", $movieSLUGPeople, $job);
     $query->execute();
@@ -529,7 +529,7 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
     global $newConnection;
 
     // 2. Perform database query
-    $query = $newConnection->prepare("SELECT first_name, middle_initialname, last_name FROM movies_peoples INNER JOIN peoples_jobs ON peoples_jobs.people_id = movies_peoples.people_id INNER JOIN jobs ON peoples_jobs.job_id =  INNER JOIN peoples ON movies_peoples.people_id = peoples.people_id INNER JOIN movies ON movies_peoples.movie_id = movies.movie_id WHERE movie_page_link = ? and jobs = ? ");
+    $query = $newConnection->prepare("SELECT first_name, middle_initialname, last_name FROM movies_peoples INNER JOIN peoples_jobs ON peoples_jobs.people_id = movies_peoples.people_id INNER JOIN jobs ON peoples_jobs.job_id =  INNER JOIN peoples ON movies_peoples.people_id = peoples.people_id INNER JOIN movies ON movies_peoples.movie_id = movies.movie_id WHERE movie_page_link = ? and job = ? ");
 
     $query->bind_param("ss", $movieSLUGDirector, $job);
     $query->execute();
