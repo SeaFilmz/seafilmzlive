@@ -168,6 +168,7 @@
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="portland-oregon-actors">Actors</a></div>
               <div class="cityDataPointOfMany"><a href="portland-oregon-athletes">Athletes</a></div>
+              <div class="cityDataPointOfMany"><a href="portland-oregon-musicians">Musicians</a></div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
