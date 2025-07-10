@@ -2,8 +2,8 @@
 <?php
   $title = 'Portland, Oregon Musicians - SeaFilmz';
   $mDesc = 'List of musicians born in the city of Portland, Oregon organized by musician name.';
-  $ogTitle = 'Seattle Musicians - SeaFilmz';
-  $ogURL = 'https://seafilmz.com/seattle-musicians';
+  $ogTitle = 'Portland, Oregon Musicians - SeaFilmz';
+  $ogURL = 'https://seafilmz.com/portland-oregon-musicians';
   $body = 'MainBody';
   require_once "templates/main-page-structure.php";
   headerTemp();
