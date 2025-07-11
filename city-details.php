@@ -185,35 +185,25 @@
           </tr>
         <?php } ?>
 
-        <?php if ($city === 'Tacoma') { ?>
-          <tr class="cityDataPointRow">
-            <td class="cityData cityDataDesc">People Born</td>
-            <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="tacoma-washington-actors">Actors</a></div>
-              <div class="cityDataPointOfMany"><a href="tacoma-washington-athletes">Athletes</a></div>
-            </td>
-          </tr>
-        <?php } ?>
-
-        <?php if ($city === 'Bellevue') { ?>
-          <tr class="cityDataPointRow">
-            <td class="cityData cityDataDesc">People Born</td>
-            <td class="cityData">
-              <div class="cityDataPointOfMany"><a href="bellevue-washington-actors">Actors</a></div>
-              <div class="cityDataPointOfMany"><a href="bellevue-washington-athletes">Athletes</a></div>
-            </td>
-          </tr>
-        <?php } ?>
-
-        <?php if ($city === 'Anchorage') { ?>
+        <?php function peopleBornByCityState($cityState) { ?>
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">People Born</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="anchorage-alaska-actors">Actors</a></div>
-              <div class="CityDataPointOfMany"><a href="anchorage-alaska-athletes">Athletes</a></div>
+              <div class="CityDataPointOfMany"><a href="<?php echo "{$cityState}" ?>-actors">Actors</a></div>
+              <div class="CityDataPointOfMany"><a href="<?php echo "{$cityState}" ?>-athletes">Athletes</a></div>
             </td>
           </tr>
         <?php } ?>
+
+        <?php
+          if ($city === 'Tacoma') {
+            peopleBornByCityState('tacoma-washington');
+          } elseif ($city === 'Bellevue') {
+            peopleBornByCityState('bellevue-washington');
+          } elseif ($city === 'Anchorage') {
+            peopleBornByCityState('anchorage-alaska');
+          }
+        ?>
 
         <?php
           if ($city === 'Seattle' or $city === 'Portland') {
