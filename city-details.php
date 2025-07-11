@@ -205,6 +205,16 @@
           </tr>
         <?php } ?>
 
+        <?php if ($city === 'Anchorage') { ?>
+          <tr class="CityDataPointRow">
+            <td class="CityData CityDataDesc">People Born</td>
+            <td class="CityData">
+              <div class="CityDataPointOfMany"><a href="anchorage-alaska-actors">Actors</a></div>
+              <div class="CityDataPointOfMany"><a href="anchorage-alaska-athletes">Athletes</a></div>
+            </td>
+          </tr>
+        <?php } ?>
+
         <?php
           if ($city === 'Seattle' or $city === 'Portland') {
           } else {
