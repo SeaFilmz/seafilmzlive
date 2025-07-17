@@ -200,6 +200,8 @@
             peopleBornByCityState('tacoma-washington');
           } elseif ($city === 'Bellevue') {
             peopleBornByCityState('bellevue-washington');
+          } if ($city === 'Spokane') {
+            peopleBornByCityState('spokane-washington');
           } elseif ($city === 'Anchorage') {
             peopleBornByCityState('anchorage-alaska');
           }
