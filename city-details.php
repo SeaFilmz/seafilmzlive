@@ -189,8 +189,8 @@
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">People Born</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="<?php echo "{$cityState}" ?>-actors">Actors</a></div>
-              <div class="CityDataPointOfMany"><a href="<?php echo "{$cityState}" ?>-athletes">Athletes</a></div>
+              <div class="CityDataPointOfMany"><a href="<?= "{$cityState}" ?>-actors">Actors</a></div>
+              <div class="CityDataPointOfMany"><a href="<?= "{$cityState}" ?>-athletes">Athletes</a></div>
             </td>
           </tr>
         <?php } ?>
@@ -200,7 +200,7 @@
             peopleBornByCityState('tacoma-washington');
           } elseif ($city === 'Bellevue') {
             peopleBornByCityState('bellevue-washington');
-          } if ($city === 'Spokane') {
+          } elseif ($city === 'Spokane') {
             peopleBornByCityState('spokane-washington');
           } elseif ($city === 'Anchorage') {
             peopleBornByCityState('anchorage-alaska');
