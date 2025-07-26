@@ -63,7 +63,7 @@
     </footer>
 
     <!--Connection to Manual Google AdSense.-->
-    <?php include 'googleadsense-manualconnection.php'; ?>
+    <div class="MainPageManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
 
   </body>
 

@@ -325,3 +325,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.MainPageManualAds {
+  text-align: center;
+}
