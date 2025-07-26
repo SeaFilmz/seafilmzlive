@@ -19,11 +19,6 @@
         <meta property="og:description" content="<?php echo $mDesc; ?>">
         <meta property="og:url" content="<?php echo $ogURL; ?>">
         <meta property="og:type" content="website">
-
-        <!--Connection to Google Analytics and AdSense.-->
-        <?php include 'googleanalytics_connection.php'; ?>
-        <?php include 'googleadsense_connection.php'; ?>
-
       </head>
 
       <body class=<?php echo $body; ?>>
@@ -66,6 +61,9 @@
           <p class="NavFooterMobile"><a href="services">Services</a></p>
       </nav>
     </footer>
+
+    <!--Connection to Manual Google AdSense.-->
+    <?php include 'googleadsense-manualconnection.php'; ?>
 
   </body>
 
