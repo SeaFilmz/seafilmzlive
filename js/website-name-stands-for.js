@@ -1,5 +1,7 @@
 //Title Stand For Button on About Page
-const websiteHeader = document.querySelector("#headerStandFor");
+document.getElementById("HeaderTextSwapButton").onclick = headerSwitchText;
+
+const websiteHeader = document.querySelector("#HeaderStandFor");
 
 function headerSwitchText() {
   if (websiteHeader.innerHTML === "SeaFilmz") {
