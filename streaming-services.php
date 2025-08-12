@@ -32,9 +32,9 @@
 
         streamingServiceList("https://www.netflix.com", "Netflix");
 
-        streamingServiceList("https://www.max.com/", "Max");
-
         streamingServiceList("https://www.hulu.com/welcome", "Hulu");
+
+        streamingServiceList("https://www.hbomax.com/", "HBO Max");
 
         streamingServiceList("https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee");
 
