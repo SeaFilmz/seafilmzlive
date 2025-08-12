@@ -291,6 +291,10 @@ tr:nth-child(even) {
   margin: 0.5rem 0 0.7rem 0;
 }
 
+.subheader {
+  text-align: center;
+}
+
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
