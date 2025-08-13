@@ -19,32 +19,26 @@
     <h3 class="subheader">List of Major Streaming Services</h3>
 
     <ul class="StreamingServices">
-    <?php
-        streamingServiceList("https://tubitv.com", "Tubi");
+      <?php
+        $streamingServices = [
+          ["https://tubitv.com", "Tubi"],
+          ["https://www.starz.com/us/en/", "Starz"],
+          ["https://www.peacocktv.com", "Peacock"],
+          ["https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime"],
+          ["https://www.paramountplus.com", "Paramount+"],
+          ["https://www.netflix.com", "Netflix"],
+          ["https://www.hulu.com/welcome", "Hulu"],
+          ["https://www.hbomax.com/", "HBO Max"],
+          ["https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee"],
+          ["https://www.disneyplus.com", "Disney+"],
+          ["https://www.discoveryplus.com", "Discovery+"],
+          ["https://www.apple.com/apple-tv-plus/", "Apple TV+"],
+          ["https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video"]
+        ];
 
-        streamingServiceList("https://www.starz.com/us/en/", "Starz");
-
-        streamingServiceList("https://www.peacocktv.com", "Peacock");
-
-        streamingServiceList("https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime");
-
-        streamingServiceList("https://www.paramountplus.com", "Paramount+");
-
-        streamingServiceList("https://www.netflix.com", "Netflix");
-
-        streamingServiceList("https://www.hulu.com/welcome", "Hulu");
-
-        streamingServiceList("https://www.hbomax.com/", "HBO Max");
-
-        streamingServiceList("https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee");
-
-        streamingServiceList("https://www.disneyplus.com", "Disney+");
-
-        streamingServiceList("https://www.discoveryplus.com", "Discovery+");
-
-        streamingServiceList("https://www.apple.com/apple-tv-plus/", "Apple TV+");
-
-        streamingServiceList("https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video");
+        for ($i = 0; $i < count($streamingServices); $i++) {
+          streamingServiceList($streamingServices[$i][0], $streamingServices[$i][1]);
+        };
       ?>
     </ul>
 
