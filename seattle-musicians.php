@@ -55,7 +55,7 @@
 
     <!--link to Total Musicians Count-->
 <?php
-  require 'queryfunctions/people-functions.php';
+  require_once 'queryfunctions/people-functions.php';
   peopleCityBornByJobCount('Seattle', 'musician');
 ?>
 

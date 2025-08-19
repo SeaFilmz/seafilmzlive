@@ -65,7 +65,7 @@
 
     <!--link to Total Athletes Count-->
 <?php
-  require 'queryfunctions/people-functions.php';
+  require_once 'queryfunctions/people-functions.php';
   peopleCityBornByJobCount('Seattle', 'athlete');
 ?>
 
