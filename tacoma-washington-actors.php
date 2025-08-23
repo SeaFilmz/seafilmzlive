@@ -60,7 +60,7 @@
 
     <!--link to Total Actors Count-->
 <?php
-  require 'queryfunctions/people-functions.php';
+  require_once 'queryfunctions/people-functions.php';
   peopleCityBornByJobCount('Tacoma', 'actor');
 ?>
 
