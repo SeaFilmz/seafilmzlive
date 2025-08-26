@@ -11,10 +11,6 @@
 
   <main>
 
-    <?php function streamingServiceList($link, $name) { ?>
-      <li class="StreamingServicesName"><a href="<?= $link; ?>" target="_blank"><?= $name; ?></a></li>
-    <?php } ?>
-
     <h1>Where to Watch Seattle Movies:</h1>
     <h3 class="subheader">List of Major Streaming Services</h3>
 
@@ -36,9 +32,13 @@
           ["https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video"]
         ];
 
-        for ($i = 0; $i < count($streamingServices); $i++) {
-          streamingServiceList($streamingServices[$i][0], $streamingServices[$i][1]);
-        };
+        for ($i = 0; $i < count($streamingServices); $i++) { ?>
+          <li class="StreamingServicesName">
+            <a href="<?= $streamingServices[$i][0]; ?>" target="_blank">
+              <?= $streamingServices[$i][1]; ?>
+            </a>
+          </li>
+        <?php };
       ?>
     </ul>
 
