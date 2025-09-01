@@ -9,9 +9,9 @@
   headerTemp();
 ?>
 
-    <h1 class="OregonCitiesHeader"><b>Oregon State Cities</b></h1>
+    <h1 class="StateCitiesHeader"><b>Oregon State Cities</b></h1>
 
-    <div class="OregonCitiesContent">
+    <div class="StateCitiesContent">
 
       <?php
         require_once 'queryfunctions/state-cities-functions.php';

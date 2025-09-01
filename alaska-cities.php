@@ -9,9 +9,9 @@
   headerTemp();
 ?>
 
-    <h1 class="AlaskaCitiesHeader"><b>Alaska State Cities</b></h1>
+    <h1 class="StateCitiesHeader"><b>Alaska State Cities</b></h1>
 
-    <div class="AlaskaCitiesContent">
+    <div class="StateCitiesContent">
 
       <?php
         require_once 'queryfunctions/state-cities-functions.php';

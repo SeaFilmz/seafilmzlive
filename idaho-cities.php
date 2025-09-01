@@ -9,9 +9,9 @@
   headerTemp();
 ?>
 
-    <h1 class="IdahoCitiesHeader"><b>Idaho State Cities</b></h1>
+    <h1 class="StateCitiesHeader"><b>Idaho State Cities</b></h1>
 
-    <div class="IdahoCitiesContent">
+    <div class="StateCitiesContent">
 
 
       <?php
