@@ -20,7 +20,7 @@
       <li class="BuiltWithTool">MariaDB</li>
     </ul>
 
-    <p class='BuildWithMoreInfo'>Currently the SeaFilmz website uses no frameworks and libraries.</p>
+    <p class='BuiltWithMoreInfo'>Currently the SeaFilmz website uses no frameworks and libraries.</p>
   </main>
 
 <?php
