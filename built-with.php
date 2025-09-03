@@ -12,12 +12,15 @@
   <main>
     <h1 class="BuiltWithHeader">SeaFilmz Built With</h1>
     <ul class="BuiltWith">
-      <li class="BuiltWithTool">HTML</li>
-      <li class="BuiltWithTool">CSS</li>
-      <li class="BuiltWithTool">JavaScript</li>
-      <li class="BuiltWithTool">PHP</li>
-      <li class="BuiltWithTool">SQL</li>
-      <li class="BuiltWithTool">MariaDB</li>
+      <?php
+        $tools = ["HTML", "CSS", "JavaScript", "PHP", "SQL", "MariaDB"];
+
+        $count = count($tools);
+
+        for ($i = 0; $i < $count; $i++) {
+          echo "<li class='BuiltWithTool'>{$tools[$i]}</li>";
+        }
+      ?>
     </ul>
 
     <p class='BuiltWithMoreInfo'>Currently the SeaFilmz website uses no frameworks and libraries.</p>
