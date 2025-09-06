@@ -1,5 +1,5 @@
     <header id="goToTopLink" class="banner">
-      <h2 id="headerStandFor"><a href="/">SeaFilmz</a></h2>
+      <h2 id="headerStandFor"><a id="HeaderLink" href="/">SeaFilmz</a></h2>
       <p class="Slogan">6 Degrees of Seattle</p>
 
       <?php

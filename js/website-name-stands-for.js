@@ -1,13 +1,13 @@
 //Title Stand For Button on About Page
 document.getElementById("HeaderTextSwapButton").onclick = headerSwitchText;
 
-const websiteHeader = document.querySelector("#HeaderStandFor");
+const websiteHeaderLink = document.querySelector("#HeaderLink");
 
 function headerSwitchText() {
-  if (websiteHeader.innerHTML === "SeaFilmz") {
-    websiteHeader.innerHTML = "Seattle Filmz";
+  if (websiteHeaderLink.innerHTML === "SeaFilmz") {
+    websiteHeaderLink.innerHTML = "Seattle Filmz";
   }
   else {
-    websiteHeader.innerHTML = "SeaFilmz";
+    websiteHeaderLink.innerHTML = "SeaFilmz";
   }
 }
