@@ -4,10 +4,10 @@ document.getElementById("HeaderTextSwapButton").onclick = headerSwitchText;
 const websiteHeaderLink = document.querySelector("#HeaderLink");
 
 function headerSwitchText() {
-  if (websiteHeaderLink.innerHTML === "SeaFilmz") {
-    websiteHeaderLink.innerHTML = "Seattle Filmz";
+  if (websiteHeaderLink.textContent === "SeaFilmz") {
+    websiteHeaderLink.textContent = "Seattle Filmz";
   }
   else {
-    websiteHeaderLink.innerHTML = "SeaFilmz";
+    websiteHeaderLink.textContent = "SeaFilmz";
   }
 }
