@@ -23,7 +23,7 @@
     </section>
 
     <div class="SecondHeader">
-      <button onclick="headerSwitchText()" class="SecondHeaderButton">SeaFilmz Stand For</button>
+      <button id="HeaderTextSwapButton" class="SecondHeaderButton">SeaFilmz Stand For</button>
     </div>
 
     <script src="/js/website-name-stands-for.js" defer></script>

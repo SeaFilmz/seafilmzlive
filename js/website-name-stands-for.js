@@ -1,5 +1,5 @@
 //Title Stand For Button on About Page
-document.getElementById("HeaderTextSwapButton").onclick = headerSwitchText;
+const headerTextSwapButton = document.getElementById("HeaderTextSwapButton");
 
 const websiteHeaderLink = document.querySelector("#HeaderLink");
 
@@ -11,3 +11,5 @@ function headerSwitchText() {
     websiteHeaderLink.textContent = "SeaFilmz";
   }
 }
+
+headerTextSwapButton.addEventListener("click", headerSwitchText);
