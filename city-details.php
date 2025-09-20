@@ -235,7 +235,7 @@
       </div>
 
       <div id="ImageAnswer">
-        <button id="popsicleImageAnswer">Answer</button>
+        <button id="PopsicleImageAnswer">Answer</button>
       </div>
 
       <script src="/js/popsicle-answer.js" defer></script>
