@@ -3,12 +3,14 @@ const headerTextSwapButton = document.getElementById("HeaderTextSwapButton");
 
 const websiteHeaderLink = document.querySelector("#HeaderLink");
 
+const WebsiteName = "SeaFilmz";
+
 function headerSwitchText() {
-  if (websiteHeaderLink.textContent === "SeaFilmz") {
+  if (websiteHeaderLink.textContent === WebsiteName) {
     websiteHeaderLink.textContent = "Seattle Filmz";
   }
   else {
-    websiteHeaderLink.textContent = "SeaFilmz";
+    websiteHeaderLink.textContent = WebsiteName;
   }
 }
 
