@@ -50,15 +50,17 @@
       </div>
 
       <nav class="NavFooter">
-          <p class="NavFooterMobile"><a href="#goToTopLink">Go to Top</a></p>
+        <ul class="NavFooterList">
+          <li class="NavFooterMobile"><a href="#goToTopLink">Go to Top</a><li>
 
-          <p class="NavFooterMobile"><a href="about">About</a></p>
+          <li class="NavFooterMobile"><a href="about">About</a><li>
 
-          <p class="NavFooterMobile"><a href="contact">Contact</a></p>
+          <li class="NavFooterMobile"><a href="contact">Contact</a><li>
 
-          <p class="NavFooterMobile"><a href="built-with">Built With</a></p>
+          <li class="NavFooterMobile"><a href="built-with">Built With</a><li>
 
-          <p class="NavFooterMobile"><a href="services">Services</a></p>
+          <li class="NavFooterMobile"><a href="services">Services</a><li>
+        </ul>
       </nav>
     </footer>
 

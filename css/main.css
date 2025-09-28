@@ -324,10 +324,15 @@ footer {
   width: 3.25%;
 }
 
-.NavFooter {
+.NavFooterList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 .MainPageManualAds {
