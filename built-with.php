@@ -2,8 +2,8 @@
   $title = 'SeaFilmz Built With';
   $mDesc = 'A list of the tools used to build the SeaFilmz website.';
   $body = 'MainBody';
-  $ogTitle = 'SeaFilmz Built With';
-  $ogURL = 'https://seafilmz.com/built-with';
+  $ogImage = 'https://seafilmz.com/images/seafilmz-builtwith-screenshot.png';
+  $ogImageAlt = 'Screenshot of the main section of the built with webpage that includes a list of tools used to build the SeaFilmz website.';
   /*link to the start of a seafilmz general web page template*/
   require_once 'templates/main-page-structure.php';
   headerTemp();
