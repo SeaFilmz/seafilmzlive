@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogURL, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -19,6 +19,8 @@
         <meta property="og:description" content="<?php echo $mDesc; ?>">
         <meta property="og:url" content="<?php echo $ogURL; ?>">
         <meta property="og:type" content="website">
+        <meta property="og:image" content="<?php echo $ogImage; ?>">
+        <meta property="og:image:alt" content="<?php echo $ogImageAlt; ?>">
       </head>
 
       <body class=<?php echo $body; ?>>
