@@ -10,7 +10,7 @@
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $mDesc; ?>">
         <meta charset="utf-8">
-        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/mobile-nav.js" defer></script>
 
