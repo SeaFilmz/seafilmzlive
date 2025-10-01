@@ -19,8 +19,13 @@
         <meta property="og:description" content="<?php echo $mDesc; ?>">
         <meta property="og:url" content="<?php echo $ogURL; ?>">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="<?php echo $ogImage; ?>">
-        <meta property="og:image:alt" content="<?php echo $ogImageAlt; ?>">
+        <?php if (empty($ogImage) && empty($ogImageAlt)) { ?>
+          <meta property="og:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
+          <meta property="og:image:alt" content="Screenshot of SeaFilmz header">
+        <?php } else { ?>
+          <meta property="og:image" content="<?php echo $ogImage; ?>">
+          <meta property="og:image:alt" content="<?php echo $ogImageAlt; ?>">
+        <?php } ?>
       </head>
 
       <body class=<?php echo $body; ?>>
