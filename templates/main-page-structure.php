@@ -26,6 +26,18 @@
           <meta property="og:image" content="<?php echo $ogImage; ?>">
           <meta property="og:image:alt" content="<?php echo $ogImageAlt; ?>">
         <?php } ?>
+
+        <!-- Open Twitter Card Tags for Social Media -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="<?php echo $ogTitle; ?>">
+        <meta name="twitter:description" content="<?php echo $mDesc; ?>">
+        <?php if (empty($ogImage) && empty($ogImageAlt)) { ?>
+          <meta property="twitter:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
+          <meta property="twitter:image:alt" content="Screenshot of SeaFilmz header">
+        <?php } else { ?>
+          <meta property="twitter:image" content="<?php echo $ogImage; ?>">
+          <meta property="twitter:image:alt" content="<?php echo $ogImageAlt; ?>">
+        <?php } ?>
       </head>
 
       <body class=<?php echo $body; ?>>
