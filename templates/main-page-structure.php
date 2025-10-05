@@ -32,11 +32,11 @@
         <meta name="twitter:title" content="<?php echo $ogTitle; ?>">
         <meta name="twitter:description" content="<?php echo $mDesc; ?>">
         <?php if (empty($ogImage) && empty($ogImageAlt)) { ?>
-          <meta property="twitter:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
-          <meta property="twitter:image:alt" content="Screenshot of SeaFilmz header">
+          <meta name="twitter:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
+          <meta name="twitter:image:alt" content="Screenshot of SeaFilmz header">
         <?php } else { ?>
-          <meta property="twitter:image" content="<?php echo $ogImage; ?>">
-          <meta property="twitter:image:alt" content="<?php echo $ogImageAlt; ?>">
+          <meta name="twitter:image" content="<?php echo $ogImage; ?>">
+          <meta name="twitter:image:alt" content="<?php echo $ogImageAlt; ?>">
         <?php } ?>
       </head>
 
