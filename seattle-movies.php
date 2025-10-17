@@ -1,6 +1,6 @@
 <?php
   $title = 'Seattle Movies by Title or Year - SeaFilmz';
-  $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by title or by year.';
+  $mDesc = 'Discover movies that were filmed fully or partly in Seattle - organized by title or year.';
   $ogTitle = 'Seattle Movies by Title or Year - SeaFilmz';
   $ogURL = 'https://seafilmz.com/seattle-movies';
   $body = 'MainBody';
