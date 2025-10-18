@@ -1,7 +1,7 @@
 <!--link to the start of a seafilmz general webpage template-->
 <?php
   $title = 'Seattle Movies by Box Office Gross - SeaFilmz';
-  $mDesc = 'List of movies filmed fully or partly in the city of Seattle organized by total worldwide gross in US dollars.';
+  $mDesc = 'Discover movies filmed fully or partly in Seattle — organized by box office gross in US Dollars.';
   $ogTitle = 'Seattle Movies by Box Office Gross - SeaFilmz';
   $ogURL = 'https://seafilmz.com/seattle-movies-gross';
   $body = 'MainBody';
