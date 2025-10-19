@@ -58,7 +58,7 @@
         </span >
         <span class="SocialMediaInfo">
           <a href="https://instagram.com/seafilmz" target="_blank" class="socialMediaLink">
-            <img src="/images/instagram-color-logo.png" alt="instagram logo" class="InstagramLogoColorImage">
+            <img src="/images/instagram-color-logo-resized.png" alt="instagram logo" class="InstagramLogoColorImage">
           </a>
         </span>
         <span class="SocialMediaInfo">
