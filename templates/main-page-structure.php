@@ -49,6 +49,9 @@
 
   function footerTemp() {
 ?>
+    <!--Connection to Manual Google AdSense.-->
+    <div class="MainPageManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
+
     <footer>
       <div class="FollowFooter">
         <span class="SocialMediaInfo">
@@ -82,10 +85,6 @@
         </ul>
       </nav>
     </footer>
-
-    <!--Connection to Manual Google AdSense.-->
-    <div class="MainPageManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
-
   </body>
 
 </html>
