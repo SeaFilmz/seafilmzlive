@@ -17,6 +17,7 @@
     $mDesc = "Fact page about the city of {$city}";
     $ogTitle = "{$city} - SeaFilmz";
     $ogURL = 'https://seafilmz.com' . $cityStateSLUGPart;
+    $schemaType = 'Place';
     $body = "MainBody";
     require_once 'templates/main-page-structure.php';
     headerTemp();
