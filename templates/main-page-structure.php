@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -41,7 +41,8 @@
 
         <script type="application/ld+json">
           {
-            "@context": "https://schema.org"
+            "@context": "https://schema.org",
+            "@type": "<?= $schemaType; ?>""@type": "<?= $schemaType; ?>"
           }
         </script>
       </head>
