@@ -16,6 +16,7 @@
   $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["year_released"] . ').';
   $ogTitle = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
+	$schemaType = 'Movie';
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
