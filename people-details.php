@@ -35,6 +35,7 @@
     $ogTitle = $people["musician_name "] . ' - SeaFilmz';
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
+  $schemaType = 'Person';
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
