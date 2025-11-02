@@ -38,6 +38,12 @@
           <meta name="twitter:image" content="<?php echo $ogImage; ?>">
           <meta name="twitter:image:alt" content="<?php echo $ogImageAlt; ?>">
         <?php } ?>
+
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org"
+          }
+        </script>
       </head>
 
       <body class=<?php echo $body; ?>>
