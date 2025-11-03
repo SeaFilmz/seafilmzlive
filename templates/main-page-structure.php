@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -42,7 +42,11 @@
         <script type="application/ld+json">
           {
             "@context": "https://schema.org",
-            "@type": "<?= $schemaType; ?>""@type": "<?= $schemaType; ?>"
+            "@type": "<?= $schemaType; ?>"
+            <?php if ($schemaType === 'Movie') { ?>
+              ,
+              "name": "<?= $movieTitle; ?>"
+            <?php } ?>
           }
         </script>
       </head>
