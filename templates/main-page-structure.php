@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $personName, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -46,6 +46,9 @@
             <?php if ($schemaType === 'Movie') { ?>
               ,
               "name": "<?= $movieTitle; ?>"
+            <?php } elseif ($schemaType === 'Person') { ?>
+              ,
+              "name": "<?= $personName; ?>"
             <?php } ?>
           }
         </script>

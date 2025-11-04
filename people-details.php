@@ -36,6 +36,11 @@
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $schemaType = 'Person';
+  if ($people["job"] === 'musician') {
+    $personName = $people["musician_name"];
+  } else {
+    $personName = $people["first_name"] . ' ' . $people["last_name"];
+  }
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
