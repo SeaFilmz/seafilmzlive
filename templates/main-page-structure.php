@@ -43,7 +43,10 @@
           {
             "@context": "https://schema.org",
             "@type": "<?= $schemaType; ?>"
-            <?php if ($schemaType === 'Movie') { ?>
+            <?php if ($schemaType === 'WebSite') { ?>
+              ,
+              "name": "SeaFilmz"
+            <?php } elseif ($schemaType === 'Movie') { ?>
               ,
               "name": "<?= $movieTitle; ?>"
             <?php } elseif ($schemaType === 'Person') { ?>
