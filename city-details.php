@@ -18,6 +18,7 @@
     $ogTitle = "{$city} - SeaFilmz";
     $ogURL = 'https://seafilmz.com' . $cityStateSLUGPart;
     $schemaType = 'Place';
+    $cityStateName = "{$city}, {$StateProvince}";
     $body = "MainBody";
     require_once 'templates/main-page-structure.php';
     headerTemp();
