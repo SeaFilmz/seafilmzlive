@@ -45,7 +45,8 @@
             "@type": "<?= $schemaType; ?>"
             <?php if ($schemaType === 'WebSite') { ?>
               ,
-              "name": "SeaFilmz"
+              "name": "SeaFilmz",
+              "url": "https://seafilmz.com"
             <?php } elseif ($schemaType === 'Movie') { ?>
               ,
               "name": "<?= $movieTitle; ?>"
