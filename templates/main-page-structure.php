@@ -46,7 +46,8 @@
             <?php if ($schemaType === 'WebSite') { ?>
               ,
               "name": "SeaFilmz",
-              "url": "https://seafilmz.com"
+              "url": "https://seafilmz.com",
+              "inLanguage": "en-US"
             <?php } elseif ($schemaType === 'Movie') { ?>
               ,
               "name": "<?= $movieTitle; ?>"
