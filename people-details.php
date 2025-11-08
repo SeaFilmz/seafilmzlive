@@ -36,6 +36,7 @@
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $schemaType = 'Person';
+  $personURLSlug = $peopleSLUGPart;
   if ($people["job"] === 'musician') {
     $personName = $people["musician_name"];
   } else {

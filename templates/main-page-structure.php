@@ -1,6 +1,6 @@
 <?php
   function headerTemp() {
-    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $movieURLSlug, $personName, $cityStateName, $body;
+    global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $movieURLSlug, $personName, $personURLSlug, $cityStateName, $body;
     require_once 'new_db_connection.php';
 ?>
     <!DOCTYPE html>
@@ -54,7 +54,8 @@
               "url": "https://www.seafilmz.com<?= $movieURLSlug; ?>"
             <?php } elseif ($schemaType === 'Person') { ?>
               ,
-              "name": "<?= $personName; ?>"
+              "name": "<?= $personName; ?>",
+              "url": "https://www.seafilmz.com<?= $personURLSlug; ?>"
             <?php } elseif ($schemaType === 'Place') { ?>
               ,
               "name": "<?= $cityStateName; ?>"
