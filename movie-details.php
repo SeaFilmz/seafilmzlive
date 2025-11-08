@@ -18,6 +18,7 @@
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
 	$schemaType = 'Movie';
 	$movieTitle = $movies["movie_title"];
+	$movieURLSlug = $movieSLUGPart;
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
