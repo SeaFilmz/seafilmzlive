@@ -19,6 +19,7 @@
 	$schemaType = 'Movie';
 	$movieTitle = $movies["movie_title"];
 	$movieURLSlug = $movieSLUGPart;
+	$movieYear = $movies["year_released"];
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
