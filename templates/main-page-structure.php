@@ -76,7 +76,7 @@
   function footerTemp() {
 ?>
     <!--Connection to Manual Google AdSense.-->
-    <div class="MainPageManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
+    <div class="GoogleManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
 
     <footer>
       <div class="FollowFooter">
