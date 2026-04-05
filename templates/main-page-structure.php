@@ -1,4 +1,10 @@
 <?php
+
+  //Protects against Cross-Site Scripting (XSS) and ensures quotes don't break HTML tags.
+  function escapeOutput($data) {
+    return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+  }
+
   function headerTemp() {
     global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $movieURLSlug, $movieYear, $personName, $personURLSlug, $cityStateName, $cityStateURLSlug, $body;
     require_once 'new_db_connection.php';
@@ -7,17 +13,17 @@
     <html lang="en">
 
       <head>
-        <title><?php echo $title; ?></title>
-        <meta name="description" content="<?php echo $mDesc; ?>">
+        <title><?php echo escapeOutput($title); ?></title>
+        <meta name="description" content="<?php echo escapeOutput($mDesc); ?>">
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/mobile-nav.js" defer></script>
 
         <!-- Open Graph Meta Tags for Social Media -->
-        <meta property="og:title" content="<?php echo $ogTitle; ?>">
-        <meta property="og:description" content="<?php echo $mDesc; ?>">
-        <meta property="og:url" content="<?php echo $ogURL; ?>">
+        <meta property="og:title" content="<?php echo escapeOutput($ogTitle); ?>">
+        <meta property="og:description" content="<?php echo escapeOutput($mDesc); ?>">
+        <meta property="og:url" content="<?php echo escapeOutput($ogURL); ?>">
         <meta property="og:type" content="website">
         <?php if (empty($ogImage) && empty($ogImageAlt)) { ?>
           <meta property="og:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
@@ -29,8 +35,8 @@
 
         <!-- Open Twitter Card Tags for Social Media -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="<?php echo $ogTitle; ?>">
-        <meta name="twitter:description" content="<?php echo $mDesc; ?>">
+        <meta name="twitter:title" content="<?php echo escapeOutput($ogTitle); ?>">
+        <meta name="twitter:description" content="<?php echo escapeOutput($mDesc); ?>">
         <?php if (empty($ogImage) && empty($ogImageAlt)) { ?>
           <meta name="twitter:image" content="https://seafilmz.com/images/seafilmz-header-screenshot.png">
           <meta name="twitter:image:alt" content="Screenshot of SeaFilmz header">
