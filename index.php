@@ -17,7 +17,14 @@
       <div class="MainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
 
-        <p class="SeattleMovieMainLinks"><span class="SeattleMoviesMainHeader">Movies Filmed in Seattle: </span><span class="SeattleMoviesMain"><a href="seattle-movies">Title</a>, <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>, <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>, <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a></span></p>
+        <section class="SeattleMovieMainLinks"><div class="SeattleMoviesMainHeader">Movies Filmed in Seattle:</div>
+          <nav class="SeattleMoviesMain">
+            <a href="seattle-movies" class="SeattleMovieMainLinks2">Title</a>,
+            <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>,
+            <a href="seattle-movies-runtime" class="SeattleMovieMainLinks2">Runtime</a>,
+            <a href="seattle-movies-gross" class="SeattleMovieMainLinks2">Total Worldwide Gross</a>
+          </nav>
+        </section>
 
         <p class="SeattlePeopleMainLinks"><span class="SeattlePeopleMainHeader">Seattle Born: </span><span class="SeattlePeopleMain"><a href="seattle-actors">Actors</a>, <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>, <a href="seattle-athletes" class="SeattlePeopleMainLinks2">Athletes</a></span></p>
 
