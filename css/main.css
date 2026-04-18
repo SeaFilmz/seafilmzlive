@@ -130,25 +130,25 @@ h1 {
   font-weight: 600;
 }
 
-.SeattleMoviesMainHeader {
+.SeattleMoviesMainHeader,
+.SeattlePeopleMainHeader {
   width: 20rem;
   font-size: 1.25rem;
   font-weight: 900;
 }
 
-.SeattlePeopleMainHeader,
 .SeattleFunFactsMainHeader {
   font-size: 1.25rem;
   font-weight: 900;
 }
 
-.SeattleMoviesMain {
+.SeattleMoviesMain,
+.SeattlePeopleMain {
   display: inline-block;
   width: 20rem;
   font-weight: 900;
 }
 
-.SeattlePeopleMain,
 .SeattleFunFactsMain {
   font-weight: 900;
 }
