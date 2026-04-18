@@ -34,7 +34,12 @@
           </nav>
         </section>
 
-        <p class="SeattleFunFactsMainLinks"><span class="SeattleFunFactsMainHeader">City Facts: </span><span class="SeattleFunFactsMain"><a href="seattle-washington">Seattle</a>, <a href="portland-oregon">Portland OR</a></span></p>
+        <section class="SeattleFunFactsMainLinks"><div class="SeattleFunFactsMainHeader">City Facts:</div>
+          <nav class="SeattleFunFactsMain">
+            <a href="seattle-washington">Seattle</a>,
+            <a href="portland-oregon">Portland OR</a>
+          </nav>
+        </section>
       </div>
 
 			<div class="quizStartButton">
