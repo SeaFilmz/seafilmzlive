@@ -46,7 +46,7 @@
         <button type="button" onclick="startQuizButton()" class="SFStartQuizButton"><b>Start SeaFilmz Quiz</b></button>
       </div>
 
-      <div class="SFQuizBackground">
+      <section class="SFQuizBackground">
 
 				<h2 class="SFQuizBackground">SeaFilmz Quiz</h2>
 
@@ -99,7 +99,7 @@
         </form>
 
 				<p id="answerText" class="AnswerText"></p>
-      </div>
+      </section>
 
 		</main>
 
