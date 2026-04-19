@@ -26,11 +26,11 @@
 ?>
 
 		<main class="CityMainFacts">
-      <h1 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
+      <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
         <?php if ($cityFact["state_province_capital"] === 1) { ?>
           (State Capital City)
         <?php } ?>
-      </h1>
+      </h2>
 
       <table class="CityTable">
         <?php if ($cityFact["incorporated_date"] !== NULL) { ?>
