@@ -10,7 +10,7 @@
 ?>
 
   <main>
-    <h1 class="BuiltWithHeader">SeaFilmz Built With</h1>
+    <h2 class="BuiltWithHeader">SeaFilmz Built With</h2>
     <ul class="BuiltWith">
       <?php
         $tools = ["HTML", "CSS", "JavaScript", "PHP", "SQL", "MariaDB"];
