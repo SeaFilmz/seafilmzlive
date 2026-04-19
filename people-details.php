@@ -49,14 +49,14 @@
 
     <main class="PeopleMainFacts">
       <?php if (($people["first_name"] and $people["last_name"]) != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["first_name"]; ?>
+        <h2 class="PeopleName"><?php echo $people["first_name"]; ?>
         <?php if ($people["middle_initialname"] != NULL) { ?>
           <b class="PeopleName"><?php echo $people["middle_initialname"]; ?></b>
         <?php } ?>
-        <?php echo $people["last_name"]; ?></h1>
+        <?php echo $people["last_name"]; ?></h2>
       <?php }
       elseif ($people["musician_name "] != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
+        <h2 class="PeopleName"><?php echo $people["musician_name "]; ?></h>
       <?php } ?>
 
       <table class="IndividualPeopleTable">
