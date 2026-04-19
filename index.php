@@ -17,7 +17,7 @@
       <div class="MainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
 
-        <section class="SeattleMovieMainLinks"><div class="SeattleMoviesMainHeader">Movies Filmed in Seattle</div>
+        <section class="SeattleMovieMainLinks"><h3 class="SeattleMoviesMainHeader">Movies Filmed in Seattle</h3>
           <nav class="SeattleMoviesMain">
             <a href="seattle-movies" class="SeattleMovieMainLinks2">Title</a>,
             <a href="seattle-movies#sortByYear" class="SeattleMovieMainLinks2">Year Released</a>,
@@ -26,7 +26,7 @@
           </nav>
         </section>
 
-        <section class="SeattlePeopleMainLinks"><div class="SeattlePeopleMainHeader">Seattle Born</div>
+        <section class="SeattlePeopleMainLinks"><h3 class="SeattlePeopleMainHeader">Seattle Born</h3>
           <nav class="SeattlePeopleMain">
             <a href="seattle-actors">Actors</a>,
             <a href="seattle-musicians" class="SeattlePeopleMainLinks2">Musicians</a>,
@@ -34,7 +34,7 @@
           </nav>
         </section>
 
-        <section class="SeattleFunFactsMainLinks"><div class="SeattleFunFactsMainHeader">City Facts</div>
+        <section class="SeattleFunFactsMainLinks"><h3 class="SeattleFunFactsMainHeader">City Facts</h3>
           <nav class="SeattleFunFactsMain">
             <a href="seattle-washington">Seattle</a>,
             <a href="portland-oregon">Portland OR</a>
