@@ -56,7 +56,7 @@
         <?php echo $people["last_name"]; ?></h2>
       <?php }
       elseif ($people["musician_name "] != NULL) { ?>
-        <h2 class="PeopleName"><?php echo $people["musician_name "]; ?></h>
+        <h2 class="PeopleName"><?php echo $people["musician_name "]; ?></h2>
       <?php } ?>
 
       <table class="IndividualPeopleTable">
