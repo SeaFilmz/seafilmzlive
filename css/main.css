@@ -133,7 +133,6 @@ h1 {
 .SeattleMoviesMainHeader,
 .SeattlePeopleMainHeader,
 .SeattleFunFactsMainHeader {
-  width: 20rem;
   font-size: 1.25rem;
   font-weight: 900;
 }
@@ -142,7 +141,6 @@ h1 {
 .SeattlePeopleMain,
 .SeattleFunFactsMain {
   display: inline-block;
-  width: 20rem;
   font-weight: 900;
 }
 
