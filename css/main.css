@@ -97,6 +97,10 @@ h1, h2 {
   text-align: center;
 }
 
+h2 {
+  margin: 0;
+}
+
 .HomePage {
   background-image: url("/images/Seattle-Beach-GG-Web.webp");
   background-position: center;
@@ -339,13 +343,13 @@ li {
 
 .GoogleManualAds {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 768px) {
   .GoogleManualAds {
     width: 320px;
     height: 50px;
-    margin: 0 auto 1rem auto;
+    margin: 2rem auto;
   }
 }

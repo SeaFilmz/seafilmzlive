@@ -72,6 +72,9 @@
 
     <p id="watchedText" class="WatchedText"></p>
 
+    <!--Connection to Manual Google AdSense.-->
+    <div class="GoogleManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
+
     <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
     <div class="MYTable">
