@@ -15,7 +15,7 @@
       </b>
     </p>
 
-    <h1 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h1>
+    <h2 class="MoviesPageHeader"><b>Movies Filmed in Seattle by Runtime</b></h2>
 
     <div class="MRTable">
     <table class="MovieRuntimeTable">
