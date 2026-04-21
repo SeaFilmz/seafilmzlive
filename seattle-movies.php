@@ -72,7 +72,7 @@
 
     <p id="watchedText" class="WatchedText"></p>
 
-    <h1 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h1>
+    <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
     <div class="MYTable">
     <table class="MoviesTable">
