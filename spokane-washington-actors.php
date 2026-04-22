@@ -65,7 +65,7 @@
   peopleCityBornByJobCount('Spokane', 'actor');
 ?>
 
-    <h1 id="SortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Spokane, Washington by Birthdate</b></h1>
+    <h2 id="SortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Spokane, Washington by Birthdate</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">

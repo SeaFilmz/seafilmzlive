@@ -14,7 +14,7 @@
       </b>
     </h2>
 
-    <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Bellevue, Washington by First Name</b></h1>
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Bellevue, Washington by First Name</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">

@@ -14,7 +14,7 @@
       </b>
     </p>
 
-    <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Tacoma, Washington by First Name</b></h1>
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Tacoma, Washington by First Name</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">
