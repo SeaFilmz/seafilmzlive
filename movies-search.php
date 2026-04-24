@@ -49,7 +49,7 @@
 			while ($row = mysqli_fetch_assoc($result)) {
 		?>
 
-				<div class="movieResult">
+				<div class="MovieResult">
 
 					<div class="movieTitleYear"><a href= "<?php echo $row["movie_page_link"]; ?>" class="movieTitleLink"><?php echo $row["movie_title"]; ?></a></div>
 					<div><?php echo $row["year_released"]; ?></div>
