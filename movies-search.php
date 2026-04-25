@@ -7,7 +7,6 @@
   headerTemp();
 ?>
 
-
 <main class="HomePageContent">
 
 <?php
