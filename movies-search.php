@@ -40,7 +40,7 @@
 			if ($searchRemoveWhitespaceAll !== "") {
 		?>
 
-				<h1>Movie Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h1>
+				<h2>Movie Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
 
 		<?php
 		}
