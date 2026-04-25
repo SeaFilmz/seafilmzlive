@@ -18,14 +18,21 @@
 		$searchRemoveWhitespaceAllLower = strtolower($searchRemoveWhitespaceAll);
 
 		$movieTitle ="%$searchRemoveWhitespaceAll%";
+		$peopleName ="$searchRemoveWhitespaceAll%";
 
 		$query = $newConnection->prepare(
 			"SELECT * FROM movies
 				WHERE REPLACE(movie_title, ' ', '') LIKE ?
 				ORDER BY movie_title ASC
+			UNION
+			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, 'N/A' AS YearReleased, people_links AS Link, 2 AS SortPriority FROM peoples INNER JOIN cities ON peoples.birth_city_id = cities.city_id
+        WHERE REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
+        OR last_name LIKE ?
+        AND state_province IN ('Washington', 'Oregon', 'Idaho','Alaska')
+        ORDER BY SortPriority ASC, DisplayName ASC
 		");
 
-		$query->bind_param("s", $movieTitle);
+		$query->bind_param("sss", $movieTitle, $peopleName, $peopleName);
 
 		$query->execute();
 
@@ -39,7 +46,7 @@
 			if ($searchRemoveWhitespaceAll !== "") {
 		?>
 
-				<h2>Movie Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
+				<h2>Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
 
 		<?php
 		}
@@ -50,9 +57,11 @@
 
 				<div class="MovieResult">
 
-					<div class="movieTitleYear"><a href= "<?php echo $row["movie_page_link"]; ?>" class="movieTitleLink"><?php echo $row["movie_title"]; ?></a></div>
-					<div><?php echo $row["year_released"]; ?></div>
-					<div>Movie</div>
+					<div class="MovieTitleYear"><a href= "<?php echo $row["Link"]; ?>" class="MovieTitleLink"><?php echo $row["DisplayName"]; ?></a></div>
+					<?php if ($row["SortPriority"] == 1) { ?>
+    				<div><?php echo $row["YearReleased"]; ?></div>
+    				<div>Movie</div>
+    			<?php } ?>
 
 				</div>
 
