@@ -47,7 +47,7 @@
 			if ($searchRemoveWhitespaceAll !== "") {
 		?>
 
-				<h2>Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
+				<h2 class="OverallSearchResultTitle">Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
 
 		<?php
 		}
