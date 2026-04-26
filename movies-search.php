@@ -21,7 +21,7 @@
 		$peopleName ="$searchRemoveWhitespaceAll%";
 
 		$query = $newConnection->prepare(
-			"SELECT * FROM movies
+			"SELECT movie_title AS DisplayName, year_released AS YearReleased, movie_page_link AS Link, 1 AS SortPriority FROM movies
 				WHERE REPLACE(movie_title, ' ', '') LIKE ?
 				ORDER BY movie_title ASC
 			UNION
