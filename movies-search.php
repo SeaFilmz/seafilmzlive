@@ -21,12 +21,13 @@
 		$peopleName ="$searchRemoveWhitespaceAll%";
 
 		$query = $newConnection->prepare(
-			"SELECT movie_title AS DisplayName, year_released AS YearReleased, movie_page_link AS Link, 1 AS SortPriority FROM movies
+			"SELECT movie_title AS DisplayName, year_released AS YearReleased, movie_page_link AS Link, 'N/A' AS Job, 1 AS SortPriority FROM movies
 				WHERE REPLACE(movie_title, ' ', '') LIKE ?
 				ORDER BY movie_title ASC
 			UNION
-			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, 'N/A' AS YearReleased, people_links AS Link, 2 AS SortPriority FROM peoples INNER JOIN cities ON peoples.birth_city_id = cities.city_id
-        WHERE REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
+			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, 'N/A' AS YearReleased, people_links AS Link, job AS Job, 2 AS SortPriority FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON peoples.birth_city_id = cities.city_id
+        WHERE job = 'actor'
+        AND REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
         OR last_name LIKE ?
         AND state_province IN ('Washington', 'Oregon', 'Idaho','Alaska')
         ORDER BY SortPriority ASC, DisplayName ASC
@@ -61,6 +62,8 @@
 					<?php if ($row["SortPriority"] == 1) { ?>
     				<div><?php echo $row["YearReleased"]; ?></div>
     				<div>Movie</div>
+    			<?php } elseif ($row["SortPriority"] == 2) { ?>
+    		    <div>Actor</div>
     			<?php } ?>
 
 				</div>
