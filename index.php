@@ -43,7 +43,7 @@
       </div>
 
 			<div class="quizStartButton">
-        <button type="button" onclick="startQuizButton()" class="SFStartQuizButton"><b>Start SeaFilmz Quiz</b></button>
+        <button type="button" onclick="startQuizButton()" class="SFStartQuizButton SFStartQuizButtonHover"><b>Start SeaFilmz Quiz</b></button>
       </div>
 
       <section class="SFQuizBackground">
