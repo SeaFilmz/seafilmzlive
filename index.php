@@ -14,14 +14,16 @@
 
     <main class="HomePageContent">
 
-      <div class="MainLinks">
+      <div class="HomePageAboutContainer">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
+      </div>
 
         <?php
           require_once 'templates/movie-search-form.php';
           movieSearchForm();
         ?>
 
+      <div class="MainLinks">
         <section class="SeattleMovieMainLinks"><h3 class="SeattleMoviesMainHeader">Movies Filmed in Seattle</h3>
           <nav class="SeattleMoviesMain">
             <a href="seattle-movies" class="SeattleMovieMainLinks2">Title</a>,
