@@ -1,6 +1,6 @@
     <header id="goToTopLink" class="banner">
       <h1 id="headerStandFor" class="WebsiteName"><a id="HeaderLink" href="/">SeaFilmz</a></h1>
-      <p class="Slogan">6 Degrees of Seattle</p>
+      <p class="Slogan SloganHomepage">6 Degrees of Seattle</p>
 
       <?php if ($showSearch === true) {
         require_once 'templates/movie-search-form.php';

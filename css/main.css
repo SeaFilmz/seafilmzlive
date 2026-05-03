@@ -38,6 +38,10 @@ button {
   margin-top: -4rem;
 }
 
+.SloganHomepage {
+  margin-bottom: 0.625rem;
+}
+
 .MovieSearchForm {
   margin: 0.5rem 0.5rem 1rem 0.5rem;
   text-align: center;
