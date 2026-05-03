@@ -9,13 +9,18 @@
   $body = 'HomePage';
   /*link to the start of a seafilmz general web page template*/
   require_once 'templates/main-page-structure.php';
-  headerTemp();
+  headerTemp(false);
 ?>
 
     <main class="HomePageContent">
 
       <div class="MainLinks">
         <p class="HomePageAbout">Northwest US cities, movies, actors and more</p>
+
+        <?php
+          require_once 'templates/movie-search-form.php';
+          movieSearchForm();
+        ?>
 
         <section class="SeattleMovieMainLinks"><h3 class="SeattleMoviesMainHeader">Movies Filmed in Seattle</h3>
           <nav class="SeattleMoviesMain">

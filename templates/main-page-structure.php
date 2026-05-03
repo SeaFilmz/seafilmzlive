@@ -5,7 +5,7 @@
     return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
   }
 
-  function headerTemp() {
+  function headerTemp($showSearch = true) {
     global $title, $mDesc, $ogTitle, $ogURL, $ogImage, $ogImageAlt, $schemaType, $movieTitle, $movieURLSlug, $movieYear, $personName, $personURLSlug, $cityStateName, $cityStateURLSlug, $body;
     require_once 'new_db_connection.php';
 ?>
