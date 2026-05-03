@@ -364,7 +364,7 @@ li {
   margin: 2rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .GoogleManualAds {
     width: 320px;
     height: 50px;
