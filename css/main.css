@@ -167,6 +167,7 @@ h2 {
   box-shadow: 0.625rem 0.3125rem 0.3125rem rgb(0, 0, 0, 0.4);
 }
 
+#SearchButton:hover,
 .SFStartQuizButtonHover:hover {
   background-color: #77c9c9;
 }
