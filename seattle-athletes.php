@@ -21,7 +21,7 @@
       </b>
     </p>
 
-    <h1 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h1>
+    <h2 class="AthletesPageHeader"><b>Athletes Born in Seattle</b></h2>
 
     <div class="ATable">
     <table class="AthletesTable">
