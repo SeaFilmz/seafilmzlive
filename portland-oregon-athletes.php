@@ -21,7 +21,7 @@
       </b>
     </p>
 
-    <h1 class="AthletesPageHeader"><b>Athletes Born in Portland, Oregon</b></h1>
+    <h2 class="AthletesPageHeader"><b>Athletes Born in Portland, Oregon</b></h2>
 
     <div class="ATable">
     <table class="AthletesTable">
