@@ -9,7 +9,7 @@
   headerTemp();
 ?>
 
-		<h1 class="SeattleMTHeader">Seattle Movie Theaters</h1>
+		<h2 class="SeattleMTHeader">Seattle Movie Theaters</h2>
 		<div class="SeattleMTContent">
       <ul class="SMTList">
         <?php
