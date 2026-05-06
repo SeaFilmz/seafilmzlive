@@ -11,7 +11,7 @@
 
 
 
-    <h1 class="MusiciansPageHeader"><b>Musicians Born in Seattle</b></h1>
+    <h2 class="MusiciansPageHeader"><b>Musicians Born in Seattle</b></h2>
 
     <div class="MTable">
     <table class="MusiciansTable">
