@@ -15,7 +15,7 @@
       </b>
     </p>
 
-    <h1 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Portland, Oregon by Title</b></h1>
+    <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Portland, Oregon by Title</b></h2>
 
     <div class="MTTable">
     <table class="MoviesTable">
