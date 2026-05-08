@@ -15,7 +15,7 @@
       </b>
     </p>
 
-    <h1 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Anchorage, Alaska by First Name</b></h1>
+    <h2 id="sortByActorName" class="ActorsPageHeader"><b>Actors Born in Anchorage, Alaska by First Name</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">
@@ -65,7 +65,7 @@
   peopleCityBornByJobCount('Anchorage', 'actor');
 ?>
 
-    <h1 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h1>
+    <h2 id="sortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Seattle by Birthdate</b></h2>
 
     <div class="MATable">
     <table class="ActorsTable">
