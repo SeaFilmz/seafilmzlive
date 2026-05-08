@@ -21,7 +21,7 @@
       </b>
     </h1>
 
-    <h1 class="AthletesPageHeader"><b>Athletes Born in Bellevue, Washington</b></h1>
+    <h2 class="AthletesPageHeader"><b>Athletes Born in Bellevue, Washington</b></h2>
 
     <div class="ATable">
     <table class="AthletesTable">
