@@ -471,9 +471,8 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
         </table>
         </div>
 
-<?php } ?>
+<?php }
 
-<?php
   function individualMovieFactPageQuery($movieTitle, $city) {
     global $newConnection;
 
@@ -488,9 +487,8 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
       or die("Database query failed.");
 
     return $result;
-} ?>
+}
 
-<?php
   function individualMovieFactPageLocationQuery($movieSLUG) {
     global $newConnection;
 
@@ -505,9 +503,8 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
       or die("Database query failed.");
 
     return $filmLocations;
-} ?>
+}
 
-<?php
   function individualMoviePeopleFactPageQuery($movieSLUGPeople, $job) {
     global $newConnection;
 
@@ -522,9 +519,8 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
       or die("Database query failed.");
 
     return $movieActors;
-} ?>
+}
 
-<?php
   function individualMovieDirectorFactPageQuery($movieSLUGDirector, $job) {
     global $newConnection;
 
