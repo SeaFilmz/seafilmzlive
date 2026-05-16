@@ -44,10 +44,11 @@
           }
 
 
-          // 2.5 Baseball Perform database query
+          // 2.5 Total Count of City Born People by Job by Sport database query
           $query = $newConnection->prepare("SELECT COUNT(*) as total, sport_known_for FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND sport_known_for = ? AND sport_known_for IS NOT NULL GROUP BY sport_known_for ");
 
-          $sport = 'Baseball';
+          // 2.5 Baseball
+					$sport = 'Baseball';
           $query->bind_param("sss", $city, $job, $sport);
           $query->execute();
 
@@ -60,9 +61,7 @@
             /* output data from each row*/
 
 
-          // 2.5 Basketball Perform database query
-          $query = $newConnection->prepare("SELECT COUNT(*) as total, sport_known_for FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND sport_known_for = ? AND sport_known_for IS NOT NULL GROUP BY sport_known_for ");
-
+          // 2.5 Basketball
           $sport = 'Basketball';
           $query->bind_param("sss", $city, $job, $sport);
           $query->execute();
@@ -76,9 +75,7 @@
             /* output data from each row*/
 
 
-          // 2.5 Football Perform database query
-          $query = $newConnection->prepare("SELECT COUNT(*) as total, sport_known_for FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND sport_known_for = ? AND sport_known_for IS NOT NULL GROUP BY sport_known_for ");
-
+          // 2.5 Football
           $sport = 'Football';
           $query->bind_param("sss", $city, $job, $sport);
           $query->execute();
@@ -92,9 +89,7 @@
             /* output data from each row*/
 
 
-          // 2.5 Golf Perform database query
-          $query = $newConnection->prepare("SELECT COUNT(*) as total, sport_known_for FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND sport_known_for = ? AND sport_known_for IS NOT NULL GROUP BY sport_known_for ");
-
+          // 2.5 Golf
           $sport = 'Golf';
           $query->bind_param("sss", $city, $job, $sport);
           $query->execute();
