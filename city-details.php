@@ -149,6 +149,7 @@
               <div class="cityDataPointOfMany"><a href="https://www.nhl.com/kraken" target="_blank">Seattle Kraken</a> (men's hockey)</div>
               <div class="cityDataPointOfMany"><a href="http://storm.wnba.com/" target="_blank">Seattle Storm</a> (women's basketball)</div>
               <div class="cityDataPointOfMany"><a href="https://www.reignfc.com/" target="_blank">Seattle Reign FC</a> (women's soccer)</div>
+              <div class="cityDataPointOfMany"><a href="https://www.thepwhl.com/en/teams/seattle-torrent" target="_blank">Seattle Torrent</a> (women's hockey)</div>
             </td>
           </tr>
           <tr class="cityDataPointRow">
