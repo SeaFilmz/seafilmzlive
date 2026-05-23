@@ -24,11 +24,13 @@
       </tr>
 
         <?php
+            // 1. Declare Global Variables
+            $city = 'Tacoma';
+            $job = 'actor';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND job = ? AND first_name IS NOT NULL ORDER BY first_name ASC ");
 
-            $city = 'Tacoma';
-            $job = 'actor';
             $query->bind_param("ss", $city, $job);
             $query->execute();
 
@@ -77,9 +79,7 @@
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND job = ? AND first_name IS NOT NULL ORDER BY Birthdate DESC ");
 
-            $cityBirthdate = 'Tacoma';
-            $jobBirthdate = 'actor';
-            $query->bind_param("ss", $cityBirthdate, $jobBirthdate);
+            $query->bind_param("ss", $city, $job);
             $query->execute();
 
             //Result variable with an error check
