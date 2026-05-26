@@ -25,10 +25,12 @@
       </tr>
 
         <?php
+            // 1. Declare Global Variables
+            $city = 'Seattle';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
 
-            $city = 'Seattle';
             $query->bind_param("s", $city);
             $query->execute();
 
@@ -88,8 +90,7 @@
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ");
 
-            $cityY = 'Seattle';
-            $query->bind_param("s", $cityY);
+            $query->bind_param("s", $city);
             $query->execute();
 
             //Result variable with an error check
