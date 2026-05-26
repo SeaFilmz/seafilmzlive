@@ -64,7 +64,7 @@
     <!--link to Total Actors Count-->
 <?php
   require_once 'queryfunctions/people-functions.php';
-  peopleCityBornByJobCount('Spokane', 'actor');
+  peopleCityBornByJobCount($city, $job);
 ?>
 
     <h2 id="SortByBirthdate" class="ActorsPageHeader"><b>Actors Born in Spokane, Washington by Birthdate</b></h2>
@@ -110,7 +110,7 @@
     </div>
 
     <!--link to Total Actors Count-->
-<?php peopleCityBornByJobCount('Spokane', 'actor'); ?>
+<?php peopleCityBornByJobCount($city, $job); ?>
 
 <?php
   // footer display function
