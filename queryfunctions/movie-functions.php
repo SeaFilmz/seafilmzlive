@@ -1,4 +1,22 @@
 <?php
+  function moviesFilmedCityByTitleQuery($city) {
+    global $newConnection;
+
+    // 2. Perform database query
+    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
+
+    $query->bind_param("s", $city);
+    $query->execute();
+
+    //Result variable with an error check
+    $moviesByCity = $query->get_result()
+      or die("Database query failed.");
+
+    return $moviesByCity;
+  }
+?>
+
+<?php
   function cityMoviesCount($city) {
     global $newConnection;
 ?>
@@ -535,4 +553,5 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
       or die("Database query failed.");
 
     return $movieDirector;
-} ?>
+}
+?>
