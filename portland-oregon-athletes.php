@@ -31,11 +31,13 @@
       </tr>
 
         <?php
+            // 1. Declare Global Variables
+            $city = 'Portland';
+            $job = 'athlete';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND job = ? ORDER BY sport_known_for ASC, first_name ");
 
-            $city = 'Portland';
-            $job = 'athlete';
             $query->bind_param("ss", $city, $job);
             $query->execute();
 
@@ -66,7 +68,7 @@
     <!--link to Total Athletes Count-->
 <?php
   require_once 'queryfunctions/people-functions.php';
-  peopleCityBornByJobCount('Portland', 'athlete');
+  peopleCityBornByJobCount($city, $job);
 ?>
 
 <?php
