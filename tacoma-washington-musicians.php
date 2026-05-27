@@ -18,11 +18,13 @@
       </tr>
 
       <?php
+            // 1. Declare Global Variables
+            $city = 'Tacoma';
+            $job = 'musician';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND job = ? AND musician_name  IS NOT NULL ORDER BY musician_name  ");
 
-            $city = 'Tacoma';
-            $job = 'musician';
             $query->bind_param("ss", $city, $job);
             $query->execute();
 
@@ -54,7 +56,7 @@
     <!--link to Total Musicians Count-->
 <?php
   require_once 'queryfunctions/people-functions.php';
-  peopleCityBornByJobCount('Tacoma', 'musician');
+  peopleCityBornByJobCount($city, $job);
 ?>
 
     <!--link to footer-->
