@@ -25,10 +25,12 @@
       </tr>
 
         <?php
+            // 1. Declare Global Variables
+            $city = 'Seattle';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY runtime ASC, movie_title ");
 
-            $city = 'Seattle';
             $query->bind_param("s", $city);
             $query->execute();
 
@@ -58,17 +60,17 @@
 
 <?php
   require_once 'queryfunctions/movie-functions.php';
-  cityRuntimeCount('Seattle');
-  cityRuntimeAvg('Seattle');
-  cityRuntimeShortest('Seattle');
-  cityRuntimeLongest('Seattle');
+  cityRuntimeCount($city);
+  cityRuntimeAvg($city);
+  cityRuntimeShortest($city);
+  cityRuntimeLongest($city);
 ?>
 <br>
 <?php
-  cityRuntimeCountHours('Seattle');
-  cityRuntimeAvgHours('Seattle');
-  cityRuntimeShortestHours('Seattle');
-  cityRuntimeLongestHours('Seattle');
+  cityRuntimeCountHours($city);
+  cityRuntimeAvgHours($city);
+  cityRuntimeShortestHours($city);
+  cityRuntimeLongestHours($city);
 ?>
 
 <?php
