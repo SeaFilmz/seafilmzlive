@@ -25,23 +25,16 @@
       </tr>
 
         <?php
-            // 1. Declare Global Variables
-            $city = 'Portland';
+          // 1. Declare Global Variables
+          $city = 'Portland';
 
-            // 2. Perform database query
-            $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
+          // 2. Perform database query
+          require_once 'queryfunctions/movie-functions.php';
+          $moviesByCity = moviesFilmedCityByTitleQuery($city);
 
-
-            $query->bind_param("s", $city);
-            $query->execute();
-
-            //Result variable with an error check
-            $result = $query->get_result()
-              or die("Database query failed.");
-
-            // 3. Use returned data (if any)
-            while ($movies = mysqli_fetch_assoc($result)) {
-                // output data from each row
+          // 3. Use returned data (if any)
+          while ($movies = mysqli_fetch_assoc($moviesByCity)) {
+            // output data from each row
         ?>
 
       <tr class="MoviesContent">
@@ -57,17 +50,14 @@
             }
 
             // 4. Release returned data
-            mysqli_free_result($result);
+            mysqli_free_result($moviesByCity);
         ?>
 
     </table>
     </div>
 
         <!--link to Total Movie Count-->
-<?php
-  require_once 'queryfunctions/movie-functions.php';
-  cityMoviesCount($city);
-?>
+<?php cityMoviesCount($city); ?>
 
     <div class="WatchedButton">
       <button onclick="movieWatchedButton($city)" class="WatchedButton"><b>Movies Watched</b></button>
