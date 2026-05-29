@@ -25,10 +25,12 @@
           </tr>
 
         <?php
+            // 1. Declare Global Variables
+            $city = 'Seattle';
+
             // 2. Perform database query
             $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? AND total_world_gross IS NOT NULL ORDER BY total_world_gross DESC ");
 
-            $city = 'Seattle';
             $query->bind_param("s", $city);
             $query->execute();
 
@@ -58,8 +60,8 @@
 
 <?php
   require_once 'queryfunctions/movie-functions.php';
-  cityMovieGrossTotal('Seattle');
-  cityMovieHighestGrossTotal('Seattle');
+  cityMovieGrossTotal($city);
+  cityMovieHighestGrossTotal($city);
 ?>
 
 <?php
