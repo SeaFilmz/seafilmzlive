@@ -46,7 +46,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newConnection->prepare("SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $city);
             $query->execute();
@@ -73,7 +73,26 @@
         </table>
         </div>
 
-<?php  }
+<?php }
+
+  function moviesFilmedCityByRuntimeQuery($city) {
+    global $newConnection;
+
+    // 2. Perform database query
+    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY runtime ASC, movie_title ");
+
+    $query->bind_param("s", $city);
+    $query->execute();
+
+    //Result variable with an error check
+    $moviesByCityByRuntime = $query->get_result()
+      or die("Database query failed.");
+
+    return $moviesByCityByRuntime;
+  }
+?>
+
+<?php
 
   function cityRuntimeCount($cityRt) {
     global $newConnection;

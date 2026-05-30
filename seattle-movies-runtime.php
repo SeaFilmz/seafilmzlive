@@ -29,17 +29,11 @@
             $city = 'Seattle';
 
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ORDER BY runtime ASC, movie_title ");
-
-            $query->bind_param("s", $city);
-            $query->execute();
-
-            //Result variable with an error check
-            $result = $query->get_result()
-              or die("Database query failed.");
+            require_once 'queryfunctions/movie-functions.php';
+            $moviesByCityByRuntime = moviesFilmedCityByRuntimeQuery($city);
 
             // 3. Use returned data (if any)
-            while ($movies = mysqli_fetch_assoc($result)) {
+            while ($movies = mysqli_fetch_assoc($moviesByCityByRuntime)) {
                 // output data from each row
         ?>
 
@@ -52,14 +46,13 @@
             }
 
             // 4. Release returned data
-            mysqli_free_result($result);
+            mysqli_free_result($moviesByCityByRuntime);
         ?>
 
         </table>
         </div>
 
 <?php
-  require_once 'queryfunctions/movie-functions.php';
   cityRuntimeCount($city);
   cityRuntimeAvg($city);
   cityRuntimeShortest($city);
