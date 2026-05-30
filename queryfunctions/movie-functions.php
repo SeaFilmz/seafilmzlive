@@ -17,6 +17,24 @@
 ?>
 
 <?php
+  function moviesFilmedCityByReleaseYearTitleQuery($city) {
+    global $newConnection;
+
+    // 2. Perform database query
+    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ");
+
+    $query->bind_param("s", $city);
+    $query->execute();
+
+    //Result variable with an error check
+    $moviesByCityByYearReleased = $query->get_result()
+      or die("Database query failed.");
+
+    return $moviesByCityByYearReleased;
+  }
+?>
+
+<?php
   function cityMoviesCount($city) {
     global $newConnection;
 ?>
