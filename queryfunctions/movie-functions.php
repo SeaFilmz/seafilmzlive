@@ -105,7 +105,7 @@
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newConnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRt);
             $query->execute();
@@ -145,7 +145,7 @@ function cityRuntimeCountHours($cityRt) {
 
       <?php
           // 2. Perform database query
-          $query = $newConnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newConnection->prepare("SELECT SUM(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRt);
           $query->execute();
@@ -193,7 +193,7 @@ function cityRuntimeAvg($cityRtAvg) {
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newConnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtAvg);
             $query->execute();
@@ -233,7 +233,7 @@ function cityRuntimeAvgHours($cityRtAvg) {
 
       <?php
           // 2. Perform database query
-          $query = $newConnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newConnection->prepare("SELECT AVG(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtAvg);
           $query->execute();
@@ -281,7 +281,7 @@ function cityRuntimeShortest($cityRtShortest) {
 
       <?php
           // 2. Perform database query
-          $query = $newConnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newConnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtShortest);
           $query->execute();
@@ -321,7 +321,7 @@ function cityRuntimeShortestHours($cityRtShortest) {
 
       <?php
           // 2. Perform database query
-          $query = $newConnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+          $query = $newConnection->prepare("SELECT MIN(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
           $query->bind_param("s", $cityRtShortest);
           $query->execute();
@@ -369,7 +369,7 @@ function cityRuntimeLongest($cityRtLongest) {
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newConnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtLongest);
             $query->execute();
@@ -409,7 +409,7 @@ function cityRuntimeLongestHours($cityRtLongest) {
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  = movies_cities.city_id WHERE city = ? ");
+            $query = $newConnection->prepare("SELECT MAX(runtime) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
 
             $query->bind_param("s", $cityRtLongest);
             $query->execute();
