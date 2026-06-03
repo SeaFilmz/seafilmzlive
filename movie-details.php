@@ -16,10 +16,10 @@
   $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["year_released"] . ').';
   $ogTitle = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
-	$schemaType = 'Movie';
-	$movieTitle = $movies["movie_title"];
-	$movieURLSlug = $movieSLUGPart;
-	$movieYear = $movies["year_released"];
+  $schemaType = 'Movie';
+  $movieTitle = $movies["movie_title"];
+  $movieURLSlug = $movieSLUGPart;
+  $movieYear = $movies["year_released"];
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
@@ -95,7 +95,7 @@
         </tr>
 
       <?php
-        $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed);
+        $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed, $movies["city"]);
       ?>
 
         <tr class="movieDataPointRow">
