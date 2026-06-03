@@ -35,7 +35,7 @@
         ORDER BY SortPriority ASC, DisplayName ASC
 		");
 
-		$query->bind_param("ssss", $movieTitle, $peopleName, $peopleName, $peopleName);
+		$query->bind_param("sssss", $movieTitle, $peopleName, $peopleName, $peopleName, $peopleName);
 
 		$query->execute();
 
