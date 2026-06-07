@@ -1,0 +1,6 @@
+deployment:
+tasks:
+- export
+DEPLOYPATH=/home/seafilmz/public_html/
+- /bin/cp index.php
+$DEPLOYPATH
