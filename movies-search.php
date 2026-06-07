@@ -1,6 +1,6 @@
 <?php
   $title = 'Search - SeaFilmz';
-  $mDesc = 'SeaFilmz movie title search results.';
+  $mDesc = 'Search Results - SeaFilmz';
   $body = 'MainBody';
   /*link to the start of a seafilmz general web page template*/
   require_once 'templates/main-page-structure.php';
