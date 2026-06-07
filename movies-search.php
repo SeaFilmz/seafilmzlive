@@ -61,8 +61,7 @@
 
 						<?php if ($row["SortPriority"] == 1) { ?>
 							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["DisplayName"]; ?></a></div>
-							<div><?php echo $row["YearReleased"]; ?></div>
-							<div>Movie</div>
+							<div>Movie &bull; <?php echo $row["YearReleased"]; ?> </div>
 						<?php } elseif ($row["Job"] == 'actor') { ?>
 							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["DisplayName"]; ?></a></div>
 							<div>Actor</div>
