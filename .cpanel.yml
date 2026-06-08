@@ -4,3 +4,5 @@ tasks:
 DEPLOYPATH=/home/seafilmz/public_html/
 - /bin/cp index.php
 $DEPLOYPATH
+- /bin/cp streaming-services.php
+$DEPLOYPATH
