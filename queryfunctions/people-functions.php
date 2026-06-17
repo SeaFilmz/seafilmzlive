@@ -1,4 +1,22 @@
 <?php
+  function peopleBirthCityByJob($city, $job) {
+    global $newConnection;
+
+    // 2. Perform database query
+    $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND first_name IS NOT NULL ORDER BY first_name ASC ");
+
+    $query->bind_param("ss", $city, $job);
+    $query->execute();
+
+    //Result variable with an error check
+    $peopleBirthCityByJob = $query->get_result()
+      or die("Database query failed.");
+
+    return $peopleBirthCityByJob;
+  }
+?>
+
+<?php
   function peopleCityBornByJobCount($city, $job) {
     global $newConnection;
 ?>
