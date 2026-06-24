@@ -1,9 +1,7 @@
 ---
 deployment:
 tasks:
-- export
-DEPLOYPATH=/home/seafilmz/public_html/
-- /bin/cp index.php $DEPLOYPATH
-- /bin/cp about.php $DEPLOYPATH
-- /bin/cp streaming-services.php $DEPLOYPATH
-- /bin/cp sitemap.php $DEPLOYPATH
+- /bin/cp index.php /home/seafilmz/public_html/
+- /bin/cp about.php /home/seafilmz/public_html/
+- /bin/cp streaming-services.php /home/seafilmz/public_html/
+- /bin/cp sitemap.php /home/seafilmz/public_html/
