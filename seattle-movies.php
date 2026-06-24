@@ -20,7 +20,8 @@
     <div class="MTTable">
     <table class="MoviesTable">
       <tr>
-        <th class="MoviesColumnHeader1">Title</th>
+        <th class="MoviesColumnHeader1"></th>
+        <th class="MoviesColumnHeader2">Title</th>
         <th class="MoviesColumnHeader2"><a href="#sortByYear" class="SortText">Year</a><div class="SortTriangle">&#9660</div></th>
       </tr>
 
