@@ -15,7 +15,7 @@
       <div class="AboutDescription">
         <p>Do you enjoy movies, music, or sports?</p>
         <p>Do you watch movies or sports?</p>
-        <p>Do you listen music?</p>
+        <p>Do you listen to music?</p>
         <p>Do you want to learn about Seattle?</p>
         <p>If you said yes to any of these four questions then this website is for you.</p>
         <p>This website is SeaFilmz which is a media website about Seattle. SeaFilmz is developed by a person who grew up in the greater Seattle area and is a current resident who is into media and is a movie enthusiast.</p>
