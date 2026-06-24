@@ -16,9 +16,9 @@
         <p>Do you enjoy movies, music, or sports?</p>
         <p>Do you watch movies or sports?</p>
         <p>Do you listen to music?</p>
-        <p>Do you want to learn about Seattle?</p>
+        <p>Do you want to learn about cities in the Northwest United States?</p>
         <p>If you said yes to any of these four questions then this website is for you.</p>
-        <p>This website is SeaFilmz which is a media website about Seattle. SeaFilmz is developed by a person who grew up in the greater Seattle area and is a current resident who is into media and is a movie enthusiast.</p>
+        <p>SeaFilmz is a Northwest United States media website with a focus on movies. It is developed by a movie enthusiast who grew up in the Northwest United States.</p>
       </div>
     </section>
 
