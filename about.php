@@ -18,7 +18,7 @@
           <p>Do you watch movies or sports?</p>
           <p>Do you listen to music?</p>
           <p>Do you want to learn about cities in the Northwest United States?</p>
-          <p>If you said yes to any of these four questions then this website is for you.</p>
+          <p>If you said yes to any of these four questions, welcome to the SeaFilmz website!</p>
           <p>SeaFilmz is a Northwest United States media website with a focus on movies. It is developed by a movie enthusiast who grew up in the Northwest United States.</p>
         </div>
       </section>
@@ -27,7 +27,7 @@
         <button id="HeaderTextSwapButton" class="SecondHeaderButton">SeaFilmz Stand For</button>
       </div>
     </main>
-    
+
     <script src="/js/website-name-stands-for.js" defer></script>
 
 <?php
