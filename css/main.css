@@ -205,6 +205,14 @@ h2 {
   text-align: center;
 }
 
+.AboutPageFirstQuestion {
+  margin: 1rem 0;
+}
+
+.AboutPageQuestion {
+  margin-bottom: 1rem;
+}
+
 .SecondHeader {
   text-align: center;
   margin-bottom: 1rem;
