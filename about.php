@@ -15,13 +15,11 @@
 
         <div class="AboutDescription">
           <ul>
-            <li class="AboutPageFirstQuestion">Do you enjoy movies, music, or sports?</li>
-            <li class="AboutPageQuestion">Do you watch movies or sports?</li>
-            <li class="AboutPageQuestion">Do you listen to music?</li>
+            <li class="AboutPageFirstQuestion">Are you looking to discover more about movies, music or sports?</li>
             <li>Do you want to learn about cities in the Northwest United States?</li>
           </ul>
           
-          <p>If you said yes to any of these four questions, welcome to the SeaFilmz website!</p>
+          <p>If you answered yes to either of these questions, welcome to the SeaFilmz website!</p>
           <p>SeaFilmz is a Northwest United States media website with a focus on movies. It is developed by a movie enthusiast who grew up in the Northwest United States.</p>
         </div>
       </section>
