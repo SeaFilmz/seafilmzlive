@@ -6,3 +6,4 @@ deployment:
     - /bin/cp built-with.php /home/seafilmz/public_html/
     - /bin/cp streaming-services.php /home/seafilmz/public_html/
     - /bin/cp sitemap.php /home/seafilmz/public_html/
+    - /bin/cp js/website-name-stands-for.js /home/seafilmz/public_html/js/
