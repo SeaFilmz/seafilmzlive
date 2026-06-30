@@ -31,7 +31,7 @@
 
           // 2. Perform database query
           require_once 'queryfunctions/movie-functions.php';
-          $moviesByCity = moviesFilmedCityByTitleQuery($city);
+          $moviesByCity = moviesFilmedCityByTitleQuery($newConnection, $city);
 
           // 3. Use returned data (if any)
           while ($movies = mysqli_fetch_assoc($moviesByCity)) {

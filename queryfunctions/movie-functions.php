@@ -1,10 +1,10 @@
 <?php
-  function moviesFilmedCityByTitleQuery($city) {
-    global $newConnection;
+  function moviesFilmedCityByTitleQuery($databaseConnection, $city) {
 
     // 2. Perform database query
-    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY movie_title ASC ");
+    $sql = "SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY movie_title ASC ";
 
+    $query = $databaseConnection->prepare($sql);
     $query->bind_param("s", $city);
     $query->execute();
 
