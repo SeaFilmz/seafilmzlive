@@ -4,6 +4,7 @@
   $mDesc = 'Info about what is seafilmz and who its founder/developer is.';
   $ogTitle = 'About - SeaFilmz';
   $ogURL = 'https://seafilmz.com/about';
+  $schemaType = 'AboutPage';
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
