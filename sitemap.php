@@ -6,7 +6,7 @@
 	require_once 'new_db_connection.php';
 
 	// Base URL
-	$baseURL = 'https://www.seafilmz.com';
+	$baseURL = 'https://seafilmz.com';
 
 	// Start XML
 	echo '<?xml version="1.0" encoding="UTF-8"?>';
