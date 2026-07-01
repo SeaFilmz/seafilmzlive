@@ -4,7 +4,7 @@
   $mDesc = 'This is a list of streaming services that might have Seattle movies you can watch.';
   $body = 'MainBody';
   $ogTitle = 'Where to Watch Seattle Movies - SeaFilmz';
-  $ogURL = 'https://seafilmz.com/built-with';
+  $ogURL = 'https://seafilmz.com/streaming-services';
   require_once 'templates/main-page-structure.php';
   headerTemp();
 ?>
