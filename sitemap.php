@@ -120,7 +120,7 @@
 		<priority>0.64</priority>
 	</url>
 	<url>
-		<loc><?= $baseURL; ?>/pportland-oregon-athletes</loc>
+		<loc><?= $baseURL; ?>/portland-oregon-athletes</loc>
 		<priority>0.64</priority>
 	</url>
 	<url>
