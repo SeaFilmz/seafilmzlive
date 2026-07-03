@@ -21,8 +21,8 @@
     <table class="MoviesTable">
       <tr>
         <th class="MoviesColumnHeader1"></th>
-        <th class="MoviesColumnHeader2">Title</th>
-        <th class="MoviesColumnHeader2"><a href="#sortByYear" class="SortText">Year</a><div class="SortTriangle">&#9660</div></th>
+        <th class="MoviesColumnHeader2">Title<div class="SortTriangle">&#9650</div></th>
+        <th class="MoviesColumnHeader2"><a href="#sortByYear" class="SortText">Year</a></th>
       </tr>
 
         <?php
@@ -77,8 +77,8 @@
     <div class="MYTable">
     <table class="MoviesTable">
       <tr>
-        <th class="MoviesColumnHeader1"><a href="#sortByTitle" class="SortText">Title</a><div class="SortTriangle">&#9650</div></th>
-        <th class="MoviesColumnHeader2">Year</th>
+        <th class="MoviesColumnHeader1"><a href="#sortByTitle" class="SortText">Title</a></th>
+        <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
       </tr>
 
         <?php
