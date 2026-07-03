@@ -15,14 +15,14 @@
       </b>
     </p>
 
-    <h2 id="sortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
+    <h2 id="SortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
 
     <div class="MTTable">
     <table class="MoviesTable">
       <tr>
         <th class="MoviesColumnHeader1"></th>
         <th class="MoviesColumnHeader2">Title<div class="SortTriangle">&#9650</div></th>
-        <th class="MoviesColumnHeader2"><a href="#sortByYear" class="SortText">Year</a></th>
+        <th class="MoviesColumnHeader2"><a href="#SortByYear" class="SortText">Year</a></th>
       </tr>
 
         <?php
@@ -67,17 +67,17 @@
       <button onclick="movieWatchedButton($city)" class="WatchedButton"><b>Movies Watched</b></button>
     </div>
 
-    <p id="watchedText" class="WatchedText"></p>
+    <p id="WatchedText" class="WatchedText"></p>
 
     <!--Connection to Manual Google AdSense.-->
     <div class="GoogleManualAds"><?php include 'googleadsense-manualconnection.php'; ?></div>
 
-    <h2 id="sortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
+    <h2 id="SortByYear" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Year</b></h2>
 
     <div class="MYTable">
     <table class="MoviesTable">
       <tr>
-        <th class="MoviesColumnHeader1"><a href="#sortByTitle" class="SortText">Title</a></th>
+        <th class="MoviesColumnHeader1"><a href="#SortByTitle" class="SortText">Title</a></th>
         <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
       </tr>
 
