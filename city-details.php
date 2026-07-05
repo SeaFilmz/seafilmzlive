@@ -152,6 +152,7 @@
               <div class="cityDataPointOfMany"><a href="https://www.thepwhl.com/en/teams/seattle-torrent" target="_blank">Seattle Torrent</a> (women's hockey)</div>
             </td>
           </tr>
+          <?php cityAttractionTableQuery($city, 'Major League Sports Venue'); ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Libraries</td>
             <td class="cityData"><a href="https://www.spl.org/hours-and-locations">List of Libraries</a></td>
@@ -183,6 +184,7 @@
               <div><a href="https://www.thorns.com/" target="_blank">Portland Thorns FC</a> (women's soccer)</div>
             </td>
           </tr>
+          <?php cityAttractionTableQuery($city, 'Major League Sports Venue'); ?>
           <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">Libraries</td>
             <td class="cityData"><a href="portland-oregon-libraries">List of Libraries</a></td>
