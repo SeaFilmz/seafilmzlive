@@ -60,7 +60,7 @@
         <!--link to Total Movie Count-->
 <?php
   // require_once 'queryfunctions/movie-functions.php';
-  cityMoviesCount($city);
+  cityMoviesCount($newConnection,$city);
 ?>
 
     <div class="WatchedButton">
@@ -106,7 +106,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php cityMoviesCount($city); ?>
+<?php cityMoviesCount($newConnection, $city); ?>
 
     <script src="/js/movies-watched.js" defer></script>
 

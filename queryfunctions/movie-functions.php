@@ -35,8 +35,7 @@
 ?>
 
 <?php
-  function cityMoviesCount($city) {
-    global $newConnection;
+  function cityMoviesCount($databaseConnection, $city) { 
 ?>
 
 <div class="MCTable">
@@ -46,8 +45,9 @@
 
         <?php
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ");
+            $sql = "SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ";
 
+            $query = $databaseConnection->prepare($sql);
             $query->bind_param("s", $city);
             $query->execute();
 

@@ -58,7 +58,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php cityMoviesCount($city); ?>
+<?php cityMoviesCount($newConnection, $city); ?>
 
     <div class="WatchedButton">
       <button onclick="movieWatchedButton($city)" class="WatchedButton"><b>Movies Watched</b></button>
@@ -100,7 +100,7 @@
     </div>
 
         <!--link to Total Movie Count-->
-<?php cityMoviesCount($city); ?>
+<?php cityMoviesCount($newConnection, $city); ?>
 
     <script src="/js/movies-watched.js" defer></script>
 
