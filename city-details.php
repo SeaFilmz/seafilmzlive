@@ -69,7 +69,7 @@
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://kingcounty.gov/" target="_blank">King</a></div>
-              <div><a href="https://snohomishcountywa.gov/" target="_blank">Snohomish</a><div>
+              <div><a href="https://snohomishcountywa.gov/" target="_blank">Snohomish</a></div>
             </td>
           </tr>
         <?php } elseif ($city === 'Portland') { ?>
@@ -78,7 +78,7 @@
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://multco.us/" target="_blank">Multnomah</a></div>
               <div class="cityDataPointOfMany"><a href="https://www.clackamas.us/" target="_blank">Clackamas</a></div>
-              <div><a href="https://www.co.washington.or.us/" target="_blank">Washington</a><div>
+              <div><a href="https://www.co.washington.or.us/" target="_blank">Washington</a></div>
             </td>
           </tr>
         <?php } elseif ($city === 'Milwaukie') { ?>
@@ -86,7 +86,7 @@
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://multco.us/" target="_blank">Multnomah</a></div>
-              <div><a href="https://www.clackamas.us/" target="_blank">Clackamas</a><div>
+              <div><a href="https://www.clackamas.us/" target="_blank">Clackamas</a></div>
             </td>
           </tr>
         <?php } elseif ($city === 'Salem') { ?>
@@ -94,7 +94,7 @@
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://www.co.marion.or.us/" target="_blank">Marion</a></div>
-              <div><a href="https://www.co.polk.or.us/" target="_blank">Polk</a><div>
+              <div><a href="https://www.co.polk.or.us/" target="_blank">Polk</a></div>
             </td>
           </tr>
         <?php } elseif ($city === 'Pocatello') { ?>
@@ -102,7 +102,7 @@
             <td class="cityData cityDataDesc">County</td>
             <td class="cityData">
               <div class="cityDataPointOfMany"><a href="https://www.bannockcounty.us/" target="_blank">Bannock</a></div>
-              <div><a href="https://www.co.power.id.us/" target="_blank">Power</a><div>
+              <div><a href="https://www.co.power.id.us/" target="_blank">Power</a></div>
             </td>
           </tr>
         <?php } ?>
