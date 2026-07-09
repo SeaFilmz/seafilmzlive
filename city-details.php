@@ -54,10 +54,9 @@
           renderCityDataRow('Country', '<a href="' . htmlspecialchars($cityFact["official_country_links"]) . '" target="_blank">United States of America</a>');
         } ?>
         
-        <tr class="cityDataPointRow">
-            <td class="cityData cityDataDesc">State</td>
-            <td class="cityData"><a href="<?= "{$cityFact["official_state_province_links"]}"; ?>" target="_blank"><?= $StateProvince; ?></a></td>
-        </tr>
+        <?php
+          renderCityDataRow('State', '<a href="' . htmlspecialchars($cityFact["official_state_province_links"]) . '" target="_blank">' . $StateProvince . '</a>');
+        ?>
 
         <?php if ($rows === 1) { ?>
           <?php if ($StateProvince !== 'Alaska') { ?>
