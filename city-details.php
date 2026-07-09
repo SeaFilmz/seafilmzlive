@@ -50,17 +50,14 @@
           </tr>
         <?php } ?>
 
-        <?php if ($cityFact["country"] === 'USA') { ?>
-          <tr class="cityDataPointRow">
-            <td class="cityData cityDataDesc">Country</td>
-            <td class="cityData"><a href="<?= "{$cityFact["official_country_links"]}"; ?>" target="_blank">United States of America</a></td>
-          </tr>
-        <?php } ?>
-
-          <tr class="cityDataPointRow">
+        <?php if ($cityFact["country"] === 'USA') {
+          renderCityDataRow('Country', '<a href="' . htmlspecialchars($cityFact["official_country_links"]) . '" target="_blank">United States of America</a>');
+        } ?>
+        
+        <tr class="cityDataPointRow">
             <td class="cityData cityDataDesc">State</td>
             <td class="cityData"><a href="<?= "{$cityFact["official_state_province_links"]}"; ?>" target="_blank"><?= $StateProvince; ?></a></td>
-          </tr>
+        </tr>
 
         <?php if ($rows === 1) { ?>
           <?php if ($StateProvince !== 'Alaska') { ?>
