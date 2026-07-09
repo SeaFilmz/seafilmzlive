@@ -32,6 +32,16 @@
         <?php } ?>
       </h2>
 
+
+      <?php
+        function renderCityDataRow($label, $content) {
+          echo '<tr class="cityDataPointRow">';
+            echo '<td class="cityData cityDataDesc">' . htmlspecialchars($label) . '</td>';
+            echo '<td class="cityData">' . $content . '</td>';
+          echo '</tr>';
+        }
+      ?>
+
       <table class="CityTable">
         <?php if ($cityFact["incorporated_date"] !== NULL) { ?>
           <tr class="cityDataPointRow">
