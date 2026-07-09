@@ -35,9 +35,9 @@
 
       <?php
         function renderCityDataRow($label, $content) {
-          echo '<tr class="cityDataPointRow">';
-            echo '<td class="cityData cityDataDesc">' . htmlspecialchars($label) . '</td>';
-            echo '<td class="cityData">' . $content . '</td>';
+          echo '<tr class="CityDataPointRow">';
+            echo '<td class="CityData CityDataDesc">' . htmlspecialchars($label) . '</td>';
+            echo '<td class="CityData">' . $content . '</td>';
           echo '</tr>';
         }
       ?>
