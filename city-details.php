@@ -113,12 +113,9 @@
           </tr>
         <?php } ?>
 
-        <?php if ($cityFact["city_links"] !== NULL) { ?>
-          <tr class="cityDataPointRow">
-            <td class="cityData cityDataDesc">City</td>
-            <td class="cityData"><a href="<?= "{$cityFact["official_city_links"]}"; ?>" target="_blank"><?= "{$city}"; ?></a></td>
-          </tr>
-        <?php } ?>
+        <?php if ($cityFact["city_links"] !== NULL) {
+          renderCityDataRow('City', '<a href="' . htmlspecialchars($cityFact["official_city_links"]) . '" target="_blank">' . htmlspecialchars($city) . '</a>');
+        } ?>
 
         <?php if ($city === 'Seattle') { ?>
           <tr class="cityDataPointRow">
