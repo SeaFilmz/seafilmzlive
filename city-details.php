@@ -33,14 +33,12 @@
       </h2>
 
 
-      <?php
-        function renderCityDataRow($label, $content) {
-          echo '<tr class="CityDataPointRow">';
-            echo '<td class="CityData CityDataDesc">' . htmlspecialchars($label) . '</td>';
-            echo '<td class="CityData">' . $content . '</td>';
-          echo '</tr>';
-        }
-      ?>
+      <?php function renderCityDataRow($label, $content) { ?>
+          <tr class="CityDataPointRow">
+            <td class="CityData CityDataDesc"><?= htmlspecialchars($label) ?></td>
+            <td class="CityData"><?= $content ?></td>
+          </tr>
+      <?php } ?>
 
       <table class="CityTable">
         <?php if ($cityFact["incorporated_date"] !== NULL) { ?>
