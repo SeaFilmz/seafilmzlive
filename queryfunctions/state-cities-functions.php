@@ -12,10 +12,10 @@
     $result = $query->get_result()
       or die("Database query failed.");
 
-    while ($city = mysqli_fetch_assoc($result)) { ?>
-        <?php if ($city["city_links"] !== NULL) { ?>
+    while ($city = mysqli_fetch_assoc($result)) {
+        if ($city["city_links"] !== NULL) { ?>
           <p class="StateCitiesLinks">
-            <a href= "<?= $city["city_links"]; ?>"><?= $city["city"]; ?></a>
+            <a href= "<?= htmlspecialchars($city["city_links"]); ?>"><?= htmlspecialchars($city["city"]); ?></a>
           </p>
         <?php }
     }
