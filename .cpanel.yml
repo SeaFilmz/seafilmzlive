@@ -10,3 +10,4 @@ deployment:
     - /bin/cp js/popsicle-answer.js /home/seafilmz/public_html/js/
     - /bin/cp js/mobile-nav.js /home/seafilmz/public_html/js/
     - /bin/cp templates/movie-search-form.php /home/seafilmz/public_html/templates/
+    - /bin/cp queryfunctions/state-cities-functions.php /home/seafilmz/public_html/queryfunctions/
