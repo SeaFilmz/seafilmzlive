@@ -21,6 +21,7 @@
         <script src="js/mobile-nav.js" defer></script>
 
         <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:site_name" content="SeaFilmz">
         <meta property="og:title" content="<?php echo escapeOutput($ogTitle); ?>">
         <meta property="og:description" content="<?php echo escapeOutput($mDesc); ?>">
         <meta property="og:url" content="<?php echo escapeOutput($ogURL); ?>">
