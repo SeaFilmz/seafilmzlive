@@ -26,7 +26,7 @@
 ?>
 
     <main class="MovieMainFacts">
-      <h2 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h2>
+      <h1 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h1>
 
       <?php
         $bday = $movies["year_released"]; // Movies Year Released from DB
