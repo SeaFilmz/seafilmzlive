@@ -10,7 +10,7 @@
 ?>
 
               <div class="Contact">
-                <h2>Contact Info</h2>
+                <h1>Contact Info</h1>
                 <b class="contactTitle1">Seattle Filmz Email</b> :
                 <span class="contactInfo">seafilmz@gmail.com</span>
                 <p></p>
