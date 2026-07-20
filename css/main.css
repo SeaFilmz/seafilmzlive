@@ -17,6 +17,7 @@ header {
 
 .WebsiteName {
     font-size: 5rem;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -35,7 +36,6 @@ button {
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
-  margin-top: -4rem;
 }
 
 .SloganHomepage {
