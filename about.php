@@ -12,7 +12,7 @@
 
     <main>
       <section class="AboutPageContent">
-        <h2 class="AboutHeader">About SeaFilmz</h2>
+        <h1 class="AboutHeader">About SeaFilmz</h1>
 
         <div class="AboutDescription">
           <ul>
