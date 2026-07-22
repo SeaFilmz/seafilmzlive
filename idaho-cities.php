@@ -9,7 +9,7 @@
   headerTemp();
 ?>
 
-    <h2 class="StateCitiesHeader"><b>Idaho State Cities</b></h2>
+    <h1 class="StateCitiesHeader"><b>Idaho State Cities</b></h1>
 
     <div class="StateCitiesContent">
 
