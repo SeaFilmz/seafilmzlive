@@ -26,12 +26,11 @@
 ?>
 
 		<main class="CityMainFacts">
-      <h2 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
+      <h1 class="CityPageHeader"><?= "{$city}, {$StateProvince}"; ?>
         <?php if ($cityFact["state_province_capital"] === 1) { ?>
           (State Capital City)
         <?php } ?>
-      </h2>
-
+      </h1>
 
       <?php function renderCityDataRow($label, $content) { ?>
           <tr class="CityDataPointRow">
