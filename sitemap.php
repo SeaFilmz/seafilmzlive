@@ -214,12 +214,12 @@
 
 		while ($row = $resultC->fetch_assoc()) {
 
-			$urlP = $baseURL . '/' . htmlspecialchars($row['city_links']);
+			$urlC = $baseURL . '/' . htmlspecialchars($row['city_links']);
 
 	?>
 
 		<url>
-			<loc><?= $urlP ?></loc>
+			<loc><?= $urlC ?></loc>
 			<priority>0.75</priority>
 		</url>
 	<?php
