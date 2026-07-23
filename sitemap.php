@@ -208,7 +208,7 @@
 
 	<?php
 		// Dynamic people URLs from SQL
-		$stmtC = $newConnection->prepare("SELECT city_links FROM cities WHERE city_links IS NOT NULL");
+		$stmtC = $newConnection->prepare("SELECT city_links FROM cities WHERE city_links IS NOT NULL AND city_links != ''");
 		$stmtC->execute();
 		$resultC = $stmtC->get_result();
 
