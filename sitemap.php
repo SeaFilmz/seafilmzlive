@@ -170,7 +170,7 @@
 
 	<?php
 		// Dynamic movie URLs from SQL
-		$stmtM = $newConnection->prepare("SELECT movie_page_link FROM movies");
+		$stmtM = $newConnection->prepare("SELECT movie_page_link FROM movies WHERE movie_page_link IS NOT NULL AND movie_page_link != ''");
 		$stmtM->execute();
 		$resultM = $stmtM->get_result();
 
