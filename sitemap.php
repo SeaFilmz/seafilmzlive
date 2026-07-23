@@ -184,6 +184,7 @@
 		</url>
 	<?php
 		}
+		$stmtM->close();
 	?>
 
 	<?php
@@ -204,6 +205,7 @@
 		</url>
 	<?php
 		}
+		$stmtP->close();
 	?>
 
 	<?php
@@ -224,6 +226,7 @@
 		</url>
 	<?php
 		}
+		$stmtC->close();
 	?>
 
 </urlset>
