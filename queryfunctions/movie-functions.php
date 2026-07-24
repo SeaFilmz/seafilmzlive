@@ -45,7 +45,7 @@
 
         <?php
             // 2. Perform database query
-            $sql = "SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id WHERE city = ? ";
+            $sql = "SELECT COUNT(*) FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON cities.city_id = movies_cities.city_id WHERE city = ? ";
 
             $query = $databaseConnection->prepare($sql);
             $query->bind_param("s", $city);
