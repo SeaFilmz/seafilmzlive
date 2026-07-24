@@ -15,7 +15,7 @@
       </b>
     </p>
 
-    <h2 id="SortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h2>
+    <h1 id="SortByTitle" class="MoviesPageHeader"><b>Movies Filmed in Seattle by Title</b></h1>
 
     <div class="MTTable">
     <table class="MoviesTable">
