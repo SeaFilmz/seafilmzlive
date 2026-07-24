@@ -8,6 +8,7 @@ deployment:
     - /bin/cp sitemap.php /home/seafilmz/public_html/
     - /bin/cp washington-cities.php /home/seafilmz/public_html/
     - /bin/cp oregon-cities.php /home/seafilmz/public_html/
+    - /bin/cp idaho-cities.php /home/seafilmz/public_html/
     - /bin/cp js/website-name-stands-for.js /home/seafilmz/public_html/js/
     - /bin/cp js/popsicle-answer.js /home/seafilmz/public_html/js/
     - /bin/cp js/mobile-nav.js /home/seafilmz/public_html/js/
