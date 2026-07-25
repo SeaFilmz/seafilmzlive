@@ -19,11 +19,13 @@
 
     <div class="MTTable">
     <table class="MoviesTable">
-      <tr>
-        <th class="MoviesColumnHeader1"></th>
-        <th class="MoviesColumnHeader2">Title<div class="SortTriangle">&#9650</div></th>
-        <th class="MoviesColumnHeader2"><a href="#SortByYear" class="SortText">Year</a></th>
-      </tr>
+      <thead>
+        <tr>
+          <th class="MoviesColumnHeader1"></th>
+          <th class="MoviesColumnHeader2">Title<div class="SortTriangle">&#9650</div></th>
+          <th class="MoviesColumnHeader2"><a href="#SortByYear" class="SortText">Year</a></th>
+        </tr>
+      </thead>
 
       <tbody>
         <?php
@@ -77,10 +79,12 @@
 
     <div class="MYTable">
     <table class="MoviesTable">
-      <tr>
-        <th class="MoviesColumnHeader1"><a href="#SortByTitle" class="SortText">Title</a></th>
-        <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
-      </tr>
+      <thead>
+        <tr>
+          <th class="MoviesColumnHeader1"><a href="#SortByTitle" class="SortText">Title</a></th>
+          <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
+        </tr>
+      </thead>
 
       <tbody>
         <?php
