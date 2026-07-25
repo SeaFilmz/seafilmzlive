@@ -25,6 +25,7 @@
         <th class="MoviesColumnHeader2"><a href="#SortByYear" class="SortText">Year</a></th>
       </tr>
 
+      <tbody  
         <?php
           // 1. Declare Global Variables
           $city = 'Portland';
@@ -53,7 +54,7 @@
             // 4. Release returned data
             mysqli_free_result($moviesByCity);
         ?>
-
+      </tbody>
     </table>
     </div>
 
@@ -75,6 +76,7 @@
         <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
       </tr>
 
+      <tbody>
         <?php
             // 2. Perform database query
             $moviesByCityByYearReleased = moviesFilmedCityByReleaseYearTitleQuery($newConnection, $city);
@@ -95,7 +97,7 @@
             // 4. Release returned data
             mysqli_free_result($moviesByCityByYearReleased);
         ?>
-
+      </tbody>
     </table>
     </div>
 
