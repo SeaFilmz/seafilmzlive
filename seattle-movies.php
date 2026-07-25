@@ -25,6 +25,7 @@
         <th class="MoviesColumnHeader2"><a href="#SortByYear" class="SortText">Year</a></th>
       </tr>
 
+      <tbody>
         <?php
           // 1. Declare Global Variables
           $city = 'Seattle';
@@ -38,14 +39,14 @@
             // output data from each row
         ?>
 
-      <tr class="MoviesContent">
-        <td class="MovieCountCheckbox">
-          <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
-          <label for="movieCheckboxes"></label>
-        </td>
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
-        <td class="MovieYearContent"><?php echo $movies["year_released"]; ?></td>
-      </tr>
+        <tr class="MoviesContent">
+          <td class="MovieCountCheckbox">
+            <input type="checkbox" class="movieCheckboxes" name="movieCheckboxes">
+            <label for="movieCheckboxes"></label>
+          </td>
+          <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+          <td class="MovieYearContent"><?php echo $movies["year_released"]; ?></td>
+        </tr>
 
         <?php
             }
@@ -53,7 +54,7 @@
             // 4. Release returned data
             mysqli_free_result($moviesByCity);
         ?>
-
+      </tbody>
     </table>
     </div>
 
@@ -81,6 +82,7 @@
         <th class="MoviesColumnHeader2">Year<div class="SortTriangle">&#9660</div></th>
       </tr>
 
+      <tbody>
         <?php
             // 2. Perform database query
             $moviesByCityByYearReleased = moviesFilmedCityByReleaseYearTitleQuery($newConnection, $city);
@@ -90,10 +92,10 @@
                 // output data from each row
         ?>
 
-      <tr class="MoviesContent">
-        <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
-        <td class="MovieYearContent"><?php echo $movies["year_released"]; ?></td>
-      </tr>
+        <tr class="MoviesContent">
+          <td class="MovieTitlesContent"><b><a href= "<?php echo $movies["movie_page_link"]; ?>"><?php echo $movies["movie_title"]; ?></a></b></td>
+          <td class="MovieYearContent"><?php echo $movies["year_released"]; ?></td>
+        </tr>
 
         <?php
             }
@@ -101,7 +103,7 @@
             // 4. Release returned data
             mysqli_free_result($moviesByCityByYearReleased);
         ?>
-
+      </tbody>
     </table>
     </div>
 
