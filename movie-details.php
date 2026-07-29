@@ -49,10 +49,13 @@
           </td>
         </tr>
 
-        <tr class="movieDataPointRow">
-          <td class="movieData  movieDataDesc">Run Time</td>
-          <td class="movieData"><?php echo $movies["runtime"]; ?> Minutes</td>
-        </tr>
+        
+        <?php if ($movies["total_world_gross"] != NULL) { ?>
+          <tr class="movieDataPointRow">
+            <td class="movieData  movieDataDesc">Run Time</td>
+            <td class="movieData"><?php echo $movies["runtime"]; ?> Minutes</td>
+          </tr>
+        <?php } ?>
 
         <?php if ($movies["total_world_gross"] != NULL) { ?>
           <tr class="movieDataPointRow">
