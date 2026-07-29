@@ -31,7 +31,7 @@
       <?php
         $releaseYear = $movies["year_released"]; // Movies Year Released from DB
         $today = date('Y'); // Todays Date
-        $diff = $today-$releaseYear; // Calculate Age
+        $movieAge = $today-$releaseYear; // Calculate Age
       ?>
 
       <table>
@@ -44,7 +44,7 @@
           <td class="movieData movieDataDesc">Movie Age</td>
           <td class="movieData">
             <?php
-              echo $diff . ' Years';
+              echo $movieAge . ' Years';
             ?>
           </td>
         </tr>
