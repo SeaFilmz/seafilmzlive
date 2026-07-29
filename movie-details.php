@@ -29,9 +29,9 @@
       <h1 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h1>
 
       <?php
-        $bday = $movies["year_released"]; // Movies Year Released from DB
+        $releaseYear = $movies["year_released"]; // Movies Year Released from DB
         $today = date('Y'); // Todays Date
-        $diff = $today-$bday; // Calculate Age
+        $diff = $today-$releaseYear; // Calculate Age
       ?>
 
       <table>
