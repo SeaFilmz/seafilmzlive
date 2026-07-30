@@ -34,21 +34,23 @@
         $movieAge = $today-$releaseYear; // Calculate Age
       ?>
 
+        <?php function tableFactRow($label, $value) { ?>
+          <tr class="MovieDataPointRow">
+            <td class="MovieData MovieDataDesc">
+              <?= htmlspecialchars($label) ?>
+            </td>
+            <td class="MovieData">
+              <?= htmlspecialchars($value) ?>
+            </td>
+          </tr>
+        <?php } ?>
+
       <table>
-        <tr class="movieDataPointRow">
-          <td class="movieData movieDataDesc">Year Released</td>
-          <td class="movieData"><?php echo $movies["year_released"]; ?></td>
-        </tr>
+        <?php
+          tableFactRow("Year Released", $movies["year_released"]);
 
-        <tr class="movieDataPointRow">
-          <td class="movieData movieDataDesc">Movie Age</td>
-          <td class="movieData">
-            <?php
-              echo $movieAge . ' Years';
-            ?>
-          </td>
-        </tr>
-
+          tableFactRow("Movie Age", $movieAge . ' Years');
+        ?>
         
         <?php if ($movies["runtime"] != NULL) { ?>
           <tr class="movieDataPointRow">
