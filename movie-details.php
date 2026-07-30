@@ -54,15 +54,15 @@
         
         <?php if ($movies["runtime"] != NULL) { ?>
           <tr class="movieDataPointRow">
-            <td class="movieData  MovieDataDesc">Run Time</td>
-            <td class="movieData"><?php echo $movies["runtime"]; ?> Minutes</td>
+            <td class="MovieData  MovieDataDesc">Run Time</td>
+            <td class="MovieData"><?php echo $movies["runtime"]; ?> Minutes</td>
           </tr>
         <?php } ?>
 
         <?php if ($movies["total_world_gross"] != NULL) { ?>
           <tr class="movieDataPointRow">
-            <td class="movieData MovieDataDesc">Total Worldwide Gross in US Dollars</td>
-            <td class="movieData">$<?php echo number_format($movies["total_world_gross"]); ?></td>
+            <td class="MovieData MovieDataDesc">Total Worldwide Gross in US Dollars</td>
+            <td class="MovieData">$<?php echo number_format($movies["total_world_gross"]); ?></td>
           </tr>
         <?php }
   } ?>
@@ -71,7 +71,7 @@
         $movieActors = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'actor');
       ?>
         <tr class="movieDataPointRow">
-          <td class="movieData MovieDataDesc">Main Actors</td>
+          <td class="MovieData MovieDataDesc">Main Actors</td>
           <?php
             while ($actors = mysqli_fetch_assoc($movieActors)) {
           ?>
@@ -87,7 +87,7 @@
         $movieDirector = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'director');
       ?>
         <tr class="movieDataPointRow">
-          <td class="movieData MovieDataDesc">Director</td>
+          <td class="MovieData MovieDataDesc">Director</td>
           <?php
             while ($director = mysqli_fetch_assoc($movieDirector)) {
           ?>
@@ -104,7 +104,7 @@
       ?>
 
         <tr class="movieDataPointRow">
-          <td class="movieData MovieDataDesc">Filming Location</td>
+          <td class="MovieData MovieDataDesc">Filming Location</td>
           <?php
             while ($locations = mysqli_fetch_assoc($filmLocations)) {
           ?>

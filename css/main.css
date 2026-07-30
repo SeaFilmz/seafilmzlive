@@ -301,6 +301,10 @@ tr:nth-child(even) {
   font-weight: 600;
 }
 
+.MovieData {
+  padding: 0.5rem;
+}
+
 .StateCitiesLinks {
   text-align: center;
 }
