@@ -297,6 +297,10 @@ tr:nth-child(even) {
   text-align: left;
 }
 
+.MovieDataDesc {
+  font-weight: 600;
+}
+
 .StateCitiesLinks {
   text-align: center;
 }
