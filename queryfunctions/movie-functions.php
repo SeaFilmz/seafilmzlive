@@ -20,7 +20,7 @@
   function moviesFilmedCityByReleaseYearTitleQuery($databaseConnection,$city) {
 
     // 2. Perform database query
-    $sql = "SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ";
+    $sql = "SELECT movies.movie_id, movies.movie_title, movies.year_released, movies.movie_page_link FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON movies_cities.city_id = cities.city_id WHERE city = ? ORDER BY year_released DESC, movie_title ";
 
     $query = $databaseConnection->prepare($sql);
     $query->bind_param("s", $city);
