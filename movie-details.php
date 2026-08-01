@@ -59,6 +59,13 @@
           </tr>
         <?php } ?>
 
+        <?php if ($movies["production_budget"] != NULL) { ?>
+          <tr class="MovieDataPointRow">
+            <td class="MovieData MovieDataDesc">Production Budget</td>
+            <td class="MovieData">$<?php echo number_format($movies["production_budget"]); ?></td>
+          </tr>
+        <?php }
+
         <?php if ($movies["total_world_gross"] != NULL) { ?>
           <tr class="MovieDataPointRow">
             <td class="MovieData MovieDataDesc">Total Worldwide Gross in US Dollars</td>
