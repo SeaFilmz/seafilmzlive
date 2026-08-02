@@ -59,6 +59,18 @@
         <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
       <?php } ?>
 
+
+      <?php function tableFactRow($label, $value) { ?>
+        <tr class="MovieDataPointRow">
+          <td class="MovieData MovieDataDesc">
+              <?= htmlspecialchars($label) ?>
+          </td>
+          <td class="MovieData">
+            <?= htmlspecialchars($value) ?>
+          </td>
+        </tr>
+      <?php } ?>
+
       <table class="IndividualPeopleTable">
         <?php if ($people["birth_name"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
