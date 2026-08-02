@@ -56,12 +56,9 @@
           tableFactRow("Run Time", $movies["runtime"] . ' Minutes'); 
         } ?>
 
-        <?php if ($movies["production_budget"] != NULL) { ?>
-          <tr class="MovieDataPointRow">
-            <td class="MovieData MovieDataDesc">Production Budget</td>
-            <td class="MovieData">$<?php echo number_format($movies["production_budget"]); ?></td>
-          </tr>
-        <?php } ?>
+        <?php if ($movies["production_budget"] != NULL) {
+          tableFactRow("Production Budget", "$" . number_format($movies["production_budget"])); 
+        } ?>
 
         <?php if ($movies["total_world_gross"] != NULL) { ?>
           <tr class="MovieDataPointRow">
