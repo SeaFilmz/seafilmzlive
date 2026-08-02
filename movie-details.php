@@ -52,12 +52,9 @@
           tableFactRow("Movie Age", $movieAge . ' Years');
         ?>
         
-        <?php if ($movies["runtime"] != NULL) { ?>
-          <tr class="MovieDataPointRow">
-            <td class="MovieData  MovieDataDesc">Run Time</td>
-            <td class="MovieData"><?php echo $movies["runtime"]; ?> Minutes</td>
-          </tr>
-        <?php } ?>
+        <?php if ($movies["runtime"] != NULL) {
+          tableFactRow("Run Time", $movies["runtime"] . ' Minutes'); 
+        } ?>
 
         <?php if ($movies["production_budget"] != NULL) { ?>
           <tr class="MovieDataPointRow">
