@@ -60,13 +60,10 @@
           tableFactRow("Production Budget", "$" . number_format($movies["production_budget"])); 
         } ?>
 
-        <?php if ($movies["total_world_gross"] != NULL) { ?>
-          <tr class="MovieDataPointRow">
-            <td class="MovieData MovieDataDesc">Total Worldwide Gross in US Dollars</td>
-            <td class="MovieData">$<?php echo number_format($movies["total_world_gross"]); ?></td>
-          </tr>
-        <?php }
-  } ?>
+        <?php if ($movies["total_world_gross"] != NULL) {
+          tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"])); 
+        } ?>
+  <?php  } ?>
 
       <?php
         $movieActors = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'actor');
