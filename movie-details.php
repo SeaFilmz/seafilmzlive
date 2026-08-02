@@ -50,20 +50,19 @@
           tableFactRow("Year Released", $movies["year_released"]);
 
           tableFactRow("Movie Age", $movieAge . ' Years');
-        ?>
         
-        <?php if ($movies["runtime"] != NULL) {
-          tableFactRow("Run Time", $movies["runtime"] . ' Minutes'); 
-        } ?>
+          if ($movies["runtime"] != NULL) {
+            tableFactRow("Run Time", $movies["runtime"] . ' Minutes'); 
+          }
 
-        <?php if ($movies["production_budget"] != NULL) {
-          tableFactRow("Production Budget", "$" . number_format($movies["production_budget"])); 
-        } ?>
+          if ($movies["production_budget"] != NULL) {
+            tableFactRow("Production Budget", "$" . number_format($movies["production_budget"])); 
+          }
 
-        <?php if ($movies["total_world_gross"] != NULL) {
-          tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"])); 
-        } ?>
-  <?php  } ?>
+          if ($movies["total_world_gross"] != NULL) {
+            tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"])); 
+          }
+  } ?>
 
       <?php
         $movieActors = individualMoviePeopleFactPageQuery($movieSLUGPartFixed, 'actor');
