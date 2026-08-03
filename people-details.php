@@ -59,13 +59,12 @@
         <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
       <?php } ?>
 
-
       <?php function tableFactRow($label, $value) { ?>
-        <tr class="MovieDataPointRow">
-          <td class="MovieData MovieDataDesc">
+        <tr class="PeopleDataPointRow">
+          <td class="PeopleData PeopleDataDesc">
               <?= htmlspecialchars($label) ?>
           </td>
-          <td class="MovieData">
+          <td class="PeopleData">
             <?= htmlspecialchars($value) ?>
           </td>
         </tr>
