@@ -71,14 +71,12 @@
       <?php } ?>
 
       <table class="IndividualPeopleTable">
-        <?php if ($people["birth_name"] !== NULL) { ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Birth Name</td>
-            <td class="peopleData"><?php echo $people["birth_name"]; ?></td>
-          </tr>
-        <?php
-        }
+        <?php 
+          if ($people["birth_name"] !== NULL) {
+            tableFactRow("Birth Name", $people["birth_name"]);
+          }
         ?>
+
         <?php if ($people["birthdate"] !== NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Birthdate</td>
