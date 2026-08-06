@@ -71,7 +71,7 @@
       <?php } ?>
 
       <table class="IndividualPeopleTable">
-        <?php 
+        <?php
           if ($people["birth_name"] !== NULL) {
             tableFactRow("Birth Name", $people["birth_name"]);
           }
@@ -128,14 +128,13 @@
               <?php echo $people["state_province"] . ", " . $people["country"]; ?>
             </td>
           </tr>
-        <?php if ($people["height"] != NULL) { ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Height</td>
-            <td class="peopleData"><?php echo $people["height"]; ?></td>
-          </tr>
+
         <?php
-        }
+          if ($people["height"] != NULL) {
+            tableFactRow("Height", $people["height"]);
+          }
         ?>
+
         <?php if ($people["sport_known_for"] != NULL) { ?>
           <tr class="peopleDataPointRow">
             <td class="peopleData peopleDataDesc">Sport Known For</td>
