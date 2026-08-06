@@ -133,16 +133,10 @@
           if ($people["height"] != NULL) {
             tableFactRow("Height", $people["height"]);
           }
-        ?>
 
-        <?php if ($people["sport_known_for"] != NULL) { ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Sport Known For</td>
-            <td class="peopleData"><?php echo $people["sport_known_for"]; ?></td>
-          </tr>
-        <?php
-        }
-        ?>
+          if ($people["sport_known_for"] != NULL) {
+           tableFactRow("Sport Known For", $people["sport_known_for"]);
+         } ?>
       </table>
     </main>
 
