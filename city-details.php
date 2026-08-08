@@ -49,9 +49,8 @@
 
         <?php if ($cityFact["country"] === 'USA') {
           tableFactRow('Country', '<a href="' . htmlspecialchars($cityFact["official_country_links"]) . '" target="_blank">United States of America</a>');
-        } ?>
+        }
 
-        <?php
           tableFactRow('State', '<a href="' . htmlspecialchars($cityFact["official_state_province_links"]) . '" target="_blank">' . $StateProvince . '</a>');
         ?>
 
