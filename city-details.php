@@ -32,7 +32,7 @@
         <?php } ?>
       </h1>
 
-      <?php function renderCityDataRow($label, $content) { ?>
+      <?php function tableFactRow($label, $content) { ?>
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc"><?= htmlspecialchars($label) ?></td>
             <td class="CityData"><?= $content ?></td>
@@ -48,11 +48,11 @@
         <?php } ?>
 
         <?php if ($cityFact["country"] === 'USA') {
-          renderCityDataRow('Country', '<a href="' . htmlspecialchars($cityFact["official_country_links"]) . '" target="_blank">United States of America</a>');
+          tableFactRow('Country', '<a href="' . htmlspecialchars($cityFact["official_country_links"]) . '" target="_blank">United States of America</a>');
         } ?>
-        
+
         <?php
-          renderCityDataRow('State', '<a href="' . htmlspecialchars($cityFact["official_state_province_links"]) . '" target="_blank">' . $StateProvince . '</a>');
+          tableFactRow('State', '<a href="' . htmlspecialchars($cityFact["official_state_province_links"]) . '" target="_blank">' . $StateProvince . '</a>');
         ?>
 
         <?php if ($rows === 1) { ?>
@@ -111,7 +111,7 @@
         <?php } ?>
 
         <?php if ($cityFact["city_links"] !== NULL) {
-          renderCityDataRow('City', '<a href="' . htmlspecialchars($cityFact["official_city_links"]) . '" target="_blank">' . htmlspecialchars($city) . '</a>');
+          tableFactRow('City', '<a href="' . htmlspecialchars($cityFact["official_city_links"]) . '" target="_blank">' . htmlspecialchars($city) . '</a>');
         } ?>
 
         <?php if ($city === 'Seattle') { ?>
