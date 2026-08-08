@@ -26,7 +26,7 @@
 ?>
 
     <main class="MovieMainFacts">
-      <h1 class="MovieTitle"><b><?php echo $movies["movie_title"]; ?></b></h1>
+      <h1 class="MovieTitle"><b><?= $movies["movie_title"]; ?></b></h1>
 
       <?php
         $releaseYear = $movies["year_released"]; // Movies Year Released from DB
@@ -50,17 +50,17 @@
           tableFactRow("Year Released", $movies["year_released"]);
 
           tableFactRow("Movie Age", $movieAge . ' Years');
-        
+
           if ($movies["runtime"] != NULL) {
-            tableFactRow("Run Time", $movies["runtime"] . ' Minutes'); 
+            tableFactRow("Run Time", $movies["runtime"] . ' Minutes');
           }
 
           if ($movies["production_budget"] != NULL) {
-            tableFactRow("Production Budget", "$" . number_format($movies["production_budget"])); 
+            tableFactRow("Production Budget", "$" . number_format($movies["production_budget"]));
           }
 
           if ($movies["total_world_gross"] != NULL) {
-            tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"])); 
+            tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"]));
           }
   } ?>
 
