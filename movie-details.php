@@ -103,7 +103,7 @@
         </tr>
 
       <?php
-        $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed, $movies["city"]);
+        $filmLocations = individualMovieFactPageLocationQuery($movieSLUGPartFixed);
       ?>
 
         <tr class="MovieDataPointRow">
