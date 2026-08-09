@@ -35,7 +35,7 @@
 ?>
 
 <?php
-  function cityMoviesCount($databaseConnection, $city) { 
+  function cityMoviesCount($databaseConnection, $city) {
 ?>
 
 <div class="MCTable">
@@ -544,13 +544,13 @@ function cityMovieHighestGrossTotal($cityHighestGrossTotal) {
     return $result;
 }
 
-  function individualMovieFactPageLocationQuery($movieSLUG, $city) {
+  function individualMovieFactPageLocationQuery($movieSLUG) {
     global $newConnection;
 
     // 2. Perform database query
-    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  cities.city_id = movies_cities.city_id WHERE movie_page_link = ? AND city = ? ");
+    $query = $newConnection->prepare("SELECT * FROM movies_cities INNER JOIN movies ON movies.movie_id = movies_cities.movie_id INNER JOIN cities ON  cities.city_id = movies_cities.city_id WHERE movie_page_link = ? ");
 
-    $query->bind_param("ss", $movieSLUG, $city);
+    $query->bind_param("s", $movieSLUG);
     $query->execute();
 
     //Result variable with an error check
