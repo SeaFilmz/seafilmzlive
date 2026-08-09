@@ -88,14 +88,17 @@
       ?>
         <tr class="MovieDataPointRow">
           <td class="MovieData MovieDataDesc">Director</td>
-          <?php
-            while ($director = mysqli_fetch_assoc($movieDirector)) {
-          ?>
-          <td class="movieDataDirector"><?php echo $director["first_name"]; ?> <?php if ($director["middle_initialname"] != NULL) { echo $director["middle_initialname"]; } ?> <?php echo $director["last_name"]; ?></td>
-          <?php }
+          <td class="MovieDataDirector">
+            <?php
+              while ($director = mysqli_fetch_assoc($movieDirector)) {
+            ?>
+              <p><?= htmlspecialchars($director["first_name"]); ?> <?php if ($director["middle_initialname"] != NULL) { echo htmlspecialchars($director["middle_initialname"]); } ?> <?= htmlspecialchars($director["last_name"]); ?></p>
+              <?php } ?>
+          </td>
 
-          // 4. Release returned data
-          mysqli_free_result($movieDirector);
+          <?php
+            // 4. Release returned data
+            mysqli_free_result($movieDirector);
           ?>
         </tr>
 
