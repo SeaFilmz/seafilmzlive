@@ -108,14 +108,17 @@
 
         <tr class="MovieDataPointRow">
           <td class="MovieData MovieDataDesc">Filming Location</td>
-          <?php
-            while ($locations = mysqli_fetch_assoc($filmLocations)) {
-          ?>
-          <td class="movieDataFilmLocations"><a href="<?php echo $locations["city_links"]; ?>"><?php echo $locations["city"]; ?></a>, <?php echo $locations["state_province"]; ?>, <?php echo $locations["country"]; ?></td>
-          <?php }
+          <td class="MovieDataFilmLocations">
+            <?php
+              while ($locations = mysqli_fetch_assoc($filmLocations)) {
+            ?>
+                <p><a href="<?= htmlspecialchars($locations["city_links"]); ?>"><?= htmlspecialchars($locations["city"]); ?></a>, <?= htmlspecialchars($locations["state_province"]); ?>, <?= htmlspecialchars($locations["country"]); ?></p>
+              <?php } ?>
+          </td>
 
-          // 4. Release returned data
-          mysqli_free_result($filmLocations);
+          <?php
+            // 4. Release returned data
+            mysqli_free_result($filmLocations);
           ?>
         </tr>
       </table>
