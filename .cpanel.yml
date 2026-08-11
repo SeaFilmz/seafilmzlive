@@ -14,6 +14,7 @@ deployment:
     - /bin/cp portland-oregon-movies.php /home/seafilmz/public_html/
     - /bin/cp movie-details.php /home/seafilmz/public_html/
     - /bin/cp people-details.php /home/seafilmz/public_html/
+    - /bin/cp city-details.php /home/seafilmz/public_html/
     - /bin/cp js/website-name-stands-for.js /home/seafilmz/public_html/js/
     - /bin/cp js/popsicle-answer.js /home/seafilmz/public_html/js/
     - /bin/cp js/mobile-nav.js /home/seafilmz/public_html/js/
