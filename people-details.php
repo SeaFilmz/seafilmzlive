@@ -78,21 +78,21 @@
         ?>
 
         <?php if ($people["birthdate"] !== NULL) { ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Birthdate</td>
-            <td class="peopleData"><?php $date = date_create($people["birthdate"]); echo date_format($date, "F d, Y"); ?></td>
+          <tr class="PeopleDataPointRow">
+            <td class="PeopleData PeopleDataDesc">Birthdate</td>
+            <td class="PeopleData"><?php $date = date_create($people["birthdate"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
         <?php
         }
         ?>
         <?php if ($people["death_date"] !== NULL) { ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Death Date</td>
-            <td class="peopleData"><?php $date = date_create($people["death_date"]); echo date_format($date, "F d, Y"); ?></td>
+          <tr class="PeopleDataPointRow">
+            <td class="PeopleData PeopleDataDesc">Death Date</td>
+            <td class="PeopleData"><?php $date = date_create($people["death_date"]); echo date_format($date, "F d, Y"); ?></td>
           </tr>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Death Age</td>
-            <td class="peopleData">
+          <tr class="PeopleDataPointRow">
+            <td class="PeopleData PeopleDataDesc">Death Age</td>
+            <td class="PeopleData">
             <?php
               $bday = date_create($people["birthdate"]); // Actors Birtdate for Db
               $dday = date_create($people["death_date"]);
@@ -105,9 +105,9 @@
         <?php
         } elseif ($people["birthdate"] != NULL) {
         ?>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Age</td>
-            <td class="peopleData">
+          <tr class="PeopleDataPointRow">
+            <td class="PeopleData PeopleDataDesc">Age</td>
+            <td class="PeopleData">
             <?php
               $bday = date_create($people["birthdate"]); // Actors Birtdate from Db
               $today = new DateTime(date('m/d/Y')); // Todays Date
@@ -116,9 +116,9 @@
             } ?>
             </td>
           </tr>
-          <tr class="peopleDataPointRow">
-            <td class="peopleData peopleDataDesc">Birth Place</td>
-            <td class="peopleData">
+          <tr class="PeopleDataPointRow">
+            <td class="PeopleData PeopleDataDesc">Birth Place</td>
+            <td class="PeopleData">
             <?php
             if ($people["city_links"] !== NULL and $people["people_links"] !== NULL) { ?>
               <a href="<?php echo $people["city_links"]; ?>"><?php echo $people["city"]; ?></a>,
