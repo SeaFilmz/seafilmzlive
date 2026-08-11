@@ -26,12 +26,12 @@
 			UNION
 			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, musician_name AS MusicanName, 'N/A' AS YearReleased, people_links AS Link, job AS Job, 2 AS SortPriority FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON peoples.birth_city_id = cities.city_id
         WHERE job in ('actor', 'musician', 'athlete')
-          AND (REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
-          OR last_name LIKE ?
-          OR middle_initial_name LIKE ?
-          OR musician_name LIKE ?)
-          AND state_province IN ('Washington', 'Oregon', 'Idaho','Alaska')
-          ORDER BY SortPriority ASC, DisplayName ASC
+					AND (REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
+					OR last_name LIKE ?
+					OR middle_initial_name LIKE ?
+					OR musician_name LIKE ?)
+					AND state_province IN ('Washington', 'Oregon', 'Idaho','Alaska')
+					ORDER BY SortPriority ASC, DisplayName ASC
 		");
 
 		$query->bind_param("sssss", $movieTitle, $peopleName, $peopleName, $peopleName, $peopleName);
