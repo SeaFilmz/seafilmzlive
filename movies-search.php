@@ -78,6 +78,11 @@
 				<?php
 				}
 			}
+			if ($searchRemoveWhitespaceAllLower === "seattle") { ?>
+				<div class="MoviePersonSearchResult"><a href= "seattle-washington" class="InternalSearchLink">Seattle</a></div>
+				<div>City</div>
+			<?php
+			}
 	}
 	?>
 
