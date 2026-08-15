@@ -60,16 +60,16 @@
 					<div class="SearchResult">
 
 						<?php if ($row["SortPriority"] == 1) { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["DisplayName"]; ?></a></div>
-							<div>Movie &bull; <?php echo $row["YearReleased"]; ?> </div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["DisplayName"]; ?></a></div>
+							<div>Movie &bull; <?= $row["YearReleased"]; ?> </div>
 						<?php } elseif ($row["Job"] == 'actor') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["DisplayName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["DisplayName"]; ?></a></div>
 							<div>Actor</div>
 						<?php } elseif ($row["Job"] == 'athlete') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["DisplayName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["DisplayName"]; ?></a></div>
 							<div>Athlete</div>
 						<?php } elseif ($row["Job"] == 'musician') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?php echo $row["Link"]; ?>" class="InternalSearchLink"><?php echo $row["MusicianName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["MusicianName"]; ?></a></div>
 							<div>Musician</div>
 						<?php } else {
 							echo "There are no results matching your search!";
