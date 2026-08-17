@@ -21,10 +21,15 @@
 		$peopleName ="$searchRemoveWhitespaceAll%";
 
 		$query = $newConnection->prepare(
-			"SELECT movie_title AS DisplayName, '' AS MusicianName, year_released AS YearReleased, movie_page_link AS Link, '' AS Job, 1 AS SortPriority FROM movies
+			"SELECT movie_title AS DisplayName, '' AS MusicianName, year_released AS YearReleased, movie_page_link AS Link, '' AS Job, 1 AS SortPriority
+				FROM movies
 				WHERE REPLACE(movie_title, ' ', '') LIKE ?
 			UNION
-			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, musician_name AS MusicianName, 'N/A' AS YearReleased, people_links AS Link, job AS Job, 2 AS SortPriority FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON peoples.birth_city_id = cities.city_id
+			SELECT CONCAT_WS(' ', first_name, middle_initial_name, last_name) AS DisplayName, musician_name AS MusicianName, 'N/A' AS YearReleased, people_links AS Link, job AS Job, 2 AS SortPriority
+				FROM peoples_jobs
+				INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id
+				INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id
+				INNER JOIN cities ON peoples.birth_city_id = cities.city_id
         WHERE job IN ('actor', 'musician', 'athlete')
 					AND (REPLACE(CONCAT(first_name, IFNULL(middle_initial_name, ''), last_name), ' ', '') LIKE ?
 					OR last_name LIKE ?
