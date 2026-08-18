@@ -13,6 +13,7 @@ deployment:
     - /bin/cp seattle-movies.php /home/seafilmz/public_html/
     - /bin/cp seattle-actors.php /home/seafilmz/public_html/
     - /bin/cp portland-oregon-movies.php /home/seafilmz/public_html/
+    - /bin/cp portland-oregon-actors.php /home/seafilmz/public_html/
     - /bin/cp movie-details.php /home/seafilmz/public_html/
     - /bin/cp people-details.php /home/seafilmz/public_html/
     - /bin/cp city-details.php /home/seafilmz/public_html/
