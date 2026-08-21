@@ -11,6 +11,7 @@ deployment:
     - /bin/cp idaho-cities.php /home/seafilmz/public_html/
     - /bin/cp alaska-cities.php /home/seafilmz/public_html/
     - /bin/cp seattle-movies.php /home/seafilmz/public_html/
+    - /bin/cp seattle-movies-runtime.php /home/seafilmz/public_html/
     - /bin/cp seattle-actors.php /home/seafilmz/public_html/
     - /bin/cp seattle-athletes.php /home/seafilmz/public_html/
     - /bin/cp portland-oregon-movies.php /home/seafilmz/public_html/
