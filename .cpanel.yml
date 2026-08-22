@@ -6,10 +6,7 @@ deployment:
     - /bin/cp built-with.php /home/seafilmz/public_html/
     - /bin/cp streaming-services.php /home/seafilmz/public_html/
     - /bin/cp sitemap.php /home/seafilmz/public_html/
-    - /bin/cp washington-cities.php /home/seafilmz/public_html/
-    - /bin/cp oregon-cities.php /home/seafilmz/public_html/
-    - /bin/cp idaho-cities.php /home/seafilmz/public_html/
-    - /bin/cp alaska-cities.php /home/seafilmz/public_html/
+    - /bin/cp washington-cities.php oregon-cities.php idaho-cities.php alaska-cities.php /home/seafilmz/public_html/
     - /bin/cp seattle-movies.php /home/seafilmz/public_html/
     - /bin/cp seattle-movies-runtime.php /home/seafilmz/public_html/
     - /bin/cp seattle-movies-gross.php /home/seafilmz/public_html/
