@@ -19,7 +19,7 @@
   $schemaType = 'Movie';
   $movieTitle = $movies["movie_title"];
   $movieURLSlug = $movieSLUGPart;
-  $movieYear = $movies["year_released"];
+  $movieReleaseYear = $movies["year_released"];
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
@@ -29,9 +29,8 @@
       <h1 class="MovieTitle"><b><?= $movies["movie_title"]; ?></b></h1>
 
       <?php
-        $releaseYear = $movies["year_released"]; // Movies Year Released from DB
         $currentYear = date('Y'); // Todays Date
-        $movieAge = $currentYear-$releaseYear; // Calculate Age
+        $movieAge = $currentYear-$movieReleaseYear; // Calculate Age
       ?>
 
         <?php function tableFactRow($label, $value) { ?>
@@ -47,7 +46,7 @@
 
       <table>
         <?php
-          tableFactRow("Year Released", $releaseYear);
+          tableFactRow("Year Released", $movieReleaseYear);
 
           tableFactRow("Movie Age", $movieAge . ' Years');
 
