@@ -47,7 +47,7 @@
 
       <table>
         <?php
-          tableFactRow("Year Released", $movies["year_released"]);
+          tableFactRow("Year Released", $releaseYear);
 
           tableFactRow("Movie Age", $movieAge . ' Years');
 
