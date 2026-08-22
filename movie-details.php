@@ -26,7 +26,7 @@
 ?>
 
     <main class="MovieMainFacts">
-      <h1 class="MovieTitle"><b><?= $movies["movie_title"]; ?></b></h1>
+      <h1 class="MovieTitle"><b><?= $movieTitle; ?></b></h1>
 
       <?php
         $currentYear = date('Y'); // Todays Date
