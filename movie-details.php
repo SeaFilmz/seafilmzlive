@@ -12,12 +12,12 @@
   if ($movies = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  $title = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
-  $mDesc = 'This is the fact page for Seattle movie ' . $movies["movie_title"] . ' (' . $movies["year_released"] . ').';
-  $ogTitle = $movies["movie_title"] . ' (' . $movies["year_released"] . ') - SeaFilmz';
+  $movieTitle = $movies["movie_title"];
+  $title = $movieTitle . ' (' . $movies["year_released"] . ') - SeaFilmz';
+  $mDesc = 'This is the fact page for Seattle movie ' . $movieTitle . ' (' . $movies["year_released"] . ').';
+  $ogTitle = $movieTitle . ' (' . $movies["year_released"] . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $schemaType = 'Movie';
-  $movieTitle = $movies["movie_title"];
   $movieURLSlug = $movieSLUGPart;
   $movieReleaseYear = $movies["year_released"];
   $body = 'MainBody';
