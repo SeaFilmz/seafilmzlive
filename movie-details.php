@@ -50,15 +50,15 @@
 
           tableFactRow("Movie Age", $movieAge . ' Years');
 
-          if ($movies["runtime"] != NULL) {
+          if ($movies["runtime"] !== NULL) {
             tableFactRow("Run Time", $movies["runtime"] . ' Minutes');
           }
 
-          if ($movies["production_budget"] != NULL) {
+          if ($movies["production_budget"] !== NULL) {
             tableFactRow("Production Budget", "$" . number_format($movies["production_budget"]));
           }
 
-          if ($movies["total_world_gross"] != NULL) {
+          if ($movies["total_world_gross"] !== NULL) {
             tableFactRow("Total Worldwide Gross in US Dollars", "$" . number_format($movies["total_world_gross"]));
           }
   } ?>
