@@ -13,13 +13,13 @@
     // output data from each row
 
   $movieTitle = $movies["movie_title"];
-  $title = $movieTitle . ' (' . $movies["year_released"] . ') - SeaFilmz';
-  $mDesc = 'This is the fact page for Seattle movie ' . $movieTitle . ' (' . $movies["year_released"] . ').';
-  $ogTitle = $movieTitle . ' (' . $movies["year_released"] . ') - SeaFilmz';
+  $movieReleaseYear = $movies["year_released"];
+  $title = $movieTitle . ' (' . $movieReleaseYear . ') - SeaFilmz';
+  $mDesc = 'This is the fact page for Seattle movie ' . $movieTitle . ' (' . $movieReleaseYear . ').';
+  $ogTitle = $movieTitle . ' (' . $movieReleaseYear . ') - SeaFilmz';
   $ogURL = 'https://seafilmz.com' . $movieSLUGPart;
   $schemaType = 'Movie';
   $movieURLSlug = $movieSLUGPart;
-  $movieReleaseYear = $movies["year_released"];
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
   headerTemp();
