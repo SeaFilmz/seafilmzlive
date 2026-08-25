@@ -14,24 +14,25 @@
     // output data from each row
 
     $peopleFirstName = $people["first_name"];
+    $peopleLastName = $people["last_name"];
 
-  if (($peopleFirstName and $people["last_name"] and $people["sport_known_for"]) != NULL) {
-    $title = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
-    $mDesc = $peopleFirstName . ' ' . $people["last_name"] . ' is a Seattle born athlete.';
+  if (($peopleFirstName and $peopleLastName and $people["sport_known_for"]) != NULL) {
+    $title = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
+    $mDesc = $peopleFirstName . ' ' . $peopleLastName . ' is a Seattle born athlete.';
   }
-  elseif (($peopleFirstName and $people["last_name"]) != NULL) {
-    $title = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
-    $mDesc = $peopleFirstName . ' ' . $people["last_name"] . ' is a Seattle born actor.';
+  elseif (($peopleFirstName and $peopleLastName) != NULL) {
+    $title = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
+    $mDesc = $peopleFirstName . ' ' . $peopleLastName . ' is a Seattle born actor.';
   }
   elseif ($people["musician_name "] != NULL) {
     $title = $people["musician_name "] . ' - SeaFilmz';
     $mDesc = $people["musician_name "] . ' is a Seattle born musician.';
   }
-  if (($peopleFirstName and $people["last_name"] and $people["sport_known_for"]) != NULL) {
-    $ogTitle = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
+  if (($peopleFirstName and $peopleLastName and $people["sport_known_for"]) != NULL) {
+    $ogTitle = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
   }
-  elseif (($peopleFirstName and $people["last_name"]) != NULL) {
-    $ogTitle = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
+  elseif (($peopleFirstName and $peopleLastName) != NULL) {
+    $ogTitle = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
   }
   elseif ($people["musician_name "] != NULL) {
     $ogTitle = $people["musician_name "] . ' - SeaFilmz';
@@ -42,7 +43,7 @@
   if ($people["job"] === 'musician') {
     $personName = $people["musician_name"];
   } else {
-    $personName = $peopleFirstName . ' ' . $people["last_name"];
+    $personName = $peopleFirstName . ' ' . $peopleLastName;
   }
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
@@ -50,12 +51,12 @@
 ?>
 
     <main class="PeopleMainFacts">
-      <?php if (($peopleFirstName and $people["last_name"]) != NULL) { ?>
+      <?php if (($peopleFirstName and $peopleLastName) != NULL) { ?>
         <h1 class="PeopleName"><?php echo $peopleFirstName; ?>
         <?php if ($people["middle_initialname"] != NULL) { ?>
           <b class="PeopleName"><?php echo $people["middle_initialname"]; ?></b>
         <?php } ?>
-        <?php echo $people["last_name"]; ?></h1>
+        <?php echo $peopleLastName; ?></h1>
       <?php }
       elseif ($people["musician_name "] != NULL) { ?>
         <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
