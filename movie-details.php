@@ -29,7 +29,7 @@
       <h1 class="MovieTitle"><b><?= htmlspecialchars($movieTitle); ?></b></h1>
 
       <?php
-        $currentYear = date('Y'); // Todays Date
+        $currentYear = date('Y');
         $movieAge = $currentYear - $movieReleaseYear; // Calculate Age
       ?>
 
