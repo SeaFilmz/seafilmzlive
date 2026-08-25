@@ -13,23 +13,25 @@
   if ($people = mysqli_fetch_assoc($result)) {
     // output data from each row
 
-  if (($people["first_name"] and $people["last_name"] and $people["sport_known_for"]) != NULL) {
-    $title = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
-    $mDesc = $people["first_name"] . ' ' . $people["last_name"] . ' is a Seattle born athlete.';
+    $peopleFirstName = $people["first_name"];
+
+  if (($peopleFirstName and $people["last_name"] and $people["sport_known_for"]) != NULL) {
+    $title = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
+    $mDesc = $peopleFirstName . ' ' . $people["last_name"] . ' is a Seattle born athlete.';
   }
-  elseif (($people["first_name"] and $people["last_name"]) != NULL) {
-    $title = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
-    $mDesc = $people["first_name"] . ' ' . $people["last_name"] . ' is a Seattle born actor.';
+  elseif (($peopleFirstName and $people["last_name"]) != NULL) {
+    $title = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
+    $mDesc = $peopleFirstName . ' ' . $people["last_name"] . ' is a Seattle born actor.';
   }
   elseif ($people["musician_name "] != NULL) {
     $title = $people["musician_name "] . ' - SeaFilmz';
     $mDesc = $people["musician_name "] . ' is a Seattle born musician.';
   }
-  if (($people["first_name"] and $people["last_name"] and $people["sport_known_for"]) != NULL) {
-    $ogTitle = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
+  if (($peopleFirstName and $people["last_name"] and $people["sport_known_for"]) != NULL) {
+    $ogTitle = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
   }
-  elseif (($people["first_name"] and $people["last_name"]) != NULL) {
-    $ogTitle = $people["first_name"] . ' ' . $people["last_name"] . ' - SeaFilmz';
+  elseif (($peopleFirstName and $people["last_name"]) != NULL) {
+    $ogTitle = $peopleFirstName . ' ' . $people["last_name"] . ' - SeaFilmz';
   }
   elseif ($people["musician_name "] != NULL) {
     $ogTitle = $people["musician_name "] . ' - SeaFilmz';
@@ -40,7 +42,7 @@
   if ($people["job"] === 'musician') {
     $personName = $people["musician_name"];
   } else {
-    $personName = $people["first_name"] . ' ' . $people["last_name"];
+    $personName = $peopleFirstName . ' ' . $people["last_name"];
   }
   $body = 'MainBody';
   require_once 'templates/main-page-structure.php';
@@ -48,8 +50,8 @@
 ?>
 
     <main class="PeopleMainFacts">
-      <?php if (($people["first_name"] and $people["last_name"]) != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["first_name"]; ?>
+      <?php if (($peopleFirstName and $people["last_name"]) != NULL) { ?>
+        <h1 class="PeopleName"><?php echo $peopleFirstName; ?>
         <?php if ($people["middle_initialname"] != NULL) { ?>
           <b class="PeopleName"><?php echo $people["middle_initialname"]; ?></b>
         <?php } ?>
