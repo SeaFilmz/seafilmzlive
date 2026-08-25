@@ -16,6 +16,8 @@
     $peopleFirstName = $people["first_name"];
     $peopleLastName = $people["last_name"];
 
+    $peopleMusicianName = $people["musician_name"];
+
   if (($peopleFirstName and $peopleLastName and $people["sport_known_for"]) != NULL) {
     $title = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
     $mDesc = $peopleFirstName . ' ' . $peopleLastName . ' is a Seattle born athlete.';
@@ -24,9 +26,9 @@
     $title = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
     $mDesc = $peopleFirstName . ' ' . $peopleLastName . ' is a Seattle born actor.';
   }
-  elseif ($people["musician_name "] != NULL) {
-    $title = $people["musician_name "] . ' - SeaFilmz';
-    $mDesc = $people["musician_name "] . ' is a Seattle born musician.';
+  elseif ($peopleMusicianName != NULL) {
+    $title = $peopleMusicianName . ' - SeaFilmz';
+    $mDesc = $peopleMusicianName . ' is a Seattle born musician.';
   }
   if (($peopleFirstName and $peopleLastName and $people["sport_known_for"]) != NULL) {
     $ogTitle = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
@@ -34,14 +36,14 @@
   elseif (($peopleFirstName and $peopleLastName) != NULL) {
     $ogTitle = $peopleFirstName . ' ' . $peopleLastName . ' - SeaFilmz';
   }
-  elseif ($people["musician_name "] != NULL) {
-    $ogTitle = $people["musician_name "] . ' - SeaFilmz';
+  elseif ($peopleMusicianName != NULL) {
+    $ogTitle = $peopleMusicianName . ' - SeaFilmz';
   }
   $ogURL = 'https://seafilmz.com' . $peopleSLUGPart;
   $schemaType = 'Person';
   $personURLSlug = $peopleSLUGPart;
   if ($people["job"] === 'musician') {
-    $personName = $people["musician_name"];
+    $personName = $peopleMusicianName;
   } else {
     $personName = $peopleFirstName . ' ' . $peopleLastName;
   }
