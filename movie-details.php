@@ -30,7 +30,7 @@
 
       <?php
         $currentYear = date('Y'); // Todays Date
-        $movieAge = $currentYear-$movieReleaseYear; // Calculate Age
+        $movieAge = $currentYear - $movieReleaseYear; // Calculate Age
       ?>
 
         <?php function tableFactRow($label, $value) { ?>
