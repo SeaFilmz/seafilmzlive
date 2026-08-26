@@ -60,8 +60,8 @@
         <?php } ?>
         <?php echo $peopleLastName; ?></h1>
       <?php }
-      elseif ($people["musician_name "] != NULL) { ?>
-        <h1 class="PeopleName"><?php echo $people["musician_name "]; ?></h1>
+      elseif ($peopleMusicianName != NULL) { ?>
+        <h1 class="PeopleName"><?php echo $peopleMusicianName; ?></h1>
       <?php } ?>
 
       <?php function tableFactRow($label, $value) { ?>
