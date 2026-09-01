@@ -25,7 +25,7 @@
             $job = 'musician';
 
             // 2. Perform database query
-            $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON  = peoples_jobs.job_id INNER JOIN cities ON  = peoples.birth_city_id WHERE city = ? AND job = ? AND musician_name  IS NOT NULL ORDER BY musician_name  ");
+            $query = $newConnection->prepare("SELECT * FROM peoples_jobs INNER JOIN peoples ON peoples.people_id = peoples_jobs.people_id INNER JOIN jobs ON jobs.job_id = peoples_jobs.job_id INNER JOIN cities ON cities.city_id = peoples.birth_city_id WHERE city = ? AND job = ? AND musician_name IS NOT NULL ORDER BY musician_name ASC ");
 
             $query->bind_param("ss", $city, $job);
             $query->execute();
@@ -40,7 +40,7 @@
         ?>
 
       <tr class="MusiciansMainContent">
-        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["people_links"]; ?>"> <?php echo $musician["musician_name "]; ?> </a></b></td>
+        <td class="MusiciansCalledContent"> <b><a href="<?php echo $musician["people_links"]; ?>"> <?php echo $musician["musician_name"]; ?> </a></b></td>
       </tr>
 
         <?php
