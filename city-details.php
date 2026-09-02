@@ -71,7 +71,7 @@
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">County</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="https://kingcounty.gov/" target="_blank">King</a></div>
+              <div class="CityDataPointOfMany"><a href="https://kingcounty.gov/" target="_blank"><?= $county; ?></a></div>
               <div><a href="https://snohomishcountywa.gov/" target="_blank">Snohomish</a></div>
             </td>
           </tr>
