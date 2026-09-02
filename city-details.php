@@ -13,6 +13,7 @@
     $rows = mysqli_num_rows($result);
     $city = $cityFact["city"];
     $StateProvince = $cityFact["state_province"];
+    $county = $cityFact["county"];
     $title = "{$city} - SeaFilmz";
     $mDesc = "Fact page about the city of {$city}";
     $ogTitle = "{$city} - SeaFilmz";
@@ -58,12 +59,12 @@
           <?php if ($StateProvince !== 'Alaska') { ?>
             <tr class="CityDataPointRow">
               <td class="CityData CityDataDesc">County</td>
-              <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= "{$cityFact["county"]}"; ?></a></td>
+              <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= $county; ?></a></td>
             </tr>
           <?php } elseif ($StateProvince === 'Alaska') { ?>
             <tr class="CityDataPointRow">
               <td class="CityData CityDataDesc">Borough</td>
-              <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= "{$cityFact["county"]}"; ?></a></td>
+              <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= $county; ?></a></td>
             </tr>
           <?php }
         } elseif ($city === 'Bothell') { ?>
