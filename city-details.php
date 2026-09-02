@@ -104,7 +104,7 @@
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">County</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="https://www.bannockcounty.us/" target="_blank">Bannock</a></div>
+              <div class="CityDataPointOfMany"><a href="https://www.bannockcounty.us/" target="_blank"><?= $county; ?></a></div>
               <div class="CityDataPointOfMany"><a href="https://www.co.power.id.us/" target="_blank">Power</a></div>
             </td>
           </tr>
