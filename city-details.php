@@ -79,7 +79,7 @@
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">County</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="https://multco.us/" target="_blank">Multnomah</a></div>
+              <div class="CityDataPointOfMany"><a href="https://multco.us/" target="_blank"><?= $county; ?></a></div>
               <div class="CityDataPointOfMany"><a href="https://www.clackamas.us/" target="_blank">Clackamas</a></div>
               <div class="CityDataPointOfMany"><a href="https://www.co.washington.or.us/" target="_blank">Washington</a></div>
             </td>
