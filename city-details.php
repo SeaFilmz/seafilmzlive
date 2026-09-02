@@ -96,7 +96,7 @@
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">County</td>
             <td class="CityData">
-              <div class="CityDataPointOfMany"><a href="https://www.co.marion.or.us/" target="_blank">Marion</a></div>
+              <div class="CityDataPointOfMany"><a href="https://www.co.marion.or.us/" target="_blank"><?= $county; ?></a></div>
               <div class="CityDataPointOfMany"><a href="https://www.co.polk.or.us/" target="_blank">Polk</a></div>
             </td>
           </tr>
