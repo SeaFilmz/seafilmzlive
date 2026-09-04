@@ -56,12 +56,9 @@
         ?>
 
         <?php if ($rows === 1) { ?>
-          <?php if ($StateProvince !== 'Alaska') { ?>
-            <tr class="CityDataPointRow">
-              <td class="CityData CityDataDesc">County</td>
-              <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= $county; ?></a></td>
-            </tr>
-          <?php } elseif ($StateProvince === 'Alaska') { ?>
+          <?php if ($StateProvince !== 'Alaska') {
+            tableFactRow('County', '<a href="' . htmlspecialchars($cityFact["official_county_links"]) . '" target="_blank">' . $county . '</a>');
+          } elseif ($StateProvince === 'Alaska') { ?>
             <tr class="CityDataPointRow">
               <td class="CityData CityDataDesc">Borough</td>
               <td class="CityData"><a href="<?= "{$cityFact["official_county_links"]}"; ?>" target="_blank"><?= $county; ?></a></td>
