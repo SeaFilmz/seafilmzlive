@@ -110,11 +110,8 @@
 
         <?php if ($city === 'Seattle') {
           tableFactRow('Movie Theaters', '<a href="seattle-movie-theaters">List of Movie Theaters</a>');
+          tableFactRow('Movies Filmed', '<a href="seattle-movies">List of Movies Filmed</a>');
         ?>
-          <tr class="CityDataPointRow">
-            <td class="CityData CityDataDesc">Movies Filmed</td>
-            <td class="CityData"><a href="seattle-movies">List of Movies Filmed</a></td>
-          </tr>
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">Other Film and Media Resources for Seattle</td>
             <td class="CityData">
