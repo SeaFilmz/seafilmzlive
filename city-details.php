@@ -108,11 +108,9 @@
           tableFactRow('City', '<a href="' . htmlspecialchars($cityFact["official_city_links"]) . '" target="_blank">' . htmlspecialchars($city) . '</a>');
         } ?>
 
-        <?php if ($city === 'Seattle') { ?>
-          <tr class="CityDataPointRow">
-            <td class="CityData CityDataDesc">Movie Theaters</td>
-            <td class="CityData"><a href="seattle-movie-theaters">List of Movie Theaters</a></td>
-          </tr>
+        <?php if ($city === 'Seattle') {
+          tableFactRow('Movie Theaters', '<a href="seattle-movie-theaters">List of Movie Theaters</a>');
+        ?>
           <tr class="CityDataPointRow">
             <td class="CityData CityDataDesc">Movies Filmed</td>
             <td class="CityData"><a href="seattle-movies">List of Movies Filmed</a></td>
