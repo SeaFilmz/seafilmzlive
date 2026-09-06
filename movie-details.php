@@ -91,7 +91,7 @@
             <?php
               while ($director = mysqli_fetch_assoc($movieDirector)) {
             ?>
-              <p><?= htmlspecialchars($director["first_name"]); ?> <?php if ($director["middle_initialname"] != NULL) { echo htmlspecialchars($director["middle_initialname"]); } ?> <?= htmlspecialchars($director["last_name"]); ?></p>
+              <p><?= htmlspecialchars($director["first_name"]); ?> <?php if ($director["middle_initial_name"] != NULL) { echo htmlspecialchars($director["middle_initial_name"]); } ?> <?= htmlspecialchars($director["last_name"]); ?></p>
               <?php } ?>
           </td>
 
