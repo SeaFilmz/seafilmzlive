@@ -72,7 +72,7 @@
             <?php
               while ($actors = mysqli_fetch_assoc($movieActors)) {
             ?>
-                <p><?= htmlspecialchars($actors["first_name"]); ?> <?php if ($actors["middle_initialname"] != NULL) { echo htmlspecialchars($actors["middle_initialname"]); } ?> <?= htmlspecialchars($actors["last_name"]); ?></p>
+                <p><?= htmlspecialchars($actors["first_name"]); ?> <?php if ($actors["middle_initial_name"] != NULL) { echo htmlspecialchars($actors["middle_initial_name"]); } ?> <?= htmlspecialchars($actors["last_name"]); ?></p>
               <?php } ?>
           </td>
 
