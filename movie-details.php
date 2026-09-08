@@ -71,9 +71,12 @@
           <td class="MovieDataActor">
             <?php
               while ($actors = mysqli_fetch_assoc($movieActors)) {
-            ?>
-                <p><?= htmlspecialchars($actors["first_name"]); ?> <?php if ($actors["middle_initial_name"] != NULL) { echo htmlspecialchars($actors["middle_initial_name"]); } ?> <?= htmlspecialchars($actors["last_name"]); ?></p>
-              <?php } ?>
+                if ($actors["people_links"] !== NULL) { ?>
+                  <p><a href="<?= htmlspecialchars($actors["people_links"]); ?>"><?= htmlspecialchars($actors["first_name"]); ?> <?php if ($actors["middle_initial_name"] != NULL) { echo htmlspecialchars($actors["middle_initial_name"]); } ?> <?= htmlspecialchars($actors["last_name"]); ?></a></p>
+                <?php } else { ?>
+                  <p><?= htmlspecialchars($actors["first_name"]); ?> <?php if ($actors["middle_initial_name"] != NULL) { echo htmlspecialchars($actors["middle_initial_name"]); } ?> <?= htmlspecialchars($actors["last_name"]); ?></p>
+                <?php }
+              } ?>
           </td>
 
           <?php
