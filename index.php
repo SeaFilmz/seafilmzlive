@@ -105,7 +105,7 @@
 
         </form>
 
-				<p id="answerText" class="AnswerText"></p>
+				<p id="AnswerText" class="AnswerText"></p>
       </section>
 
 		</main>
