@@ -48,6 +48,11 @@
         <?php
           tableFactRow("Year Released", $movieReleaseYear);
 
+          if ($movies["release_date"] !== NULL) {
+            $date = date_create($movies["release_date"]);
+            tableFactRow("Release Date", date_format($date, "F d, Y"));
+          }
+
           tableFactRow("Movie Age", $movieAge . ' Years');
 
           if ($movies["runtime"] !== NULL) {
