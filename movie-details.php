@@ -30,7 +30,11 @@
 
       <?php
         $currentYear = date('Y');
-        $movieAge = $currentYear - $movieReleaseYear;
+        $movieAgeByYear = $currentYear - $movieReleaseYear;
+
+        $movieReleaseDate = new DateTime($movies["release_date"]);
+        $currentDate = new DateTime();
+        $movieAgeByDate = $movieReleaseDate->diff($currentDate);
       ?>
 
         <?php function tableFactRow($label, $value) { ?>
@@ -51,9 +55,10 @@
           if ($movies["release_date"] !== NULL) {
             $date = date_create($movies["release_date"]);
             tableFactRow("Release Date", date_format($date, "F d, Y"));
+            tableFactRow("Movie Age", $movieAgeByDate->y . ' Years, ' . $movieAgeByDate->m . ' Months, ' . $movieAgeByDate->d . ' Days');
+          } else {
+            tableFactRow("Movie Age", $movieAgeByYear . ' Years');
           }
-
-          tableFactRow("Movie Age", $movieAge . ' Years');
 
           if ($movies["runtime"] !== NULL) {
             tableFactRow("Run Time", $movies["runtime"] . ' Minutes');
