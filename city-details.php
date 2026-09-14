@@ -219,6 +219,7 @@
           cityAttractionTableQuery($city, 'Board Game Hangout Store');
           cityAttractionTableQuery($city, 'Golf Course');
           cityAttractionTableQuery($city, 'Amusement Park');
+          cityAttractionTableQuery($city, 'Airport');
         ?>
 			</table>
 		</main>
