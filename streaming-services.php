@@ -17,19 +17,19 @@
     <ul class="StreamingServices">
       <?php
         $streamingServices = [
-          ["https://tubitv.com", "Tubi"],
-          ["https://www.starz.com/us/en/", "Starz"],
-          ["https://www.peacocktv.com", "Peacock"],
-          ["https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime"],
-          ["https://www.paramountplus.com", "Paramount+"],
-          ["https://www.netflix.com", "Netflix"],
-          ["https://www.hulu.com/welcome", "Hulu"],
-          ["https://www.hbomax.com/", "HBO Max"],
-          ["https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee"],
-          ["https://www.disneyplus.com", "Disney+"],
-          ["https://www.discoveryplus.com", "Discovery+"],
+          ["https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video"],
           ["https://www.apple.com/apple-tv-plus/", "Apple TV+"],
-          ["https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video"]
+          ["https://www.discoveryplus.com", "Discovery+"],
+          ["https://www.disneyplus.com", "Disney+"],
+          ["https://www.amazon.com/gp/video/splash/freevee_finduse", "Freevee"],
+          ["https://www.hbomax.com/", "HBO Max"],
+          ["https://www.hulu.com/welcome", "Hulu"],
+          ["https://www.netflix.com", "Netflix"],
+          ["https://www.paramountplus.com", "Paramount+"],
+          ["https://www.paramountpluswithshowtime.com/", "Paramount+ with Showtime"],
+          ["https://www.peacocktv.com", "Peacock"],
+          ["https://www.starz.com/us/en/", "Starz"],
+          ["https://tubitv.com", "Tubi"],
         ];
 
         for ($i = 0; $i < count($streamingServices); $i++) { ?>
