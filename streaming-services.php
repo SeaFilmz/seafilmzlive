@@ -18,6 +18,7 @@
       <?php
         $streamingServices = [
           ["https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011", "Amazon Prime Video"],
+          ["https://www.amcplus.com/", "AMC+"],
           ["https://www.apple.com/apple-tv-plus/", "Apple TV+"],
           ["https://www.discoveryplus.com", "Discovery+"],
           ["https://www.disneyplus.com", "Disney+"],
