@@ -91,6 +91,10 @@
 				<div class="MoviePersonSearchResult"><a href= "portland-oregon" class="InternalSearchLink">Portland, Oregon</a></div>
 				<div>City</div>
 			<?php
+			} elseif ($searchRemoveWhitespaceAllLower === "anchorage") { ?>
+				<div class="MoviePersonSearchResult"><a href= "anchorage-alaska" class="InternalSearchLink">Anchorage, Alaska</a></div>
+				<div>City</div>
+			<?php
 			}
 	}
 	?>
