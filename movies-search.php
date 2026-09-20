@@ -94,19 +94,10 @@
     		}
 			}
 
-			if ($searchRemoveWhitespaceAllLower === "seattle") { ?>
-				<div class="MoviePersonSearchResult"><a href= "seattle-washington" class="InternalSearchLink">Seattle</a></div>
-				<div>City</div>
-			<?php
-			} elseif ($searchRemoveWhitespaceAllLower === "portland") { ?>
-				<div class="MoviePersonSearchResult"><a href= "portland-oregon" class="InternalSearchLink">Portland, Oregon</a></div>
-				<div>City</div>
-			<?php
-			} elseif ($searchRemoveWhitespaceAllLower === "anchorage") { ?>
-				<div class="MoviePersonSearchResult"><a href= "anchorage-alaska" class="InternalSearchLink">Anchorage, Alaska</a></div>
-				<div>City</div>
-			<?php
-			}
+			citySearchResult("seattle", "seattle-washington");
+			citySearchResult("portland", "portland-oregon");
+			citySearchResult("anchorage", "anchorage-alaska");
+
 	}
 	?>
 
