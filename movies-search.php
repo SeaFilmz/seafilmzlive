@@ -97,6 +97,7 @@
 			citySearchResult("seattle", "seattle-washington");
 			citySearchResult("portland", "portland-oregon");
 			citySearchResult("anchorage", "anchorage-alaska");
+			citySearchResult("boise", "boise-idaho");
 
 	}
 	?>
