@@ -83,6 +83,17 @@
 				<?php
 				}
 			}
+
+			function citySearchResult($city, $cityLink) {
+    		global $searchRemoveWhitespaceAllLower;
+
+				if ($searchRemoveWhitespaceAllLower === $city) { ?>
+					<div class="MoviePersonSearchResult"><a href="<?= htmlspecialchars($cityLink); ?>" class="InternalSearchLink"><?= htmlspecialchars(ucwords($city)); ?></a></div>
+					<div>City</div>
+				<?php
+    		}
+			}
+
 			if ($searchRemoveWhitespaceAllLower === "seattle") { ?>
 				<div class="MoviePersonSearchResult"><a href= "seattle-washington" class="InternalSearchLink">Seattle</a></div>
 				<div>City</div>
