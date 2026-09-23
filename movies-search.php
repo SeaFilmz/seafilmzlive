@@ -99,6 +99,7 @@
 			citySearchResult("anchorage", "anchorage-alaska");
 			citySearchResult("boise", "boise-idaho");
 			citySearchResult("tacoma", "tacoma-washington");
+			citySearchResult("spokane", "spokane-washington");
 
 	}
 	?>
