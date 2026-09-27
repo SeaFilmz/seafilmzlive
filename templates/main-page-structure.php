@@ -119,7 +119,7 @@
 
           <li class="NavFooterMobile"><a href="built-with">Built With</a><li>
 
-          <li class="NavFooterMobile"><a href="services">Services</a><li>
+          <li class="NavFooterMobile"><a href="projects">Projects</a><li>
         </ul>
       </nav>
     </footer>
