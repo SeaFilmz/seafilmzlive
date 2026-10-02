@@ -83,7 +83,27 @@
 				<?php
 				}
 			}
+			?>
 
+			<p class="numberOfSearcResults">
+				<?php
+					if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
+				?>
+					Movie Result: 0
+				<?php
+				} elseif ($queryResults === 1) {
+				?>
+					Movie Result: 1
+				<?php
+				} else {
+				?>
+					Movie Results:
+				<?php echo "{$queryResults}";
+				}
+				?>
+   		</p>
+
+			<?php
 			function citySearchResult($city, $cityLink) {
     		global $searchRemoveWhitespaceAllLower, $citySearchResultCount;
 
@@ -107,26 +127,6 @@
 
 	}
 	?>
-
-		<div class="numberOfSearcResults">
-			<?php
-				if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
-			?>
-				Movie Result: 0
-			<?php
-			} elseif ($queryResults === 1) {
-			?>
-				Movie Result: 1
-			<?php
-			} else {
-			?>
-				Movie Results:
-			<?php echo "{$queryResults}";
-			}
-			?>
-    </div>
-	<?php
-?>
 
 </main>
 
