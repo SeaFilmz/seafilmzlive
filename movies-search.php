@@ -85,11 +85,14 @@
 			}
 
 			function citySearchResult($city, $cityLink) {
-    		global $searchRemoveWhitespaceAllLower;
+    		global $searchRemoveWhitespaceAllLower, $citySearchResultCount;
 
-				if ($searchRemoveWhitespaceAllLower === $city) { ?>
+				if ($searchRemoveWhitespaceAllLower === $city) {
+					$citySearchResultCount++;
+				?>
 					<div class="MoviePersonSearchResult"><a href="<?= htmlspecialchars($cityLink); ?>" class="InternalSearchLink"><?= htmlspecialchars(ucwords($city)); ?></a></div>
 					<div>City</div>
+					<p class="numberOfSearcResults">City Results: <?= $citySearchResultCount; ?></p>
 				<?php
     		}
 			}
