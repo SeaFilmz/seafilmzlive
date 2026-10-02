@@ -100,6 +100,7 @@
 			citySearchResult("boise", "boise-idaho");
 			citySearchResult("tacoma", "tacoma-washington");
 			citySearchResult("spokane", "spokane-washington");
+			citySearchResult("bellevue", "bellevue-washington");
 
 	}
 	?>
