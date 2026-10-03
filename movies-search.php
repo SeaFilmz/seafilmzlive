@@ -55,6 +55,24 @@
 
 				<h2 class="OverallSearchResultTitle">Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
 
+				<p class="numberOfSearcResults">
+					<?php
+						if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
+					?>
+						Movie Result: 0
+					<?php
+					} elseif ($queryResults === 1) {
+					?>
+						Movie Result: 1
+					<?php
+					} else {
+					?>
+						Movie Results:
+					<?php echo "{$queryResults}";
+					}
+					?>
+				</p>
+
 		<?php
 		}
 
@@ -85,24 +103,6 @@
 			}
 			?>
 
-			<p class="numberOfSearcResults">
-				<?php
-					if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
-				?>
-					Movie Result: 0
-				<?php
-				} elseif ($queryResults === 1) {
-				?>
-					Movie Result: 1
-				<?php
-				} else {
-				?>
-					Movie Results:
-				<?php echo "{$queryResults}";
-				}
-				?>
-   		</p>
-
 			<?php
 			function citySearchResult($city, $cityLink) {
     		global $searchRemoveWhitespaceAllLower, $citySearchResultCount;
@@ -110,9 +110,9 @@
 				if ($searchRemoveWhitespaceAllLower === $city) {
 					$citySearchResultCount++;
 				?>
+					<p class="numberOfSearcResults">City Results: <?= $citySearchResultCount; ?></p>
 					<div class="MoviePersonSearchResult"><a href="<?= htmlspecialchars($cityLink); ?>" class="InternalSearchLink"><?= htmlspecialchars(ucwords($city)); ?></a></div>
 					<div>City</div>
-					<p class="numberOfSearcResults">City Results: <?= $citySearchResultCount; ?></p>
 				<?php
     		}
 			}
