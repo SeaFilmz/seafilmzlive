@@ -55,7 +55,7 @@
 
 				<h2 class="OverallSearchResultTitle">Results for "<?php echo htmlspecialchars(stripslashes($search)); ?>"</h2>
 
-				<p class="numberOfSearchResults">
+				<div class="numberOfSearchResults">
 					<?php
 						if ($searchRemoveWhitespaceAll === "" or $queryResults === 0) {
 					?>
@@ -71,7 +71,7 @@
 					<?php echo "{$queryResults}";
 					}
 					?>
-				</p>
+				</div>
 
 		<?php
 		}
@@ -110,7 +110,7 @@
 				if ($searchRemoveWhitespaceAllLower === $city) {
 					$citySearchResultCount++;
 				?>
-					<p class="numberOfSearchResults">City Results: <?= $citySearchResultCount; ?></p>
+					<div class="numberOfSearchResults">City Results: <?= $citySearchResultCount; ?></div>
 					<div class="MoviePersonSearchResult"><a href="<?= htmlspecialchars($cityLink); ?>" class="InternalSearchLink"><?= htmlspecialchars(ucwords($city)); ?></a></div>
 					<div>City</div>
 				<?php
