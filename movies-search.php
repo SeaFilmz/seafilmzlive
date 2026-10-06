@@ -124,6 +124,7 @@
 			citySearchResult("tacoma", "tacoma-washington");
 			citySearchResult("spokane", "spokane-washington");
 			citySearchResult("bellevue", "bellevue-washington");
+			citySearchResult("everett", "everett-washington");
 
 	}
 	?>
