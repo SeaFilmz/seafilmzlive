@@ -11,7 +11,7 @@
 
 <?php
 	if (isset($_GET['search'])) {
-		$search = mysqli_real_escape_string($newConnection, $_GET['search']);
+		$search = $_GET['search'];
 		$searchWhitespaceTrim = trim($search);
 
 		$searchRemoveWhitespaceAll = str_replace(" ", "", $search);
