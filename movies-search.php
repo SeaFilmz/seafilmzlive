@@ -104,6 +104,7 @@
 			?>
 
 			<?php
+			$citySearchResultCount = 0;
 			function citySearchResult($city, $cityLink) {
     		global $searchRemoveWhitespaceAllLower, $citySearchResultCount;
 
