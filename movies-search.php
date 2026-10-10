@@ -85,13 +85,13 @@
 							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
 							<div>Movie &bull; <?= htmlspecialchars($row["YearReleased"], ENT_QUOTES, 'UTF-8'); ?> </div>
 						<?php } elseif ($row["Job"] == 'actor') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["DisplayName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
 							<div>Actor</div>
 						<?php } elseif ($row["Job"] == 'athlete') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["DisplayName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
 							<div>Athlete</div>
 						<?php } elseif ($row["Job"] == 'musician') { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= $row["MusicianName"]; ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["MusicianName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
 							<div>Musician</div>
 						<?php } else {
 							echo "There are no results matching your search!";
