@@ -12,7 +12,6 @@
 <?php
 	if (isset($_GET['search'])) {
 		$search = $_GET['search'];
-		$searchWhitespaceTrim = trim($search);
 
 		$searchRemoveWhitespaceAll = str_replace(" ", "", $search);
 		$searchRemoveWhitespaceAllLower = strtolower($searchRemoveWhitespaceAll);
