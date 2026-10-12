@@ -82,7 +82,7 @@
 					<div class="SearchResult">
 
 						<?php if ($row["SortPriority"] == 1) { ?>
-							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
+							<div class="MoviePersonSearchResult"><a href= "<?= htmlspecialchars($row["Link"], ENT_QUOTES, 'UTF-8'); ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
 							<div>Movie &bull; <?= htmlspecialchars($row["YearReleased"], ENT_QUOTES, 'UTF-8'); ?> </div>
 						<?php } elseif ($row["Job"] == 'actor') { ?>
 							<div class="MoviePersonSearchResult"><a href= "<?= $row["Link"]; ?>" class="InternalSearchLink"><?= htmlspecialchars($row["DisplayName"], ENT_QUOTES, 'UTF-8'); ?></a></div>
